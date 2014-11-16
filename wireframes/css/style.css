@@ -1,0 +1,218 @@
+body {
+    background-color: white;
+}
+
+/* HEADER */
+ 
+    /** Set the backgrounds for the different sections **/
+    .header-area 
+    {
+        min-height: 160px;
+    }
+     
+    .call-us-today
+    {
+        font-size: 23px;
+    }
+
+    h1 
+    {
+        text-align: center;
+    }
+
+    .strapline 
+    {
+        text-align: center;
+    }
+
+    .social-buttons
+    {
+        text-align: right;
+    }
+
+/*HOMEPAGE BUSINESS PANEL*/
+
+    .business-panel 
+    {
+        margin: 40px 0 20px 0;
+
+    }
+
+    .business-panel-image 
+    {
+        height: 202px;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .business-panel-title 
+    {
+        height: 65px;
+    }
+
+    .business-panel-description 
+    {
+        height: 190px;
+        line-height: 1.75;
+    }
+
+
+    .navigation-area 
+    {
+        /* background-image: url('../img/navigation-container.jpg'); */
+        background-repeat: repeat-x;
+        background: rgba(0,0,0,.2);
+    }
+     
+    .footer-area {
+        background-color: #1f1f1f;  
+        color: #fff;
+        min-height: 50px;
+        padding: 20px 0 0 0;
+    }
+     
+    .full-width {
+        min-width:100%;
+        position: relative;
+    }
+     
+    /** Changes background color, height and margin of the border **/
+    .top-bar {
+        background: none;
+        /* height: 58px; */
+        /* line-height: 58px; */
+        margin-bottom: 0;
+    }
+     
+    /** Removes black background on menu bar **/
+    .top-bar-section ul li 
+    {
+        background: none;
+        text-transform: uppercase;
+    }
+
+    .top-bar-section li:not(.has-form) a
+    {
+        color: green;
+    }
+     
+    /** Removes black background on menu item **/
+    .top-bar-section li:not(.has-form)  a:not(.button) {
+        background: none;
+        /* line-height: 58px; */
+        /* padding: 0 27px; */
+    }
+
+/*HOMEPAGE TESTIMONIAL SECTION*/
+
+    #testimonial {
+        background: rgba(0,0,0,.1);
+        padding: 30px 0;
+        text-align: center;
+    }
+
+/*HOMEPAGE ABOUT SECTION*/
+    .homepage-blurbs
+    {
+        text-align: center;
+        padding: 60px 0 50px 0;
+    }
+    #homepage-about-blurb {
+        background: #ccc;
+    }
+
+/*HOMEPAGE SOCIAL RESPONSIBILITY BLURB*/
+    #homepage-social-blurb h3
+    {
+        color: white;
+
+    }
+
+    #homepage-social-blurb
+    {
+        background: rgba(0,0,0,.5);
+    }
+
+/*FOOTER*/
+    .footer-nav {
+        list-style: none;
+    }
+
+    a .fa {
+        padding: 10px;
+    }
+
+/*SHARED FEATURES ACROSS PAGES*/
+    .banner-statement
+    {
+    background: rgba(0,0,0,.4);
+    text-align: center;
+    padding: 20px 0;
+
+    }
+
+    .banner-statement h2
+    {
+        color: white;
+        font-weight: 300;
+    }
+
+    .main-image-section
+    {
+        background: white;
+    }
+
+    .page-summary1
+    {
+        padding: 40px 0;
+        background: rgba(0,0,0,.1);
+    }
+
+    .page-summary2
+    {
+        padding: 40px 0;
+        background: rgba(0,0,0,.2);
+    }
+
+    .page-summary3
+    {
+        padding: 40px 0;
+        background: white;
+    }
+
+    .about-paragraphs
+    {
+        font-size: 18px;
+    }
+
+    .page-sidenav-content
+    {
+        margin: 30px auto;
+    }
+
+/* SLICK SLIDER */
+
+    .slick-prev:before, .slick-next:before
+    {
+        color: rgb(0, 140, 186);
+    }
+
+/*ABOUT PAGE*/
+
+/*TEAM PAGE*/
+
+    .staff-profiles
+    {
+        margin: 40px 0;
+    }
+
+    .staff-profile-images
+    {
+        border-radius: 8px;
+    }
+
+/*AFTERSCHOOL-BREAKFAST-CLUBS PAGE*/
+    #map_canvas
+    {
+        height: 400px;
+    }
