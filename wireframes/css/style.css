@@ -30,6 +30,14 @@ body {
         text-align: right;
     }
 
+/*HOMEPAGE SLIDER */
+
+    body.home .slider-container
+    {
+        background: rgba(0,0,0,.1);
+        padding-top: 50px;
+    }
+
 /*HOMEPAGE BUSINESS PANEL*/
 
     .business-panel 
@@ -191,6 +199,8 @@ body {
     }
 
 /* SLICK SLIDER */
+
+
 
     .slick-prev:before, .slick-next:before
     {
