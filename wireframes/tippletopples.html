@@ -3,24 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Granary Care | Home</title>
+    <title>Granary Care | Tipple Topples</title>
 
    
     <link rel="stylesheet" href="css/normalize.css"> <!-- resets default browser styles  -->
     <link rel="stylesheet" href="css/foundation.css"> <!-- foundation styles  -->
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css"> <!-- import icon font  -->
-    <link rel="stylesheet" href="slick/slick.css"/> <!-- slick slider -->
+    <link rel="stylesheet" href="css/style.css"> <!-- our styles rules! -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 
-    <!-- our styles rules, after all the other styles! -->
-    <link rel="stylesheet" href="css/style.css"> 
-    
-
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/vendor/modernizr.js"></script>
 
   </head>
 
 
-  <body class="home">
+  <body>
 
     <!-- HEADER AREA -->
     <header>
@@ -32,6 +30,8 @@
             <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
             <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
             <a href="#"><i class="fa fa-pinterest fa-2x"></i></a>
+
+          
           </div>
         </div>
         
@@ -62,18 +62,18 @@
                 
                 <!-- LEFT NAV SECTION -->
                 <ul class="left">
-                    <li class="has-dropdown"><a href="about.html">About</a>
+                    <li class="has-dropdown"><a href="#">About</a>
                       <ul class="dropdown">
-                          <li><a href="team.html">Team</a></li>
+                          <li><a href="#">Team</a></li>
                           <li><a href="#">Testimonials</a></li>
                       </ul>
                     </li>
 
                     <li class="divider"></li>
 
-                    <li class="has-dropdown"><a href="granarykids.html">Granary Kids</a>
+                    <li class="has-dropdown"><a href="#">Granary Kids</a>
                       <ul class="dropdown">
-                          <li><a href="afterschool-breakfast-clubs.html">After School Clubs and Breakfast Clubs</a></li>
+                          <li><a href="#">After School Clubs and Breakfast Clubs</a></li>
                           <li><a href="#">Tipple Topples Creche</a></li>
                           <li><a href="#">Active Holiday Camps</a></li>
                           <li class="divider"></li>
@@ -140,99 +140,63 @@
                 </ul>
 
                 <!-- RIGHT NAV SECTION -->
-                <!-- <ul class="right"></ul> -->
+                <ul class="right"></ul>
               
               </section>
             </nav>
       </div>
     </div>
   </div>
-    
- 
-<!-- CONTENT AREA -->
 
-<!-- SLIDER -->
-  <div class="full-width content-area slider-container">
+<!-- BANNER STATEMENT -->
+
+<div class="full-width content-area banner-statement">
+    <div class="row">
+        <div class="large-12 medium-12 small-12 columns">
+            <h2>Love for Children and their Wellbeing</h2>
+        </div>
+    </div>
+</div>
+
+<!-- SIDEBAR AND MAIN CONTENT -->
+<div class="row page-sidenav-content">
+  <div class="large-9 medium-9 push-3 columns">
+    
+<!-- image -->
     <div class="row">
       <div class="large-12 columns">
-        
-        <div class="slider">
-          <div>
-            <img src="img/slide_b+w_970x400.jpg">
-          </div>
-          <div>
-            <img src="img/outdoors_b+w_970x400.jpg">
-          </div>
-          <div>
-            <img src="img/stories_b+w_970x400.jpg">
+        <div class="image-container">
+          <img src="img/stories_b+w_970x400.jpg"/>
+          <div class="text-overlay">
+            <p><b>Ages:</b>  1-7 years</p>
+<!--             <p>1-7 years</p>
+ -->            <p><b>Capacity:</b>  up to 40 children</p>
+            <!-- <p>up to 40 children</p> -->
           </div>
         </div>
-
       </div>
     </div>
+
+    <!-- MAIN TEXT -->
+    <h2>Tipple Topples Creche</h2>
+    <p class="about-paragraphs">Tipple Topples is Granary Care's mobile creche and childcare division.</p>
+    <p class="about-paragraphs">We are available for functions ranging from weddings and christenings to conferences and training seminars throughout Harrow, Hillingdon and surrounding boroughs.</p>
+    <p class="about-paragraphs">We have a pool of over 40 trained and vetted childcare professionals who offer quality play and childcare experiences to children aged 18 months to seven years.</p>
+    <p class="about-paragraphs">Call us today for more information on Tipple Topples Creche.</p> 
+    <a class="small radius button" href="#">Contact Us for more info</a>  
   </div>
 
-<!-- TESTIMONIAL -->
-<div class="full-width content-area testimonial">
-  <div class="row">
-    <div class="large-12 columns">
-      <h4><i><q>Here is a lovely testimonial from a very happy Granary Care client</i></q></h4>
-    </div>
-  </div>
-</div>
-
-<div class="row">
-    <div class="large-4 columns business-panel">
-      <div class="business-panel-image">
-        <img src="img/thumbs_b+w_303x202.jpg"/>
-      </div>
-      <div class="business-panel-title">
-        <h4>Breakfast and Afterschool Clubs</h4>
-      </div>
-      <p class="business-panel-description">Besides being a lot of fun, our after school clubs and breakfast clubs allow you peace of mind. You can be rest-assured your children are in a safe and stimulating environment until they return to you in the evening.</p>
-      <a class="small radius button" href="#">Find out more</a>
-    </div>
-    
-    <div class="large-4 columns business-panel">
-      <div class="business-panel-image">
-        <img src="img/thumbs_b+w_303x202.jpg"/>
-      </div>
-      <div class="business-panel-title">
-        <h4>London Nanny Agency</h4>
-      </div>
-      <p class="business-panel-description">We offer an affordable and quality nanny and au pair placement introduction service to parents in the UK and abroad. Our nannies, after school nannies, au pairs, maternity nurses and mother’s helps all have the passion and skill to meet your tailored needs.</p>
-      <a class="small radius button" href="#">Find out more</a>
-    </div>
-    
-    <div class="large-4 columns business-panel">
-      <div class="business-panel-image">
-        <img src="img/thumbs_b+w_303x202.jpg"/>
-      </div>
-      <div class="business-panel-title">
-        <h4>Mother and Baby Unit</h4>
-      </div>
-      <p class="business-panel-description">At our mother and baby facility we provide a nurturing environment for new mums. Offering psychological support and teaching skills for life, we ensure each mother can give their child a great start.</p>
-      <a class="small radius button" href="#">Find out more</a>
-    </div>
-  
-</div>
-
-
-<div class="full-width content-area homepage-blurbs" id="homepage-about-blurb">
-  <div class="row">
-    <div class="large-12 columns">
-      <h3 >With over 10 years experience here at Granary Care, we are experts in nurturing children within the safest environment. We have a unique approach to caring for and understanding children; seeing the world through their lens. </h3>
-      <a class="radius button" href="#">More About Granary Care</a>
-    </div>
-  </div>
-</div>
-
-<div class="full-width content-area homepage-blurbs" id="homepage-social-blurb">
-  <div class="row">
-    <div class="large-12 columns">
-      <h3 >Social responsibility underpins everything we do. Proceeds from our business enable us to give monetary aid to a growing number of missions and the disadvantaged around the world. We have increased our giving year on year since 2003.</h3>
-      <a class="radius button" href="#">Learn More</a>
-    </div>
+  <div class="large-3 medium-3 pull-9 columns">
+    <ul class="side-nav">
+      <li><a href="#">Granary Kids</a></li>
+      <li><a href="#">Afterschool and Breakfast Clubs</a></li>
+      <li><a href="#">Tipples Topples Creche</a></li>
+      <li><a href="#">Active Holiday Camps</a></li>
+      <li><a href="#">Locations</a></li>
+      <li><a href="#">Working with Granary Care</a></li>
+      <li><a href="#">Useful Info</a></li>
+      <li><a href="#">Testimonials</a></li>
+    </ul>
   </div>
 </div>
 
@@ -266,32 +230,58 @@
           </div>
         </div>
       </div>
-  </div>
-
-    
-    <!-- load jQuery -->
+</div>
     <script src="js/vendor/jquery.js"></script>
 
-    <!-- load Foundation and initialise it -->
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
     </script>
-    
-    <!-- load Slick and apply it to .homepageslider -->
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function()
-        {
-          var slickOptions = 
-          {
 
-          }
-
-          $('.slider').slick(slickOptions);
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() 
+      {
+        var mapCanvas = document.getElementById('map_canvas');
+        var mapOptions = 
+        {    
+          center: new google.maps.LatLng(51.535183, -0.448138),
+          zoom: 9,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var myLatLng = new google.maps.LatLng(51.507428, -0.419335);
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Hello World!'
         });
+        var contentString = '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<div id="bodyContent">'+
+          '<p><b>Botwell House RC Primary School</b> ' +
+          'Botwell Lane, Hayes, '+
+          'Middlesex UB3 2AB</p>'+
+          '</div>'+
+          '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.open(map,marker);
+        });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 
-    
+    <script>
+    $('div.schoolclubsinfo').on('click', function() {
+      $(this).toggleClass('show-description');
+      });
+    </script>
+
   </body>
 </html>
