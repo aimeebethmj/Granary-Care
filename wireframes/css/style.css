@@ -43,10 +43,12 @@ body {
     .business-panel 
     {
         margin: 40px 0 20px 0;
+        text-align: center;
+        padding: 20px;
 
     }
 
-    .business-panel-image 
+    .business-panel img 
     {
         height: 202px;
         overflow: hidden;
@@ -67,9 +69,8 @@ body {
 
     .navigation-area 
     {
-        /* background-image: url('../img/navigation-container.jpg'); */
-        background-repeat: repeat-x;
-        background: rgba(0,0,0,.2);
+        border-top: solid 1px #ddd;
+        border-bottom: solid 1px #ddd;
     }
      
     .footer-area {
@@ -93,15 +94,21 @@ body {
     }
      
     /** Removes black background on menu bar **/
-    .top-bar-section ul li 
+    .top-bar-section ul.top-level > li 
     {
         background: none;
-        text-transform: uppercase;
+        /*text-transform: uppercase;*/
+        border-right: solid 1px #ddd;
     }
+
+    .top-bar-section ul.top-level > li:last-child
+    {
+        border-right: none;
+    } 
 
     .top-bar-section li:not(.has-form) a
     {
-        color: green;
+        color: #008cba;
     }
      
     /** Removes black background on menu item **/
@@ -109,6 +116,21 @@ body {
         background: none;
         /* line-height: 58px; */
         /* padding: 0 27px; */
+    }
+
+    .top-bar .toggle-topbar.menu-icon a
+    {
+        color: #008cba;
+    }
+
+    .top-bar .toggle-topbar.menu-icon a span::after
+    {
+        box-shadow: 0 0px 0 1px #008cba, 0 7px 0 1px #008cba, 0 14px 0 1px #008cba;
+    }
+
+    .top-bar-section .has-dropdown > a:after
+    {
+        border-color: rgba(0, 0, 0, 0.3) transparent transparent transparent;
     }
 
 /*TESTIMONIAL SECTION*/
@@ -131,6 +153,8 @@ body {
     {
         color: white;
     }
+
+
 
 /*HOMEPAGE ABOUT SECTION*/
     .homepage-blurbs
@@ -166,17 +190,52 @@ body {
 /*SHARED FEATURES ACROSS PAGES*/
     .banner-statement
     {
-    background: rgba(0,0,0,.4);
-    text-align: center;
-    padding: 20px 0;
-
+        background: rgba(0,0,0,.4);
+        text-align: center;
+        padding: 50px 0;
+        background-size: cover;
+        background-position: center;
     }
 
     .banner-statement h2
     {
         color: white;
         font-weight: 300;
+        color: rgba(0,0,0,.7);
+
     }
+
+    .banner1
+    {
+    background-image: url("../img/grainfieldhigh_blur_b+w_1920.jpg");
+    }
+
+    .banner1 h2
+    {
+
+    }
+
+    .banner2
+    {
+    background-image: url("../img/brightskies_blur_b+w_1920.jpg")
+    }
+
+    .banner2 h2
+    {
+
+    }
+
+    .banner3
+    {
+    background-image: url("../img/grainfieldsun_b+w_1920.jpg")
+    }
+
+    .banner3 h2
+    {
+
+    }
+
+
 
     .main-image-section
     {
@@ -194,16 +253,31 @@ body {
         background: rgba(0,0,0,.1);
     }
 
+    .page-summary1 h2
+    {
+        margin-bottom: 20px;
+    }
+
     .page-summary2
     {
         padding: 40px 0;
         background: rgba(0,0,0,.2);
     }
 
+    .page-summary2 h2
+    {
+        margin-bottom: 20px;
+    }
+
     .page-summary3
     {
         padding: 40px 0;
         background: white;
+    }
+
+    .page-summary3 h2
+    {
+        margin-bottom: 20px;
     }
 
     .about-paragraphs
@@ -282,7 +356,7 @@ body {
 
     .schoolclubsinfo
     {
-        height: 270px;
+        height: 340px;
         overflow: hidden;
         border-radius: 8px;       
         margin: 20px 30px; 
@@ -323,9 +397,14 @@ body {
         margin: 0 10px 0 0;
     }
 
+    .schoolclubsinfo:nth-of-type(even)
+    {
+        float: right;
+    }
+
     .show-description 
     {
-        height: 843px;
+        height: 900px;
     }
 
     .show-description p
@@ -333,6 +412,7 @@ body {
         opacity: 1;
         
     }
+
 
 /* NANNY AGENCY PAGE */
 
@@ -388,6 +468,7 @@ body {
     .accreditations-container
     {
         height: 220px;
+        background: rgba(0,0,0,.3);
     }
 
     .accreditations-container img
@@ -414,4 +495,18 @@ body {
     {
         margin:80px 20px;
         padding: 30px;
+    }
+
+
+    /*TYPES OF CARER PAGE*/
+
+
+    #tab-descriptions p
+    {
+        font-size: 20px;
+    }
+
+    ul.tabs.vertical 
+    {
+        margin-right: 20px;
     }
