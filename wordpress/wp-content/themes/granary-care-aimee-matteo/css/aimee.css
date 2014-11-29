@@ -1,0 +1,512 @@
+body {
+    background-color: white;
+}
+
+/* HEADER */
+ 
+    /** Set the backgrounds for the different sections **/
+    .header-area 
+    {
+        min-height: 160px;
+    }
+     
+    .call-us-today
+    {
+        font-size: 23px;
+    }
+
+    h1 
+    {
+        text-align: center;
+    }
+
+    .strapline 
+    {
+        text-align: center;
+    }
+
+    .social-buttons
+    {
+        text-align: right;
+    }
+
+/*HOMEPAGE SLIDER */
+
+    body.home .slider-container
+    {
+        background: rgba(0,0,0,.1);
+        padding-top: 50px;
+    }
+
+/*HOMEPAGE BUSINESS PANEL*/
+
+    .business-panel 
+    {
+        margin: 40px 0 20px 0;
+        text-align: center;
+        padding: 20px;
+
+    }
+
+    .business-panel img 
+    {
+        height: 202px;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    .business-panel-title 
+    {
+        height: 65px;
+    }
+
+    .business-panel-description 
+    {
+        height: 190px;
+        line-height: 1.75;
+    }
+
+
+    .navigation-area 
+    {
+        border-top: solid 1px #ddd;
+        border-bottom: solid 1px #ddd;
+    }
+     
+    .footer-area {
+        background-color: #1f1f1f;  
+        color: #fff;
+        min-height: 50px;
+        padding: 20px 0 0 0;
+    }
+     
+    .full-width {
+        min-width:100%;
+        position: relative;
+    }
+     
+    /** Changes background color, height and margin of the border **/
+    .top-bar {
+        background: none;
+        /* height: 58px; */
+        /* line-height: 58px; */
+        margin-bottom: 0;
+    }
+     
+    /** Removes black background on menu bar **/
+    .top-bar-section ul.top-level > li 
+    {
+        background: none;
+        /*text-transform: uppercase;*/
+        border-right: solid 1px #ddd;
+    }
+
+    .top-bar-section ul.top-level > li:last-child
+    {
+        border-right: none;
+    } 
+
+    .top-bar-section li:not(.has-form) a
+    {
+        color: #008cba;
+    }
+     
+    /** Removes black background on menu item **/
+    .top-bar-section li:not(.has-form)  a:not(.button) {
+        background: none;
+        /* line-height: 58px; */
+        /* padding: 0 27px; */
+    }
+
+    .top-bar .toggle-topbar.menu-icon a
+    {
+        color: #008cba;
+    }
+
+    .top-bar .toggle-topbar.menu-icon a span::after
+    {
+        box-shadow: 0 0px 0 1px #008cba, 0 7px 0 1px #008cba, 0 14px 0 1px #008cba;
+    }
+
+    .top-bar-section .has-dropdown > a:after
+    {
+        border-color: rgba(0, 0, 0, 0.3) transparent transparent transparent;
+    }
+
+/*TESTIMONIAL SECTION*/
+
+    .testimonial 
+    {
+        background: rgba(0,0,0,.1);
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    .testimonial-large
+    {
+        background: rgba(0,0,0,.4);
+        padding: 80px 0;
+        text-align: center;
+    }
+
+    .testimonial-large h4
+    {
+        color: white;
+    }
+
+
+
+/*HOMEPAGE ABOUT SECTION*/
+    .homepage-blurbs
+    {
+        text-align: center;
+        padding: 60px 0 50px 0;
+    }
+    #homepage-about-blurb {
+        background: #ccc;
+    }
+
+/*HOMEPAGE SOCIAL RESPONSIBILITY BLURB*/
+    #homepage-social-blurb h3
+    {
+        color: white;
+
+    }
+
+    #homepage-social-blurb
+    {
+        background: rgba(0,0,0,.5);
+    }
+
+/*FOOTER*/
+    .footer-nav {
+        list-style: none;
+    }
+
+    a .fa {
+        padding: 10px;
+    }
+
+/*SHARED FEATURES ACROSS PAGES*/
+    .banner-statement
+    {
+        background: rgba(0,0,0,.4);
+        text-align: center;
+        padding: 50px 0;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .banner-statement h2
+    {
+        color: white;
+        font-weight: 300;
+        color: rgba(0,0,0,.7);
+
+    }
+
+    .banner1
+    {
+    background-image: url("../img/grainfieldhigh_blur_b+w_1920.jpg");
+    }
+
+    .banner1 h2
+    {
+
+    }
+
+    .banner2
+    {
+    background-image: url("../img/brightskies_blur_b+w_1920.jpg")
+    }
+
+    .banner2 h2
+    {
+
+    }
+
+    .banner3
+    {
+    background-image: url("../img/grainfieldsun_b+w_1920.jpg")
+    }
+
+    .banner3 h2
+    {
+
+    }
+
+
+
+    .main-image-section
+    {
+        background: white;
+    }
+
+    .main-image-section img
+    {
+        border-radius: 8px;
+    }
+
+    .page-summary1
+    {
+        padding: 40px 0;
+        background: rgba(0,0,0,.1);
+    }
+
+    .page-summary1 h2
+    {
+        margin-bottom: 20px;
+    }
+
+    .page-summary2
+    {
+        padding: 40px 0;
+        background: rgba(0,0,0,.2);
+    }
+
+    .page-summary2 h2
+    {
+        margin-bottom: 20px;
+    }
+
+    .page-summary3
+    {
+        padding: 40px 0;
+        background: white;
+    }
+
+    .page-summary3 h2
+    {
+        margin-bottom: 20px;
+    }
+
+    .about-paragraphs
+    {
+        font-size: 18px;
+    }
+
+    .page-sidenav-content
+    {
+        margin: 30px auto;
+    }
+
+    .image-container
+    {
+        border-radius: 8px;
+        overflow: hidden;
+     /*   position: relative;*/
+    }
+
+    .text-overlay
+    {
+        background: rgba(0,0,0,.5);
+        color: rgba(255,255,255,1);
+        padding: 10px 0 0 10px;
+        overflow: hidden;
+      /*  position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;*/
+    }
+
+
+
+    .image-background
+    {
+        padding: 40px 0;
+    }
+
+    
+
+/* SLICK SLIDER 
+
+
+
+    .slick-prev:before, .slick-next:before
+    {
+        color: rgb(0, 140, 186);
+    }
+
+/*ABOUT PAGE*/
+
+/*TEAM PAGE*/
+
+    .staff-profiles
+    {
+        margin: 40px 0;
+    }
+
+    .staff-profile-images
+    {
+        border-radius: 8px;
+    }
+
+/*AFTERSCHOOL-BREAKFAST-CLUBS PAGE*/
+    #map_canvas
+    {
+        height: 400px;
+        border-radius: 8px;
+        margin: 20px 0;
+    }
+
+    .school-profile-images
+    {
+        border-radius: 250px;
+    }
+
+    .schoolclubsinfo
+    {
+        height: 340px;
+        overflow: hidden;
+        border-radius: 8px;       
+        margin: 20px 30px; 
+        background-color: rgba(0,0,0,.1);
+        transition: height 0.5s;
+        -webkit-transition: height 0.5s;
+        -moz-transition: height 0.5s;
+    
+        /* padding: 0; */
+}
+
+    .schoolclubsinfo h5
+    {
+        height: 50px;
+        color: rgba(0,0,0,1);
+        margin: 0;
+        
+    
+    }
+
+    .schoolclubsinfo p
+    {
+        opacity: 0;
+        line-height: 1.5;
+    }
+
+    .schoolclubsinfo img
+    {
+        margin: 0 -6% 15px -6%;
+        width: 112%;
+        /* border-radius: 8px; */
+    
+        max-width: 112%;
+}
+
+    .schoolclubsinfo a.button
+    {
+        margin: 0 10px 0 0;
+    }
+
+    .schoolclubsinfo:nth-of-type(even)
+    {
+        float: right;
+    }
+
+    .show-description 
+    {
+        height: 900px;
+    }
+
+    .show-description p
+    {
+        opacity: 1;
+        
+    }
+
+
+/* NANNY AGENCY PAGE */
+
+    .nanny-button-image
+    {
+        
+        margin: 20px auto;
+        padding: 0;
+        position: relative;
+        text-align: center;
+        width: 202px;
+        height: 202px;
+        line-height: 202px;
+        border-radius: 101px;
+        overflow: hidden;
+        display: block;
+        /*margin-right: auto;
+        margin-left: auto;*/
+
+    }
+    .nanny-button-image img
+    {
+        vertical-align: baseline;
+    }
+
+    .nanny-button-image h3
+    {
+        margin: 0;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        padding-top: 70px;
+        width: 202px;
+        vertical-align: middle;
+        line-height: normal;
+    }
+    .nanny-business-panel
+    {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .nanny-business-panel .business-panel-description
+    {
+        height: 120px;
+    } 
+
+    .nanny-business-panel a.button
+    {
+        margin: 10px 10px;
+    }
+
+    .accreditations-container
+    {
+        height: 220px;
+        background: rgba(0,0,0,.3);
+    }
+
+    .accreditations-container img
+    {
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/* FAMILIES PAGE*/
+
+    .tabs-content > .content
+    {
+        padding: 12px;
+    }
+
+    .action-area .buttons-container
+    {
+        text-align: center;
+    }
+
+    .buttons-container a.button
+    {
+        margin:80px 20px;
+        padding: 30px;
+    }
+
+
+    /*TYPES OF CARER PAGE*/
+
+
+    #tab-descriptions p
+    {
+        font-size: 20px;
+    }
+
+    ul.tabs.vertical 
+    {
+        margin-right: 20px;
+    }
