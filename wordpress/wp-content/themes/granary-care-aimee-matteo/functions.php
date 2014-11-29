@@ -29,4 +29,13 @@ require_once('library/enqueue-scripts.php');
 // Add theme support
 require_once('library/theme-support.php');
 
+
+// let's give a proper name to the function to get the active theme's folder
+function get_active_theme_directory()
+{
+	return get_template_directory_uri();
+}
+
+
+
 ?>
