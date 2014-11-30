@@ -31,7 +31,7 @@ require_once('library/theme-support.php');
 
 
 // let's debug this theme in the browser's Console
-require_once('library/cromephp/ChromePhp.php');
+require_once('library/chromephp/ChromePhp.php');
 ChromePhp::log('Hello Console, this is ChromePhp!');
 
 
