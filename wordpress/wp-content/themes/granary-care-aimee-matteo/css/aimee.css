@@ -37,6 +37,31 @@ body {
         background: rgba(0,0,0,.1);
         padding-top: 50px;
     }
+    .slider
+	{
+		position: relative;	
+
+	}
+
+	.slider img
+	{
+		border-radius: 10px;
+		overflow: hidden;
+	}
+
+    .summary p
+    {
+    	position: absolute;
+    	font-size: 20px;
+    	background-color: rgba(0,0,0,.5);
+    	color: white;
+    	margin: 0;
+    	padding: 20px;
+    	bottom: 0;
+    	top: 0;
+    	vertical-align: middle;
+
+    }
 
 /*HOMEPAGE BUSINESS PANEL*/
 
@@ -60,7 +85,7 @@ body {
         height: 65px;
     }
 
-    .business-panel-description 
+    .business-panel p 
     {
         height: 190px;
         line-height: 1.75;
@@ -249,41 +274,43 @@ body {
 
     .page-summary1
     {
-        padding: 40px 0;
         background: rgba(0,0,0,.1);
-    }
-
-    .page-summary1 h2
-    {
-        margin-bottom: 20px;
     }
 
     .page-summary2
     {
-        padding: 40px 0;
         background: rgba(0,0,0,.2);
-    }
-
-    .page-summary2 h2
-    {
-        margin-bottom: 20px;
     }
 
     .page-summary3
     {
-        padding: 40px 0;
         background: white;
     }
 
+    .page-summary1,
+    .page-summary2,
+    .page-summary3
+    {
+    	padding: 40px 0;
+    }
+
+    .page-summary1 h2,
+    .page-summary2 h2,
     .page-summary3 h2
     {
         margin-bottom: 20px;
     }
 
-    .about-paragraphs
+    .page-summary1 p,
+    .page-summary2 p,
+    .page-summary3 p
     {
         font-size: 18px;
     }
+
+    
+
+   
 
     .page-sidenav-content
     {
