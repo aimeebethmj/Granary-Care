@@ -30,6 +30,11 @@ require_once('library/enqueue-scripts.php');
 require_once('library/theme-support.php');
 
 
+// let's debug this theme in the browser's Console
+require_once('library/cromephp/ChromePhp.php');
+ChromePhp::log('Hello Console, this is ChromePhp!');
+
+
 // let's give a proper name to the function to get the active theme's folder
 function get_active_theme_directory()
 {
