@@ -56,6 +56,7 @@
 	          </div>
 	        </div>
 	        
+		<!-- SITE TITLE AND STRAPLINE -->
 	        <div class="row">
 	          <div class="large-12 columns">
 	            <h1>
@@ -97,60 +98,59 @@
 	                      </ul>
 	                    </li>
 
-	                    <li class="has-dropdown"><a href="granarykids.html">Granary Kids</a>
+	                    <li class="has-dropdown"><a href="<?php echo site_url(); ?>/granary-kids">Granary Kids</a>
 	                      <ul class="dropdown">
-	                          <li><a href="afterschool-breakfast-clubs.html">After School Clubs and Breakfast Clubs</a></li>
-	                          <li><a href="tippletopples.html">Tipple Topples Creche</a></li>
-	                          <li><a href="#">Active Holiday Camps</a></li>
-	                          <li><a href="#">Working with Granary Kids</a></li>
-	                          <li><a href="#">Locations</a></li>
-	                          <li><a href="#">Book a place</a></li>
-	                          <li><a href="#">Useful info</a></li>
+	                          <li><a href="<?php echo site_url(); ?>/afterschool-and-breakfast-clubs">After School and Breakfast Clubs</a></li>
+	                          <li><a href="<?php echo site_url(); ?>/tipple-topples-creche">Tipple Topples Creche</a></li>
+	                          <li><a href="<?php echo site_url(); ?>/active-holiday-camps">Active Holiday Camps</a></li>
+	                          <li><a href="<?php echo site_url(); ?>/work-for-granary-kids">Working with Granary Kids</a></li>        
+	                          <li><a href="<?php echo site_url(); ?>/book-a-place">Book a place</a></li>
+	                          <li><a href="<?php echo site_url(); ?>/granary-kids-useful-info">Useful info</a></li>
 	                      </ul>
 	                    </li>
 
-	                    <li class="has-dropdown"><a href="nannyagency.html">Nanny Agency</a>
+	                    <li class="has-dropdown"><a href="<?php echo site_url(); ?>/nanny-agency">Nanny Agency</a>
 	                      <ul class="dropdown">
-	                          <li class="has-dropdown"><a href="families.html">Families</a>
+	                          <li class="has-dropdown"><a href="<?php echo site_url(); ?>/families">Families</a>
 	                            <ul class="dropdown">
-	                                <li><a href="#">Meet Our Nannies</a></li>
-	                                <li><a href="typesofcarers.html">Types of Carers</a></li>
-	                                <li><a href="#">Useful Info</a></li>
-	                                <li><a href="#">Agency Services</a></li>
-	                                <li><a href="#">Register</a></li>
+	                                <li><a href="<?php echo site_url(); ?>/meet-our-nannies">Meet Our Nannies</a></li>
+	                                <li><a href="<?php echo site_url(); ?>/types-of-carers">Types of Carers</a></li>
+	                                <li><a href="<?php echo site_url(); ?>/agency-services-for-families">Agency Services</a></li>
+	                                <li><a href="<?php echo site_url(); ?>/family-register">Register</a></li>
 	                            </ul>
 	                          </li>  
-	                          <li class="has-dropdown"><a href="#">Nannies</a>
+	                          <li class="has-dropdown"><a href="<?php echo site_url(); ?>/nannies">Nannies</a>
 	                            <ul class="dropdown">
-	                                <li><a href="#">Job Search</a></li>
-	                                <li><a href="#">Register</a></li>
-	                                <li><a href="#">Agency Services</a></li>
-	                                <li><a href="#">Useful Info</a></li>
+	                                <li><a href="<?php echo site_url(); ?>/job-search">Job Search</a></li>
+	                                <li><a href="<?php echo site_url(); ?>/nanny-register">Register</a></li>
+	                                <li><a href="<?php echo site_url(); ?>/agency-services-for-nannies">Agency Services</a></li>
 	                            </ul>
 	                          </li>  
+	                          <li><a href="<?php echo site_url(); ?>/nanny-agency-useful-info">Useful Info</a></li>
 	                      </ul>
+
 	                    </li>
 
-	                    <li class="has-dropdown"><a href="#">Mother and Baby Unit</a>
+	                    <li class="has-dropdown"><a href="<?php echo site_url(); ?>/mother-and-baby-unit">Mother and Baby Unit</a>
 	                      <ul class="dropdown">
-	                          <li><a href="#">Mother and Baby Services</a></li>
-	                          <li><a href="#">Referral Process and Fees</a></li>
-	                          <li><a href="#">Documents</a></li>
-	                          <li><a href="#">Facilities</a></li>
+	                          <li><a href="<?php echo site_url(); ?>/mother-and-baby-services">Mother and Baby Services</a></li>
+	                          <li><a href="<?php echo site_url(); ?>/referral-process-and-fees">Referral Process and Fees</a></li>
+	                          <li><a href="<?php echo site_url(); ?>/documents">Documents</a></li>
+	                          <li><a href="<?php echo site_url(); ?>/facilities">Facilities</a></li>
 	                      </ul>
 	                    </li>
 
-	                    <li><a href="#">Social Responsibility</a></li>
+	                    <li><a href="<?php echo site_url(); ?>/social-responsibility">Social Responsibility</a></li>
 
-	                    <li class="has-dropdown"><a href="#">Work for Us</a>
+	                    <li class="has-dropdown"><a href="<?php echo site_url(); ?>/work-for-us">Work for Us</a>
 	                      <ul class="dropdown">
-	                          <li><a href="#">Granary Kids</a></li>
-	                          <li><a href="#">Granary Nanny Agency</a></li>
-	                          <li><a href="#">Mother and Baby Unit</a></li>
+	                          <li><a href="<?php echo site_url(); ?>/work-for-granary-kids">Granary Kids</a></li>
+	                          <li><a href="<?php echo site_url(); ?>/nannies">Granary Nanny Agency</a></li>
+	                          <li><a href="<?php echo site_url(); ?>/work-with-mother-and-baby-unit">Mother and Baby Unit</a></li>
 	                      </ul>
 	                    </li>
 
-	                    <li><a href="#">Contact Us</a></li>
+	                    <li><a href="<?php echo site_url(); ?>/contact-us">Contact Us</a></li>
 	                      
 	                </ul>
 

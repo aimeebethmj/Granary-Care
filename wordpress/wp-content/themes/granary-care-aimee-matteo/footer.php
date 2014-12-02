@@ -17,21 +17,22 @@
     <div class="row">
         <div class="large-4 medium-4 columns">
           <ul class="footer-nav">
-            <li><a href="#">About Granary Care</a></li>
-            <li><a href="#">Granary Kids</a></li>
-            <li><a href="#">Nanny Agency</a></li>
-            <li><a href="#">Mother and Baby Unit</a></li>
-            <li><a href="#">Social Responsibility</a></li>
-            <li><a href="#">Work For Us</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="<?php echo site_url(); ?>">Home</a></li>
+            <li><a href="<?php echo site_url(); ?>/about">About Granary Care</a></li>
+            <li><a href="<?php echo site_url(); ?>/granary-kids">Granary Kids</a></li>
+            <li><a href="<?php echo site_url(); ?>/nanny-agency">Nanny Agency</a></li>
+            <li><a href="<?php echo site_url(); ?>/mother-and-baby-unit">Mother and Baby Unit</a></li>
+            <li><a href="<?php echo site_url(); ?>/social-responsibility">Social Responsibility</a></li>
+            <li><a href="<?php echo site_url(); ?>/work-for-us">Work For Us</a></li>
+            <li><a href="<?php echo site_url(); ?>/contact-us">Contact Us</a></li>
           </ul>
         </div>
         <div class="large-5 medium-5 columns">
           <p class="call-us-today">Call Us Today! <a href="tel:02084233391">020 8423 3391</a></p>
         </div>
         <div class="large-3 medium-3 columns social-buttons">
-            <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-            <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+            <a href="<?php echo ot_get_option( 'twitter' ); ?>"><i class="fa fa-twitter fa-2x"></i></a>
+            <a href="<?php echo ot_get_option( 'facebook' ); ?>"><i class="fa fa-facebook-square fa-2x"></i></a>
             <a href="#"><i class="fa fa-pinterest fa-2x"></i></a>
         </div>
     </div>
