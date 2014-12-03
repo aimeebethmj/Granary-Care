@@ -6,10 +6,14 @@ get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 
-    $bannerbackground = get_field('banner_background_image'); // get_field(), not get_sub_field() !!!1
+    $categories = get_the_category(); // returns all categories assigned to a page/post as an Array
+    $category = $categories[0]; // let's grab the first category in the Array (the element at index 0)
+    $slug = $category->slug; // kind of self-explanatory (the slug property inside the category Object)
 
-
-    // ChromePhp::log($bannerbackground);
+    // echo '<pre>';
+    // // print_r(get_the_category());
+    // print_r($category);
+    // echo '</pre>';
 
 ?>
 
@@ -17,7 +21,7 @@ get_header(); ?>
 
 <!-- BANNER STATEMENT -->
 
-<div class="full-width content-area banner-statement <?php get_category_by_slug( $slug ); ?>" style="background-image:url('<?php echo $bannerbackground['url']; ?>');">
+<div class="full-width content-area banner-statement <?php echo $slug; ?>" >
     <div class="row">
         <div class="large-12 medium-12 small-12 columns">
             <h2><?php echo get_field(business_area_homepage_banner_message);?></h2>

@@ -230,35 +230,28 @@ body {
 
     }
 
-    .banner1
+    .banner1,
+    .granarykids
     {
-    background-image: url("../img/grainfieldhigh_blur_b+w_1920.jpg");
+    background-image: url("../images/grainfieldhigh_blur_b+w_1920.jpg");
     }
 
-    .banner1 h2
-    {
+    
 
+    .banner2,
+    .nannyagency
+    {
+    background-image: url("../images/brightskies_blur_b+w_1920.jpg")
     }
 
-    .banner2
+   
+
+    .banner3,
+    .motherandbaby
     {
-    background-image: url("../img/brightskies_blur_b+w_1920.jpg")
+    background-image: url("../images/grainfieldsun_b+w_1920.jpg")
     }
 
-    .banner2 h2
-    {
-
-    }
-
-    .banner3
-    {
-    background-image: url("../img/grainfieldsun_b+w_1920.jpg")
-    }
-
-    .banner3 h2
-    {
-
-    }
 
 
 
@@ -536,4 +529,11 @@ body {
     ul.tabs.vertical 
     {
         margin-right: 20px;
+    }
+
+    /*MEET OUR NANNY PAGE*/
+
+    .nanny-profile-images
+    {
+
     }
