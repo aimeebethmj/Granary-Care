@@ -6,13 +6,10 @@ get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 
-$bannerbackground = get_sub_field('banner_background_image');
+    $bannerbackground = get_field('banner_background_image'); // get_field(), not get_sub_field() !!!1
 
-		echo '<pre>';
-		print_r($bannerbackground);
-		echo '</pre>';
 
-// ChromePhp::log($bannerbackground);
+    // ChromePhp::log($bannerbackground);
 
 ?>
 
@@ -20,7 +17,7 @@ $bannerbackground = get_sub_field('banner_background_image');
 
 <!-- BANNER STATEMENT -->
 
-<div class="full-width content-area banner-statement" style="background-image:url(<?php echo $bannerbackground; ?>);">
+<div class="full-width content-area banner-statement <?php get_category_by_slug( $slug ); ?>" style="background-image:url('<?php echo $bannerbackground['url']; ?>');">
     <div class="row">
         <div class="large-12 medium-12 small-12 columns">
             <h2><?php echo get_field(business_area_homepage_banner_message);?></h2>
