@@ -36,12 +36,6 @@ get_header(); ?>
   <div class="large-9 medium-9 push-3 columns">
     <h2><?php echo get_the_title(); ?></h2>
     <?php the_content();?>
-    <!-- <p class="about-paragraphs">We're proud to say we are experts at delievering <b>great out-of-school provision</b> to primary age children.</p>
-    <p class="about-paragraphs">Your child's <b>happiness, wellbeing and safety</b> are paramount which is why we make sure our staff are fully vetted, trained and understand safeguarding requirements that are vital when caring for children.</p>
-    <p class="about-paragraphs">With an emphasis on free-play, we encourage children to <b>learn through recreational activities</b> in a fun and stimulating environment.</p>
-    <p class="about-paragraphs">We understand that <b>every child is different</b>, making sure to recognise their individual personalities through a variety of age-specific activities.</p>
-    <p class="about-paragraphs">Read more about our services by clicking on the buttons below:</p> -->
-    
   </div>
 
   <div class="large-3 medium-3 pull-9 columns">
@@ -51,22 +45,13 @@ get_header(); ?>
 
 		  <?php while( have_rows('side_navigation') ): the_row();
 
-		// Vars
-		    $tablink = get_sub_field('tab_link');
-		    $tablabel = get_sub_field('tab_label');
+		    // Vars
+		    $tabLink = get_sub_field('tab_link');
+		    $tabLabel = get_sub_field('tab_label');
 
 		  ?>
 
-		      <li><a href="<?php echo $tablink; ?>"><?php echo $tablabel; ?></a></li>
-
-
-		<!--       <li><a href="<?php echo site_url(); ?>/afterschool-and-breakfast-clubs">Afterschool and Breakfast Clubs</a></li>
-		      <li><a href="<?php echo site_url(); ?>/tipple-topples-creche">Tipples Topples Creche</a></li>
-		      <li><a href="<?php echo site_url(); ?>/active-holiday-camps">Active Holiday Camps</a></li>
-		      <li><a href="<?php echo site_url(); ?>/work-for-granary-kids">Working with Granary Care</a></li>
-		      <li><a href="<?php echo site_url(); ?>/book-a-place">Book a place</a></li>
-		      <li><a href="<?php echo site_url(); ?>/granary-kids-useful-info">Useful Info</a></li>
-		      <li><a href="<?php echo site_url(); ?>/testimonials">Testimonials</a></li> -->
+		      <li><a href="<?php echo $tabLink; ?>"><?php echo $tabLabel; ?></a></li>
 
 		  <?php endwhile; ?>
 
@@ -86,7 +71,7 @@ get_header(); ?>
 
   <?php while( have_rows('business_panels') ): the_row();
 
-// Vars
+    // Vars
     $image = get_sub_field('business_panel_image');
     $paneltitle = get_sub_field('panel_title');
     $buttonlink = get_sub_field('button_link');

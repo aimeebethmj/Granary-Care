@@ -42,5 +42,4 @@ function get_active_theme_directory()
 }
 
 
-
 ?>
