@@ -163,7 +163,7 @@ body {
     .testimonial 
     {
         background: rgba(0,0,0,.1);
-        padding: 30px 0;
+        padding: 30px 20px;
         text-align: center;
     }
 
@@ -619,6 +619,7 @@ body {
     .testimonial-container
     {
         margin-top: 55px;
+        margin-bottom: 55px;
 
     }
 
@@ -626,5 +627,10 @@ body {
     {
         text-align: right;
 
+    }
 
+    .testimonial-container .testimonial
+    {
+        border-radius: 15px;
+        margin: 20px auto;
     }
