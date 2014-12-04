@@ -239,7 +239,8 @@ body {
     
 
     .banner2,
-    .nannyagency
+    .nannyagency,
+    .general
     {
     background-image: url("../images/brightskies_blur_b+w_1920.jpg")
     }
@@ -336,7 +337,14 @@ body {
         padding: 40px 0;
     }
 
-    
+     hr 
+    {
+        border: 0;
+        height: 0;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        border-bottom: 1px solid rgba(255,255,255, 0.3);
+        margin: 0;
+    }
 
 /* SLICK SLIDER 
 
@@ -353,7 +361,12 @@ body {
 
     .staff-profiles
     {
-        margin: 40px 0;
+        padding: 40px 0;
+    }
+
+    .staffinfo
+    {
+        padding-left: 30px;
     }
 
     .staff-profile-images
@@ -533,7 +546,85 @@ body {
 
     /*MEET OUR NANNY PAGE*/
 
+    .nanny-profiles-container
+    {
+       margin-top: 40px;
+    }
+
+    .nanny-profile-info
+    {
+        margin-top: 30px;
+        height: 360px;
+
+
+    }
+
     .nanny-profile-images
     {
+       margin-top: 30px;
+    }
+
+    .nanny-profile-images img
+    {
+        border-radius: 152px;
+        max-width: 75%;
+        display: block;
+        margin: auto;
+    }
+
+    /* TESTIMONIALS PAGE*/
+
+    .bubble 
+    {
+    position: relative;
+    margin: 40px 0;
+    max-width: 100%;
+    height: 350px;
+    padding: 40px;
+    background: #FFFFFF;
+    -webkit-border-radius: 55px;
+    -moz-border-radius: 55px;
+    border-radius: 55px;
+    border: #7F7F7F solid 4px;
+    }
+
+    .bubble:after 
+    {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 40px 25px 0;
+    border-color: #FFFFFF transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -40px;
+    left: 589px;
+    }
+
+    .bubble:before 
+    {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 43px 28px 0;
+    border-color: #7F7F7F transparent;
+    display: block;
+    width: 0;
+    z-index: 0;
+    bottom: -47px;
+    left: 586px;
+    }
+
+    .testimonial-container
+    {
+        margin-top: 55px;
+
+    }
+
+    .testimonial-container p
+    {
+        text-align: right;
+
 
     }
