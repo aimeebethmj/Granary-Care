@@ -162,7 +162,7 @@ body {
 
     .testimonial 
     {
-        background: rgba(0,0,0,.1);
+        background: rgba(0,0,0,.05);
         padding: 30px 20px;
         text-align: center;
     }
@@ -585,7 +585,7 @@ body {
     -webkit-border-radius: 55px;
     -moz-border-radius: 55px;
     border-radius: 55px;
-    border: #7F7F7F solid 4px;
+    border: rgba(0,0,0,.1) solid 4px;
     }
 
     .bubble:after 
@@ -608,7 +608,7 @@ body {
     position: absolute;
     border-style: solid;
     border-width: 43px 28px 0;
-    border-color: #7F7F7F transparent;
+    border-color: rgba(0,0,0,.1) transparent;
     display: block;
     width: 0;
     z-index: 0;
