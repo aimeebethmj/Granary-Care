@@ -47,10 +47,6 @@ get_header(); ?>
   <div class="row">
     <div class="large-12 medium-12 columns">
     	<?php echo get_field(second_section);?>
-      <!-- <h2>The Vetting Process</h2>
-      <p class="about-paragraphs">Safety is the highest priority when allowing someone into your home to care for your loved ones.</p>
-      <p class="about-paragraphs">Our 11 years of experience in childcare means we know what it takes to source, vet and recruit <b>reputable childcare practitioners and carers</b>.</p>
-      <p class="about-paragraphs"><b>Our Background Check Service includes interviewing, running background checks and getting references for your chosen nanny or carer.</p> -->
       <a class="round button" href="<?php echo get_field(second_section_button); ?>"><?php echo get_field(second_section_button_label); ?></a>
     </div>
   </div>
@@ -60,10 +56,6 @@ get_header(); ?>
   <div class="row">
     <div class="large-12 medium-12 columns">
     	<?php echo get_field(third_section);?>
-      <!-- <h2>Our Services</h2>
-      <p class="about-paragraphs">We interview every one of our nannies personally and our databases are updated regularly.</p>
-      <p class="about-paragraphs">We help you to find the right candidates for your needs, help you to arrange interviews and offer guidelines for interview technique as well as contracts and payroll advice.</p>
-      <p class="about-paragraphs"><b>Read more about our services here:</p> -->
       <a class="round button" href="<?php echo get_field(third_section_button); ?>"><?php echo get_field(third_section_button_label); ?></a>
     </div>
   </div>
