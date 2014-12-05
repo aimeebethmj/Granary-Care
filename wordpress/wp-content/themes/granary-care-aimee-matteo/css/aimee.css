@@ -276,6 +276,8 @@ body {
         background: rgba(0,0,0,.2);
     }
 
+
+
     .page-summary3
     {
         background: white;
@@ -389,7 +391,7 @@ body {
 
     .schoolclubsinfo
     {
-        height: 340px;
+        height: 350px;
         overflow: hidden;
         border-radius: 8px;       
         margin: 20px 30px; 
@@ -437,7 +439,7 @@ body {
 
     .show-description 
     {
-        height: 900px;
+        height: 930px;
     }
 
     .show-description p
@@ -447,9 +449,10 @@ body {
     }
 
 
-/* NANNY AGENCY PAGE */
+/* NANNY AGENCY PAGE  +  ACTIVE HOLIDAY CAMP PANELS*/
 
-    .nanny-button-image
+    .nanny-button-image,
+    .button-image
     {
         
         margin: 20px auto;
@@ -466,12 +469,14 @@ body {
         margin-left: auto;*/
 
     }
-    .nanny-button-image img
+    .nanny-button-image img,
+    .button-image img
     {
         vertical-align: baseline;
     }
 
-    .nanny-button-image h3
+    .nanny-business-panel .nanny-button-image h3
+    
     {
         margin: 0;
         position: absolute;
@@ -482,26 +487,42 @@ body {
         vertical-align: middle;
         line-height: normal;
     }
-    .nanny-business-panel
+
+    .nanny-business-panel .business-panel-description
+    {
+        margin-top: 30px;
+        height: 140px;
+    }
+
+    .button-image h3
+    {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+    }
+    .nanny-business-panel,
+    .activity-business-panel
     {
         text-align: center;
         padding: 20px;
     }
 
-    .nanny-business-panel .business-panel-description
+    
+    .activity-business-panel .business-panel-description
     {
-        height: 120px;
+        height: 160px;
     } 
 
     .nanny-business-panel a.button
     {
-        margin: 10px 10px;
+        margin: 50px 0;
     }
 
     .accreditations-container
     {
         height: 220px;
-        background: rgba(0,0,0,.3);
+        background: white;
     }
 
     .accreditations-container img
@@ -510,6 +531,7 @@ body {
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
+        max-width: 75%;
     }
 
 /* FAMILIES PAGE*/
@@ -634,3 +656,25 @@ body {
         border-radius: 15px;
         margin: 20px auto;
     }
+
+    /*    TIPPLES TOPPLES PAGE    */
+
+    .extra-info-box
+    {
+        background: rgba(0,0,0,0.05);
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+
+    .service-buttons-container
+    {
+        padding: 25px 0;
+    }
+
+    .service-buttons-container a
+    {
+        margin: 20px 0px;
+
+    }
+
+    

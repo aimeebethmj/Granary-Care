@@ -24,10 +24,33 @@ get_header(); ?>
 <div class="full-width content-area banner-statement <?php echo $slug; ?>" >
     <div class="row">
         <div class="large-12 medium-12 small-12 columns">
-            <h2><?php echo get_field(business_area_homepage_banner_message);?></h2>
+            <h2><?php echo get_field(banner_message);?></h2>
         </div>
     </div>
 </div>
+
+
+<!-- IMAGE -->
+<?php 
+
+$image = get_field('image');
+
+if( !empty($image) ):
+
+?>
+
+
+<div class="full-width content-area image-background">
+  <div class="row">
+    <div class="large-12 medium-12 small-12 columns">
+      <div class="image-container">
+        <img src="<?php echo $image['url']; ?>">
+      </div>
+    </div>
+  </div>
+</div>
+
+<?php endif; ?>
 
 
 
@@ -61,7 +84,9 @@ get_header(); ?>
   </div>
 </div>
 
-<!-- BUSINESS AREAS PANEL -->
+
+
+<!-- BUSINESS AREAS PANELS GRANARY KIDS PAGE -->
 
 
 <div class="full-width content-area page-summary2">
@@ -76,7 +101,10 @@ get_header(); ?>
     $paneltitle = get_sub_field('panel_title');
     $buttonlink = get_sub_field('button_link');
     $buttonlabel = get_sub_field('button_label');
+    $blurb = get_sub_field('blurb');
 
+
+    if( in_category( 'granarykids' ) ):
   ?>
 
       <div class="large-4 columns business-panel">
@@ -89,6 +117,25 @@ get_header(); ?>
           <a class="small radius button" href="<?php echo $buttonlink; ?>"><?php echo $buttonlabel; ?></a>
       </div>
 
+    <?php elseif( in_category( 'nannyagency' ) ): ?>
+
+      <!-- FOCUSSED INFO BUTTONS NANNY AGENCY PAGE -->
+    
+        <div class="large-4 medium-4 columns nanny-business-panel">
+          <div class="nanny-button-image">
+            
+            <img src="<?php echo $image['url']; ?>">
+            <h3><?php echo $paneltitle; ?></h3>
+          </div>
+          <div class="business-panel-description">
+
+            <?php echo $blurb; ?>
+          </div>
+          <a class="small round button" href="<?php echo $buttonlink; ?>"><?php echo $buttonlabel; ?></a>
+        </div>
+
+    <?php endif; ?>
+
   <?php endwhile; ?>
 
 <?php endif; ?>
@@ -97,19 +144,67 @@ get_header(); ?>
 </div>
 
 
+<?php
+
+  $buttonLink1 = get_field('action_button_1');
+  $buttonLabel1 = get_field('action_button_1_label');
+  $buttonLink2 = get_field('action_button_2');
+  $buttonLabel2 = get_field('action_button_2_label');
+
+  if( in_category('nannyagency')):
+?>
+
+<!-- ACTION BUTTONS -->
+<div class="full-width content-area action-area">
+  <div class="row">
+    <div class="large-12 medium-12 columns buttons-container">
+      <a class="large success round button" href="<?php echo $buttonLink1; ?>"><?php echo $buttonLabel1; ?></a><a class="large success round button" href="<?php echo $buttonLink2; ?>"><?php echo $buttonLabel2; ?></a>
+    </div>
+  </div>
+</div>
+
+<?php endif; ?>
+
+
 <!-- TESTIMONIAL -->
 <div class="full-width content-area testimonial-large">
   <div class="row">
     <div class="large-12 columns">
-      <a href="#"><h4><i><q><?php echo get_field(business_area_homepage_testimonial);?></i></q></h4></a>
+      <a href="#"><h4><i><q><?php echo get_field(testimonial);?></i></q></h4></a>
     </div>
   </div>
 </div>
 
 
+<?php if( in_category('nannyagency' )): ?>
 
+<!-- ACCREDITATIONS -->
+<div class="full-width content-area accreditations-container">
+  <div class="row">
 
+    
+    <?php if( have_rows('accreditations') ): ?>
 
+    <?php while( have_rows('accreditations') ): the_row();
+
+      $logo = get_sub_field('logo');
+      $logoLink = get_sub_field('logo_link');
+
+    ?>
+
+      <div class="large-3 medium-3 small-3 columns">
+        <a href="<?php echo $logoLink; ?>"><img src="<?php echo $logo['url']; ?>"></a>
+      </div>
+    
+
+    <?php endwhile; ?>
+
+  <?php endif; ?>
+
+  </div>
+</div>
+
+<?php endif; ?>
 
 
 <?php endwhile; ?>
