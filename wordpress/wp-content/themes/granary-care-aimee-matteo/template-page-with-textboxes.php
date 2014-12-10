@@ -18,7 +18,7 @@ get_header(); ?>
 <div class="full-width content-area banner-statement <?php echo $slug; ?>" >
     <div class="row">
         <div class="large-12 medium-12 small-12 columns">
-            <h2><?php echo get_field(banner_message);?></h2>
+            <h2><?php echo get_field('banner_message');?></h2>
         </div>
     </div>
 </div>
@@ -44,18 +44,41 @@ get_header(); ?>
     $panelTitle = get_sub_field('panel_title');
     $blurb = get_sub_field('blurb');
     $webLink = get_sub_field('web_link');
+    $image = get_sub_field('image');
 
   ?>
+
+  <?php if( is_page('social-responsibility' )): ?>
+
 <div class="full-width content-area page-summary3 social-panel-container">
 	<div class="row">
-  		<div class="large-12 medium-12 columns ">
+  		<div class="large-12 medium-12 columns">
           <div class="social-panel-description">
-          	<a href="<?php echo $webLink; ?>"></a><h3><?php echo $panelTitle; ?></h3></a>
+          	<a href="<?php echo $webLink; ?>"><h3><?php echo $panelTitle; ?></h3></a>
             <?php echo $blurb; ?>
           </div>
         </div>
     </div>
 </div>
+
+
+<?php elseif( is_page('granary-kids-useful-info' )): ?>
+
+<div class="full-width content-area page-summary3 social-panel-container">
+	<div class="row">
+  		<div class="large-6 medium-6 small-12 columns">
+			<div class="business-panel-image">
+    			<img src="<?php echo $image['url']; ?>"/>
+  			</div>
+	        <div class="social-panel-description">
+	          	<a href="<?php echo $webLink; ?>"><h3><?php echo $panelTitle; ?></h3></a>
+	            <?php echo $blurb; ?>
+	        </div>
+        </div>
+    </div>
+</div>
+
+<?php endif; ?>
 
  <?php endwhile; ?>
 

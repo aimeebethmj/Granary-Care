@@ -98,7 +98,7 @@
 	                      </ul>
 	                    </li>
 
-	                    <li class="has-dropdown"><a href="<?php echo site_url(); ?>/granary-kids">Granary Kids</a>
+	                    <li class="has-dropdown"><a href="<?php echo site_url(); ?>/granary-kids">Kids Clubs</a>
 	                      <ul class="dropdown">
 	                          <li><a href="<?php echo site_url(); ?>/afterschool-and-breakfast-clubs">After School and Breakfast Clubs</a></li>
 	                          <li><a href="<?php echo site_url(); ?>/tipple-topples-creche">Tipple Topples Creche</a></li>
@@ -131,12 +131,14 @@
 
 	                    </li>
 
-	                    <li class="has-dropdown"><a href="<?php echo site_url(); ?>/mother-and-baby-unit">Mother and Baby Unit</a>
+	                    <li class="has-dropdown"><a href="<?php echo site_url(); ?>/mother-and-baby">Mother and Baby</a>
 	                      <ul class="dropdown">
 	                          <li><a href="<?php echo site_url(); ?>/mother-and-baby-services">Mother and Baby Services</a></li>
-	                          <li><a href="<?php echo site_url(); ?>/referral-process-and-fees">Referral Process and Fees</a></li>
-	                          <li><a href="<?php echo site_url(); ?>/documents">Documents</a></li>
+	                          <li><a href="<?php echo site_url(); ?>/referral-process">Referral Process</a></li>
 	                          <li><a href="<?php echo site_url(); ?>/facilities">Facilities</a></li>
+	                          <li><a href="<?php echo site_url(); ?>/documents">Documents</a></li>
+	                          <li><a href="<?php echo site_url(); ?>/work-with-mother-and-baby-unit">Working with Mother and Baby</a></li>
+	                          
 	                      </ul>
 	                    </li>
 

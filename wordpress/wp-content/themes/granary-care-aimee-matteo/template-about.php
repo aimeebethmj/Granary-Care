@@ -43,7 +43,7 @@ get_header(); ?>
 <div class="full-width content-area page-summary2">
     <div class="row">
         <div class="large-10 large-centered columns">
-        	<?php echo get_field(about_page_summary_1);
+        	<?php echo get_field('about_page_summary_1');
         	?>
         </div>
     </div>
@@ -52,7 +52,7 @@ get_header(); ?>
 <div class="full-width content-area page-summary3">
     <div class="row">
         <div class="large-10 large-centered columns">
-        	<?php echo get_field(about_page_summary_2);
+        	<?php echo get_field('about_page_summary_2');
         	?>
         </div>
     </div>
@@ -61,7 +61,7 @@ get_header(); ?>
 <div class="full-width content-area page-summary2">
     <div class="row">
         <div class="large-10 large-centered columns">
-        	<?php echo get_field(about_social_responsibility_blurb);
+        	<?php echo get_field('about_social_responsibility_blurb');
         	?>
         	<a class="small radius button" href="<?php echo site_url(); ?>/social-responsibility">Read more about it here</a>
         </div>

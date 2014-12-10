@@ -242,7 +242,7 @@ body {
     .nannyagency,
     .general
     {
-    background-image: url("../images/brightskies_blur_b+w_1920.jpg")
+    background-image: url("../images/brightskies_blur_b+w_1920.jpg");
     }
 
    
@@ -250,7 +250,8 @@ body {
     .banner3,
     .motherandbaby
     {
-    background-image: url("../images/grainfieldsun_b+w_1920.jpg")
+    background-image: url("../images/grainfieldsun_b+w_1920.jpg");
+    background-position: top;
     }
 
 
@@ -702,4 +703,7 @@ body {
         padding: 60px 0;
     }
 
-    
+    .social-panel-container img
+    {
+        margin-bottom: 30px;
+    }

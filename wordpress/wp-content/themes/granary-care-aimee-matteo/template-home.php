@@ -53,7 +53,7 @@ get_header(); ?>
   <div class="row">
     <div class="large-12 columns">
       <a href="<?php echo site_url(); ?>/testimonials">
-      	<h4><i><q><?php echo get_field(home_testimonial);?></i></q></h4>
+      	<h4><i><q><?php echo get_field('home_testimonial');?></i></q></h4>
       </a>
     </div>
   </div>
@@ -119,7 +119,7 @@ get_header(); ?>
 <div class="full-width content-area homepage-blurbs" id="homepage-social-blurb">
   <div class="row">
     <div class="large-12 columns">
-    	<?php echo get_field(home_social_responsibility);
+    	<?php echo get_field('home_social_responsibility');
         	?>
       <a class="radius button" href="<?php echo site_url(); ?>/social-responsibility">Learn More</a>
     </div>

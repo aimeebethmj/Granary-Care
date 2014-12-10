@@ -24,7 +24,7 @@ get_header(); ?>
 <div class="full-width content-area banner-statement <?php echo $slug; ?>" >
     <div class="row">
         <div class="large-12 medium-12 small-12 columns">
-            <h2><?php echo get_field(banner_message);?></h2>
+            <h2><?php echo get_field('banner_message');?></h2>
         </div>
     </div>
 </div>
@@ -61,6 +61,7 @@ if( !empty($image) ):
     <?php the_content();?>
   </div>
 
+
   <div class="large-3 medium-3 pull-9 columns">
     <ul class="side-nav">
 
@@ -88,6 +89,13 @@ if( !empty($image) ):
 
 <!-- BUSINESS AREAS PANELS GRANARY KIDS PAGE -->
 
+
+<?php 
+$businessPanels = get_field('business_panels');
+
+if( !empty($businessPanels) ): 
+
+?>
 
 <div class="full-width content-area page-summary2">
   <div class="row">
@@ -123,7 +131,7 @@ if( !empty($image) ):
     
         <div class="large-4 medium-4 columns nanny-business-panel">
           <div class="nanny-button-image">
-            
+
             <img src="<?php echo $image['url']; ?>">
             <h3><?php echo $paneltitle; ?></h3>
           </div>
@@ -143,7 +151,25 @@ if( !empty($image) ):
     </div>
 </div>
 
+<?php endif; ?>
 
+<!-- SECOND SUMMARY SECTION MOTHER AND BABY ONLY -->
+
+<?php if(is_page('mother-and-baby')): 
+
+?>
+<div class="full-width content-area page-summary1">
+  <div class="row">
+    <div class="large-12 medium-12 columns">
+      <?php echo get_field('second_section');?>
+    </div>
+  </div>
+</div>
+
+<?php endif; ?>
+
+
+<!--  ACTION BUTTONS/TESTIMONIALS-  NANNY AGENCY AND MOTHER AND BABY ONLY -->
 <?php
 
   $buttonLink1 = get_field('action_button_1');
@@ -151,7 +177,7 @@ if( !empty($image) ):
   $buttonLink2 = get_field('action_button_2');
   $buttonLabel2 = get_field('action_button_2_label');
 
-  if( in_category('nannyagency')):
+  if(is_page( array( 'nanny-agency', 'mother-and-baby' ) )):
 ?>
 
 <!-- ACTION BUTTONS -->
@@ -170,15 +196,20 @@ if( !empty($image) ):
 <div class="full-width content-area testimonial-large">
   <div class="row">
     <div class="large-12 columns">
-      <a href="#"><h4><i><q><?php echo get_field(testimonial);?></i></q></h4></a>
+      <a href="#"><h4><i><q><?php echo get_field('testimonial');?></i></q></h4></a>
     </div>
   </div>
 </div>
 
 
-<?php if( in_category('nannyagency' )): ?>
+<?php 
+$accreditations = get_field('accreditations');
 
-<!-- ACCREDITATIONS -->
+if( !empty($accreditations) ): 
+  
+?>
+
+<!-- ACCREDITATIONS- NANNY AGENCY ONLY-->
 <div class="full-width content-area accreditations-container">
   <div class="row">
 

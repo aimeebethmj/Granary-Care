@@ -22,7 +22,7 @@ get_header(); ?>
 <div class="full-width content-area banner-statement <?php echo $slug; ?>" >
     <div class="row">
         <div class="large-12 medium-12 small-12 columns">
-            <h2><?php echo get_field(banner_message);?></h2>
+            <h2><?php echo get_field('banner_message');?></h2>
         </div>
     </div>
 </div>
@@ -51,7 +51,7 @@ get_header(); ?>
 <div class="full-width content-area page-summary3">
   <div class="row">
     <div class="large-12 medium-12 columns">
-      <h2><?php echo get_field(clubs_title); ?></h2>
+      <h2><?php echo get_field('clubs_title'); ?></h2>
     </div>
   </div>
 
@@ -75,6 +75,10 @@ get_header(); ?>
 	    	$club_telephone = 	get_sub_field('club_telephone');
 	    	$latitude = 		get_sub_field('latitude');
 	    	$longitude = 		get_sub_field('longitude');
+	    	$action1buttonlink = get_sub_field('action_button_1');
+    		$action1buttonlabel = get_sub_field('action_button_1_label');
+    		$action2buttonlink = get_sub_field('action_button_2');
+    		$action2buttonlabel = get_sub_field('action_button_2_label');
 
 
 
@@ -94,7 +98,7 @@ get_header(); ?>
 	        <p><?php echo $play_leader; ?></p>
 	        <p><b>Club Tel:</b></p>
 	        <p><a href="tel:<?php echo $club_telephone; ?>"><?php echo $club_telephone; ?></a></p>
-	        <a class="small radius button" href="#">Book a place</a><a class="small radius button" href="#">Contact us</a>
+	        <a class="small radius button" href="#">Book a place</a><a class="small radius button" href="#">Register</a>
 	    </div>
 
 	    <script type="text/javascript">
@@ -118,6 +122,15 @@ get_header(); ?>
 	<?php endif; ?>
 
   </div>    
+</div>
+
+<!-- ACTION BUTTONS -->
+<div class="full-width content-area action-area">
+  <div class="row">
+    <div class="large-12 medium-12 columns buttons-container">
+      <a class="large success round button" href="<?php echo get_field('action_button_1'); ?>"><?php echo get_field('action_button_1_label'); ?></a><a class="large success round button" href="<?php get_field(action_button_2); ?>"><?php echo get_field(action_button_2_label); ?></a>
+    </div>
+  </div>
 </div>
 
 <script src="https://maps.googleapis.com/maps/api/js"></script>

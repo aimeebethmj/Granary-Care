@@ -9,10 +9,10 @@ get_header(); ?>
     $categories = get_the_category(); // returns all categories assigned to a page/post as an Array
     $category = $categories[0]; // let's grab the first category in the Array (the element at index 0)
     $slug = $category->slug; // kind of self-explanatory (the slug property inside the category Object)
-    $image = get_field(image);
-    $extraInfo = get_field(extra_info);
-    $buttonLink = get_field(button_link);
-    $buttonLabel = get_field(button_label);
+    $image = get_field('image');
+    $extraInfo = get_field('extra_info');
+    $buttonLink = get_field('button_link');
+    $buttonLabel = get_field('button_label');
 
     // echo '<pre>';
     // // print_r(get_the_category());
@@ -25,7 +25,7 @@ get_header(); ?>
 <div class="full-width content-area banner-statement <?php echo $slug; ?>" >
     <div class="row">
         <div class="large-12 medium-12 small-12 columns">
-            <h2><?php echo get_field(banner_message); ?></h2>
+            <h2><?php echo get_field('banner_message'); ?></h2>
         </div>
     </div>
 </div>
@@ -41,6 +41,10 @@ get_header(); ?>
   </div>
 </div>
 
+<?php 
+if( !empty($extraInfo) ):
+?>
+
 <!-- FOR AGES INFO BOX -->
 <div class="full-width content-area">
   <div class="row">
@@ -51,6 +55,8 @@ get_header(); ?>
     </div>
   </div>
 </div>
+
+<?php endif; ?>
 
 
 <!-- HEADING AND SUMMARY PARAGRAPHS -->
@@ -81,7 +87,7 @@ get_header(); ?>
 <!-- ACTIVITIES PANELS -->
 <div class="full-width content-area page-summary1">
   <div class="row">
-  	<h2><?php echo get_field(activities_section_title); ?></h2>
+  	<h2><?php echo get_field('activities_section_title'); ?></h2>
 
 <?php if( have_rows('activities') ): ?>
 
@@ -119,7 +125,7 @@ get_header(); ?>
 <div class="full-width content-area page-summary3">
   <div class="row">
     <div class="large-12 medium-12 columns">      
-	    <?php echo get_field(second_section); ?>   
+	    <?php echo get_field('second_section'); ?>   
     </div>
     <div class="service-buttons-container">
     	<a class="large success round button" href="<?php echo $buttonLink; ?>"><?php echo $buttonLabel; ?></a>
@@ -127,8 +133,16 @@ get_header(); ?>
   </div>
 </div>
 
+<?php endif; ?>
+
 <hr>
 
+<?php 
+$accreditations = get_field('accreditations');
+
+if( !empty($accreditations) ):
+
+?>
 <!-- ACCREDITATIONS -->
 <div class="full-width content-area accreditations-container">
   <div class="row">
@@ -155,9 +169,10 @@ get_header(); ?>
   </div>
 </div>
 
-
-
 <?php endif; ?>
+
+
+
 
 
 
