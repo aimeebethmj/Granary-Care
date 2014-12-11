@@ -123,7 +123,6 @@
 	                            <ul class="dropdown">
 	                                <li><a href="<?php echo site_url(); ?>/job-search">Job Search</a></li>
 	                                <li><a href="<?php echo site_url(); ?>/nanny-register">Register</a></li>
-	                                <li><a href="<?php echo site_url(); ?>/agency-services-for-nannies">Agency Services</a></li>
 	                            </ul>
 	                          </li>  
 	                          <li><a href="<?php echo site_url(); ?>/nanny-agency-useful-info">Useful Info</a></li>

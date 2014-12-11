@@ -56,7 +56,7 @@ if( !empty($image) ):
 
 <!-- SIDEBAR AND MAIN CONTENT -->
 <div class="row page-sidenav-content">
-  <div class="large-9 medium-9 push-3 columns">
+  <div class="large-9 medium-9 push-3 columns page-summary3">
     <h2><?php echo get_the_title(); ?></h2>
     <?php the_content();?>
   </div>
@@ -206,7 +206,7 @@ if( !empty($businessPanels) ):
 $accreditations = get_field('accreditations');
 
 if( !empty($accreditations) ): 
-  
+
 ?>
 
 <!-- ACCREDITATIONS- NANNY AGENCY ONLY-->

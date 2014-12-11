@@ -12,16 +12,16 @@ get_header(); ?>
     $slug = $category->slug; // kind of self-explanatory (the slug property inside the category Object)
 
 
-    $firstbuttonlink = get_sub_field('first_section_button');
-    $firstbuttonlabel = get_sub_field('first_section_button_label');
-    $secondbuttonlink = get_sub_field('section_section_button');
-    $secondbuttonlabel = get_sub_field('second_section_button_label');
-    $thirdbuttonlink = get_sub_field('third_section_button');
-    $thirdbuttonlabel = get_sub_field('third_section_button_label');
-    $action1buttonlink = get_sub_field('action_button_1');
-    $action1buttonlabel = get_sub_field('action_button_1_label');
-    $action2buttonlink = get_sub_field('action_button_2');
-    $action2buttonlabel = get_sub_field('action_button_2_label');
+    $firstbuttonlink = get_field('first_section_button');
+    $firstbuttonlabel = get_field('first_section_button_label');
+    $secondbuttonlink = get_field('section_section_button');
+    $secondbuttonlabel = get_field('second_section_button_label');
+    $thirdbuttonlink = get_field('third_section_button');
+    $thirdbuttonlabel = get_field('third_section_button_label');
+    $action1buttonlink = get_field('action_button_1');
+    $action1buttonlabel = get_field('action_button_1_label');
+    $action2buttonlink = get_field('action_button_2');
+    $action2buttonlabel = get_field('action_button_2_label');
 
     $secondSection = get_field('second_section');
     $thirdSection = get_field('third_section');
@@ -46,7 +46,7 @@ get_header(); ?>
     <h2><?php echo get_the_title(); ?></h2>
          <?php the_content();?>
         <?php if( !empty($firstbuttonlabel) ): ?>
-          <a class="round button" href="<?php echo get_field('first_section_button'); ?>"><?php echo get_field('first_section_button_label'); ?></a>
+          <a class="round button" href="<?php echo $firstbuttonlink; ?>"><?php echo $firstbuttonlabel; ?></a>
         <?php endif; ?>
     </div>
   </div>
