@@ -92,7 +92,7 @@ get_header(); ?>
 <div class="full-width content-area testimonial-large">
   <div class="row">
     <div class="large-12 columns">
-      <a href="#"><h4><i><q><?php echo get_field('testimonial'); ?></i></q></h4></a>
+      <a href="<?php echo site_url(); ?>/testimonials"><h4><i><q><?php echo get_field('testimonial'); ?></i></q></h4></a>
     </div>
   </div>
 </div>
