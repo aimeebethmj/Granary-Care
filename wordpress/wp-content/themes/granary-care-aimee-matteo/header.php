@@ -117,13 +117,13 @@
 	                                <li><a href="<?php echo site_url(); ?>/babysitting">Babysitting</a></li>
 	                                <li><a href="<?php echo site_url(); ?>/types-of-carers">Types of Carers</a></li>
 	                                <li><a href="<?php echo site_url(); ?>/agency-services-for-families">Agency Services</a></li>
-	                                <li><a href="<?php echo site_url(); ?>/family-register">Register</a></li>
+	                                <li><a href="<?php echo site_url(); ?>/nanny-agency/register">Register</a></li>
 	                            </ul>
 	                          </li>  
 	                          <li class="has-dropdown"><a href="<?php echo site_url(); ?>/nannies">Nannies</a>
 	                            <ul class="dropdown">
 	                                <li><a href="<?php echo site_url(); ?>/job-search">Job Search</a></li>
-	                                <li><a href="<?php echo site_url(); ?>/nanny-register">Register</a></li>
+	                                <li><a href="<?php echo site_url(); ?>/nanny-agency/register">Register</a></li>
 	                            </ul>
 	                          </li>  
 	                          <li><a href="<?php echo site_url(); ?>/nanny-agency-useful-info">Useful Info</a></li>
@@ -137,7 +137,7 @@
 	                          <li><a href="<?php echo site_url(); ?>/referral-process">Referral Process</a></li>
 	                          <li><a href="<?php echo site_url(); ?>/facilities">Facilities</a></li>
 	                          <li><a href="<?php echo site_url(); ?>/documents">Documents</a></li>
-	                          <li><a href="<?php echo site_url(); ?>/work-with-mother-and-baby-unit">Working with Mother and Baby</a></li>
+	                          <li><a href="<?php echo site_url(); ?>/work-with-mother-and-baby">Working with Mother and Baby</a></li>
 	                          
 	                      </ul>
 	                    </li>
@@ -148,7 +148,7 @@
 	                      <ul class="dropdown">
 	                          <li><a href="<?php echo site_url(); ?>/work-for-granary-kids">Granary Kids</a></li>
 	                          <li><a href="<?php echo site_url(); ?>/nannies">Granary Nanny Agency</a></li>
-	                          <li><a href="<?php echo site_url(); ?>/work-with-mother-and-baby-unit">Mother and Baby Unit</a></li>
+	                          <li><a href="<?php echo site_url(); ?>/work-with-mother-and-baby">Mother and Baby</a></li>
 	                      </ul>
 	                    </li>
 
