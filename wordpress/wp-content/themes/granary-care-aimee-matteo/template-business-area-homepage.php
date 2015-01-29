@@ -10,10 +10,10 @@ get_header(); ?>
     $category = $categories[0]; // let's grab the first category in the Array (the element at index 0)
     $slug = $category->slug; // kind of self-explanatory (the slug property inside the category Object)
 
-    // echo '<pre>';
-    // // print_r(get_the_category());
-    // print_r($category);
-    // echo '</pre>';
+    /*echo '<pre>';
+    print_r(get_the_category());
+    print_r($category);
+    echo '</pre>';*/
 
 ?>
 

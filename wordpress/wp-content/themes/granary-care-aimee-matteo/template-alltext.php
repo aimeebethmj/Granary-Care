@@ -83,7 +83,8 @@ get_header(); ?>
 <div class="full-width content-area action-area">
   <div class="row">
     <div class="large-12 medium-12 columns buttons-container">
-      <a class="large success round button" href="<?php echo get_field('action_button_1'); ?>"><?php echo get_field('action_button_1_label'); ?></a><a class="large success round button" href="<?php get_field('action_button_2'); ?>"><?php echo get_field('action_button_2_label'); ?></a>
+      <a class="large success round button" href="<?php echo get_field('action_button_1'); ?>"><?php echo get_field('action_button_1_label'); ?></a>
+      <a class="large success round button" href="<?php get_field('action_button_2'); ?>"><?php echo get_field('action_button_2_label'); ?></a>
     </div>
   </div>
 </div>

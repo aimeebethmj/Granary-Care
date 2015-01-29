@@ -103,7 +103,7 @@
 	                          <li><a href="<?php echo site_url(); ?>/afterschool-and-breakfast-clubs">After School and Breakfast Clubs</a></li>
 	                          <li><a href="<?php echo site_url(); ?>/tipple-topples-creche">Tipple Topples Creche</a></li>
 	                          <li><a href="<?php echo site_url(); ?>/active-holiday-camps">Active Holiday Camps</a></li>
-	                          <li><a href="<?php echo site_url(); ?>/work-for-granary-kids">Working with Granary Kids</a></li>        
+	                          <li><a href="<?php echo site_url(); ?>/work-with-granary-kids">Work with Granary Kids</a></li>        
 	                          <li><a href="<?php echo site_url(); ?>/book-a-place">Book a place</a></li>
 	                          <li><a href="<?php echo site_url(); ?>/granary-kids-useful-info">Useful info</a></li>
 	                      </ul>
@@ -117,13 +117,13 @@
 	                                <li><a href="<?php echo site_url(); ?>/babysitting">Babysitting</a></li>
 	                                <li><a href="<?php echo site_url(); ?>/types-of-carers">Types of Carers</a></li>
 	                                <li><a href="<?php echo site_url(); ?>/agency-services-for-families">Agency Services</a></li>
-	                                <li><a href="<?php echo site_url(); ?>/nanny-agency/register">Register</a></li>
+	                                <li><a href="<?php echo site_url(); ?>/nanny-agency/families/family-register/">Register</a></li>
 	                            </ul>
 	                          </li>  
 	                          <li class="has-dropdown"><a href="<?php echo site_url(); ?>/nannies">Nannies</a>
 	                            <ul class="dropdown">
-	                                <li><a href="<?php echo site_url(); ?>/job-search">Job Search</a></li>
-	                                <li><a href="<?php echo site_url(); ?>/nanny-agency/register">Register</a></li>
+	                                <!-- <li><a href="<?php echo site_url(); ?>/job-search">Job Search</a></li> -->
+	                                <li><a href="<?php echo site_url(); ?>/nanny-agency/nannies/nanny-register/">Register</a></li>
 	                            </ul>
 	                          </li>  
 	                          <li><a href="<?php echo site_url(); ?>/nanny-agency-useful-info">Useful Info</a></li>
@@ -137,16 +137,16 @@
 	                          <li><a href="<?php echo site_url(); ?>/referral-process">Referral Process</a></li>
 	                          <li><a href="<?php echo site_url(); ?>/facilities">Facilities</a></li>
 	                          <li><a href="<?php echo site_url(); ?>/documents">Documents</a></li>
-	                          <li><a href="<?php echo site_url(); ?>/work-with-mother-and-baby">Working with Mother and Baby</a></li>
+	                          <li><a href="<?php echo site_url(); ?>/work-with-mother-and-baby">Work with Mother and Baby</a></li>
 	                          
 	                      </ul>
 	                    </li>
 
 	                    <li><a href="<?php echo site_url(); ?>/social-responsibility">Social Responsibility</a></li>
 
-	                    <li class="has-dropdown"><a href="<?php echo site_url(); ?>/work-for-us">Work for Us</a>
+	                    <li class="has-dropdown"><a>Work for Us</a>
 	                      <ul class="dropdown">
-	                          <li><a href="<?php echo site_url(); ?>/work-for-granary-kids">Granary Kids</a></li>
+	                          <li><a href="<?php echo site_url(); ?>/work-with-granary-kids">Granary Kids</a></li>
 	                          <li><a href="<?php echo site_url(); ?>/nannies">Granary Nanny Agency</a></li>
 	                          <li><a href="<?php echo site_url(); ?>/work-with-mother-and-baby">Mother and Baby</a></li>
 	                      </ul>
@@ -164,33 +164,3 @@
 	      </div>
 	    </div>
 	  </div>
-    
-
-
-<!-- 
-	<?php do_action('foundationPress_after_body'); ?>
-	
-	<div class="off-canvas-wrap" data-offcanvas>
-	<div class="inner-wrap">
-	
-	<?php do_action('foundationPress_layout_start'); ?>
-	
-	<nav class="tab-bar show-for-small-only">
-		<section class="left-small">
-			<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-		</section>
-		<section class="middle tab-bar-section">
-			
-			<h1 class="title"><?php bloginfo( 'name' ); ?></h1>
-
-		</section>
-	</nav>
-
-	<?php get_template_part('parts/off-canvas-menu'); ?>
-
-	<?php get_template_part('parts/top-bar'); ?>
-
-<section class="container" role="document">
-	<?php do_action('foundationPress_after_header'); ?> 
-
--->
