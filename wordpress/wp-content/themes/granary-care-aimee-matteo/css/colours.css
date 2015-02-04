@@ -1,0 +1,25 @@
+/*
+
+	#FCFBF7 almost white
+	#131342 dark blue
+
+*/
+
+body
+{
+	background-color: #FCFBF7;
+	color: #131342;  
+}
+
+
+/* override Foundation */
+
+h1, h2, h3, h4, h5, h6
+{
+	color: #131342; 
+}
+
+.navigation-area 
+{
+    background-color: rgba(255, 173, 6, .23);
+}
