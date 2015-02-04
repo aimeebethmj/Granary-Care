@@ -46,6 +46,7 @@ get_header(); ?>
       </div>
     </div>
   </div>
+</div>
 
 
 <!-- TESTIMONIAL -->
@@ -70,7 +71,6 @@ get_header(); ?>
 		
 
 		// vars
-		$image = get_sub_field('home_business_panel_image');
 		$title = get_sub_field('home_business_panel_title');
 		$summary = get_sub_field('home_business_panel_summary');
 		$buttonlink = get_sub_field('home_business_panel_buttonlink');
@@ -82,11 +82,8 @@ get_header(); ?>
 		// echo '</pre>';
 	?>
 
-		<div class="large-4 columns business-panel">
-	      	<div class="business-panel-image">
-	        	<img src="<?php echo $image['url']; ?>"/>
-	      	</div>
-	      	<div class="business-panel-title">
+		<div class="large-4 columns">
+	      	<div>
 	        	<h4><?php echo $title; ?></h4>
 	      	</div>
 				<?php echo $summary; ?>
@@ -105,7 +102,7 @@ get_header(); ?>
 
 <!-- ABOUT BLURB -->
 
-<div class="full-width content-area homepage-blurbs" id="homepage-about-blurb">
+<div class="full-width content-area">
   <div class="row">
     <div class="large-12 columns">
     	<?php the_content(); ?>
@@ -116,7 +113,7 @@ get_header(); ?>
 
 <!-- SOCIAL RESPONSIBILITY BLURB -->
 
-<div class="full-width content-area homepage-blurbs" id="homepage-social-blurb">
+<div class="full-width content-area">
   <div class="row">
     <div class="large-12 columns">
     	<?php echo get_field('home_social_responsibility');
