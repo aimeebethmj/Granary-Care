@@ -1,28 +1,12 @@
-body {
-    background-color: white;
-}
 
 /* HEADER */
  
     /** Set the backgrounds for the different sections **/
-    .header-area 
-    {
-        min-height: 160px;
-    }
+
      
     .call-us-today
     {
         font-size: 23px;
-    }
-
-    h1 
-    {
-        text-align: center;
-    }
-
-    .strapline 
-    {
-        text-align: center;
     }
 
     .social-buttons
@@ -30,11 +14,21 @@ body {
         text-align: right;
     }
 
+    /* logo giant */
+    .logo-giant
+    {
+        background-image: url('../images/logo-giant.png'); 
+        height: 6rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin: 3rem .5rem !important;
+    }
+
 /*HOMEPAGE SLIDER */
 
     body.home .slider-container
     {
-        background: rgba(0,0,0,.1);
         padding-top: 50px;
     }
     .slider
@@ -65,38 +59,7 @@ body {
 
 /*HOMEPAGE BUSINESS PANEL*/
 
-    .business-panel 
-    {
-        margin: 40px 0 20px 0;
-        text-align: center;
-        padding: 20px;
 
-    }
-
-    .business-panel img 
-    {
-        height: 202px;
-        overflow: hidden;
-        border-radius: 8px;
-    }
-
-    .business-panel-title 
-    {
-        height: 65px;
-    }
-
-    .business-panel p 
-    {
-        height: 190px;
-        line-height: 1.75;
-    }
-
-
-    .navigation-area 
-    {
-        border-top: solid 1px #ddd;
-        border-bottom: solid 1px #ddd;
-    }
      
     .footer-area {
         background-color: #1f1f1f;  
@@ -110,6 +73,12 @@ body {
         position: relative;
     }
      
+    .navigation-area {
+        border-bottom: none;
+
+
+    }
+
     /** Changes background color, height and margin of the border **/
     .top-bar {
         background: none;
@@ -124,6 +93,7 @@ body {
         background: none;
         /*text-transform: uppercase;*/
         border-right: solid 1px #ddd;
+        
     }
 
     .top-bar-section ul.top-level > li:last-child
@@ -162,7 +132,6 @@ body {
 
     .testimonial 
     {
-        background: rgba(0,0,0,.05);
         padding: 30px 20px;
         text-align: center;
     }
@@ -182,26 +151,10 @@ body {
 
 
 /*HOMEPAGE ABOUT SECTION*/
-    .homepage-blurbs
-    {
-        text-align: center;
-        padding: 60px 0 50px 0;
-    }
-    #homepage-about-blurb {
-        background: #ccc;
-    }
+
 
 /*HOMEPAGE SOCIAL RESPONSIBILITY BLURB*/
-    #homepage-social-blurb h3
-    {
-        color: white;
 
-    }
-
-    #homepage-social-blurb
-    {
-        background: rgba(0,0,0,.5);
-    }
 
 /*FOOTER*/
     .footer-nav {
@@ -267,22 +220,6 @@ body {
         border-radius: 8px;
     }
 
-    .page-summary1
-    {
-        background: rgba(0,0,0,.1);
-    }
-
-    .page-summary2
-    {
-        background: rgba(0,0,0,.2);
-    }
-
-
-
-    .page-summary3
-    {
-        background: white;
-    }
 
     .page-summary1,
     .page-summary2,
