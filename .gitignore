@@ -4,3 +4,5 @@ wordpress/wp-content/themes/twentyfourteen
 wordpress/wp-content/themes/playground
 
 wp-config.php
+*.pdf
+*.zip
