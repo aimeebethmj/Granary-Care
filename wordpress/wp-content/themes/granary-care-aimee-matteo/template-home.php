@@ -8,10 +8,11 @@ get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
+<div class="full-width content-area">
 
 <!-- SLIDER -->
-  <div class="full-width content-area slider-container">
-    <div class="row">
+
+    <div class="row slider-container">
       <div class="large-12 columns">
         
         <div class="slider">
@@ -43,27 +44,28 @@ get_header(); ?>
 
 		<?php endif; ?>
 
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
 
-<!-- TESTIMONIAL -->
-<div class="full-width content-area testimonial">
-  <div class="row">
-    <div class="large-12 columns">
-      <a href="<?php echo site_url(); ?>/testimonials">
-      	<h4><i><q><?php echo get_field('home_testimonial');?></i></q></h4>
-      </a>
+
+<!-- ABOUT BLURB -->
+
+    <div class="row">
+      <div class="large-4 columns">
+        <h1><?php echo get_field('about_blurb_title')?></h1>
+      </div>
+      <div class="large-7 columns">
+        <?php the_content(); ?>
+        <a href="<?php echo site_url(); ?>/about">More About Granary Care</a>
+      </div>
     </div>
-  </div>
-</div>
+
 
 
 <!-- BUSINESS PANELS -->
-<div class="row">
-
+<div class="business-panel">
 	<?php if( have_rows('home_business_panels') ): ?>
 
 	<?php while( have_rows('home_business_panels') ): the_row(); 
@@ -82,46 +84,54 @@ get_header(); ?>
 		// echo '</pre>';
 	?>
 
-		<div class="large-4 columns">
-	      	<div>
-	        	<h4><?php echo $title; ?></h4>
-	      	</div>
-				<?php echo $summary; ?>
-	      	<a class="small radius button" href="<?php echo $buttonlink; ?>"><?php echo $buttonlabel; ?></a>
-	    </div>
-
+  <div class="row">
+	      <div class="large-4 columns">
+	        	<h2><?php echo $title; ?></h2>
+	      </div>
+        <div class="large-7 columns">
+				  <?php echo $summary; ?>
+	      	<a href="<?php echo $buttonlink; ?>"><?php echo $buttonlabel; ?></a>
+          <hr/>
+        </div>
+  </div>
 
 	<?php endwhile; ?>
 
 
 <?php endif; ?>
 
-
 </div>
 
 
-<!-- ABOUT BLURB -->
 
-<div class="full-width content-area">
-  <div class="row">
-    <div class="large-12 columns">
-    	<?php the_content(); ?>
-      <a class="radius button" href="<?php echo site_url(); ?>/about">More About Granary Care</a>
-    </div>
-  </div>
-</div>
+
+
 
 <!-- SOCIAL RESPONSIBILITY BLURB -->
 
-<div class="full-width content-area">
-  <div class="row">
-    <div class="large-12 columns">
-    	<?php echo get_field('home_social_responsibility');
-        	?>
-      <a class="radius button" href="<?php echo site_url(); ?>/social-responsibility">Learn More</a>
+    <div class="row">
+      <div class="large-12 columns">
+      	<?php echo get_field('home_social_responsibility');
+          	?>
+        <a href="<?php echo site_url(); ?>/social-responsibility">Learn More</a>
+      </div>
     </div>
-  </div>
+
+
+<!-- TESTIMONIAL -->
+    <div class="row testimonial">
+      <div class="large-12 columns">
+        <a href="<?php echo site_url(); ?>/testimonials">
+          <h4><i><q><?php echo get_field('home_testimonial');?></i></q></h4>
+        </a>
+      </div>
+    </div>
+
 </div>
+
+
+
+
 
 <?php endwhile; ?>
 <!-- post navigation -->

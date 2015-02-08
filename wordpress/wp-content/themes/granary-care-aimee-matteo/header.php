@@ -54,13 +54,13 @@
 				<!-- logo + phone + account buttons -->
 				<div class="row">
 					<div class="large-12 columns top-section">
-						<a href="<?php echo site_url(); ?>"><img src=""></a>
-						<p class="call-us-today">Call Us Today! <a href="tel:<?php echo ot_get_option( 'telephone_number' ); ?>"><?php echo ot_get_option( 'telephone_number' ); ?></a></p>
+						<!-- <a href="<?php echo site_url(); ?>"><img src=""></a> -->
+						<p class="call-us-today">Call us today! <a href="tel:<?php echo ot_get_option( 'telephone_number' ); ?>"><?php echo ot_get_option( 'telephone_number' ); ?></a></p>
 					</div>
 				</div>
 				<!-- nav -->
 				<div class="row">
-					<div class="large-12 columns">
+					<div class="large-12 nav-wrap columns">
 
 						<!-- NAV WRAP -->
 						<nav class="top-bar" data-topbar role="navigation" data-options="is_hover: true">
