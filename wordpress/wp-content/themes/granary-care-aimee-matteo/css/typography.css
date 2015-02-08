@@ -26,6 +26,7 @@ h1
 	line-height: 4.5rem;
 	margin-top: 3rem;
 	margin-bottom: 3rem;
+	font-weight: 300;
 }
 
 h2 
@@ -34,6 +35,8 @@ h2
 	line-height: 3rem;
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
+	font-weight: 300;
+
 }
 
 h3 
@@ -97,3 +100,24 @@ button, .button,
 {
 	font-family: inherit;
 }
+
+.top-bar-section ul
+{
+	font-size: .75rem;
+}
+
+p
+{
+	line-height: 1.5;
+}
+
+.business-panel p
+{
+	font-weight: 300;
+}
+
+.content-area .row
+{
+	margin: 1rem auto;
+}
+

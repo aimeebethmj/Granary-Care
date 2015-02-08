@@ -19,7 +19,18 @@ h1, h2, h3, h4, h5, h6
 	color: #131342; 
 }
 
-.navigation-area 
+.nav-wrap
 {
     background-color: rgba(255, 173, 6, .23);
 }
+
+.top-section
+{
+	background-color: rgba(255,173, 6, 1);
+}
+
+.top-bar-section ul.top-level > li 
+{
+	border-right: solid 1px rgba(19,19,66,.1);
+}
+
