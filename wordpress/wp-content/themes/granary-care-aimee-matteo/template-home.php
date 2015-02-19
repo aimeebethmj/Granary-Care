@@ -56,7 +56,7 @@ get_header(); ?>
       <div class="large-4 columns">
         <h1><?php echo get_field('about_blurb_title')?></h1>
       </div>
-      <div class="large-7 columns">
+      <div class="large-6 end columns" id="home-business-blurbs">
         <?php the_content(); ?>
         <a href="<?php echo site_url(); ?>/about">More About Granary Care</a>
       </div>
@@ -77,6 +77,7 @@ get_header(); ?>
 		$summary = get_sub_field('home_business_panel_summary');
 		$buttonlink = get_sub_field('home_business_panel_buttonlink');
     $buttonlabel = get_sub_field('home_business_panel_buttonlabel');
+    $cssClass = get_sub_field('css_class')
 
 		// echo '<pre>';
 		// // print_r(get_post());
@@ -86,9 +87,9 @@ get_header(); ?>
 
   <div class="row">
 	      <div class="large-4 columns">
-	        	<h2><?php echo $title; ?></h2>
+	        	<a href="<?php echo $buttonlink; ?>"><h2><?php echo $title; ?></h2></a>
 	      </div>
-        <div class="large-7 columns">
+        <div class="large-6 end columns <?php echo $cssClass; ?>" id="home-business-blurbs">
 				  <?php echo $summary; ?>
 	      	<a href="<?php echo $buttonlink; ?>"><?php echo $buttonlabel; ?></a>
           <hr/>
@@ -110,7 +111,7 @@ get_header(); ?>
 <!-- SOCIAL RESPONSIBILITY BLURB -->
 
     <div class="row">
-      <div class="large-12 columns">
+      <div class="large-10 small-centered columns">
       	<?php echo get_field('home_social_responsibility');
           	?>
         <a href="<?php echo site_url(); ?>/social-responsibility">Learn More</a>
@@ -120,7 +121,7 @@ get_header(); ?>
 
 <!-- TESTIMONIAL -->
     <div class="row testimonial">
-      <div class="large-12 columns">
+      <div class="large-10 small-centered columns">
         <a href="<?php echo site_url(); ?>/testimonials">
           <h4><i><q><?php echo get_field('home_testimonial');?></i></q></h4>
         </a>

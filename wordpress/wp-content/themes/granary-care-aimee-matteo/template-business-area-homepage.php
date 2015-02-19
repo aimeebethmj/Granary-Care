@@ -23,8 +23,10 @@ get_header(); ?>
 
 <div class="full-width content-area banner-statement <?php echo $slug; ?>" >
     <div class="row">
-        <div class="large-12 medium-12 small-12 columns">
+        <div class="large-10 medium-10 small-centered columns">
+            <!-- :before -->
             <h2><?php echo get_field('banner_message');?></h2>
+            <!-- :after -->
         </div>
     </div>
 </div>
@@ -39,8 +41,6 @@ if( !empty($image) ):
 
 ?>
 
-
-<div class="full-width content-area image-background">
   <div class="row">
     <div class="large-12 medium-12 small-12 columns">
       <div class="image-container">
@@ -48,21 +48,23 @@ if( !empty($image) ):
       </div>
     </div>
   </div>
-</div>
 
 <?php endif; ?>
 
 
 
 <!-- SIDEBAR AND MAIN CONTENT -->
-<div class="row page-sidenav-content">
-  <div class="large-9 medium-9 push-3 columns page-summary3">
-    <h2><?php echo get_the_title(); ?></h2>
+<div class="row">
+  <div class="large-10 medium-10 small-centered columns">
+    <h1><?php echo get_the_title(); ?></h1>
+  </div>
+  <div class="large-8 medium-8 small-centered columns">
     <?php the_content();?>
   </div>
+</div>
 
 
-  <div class="large-3 medium-3 pull-9 columns">
+<!--   <div class="large-3 medium-3 pull-9 columns">
     <ul class="side-nav">
 
     	<?php if( have_rows('side_navigation') ): ?>
@@ -82,8 +84,7 @@ if( !empty($image) ):
 		<?php endif; ?>
 
     </ul>
-  </div>
-</div>
+  </div> -->
 
 
 
@@ -97,8 +98,8 @@ if( !empty($businessPanels) ):
 
 ?>
 
-<div class="full-width content-area page-summary2">
-  <div class="row">
+<!-- <div class="full-width content-area page-summary2">
+ -->  <div class="row">
 
 <?php if( have_rows('business_panels') ): ?>
 
@@ -115,7 +116,7 @@ if( !empty($businessPanels) ):
     if( in_category( 'granarykids' ) ):
   ?>
 
-      <div class="large-4 columns business-panel">
+<!--       <div class="large-4 columns business-panel">
           <div class="business-panel-image">
             <img src="<?php echo $image['url']; ?>"/>
           </div>
@@ -123,7 +124,14 @@ if( !empty($businessPanels) ):
             <h4><?php echo $paneltitle; ?></h4>
           </div>
           <a class="small radius button" href="<?php echo $buttonlink; ?>"><?php echo $buttonlabel; ?></a>
-      </div>
+      </div> -->
+
+    <div class="large-8 medium-8 small-centered columns">
+      <ul class="image-bullet">
+        <li><a href="<?php echo $buttonlink; ?>"><h3><?php echo $paneltitle; ?></h3></a></li>
+      </ul>
+    </div>
+
 
     <?php elseif( in_category( 'nannyagency' ) ): ?>
 
@@ -149,7 +157,7 @@ if( !empty($businessPanels) ):
 <?php endif; ?>
 
     </div>
-</div>
+<!-- </div> -->
 
 <?php endif; ?>
 
@@ -195,8 +203,8 @@ if( !empty($businessPanels) ):
 <!-- TESTIMONIAL -->
 <div class="full-width content-area testimonial-large">
   <div class="row">
-    <div class="large-12 columns">
-      <a href="#"><h4><i><q><?php echo get_field('testimonial');?></i></q></h4></a>
+    <div class="large-10 medium-10 small-centered columns">
+      <a href="#"><h3><i><q><?php echo get_field('testimonial');?></i></q></h3></a>
     </div>
   </div>
 </div>
@@ -212,6 +220,7 @@ if( !empty($accreditations) ):
 <!-- ACCREDITATIONS- NANNY AGENCY ONLY-->
 <div class="full-width content-area accreditations-container">
   <div class="row">
+    <div class="large-10 medium-10 small-centered columns">
 
     
     <?php if( have_rows('accreditations') ): ?>
@@ -232,6 +241,7 @@ if( !empty($accreditations) ):
 
   <?php endif; ?>
 
+    </div>
   </div>
 </div>
 

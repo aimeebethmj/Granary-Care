@@ -12,6 +12,8 @@ body
 }
 
 
+
+
 /* override Foundation */
 
 h1, h2, h3, h4, h5, h6
@@ -19,14 +21,47 @@ h1, h2, h3, h4, h5, h6
 	color: #131342; 
 }
 
-.nav-wrap
+/* navigation */
+.general .nav-wrap, .granarykids .nav-wrap
 {
     background-color: rgba(255, 173, 6, .23);
 }
 
-.top-section
+.nannyagency .nav-wrap
+{
+	background-color: rgba(255,84, 38, .23);
+} 
+
+.motherandbaby .nav-wrap
+{
+	background-color: rgba(118,194,161, .23);
+}
+
+.top-section .call-us-today a
+{
+    color: #FCFBF7;
+}
+
+.call-us-today
+{
+    color: #FCFBF7;
+}
+
+
+
+.general .top-section, .granarykids .top-section
 {
 	background-color: rgba(255,173, 6, 1);
+}
+
+.nannyagency .top-section
+{
+	background-color: rgba(255,84, 38, 1);
+}
+
+.motherandbaby .top-section
+{
+	background-color: rgba(118,194,161, 1);
 }
 
 .top-bar-section ul.top-level > li 
@@ -34,3 +69,45 @@ h1, h2, h3, h4, h5, h6
 	border-right: solid 1px rgba(19,19,66,.1);
 }
 
+/* hr and a colours home */
+.yellow hr
+{
+	background-color: rgba(255,173, 6, 1);
+}
+
+.yellow a
+{
+	color: rgba(255,173, 6, 1);
+}
+
+.orange hr
+{
+	background-color: rgba(255,84, 38, 1);
+}
+
+.orange a 
+{
+	color: rgba(255,84, 38, 1);
+}
+
+.green hr
+{
+	background-color: rgba(118,194,161, 1);
+}
+
+.green a 
+{
+	color: rgba(118,194,161, 1);
+}
+
+/* footer */
+.footer-area
+{
+	background-color: #131342;
+	color: #FCFBF7 ;	
+}
+
+.footer-area h2, .footer-area h3
+{
+	color: #FCFBF7 ;
+}

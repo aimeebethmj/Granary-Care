@@ -45,6 +45,8 @@ h3
 	line-height: 3rem;
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
+	font-weight: 300;
+
 }
 
 h4 
@@ -116,8 +118,29 @@ p
 	font-weight: 300;
 }
 
+
 .content-area .row
 {
 	margin: 1rem auto;
 }
 
+/* Footer */
+
+  .footer-area h2, .footer-area h3
+    {
+        text-align: center;
+        font-weight: 300;
+    }
+
+  .footer-area .copyright
+  {
+  	text-align: center;
+  }
+
+/* Banner Statement */
+
+  .banner-statement h2
+    {
+        font-weight: 300;
+        margin: 1rem 0;
+    }

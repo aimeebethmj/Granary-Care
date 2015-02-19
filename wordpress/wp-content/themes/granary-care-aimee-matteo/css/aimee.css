@@ -17,6 +17,8 @@
         font-weight: 700;
     }
 
+    
+
     .social-buttons
     {
         text-align: right;
@@ -31,7 +33,23 @@
         background-position: center;
         background-size: contain;
         margin: 3.75rem 3rem .5rem;    }
+    
+    /* logo small */
+    .logo-small
+    {
+        background-image: url('../images/logo-small.png');
+        height: 3rem;
+        background-repeat: no-repeat; 
+        background-position: center;
+        background-size: contain;
+    }
 
+    #logo-small-link
+    {
+        display: block;
+        height: 3rem;
+        width: 10rem;
+    }
     
 
 /*HOMEPAGE SLIDER */
@@ -88,8 +106,8 @@
 
     hr 
     {
-        background: #FFAD06; 
-        clear: both; 
+/*        background: #FFAD06; 
+*/        clear: both; 
         float: none; 
         width: 100%; 
         height: 1px;
@@ -102,12 +120,28 @@
         margin: 1rem 0;
     }
 
+    #home-business-blurbs
+    {
+        margin-left: 4rem;
+    }
+
+    .image-bullet li
+    {
+      background: url('../images/red-heart-bullet.png') no-repeat;
+      background-size: contain;
+      background-position-y: center;
+      height: 3rem;
+      list-style: none;
+      padding-left: 4rem;
+    }
+
+    
+    
+
 
 
      
     .footer-area {
-        background-color: #1f1f1f;  
-        color: #fff;
         min-height: 50px;
         padding: 20px 0 0 0;
     }
@@ -195,15 +229,10 @@
 
     .testimonial-large
     {
-        background: rgba(0,0,0,.4);
         padding: 80px 0;
         text-align: center;
     }
 
-    .testimonial-large h4
-    {
-        color: white;
-    }
 
 
 
@@ -225,26 +254,46 @@
 /*SHARED FEATURES ACROSS PAGES*/
     .banner-statement
     {
-       /* background: rgba(0,0,0,.4);*/
         text-align: center;
-        padding: 50px 0;
+        padding: 1.5rem 0;
         background-size: cover;
         background-position: center;
     }
 
-    .banner-statement h2
-    {
-        color: white;
-        font-weight: 300;
-        color: rgba(0,0,0,.7);
 
+
+    .banner-statement .columns:before, .testimonial-large .columns:before
+    {
+        content: ' ';
+        background-image: url('../images/yellow-crayon-divide.png'); 
+        /*width: 100px;*/
+        height: 1rem;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .banner-statement .columns:after, .testimonial-large .columns:after
+    {
+        content: ' ';
+        background-image: url('../images/yellow-crayon-divide.png'); 
+        height: 1rem;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;    
+        -moz-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+        filter: flipv; /*IE*/
     }
 
     .banner1,
     .granarykids
     {
-    background-image: url("../images/grainfieldhigh_blur_b+w_1920.jpg");
-    }
+/*    background-image: url("../images/grainfieldhigh_blur_b+w_1920.jpg");
+*/    }
 
     
 
@@ -252,16 +301,16 @@
     .nannyagency,
     .general
     {
-    background-image: url("../images/brightskies_blur_b+w_1920.jpg");
-    }
+/*    background-image: url("../images/brightskies_blur_b+w_1920.jpg");
+*/    }
 
    
 
     .banner3,
     .motherandbaby
     {
-    background-image: url("../images/grainfieldsun_b+w_1920.jpg");
-    background-position: top;
+/*    background-image: url("../images/grainfieldsun_b+w_1920.jpg");
+    background-position: top;*/
     }
 
 
@@ -278,42 +327,12 @@
     }
 
 
-    .page-summary1,
-    .page-summary2,
-    .page-summary3
+
+
+    .image-container img
     {
-    	padding: 40px 0;
-    }
-
-    .page-summary1 h2,
-    .page-summary2 h2,
-    .page-summary3 h2
-    {
-        margin-bottom: 20px;
-    }
-
-    .page-summary1 p,
-    .page-summary2 p,
-    .page-summary3 p
-    {
-        font-size: 18px;
-        line-height: 1.7;
-    }
-
-    
-
-   
-
-    .page-sidenav-content
-    {
-        margin: 30px auto;
-    }
-
-    .image-container
-    {
-        border-radius: 8px;
-        overflow: hidden;
-     /*   position: relative;*/
+        display: block;
+        margin: 0 auto;
     }
 
     .text-overlay
@@ -541,7 +560,6 @@
     .accreditations-container
     {
         height: 220px;
-        background: white;
     }
 
     .accreditations-container img
@@ -550,7 +568,7 @@
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
-        max-width: 75%;
+        max-width: 60%;
     }
 
 /* FAMILIES PAGE*/
