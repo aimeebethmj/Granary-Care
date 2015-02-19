@@ -15,29 +15,34 @@
 	<!-- FOOTER AREA -->
 	<div class="full-width footer-area">
     <div class="row">
-        <div class="large-4 medium-4 columns">
+      <div class="large-10 small-centered columns">
+        <h2>We love to meet new people!</h2>
+        <h3>Do you have any questions or want to talk about our Kids Clubs, Nanny Agency or Mother &amp; Baby Centre?</h3>
+        <h3 class="call-us-today">Call us today! <a href="tel:<?php echo ot_get_option( 'telephone_number' ); ?>"><?php echo ot_get_option( 'telephone_number' ); ?></a></h3>
+      </div>
+      <div class="large-6 end columns">
+        <div class="large-6 medium-6 columns">
           <ul class="footer-nav">
-            <li><a href="<?php echo site_url(); ?>">Home</a></li>
-            <li><a href="<?php echo site_url(); ?>/about">About Granary Care</a></li>
+            <li><a href="<?php echo site_url(); ?>/about">About Us</a></li>
             <li><a href="<?php echo site_url(); ?>/granary-kids">Granary Kids</a></li>
             <li><a href="<?php echo site_url(); ?>/nanny-agency">Nanny Agency</a></li>
-            <li><a href="<?php echo site_url(); ?>/mother-and-baby-unit">Mother and Baby Unit</a></li>
-            <li><a href="<?php echo site_url(); ?>/social-responsibility">Social Responsibility</a></li>
-            <li><a href="<?php echo site_url(); ?>/work-for-us">Work For Us</a></li>
-            <li><a href="<?php echo site_url(); ?>/contact-us">Contact Us</a></li>
+            <li><a href="<?php echo site_url(); ?>/mother-and-baby-unit">Mother &amp; Baby</a></li>
+            
           </ul>
         </div>
-        <div class="large-5 medium-5 columns">
-          <p class="call-us-today">Call Us Today! <a href="tel:02084233391">020 8423 3391</a></p>
+        
+        <div class="large-6 medium-6 columns">
+          <ul class="footer-nav">
+            <li><a href="<?php echo site_url(); ?>/social-responsibility">Social Responsibility</a></li>
+            <li><a href="<?php echo site_url(); ?>/work-for-us">Work With Us</a></li>
+            <li><a href="<?php echo site_url(); ?>/contact-us">Contact Us</a></li>
+            <li><a href="<?php echo ot_get_option( 'facebook' ); ?>"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+          </ul>        
         </div>
-        <div class="large-3 medium-3 columns social-buttons">
-            <a href="<?php echo ot_get_option( 'twitter' ); ?>"><i class="fa fa-twitter fa-2x"></i></a>
-            <a href="<?php echo ot_get_option( 'facebook' ); ?>"><i class="fa fa-facebook-square fa-2x"></i></a>
-            <a href="#"><i class="fa fa-pinterest fa-2x"></i></a>
-        </div>
+      </div>
     </div>
       <div class="row">
-        <div class="large-12 columns">
+        <div class="large-12 copyright columns">
           <div>
             &copy; <?php echo ( bloginfo("name") . " " . date("Y") ); ?>
           </div>

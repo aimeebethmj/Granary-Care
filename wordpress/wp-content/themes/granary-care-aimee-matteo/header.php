@@ -43,21 +43,48 @@
 
 	</head>
 
-	<body <?php body_class(); ?>>
+	<body <?php body_class(); 
+
+    $categories = get_the_category(); // returns all categories assigned to a page/post as an Array
+    $category = $categories[0]; // let's grab the first category in the Array (the element at index 0)
+    $slug = $category->slug; // kind of self-explanatory (the slug property inside the category Object)
+
+	?>>
 
 
 		<!-- HEADER AREA -->
 		<header>
 
 			<!-- NAVIGATION AREA -->
-			<div class="full-width navigation-area">
+			<div class="full-width navigation-area <?php echo $slug; ?>">
 				<!-- logo + phone + account buttons -->
-				<div class="row">
-					<div class="large-12 columns top-section">
-						<!-- <a href="<?php echo site_url(); ?>"><img src=""></a> -->
-						<p class="call-us-today">Call us today! <a href="tel:<?php echo ot_get_option( 'telephone_number' ); ?>"><?php echo ot_get_option( 'telephone_number' ); ?></a></p>
+				<?php if( is_home()): ?>
+
+					<div class="row">
+						<div class="large-12 columns top-section">
+							<!-- <a href="<?php echo site_url(); ?>"><img src=""></a> -->
+							<p class="call-us-today">Call us today! <a href="tel:<?php echo ot_get_option( 'telephone_number' ); ?>"><?php echo ot_get_option( 'telephone_number' ); ?></a></p>
+						</div>
 					</div>
-				</div>
+				<?php else: ?>
+
+					<div class="row">
+						<div class="large-12 columns top-section">
+							<div class="large-4 columns logo-small">
+								<!-- new logo -->
+								<a href="<?php echo site_url(); ?>" id="logo-small-link"></a>
+							</div>
+							<div class="large-4 columns">						
+								<p class="call-us-today">Call us today! <a href="tel:<?php echo ot_get_option( 'telephone_number' ); ?>"><?php echo ot_get_option( 'telephone_number' ); ?></a></p>
+							</div>
+							<div class="large-4 columns">
+								<!-- register buttons -->
+							</div>
+						</div>
+					</div>
+
+				<?php endif; ?>
+
 				<!-- nav -->
 				<div class="row">
 					<div class="large-12 nav-wrap columns">
@@ -162,7 +189,12 @@
 			</div> -->
 			
 			<!-- GIANT LOGO (only certain pages) -->
+		<?php if( is_home() ) : ?>
+
 			<div class="logo-giant"></div>
+
+		<?php endif; ?>
+
 		</header>
 
 
