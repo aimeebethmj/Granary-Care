@@ -144,3 +144,12 @@ p
         font-weight: 300;
         margin: 1rem 0;
     }
+
+/* buttons */
+
+.nannyagency .buttons-container a.firstbutton,
+.motherandbaby .buttons-container a.firstbutton,
+.motherandbaby .buttons-container a.secondbutton
+{
+	font-weight: 300;
+}

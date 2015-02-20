@@ -70,14 +70,14 @@
 
 					<div class="row">
 						<div class="large-12 columns top-section">
-							<div class="large-4 columns logo-small">
+							<div class="medium-4 columns  logo-small">
 								<!-- new logo -->
 								<a href="<?php echo site_url(); ?>" id="logo-small-link"></a>
 							</div>
-							<div class="large-4 columns">						
+							<div class="medium-4 columns ">						
 								<p class="call-us-today">Call us today! <a href="tel:<?php echo ot_get_option( 'telephone_number' ); ?>"><?php echo ot_get_option( 'telephone_number' ); ?></a></p>
 							</div>
-							<div class="large-4 columns">
+							<div class="medium-4 columns ">
 								<!-- register buttons -->
 							</div>
 						</div>
@@ -102,7 +102,7 @@
 							<section class="top-bar-section">
 							
 								<!-- LEFT NAV SECTION -->
-								<ul class="left top-level">
+								<ul class="top-level">
 									<li class="has-dropdown"><a href="<?php echo site_url(); ?>/about">About</a>
 										<ul class="dropdown">
 											<li><a href="<?php echo site_url(); ?>/team">Team</a></li>
@@ -116,8 +116,8 @@
 											<li><a href="<?php echo site_url(); ?>/tipple-topples-creche">Tipple Topples Creche</a></li>
 											<li><a href="<?php echo site_url(); ?>/active-holiday-camps">Active Holiday Camps</a></li>
 											<li><a href="<?php echo site_url(); ?>/work-with-granary-kids">Work with Granary Kids</a></li>        
-											<li><a href="<?php echo site_url(); ?>/book-a-place">Book a place</a></li>
-											<li><a href="<?php echo site_url(); ?>/granary-kids-useful-info">Useful info</a></li>
+<!-- 											<li><a href="<?php echo site_url(); ?>/book-a-place">Book a place</a></li>
+ -->											<li><a href="<?php echo site_url(); ?>/granary-kids-useful-info">Useful info</a></li>
 										</ul>
 									</li>
 

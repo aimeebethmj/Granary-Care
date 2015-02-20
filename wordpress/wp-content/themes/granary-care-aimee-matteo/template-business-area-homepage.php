@@ -98,57 +98,43 @@ if( !empty($businessPanels) ):
 
 ?>
 
-<!-- <div class="full-width content-area page-summary2">
- -->  <div class="row">
+  <div class="business-panel">
 
 <?php if( have_rows('business_panels') ): ?>
 
   <?php while( have_rows('business_panels') ): the_row();
 
     // Vars
-    $image = get_sub_field('business_panel_image');
-    $paneltitle = get_sub_field('panel_title');
+    // $image = get_sub_field('business_panel_image');
+    $title = get_sub_field('panel_title');
     $buttonlink = get_sub_field('button_link');
     $buttonlabel = get_sub_field('button_label');
     $blurb = get_sub_field('blurb');
+    $cssClass = get_sub_field('css_class');
 
 
-    if( in_category( 'granarykids' ) ):
-  ?>
+    if( in_category( 'granarykids' ) ): ?>
 
-<!--       <div class="large-4 columns business-panel">
-          <div class="business-panel-image">
-            <img src="<?php echo $image['url']; ?>"/>
-          </div>
-          <div class="business-panel-title">
-            <h4><?php echo $paneltitle; ?></h4>
-          </div>
-          <a class="small radius button" href="<?php echo $buttonlink; ?>"><?php echo $buttonlabel; ?></a>
-      </div> -->
-
-    <div class="large-8 medium-8 small-centered columns">
-      <ul class="image-bullet">
-        <li><a href="<?php echo $buttonlink; ?>"><h3><?php echo $paneltitle; ?></h3></a></li>
-      </ul>
-    </div>
+      <div class="large-8 medium-8 small-centered columns">
+        <ul class="image-bullet">
+          <li><a href="<?php echo $buttonlink; ?>"><h3><?php echo $title; ?></h3></a></li>
+        </ul>
+      </div>
 
 
     <?php elseif( in_category( 'nannyagency' ) ): ?>
 
-      <!-- FOCUSSED INFO BUTTONS NANNY AGENCY PAGE -->
-    
-        <div class="large-4 medium-4 columns nanny-business-panel">
-          <div class="nanny-button-image">
-
-            <img src="<?php echo $image['url']; ?>">
-            <h3><?php echo $paneltitle; ?></h3>
-          </div>
-          <div class="business-panel-description">
-
-            <?php echo $blurb; ?>
-          </div>
-          <a class="small round button" href="<?php echo $buttonlink; ?>"><?php echo $buttonlabel; ?></a>
+      <div class="row">
+        <div class="large-4 columns">
+            <a href="<?php echo $buttonlink; ?>"><h2><?php echo $title; ?></h2></a>
         </div>
+        <div class="large-6 end columns <?php echo $cssClass; ?>" id="business-blurbs">
+          <?php echo $blurb; ?>
+          <a href="<?php echo $buttonlink; ?>"><?php echo $buttonlabel; ?></a>
+          <hr/>
+        </div>
+      </div>
+
 
     <?php endif; ?>
 
@@ -157,7 +143,6 @@ if( !empty($businessPanels) ):
 <?php endif; ?>
 
     </div>
-<!-- </div> -->
 
 <?php endif; ?>
 
@@ -184,15 +169,17 @@ if( !empty($businessPanels) ):
   $buttonLabel1 = get_field('action_button_1_label');
   $buttonLink2 = get_field('action_button_2');
   $buttonLabel2 = get_field('action_button_2_label');
+  
 
   if(is_page( array( 'nanny-agency', 'mother-and-baby' ) )):
 ?>
 
 <!-- ACTION BUTTONS -->
-<div class="full-width content-area action-area">
+<div class="full-width content-area action-area <?php echo $slug; ?>">
   <div class="row">
     <div class="large-12 medium-12 columns buttons-container">
-      <a class="large success round button" href="<?php echo $buttonLink1; ?>"><?php echo $buttonLabel1; ?></a><a class="large success round button" href="<?php echo $buttonLink2; ?>"><?php echo $buttonLabel2; ?></a>
+      <a class="large round button firstbutton" href="<?php echo $buttonLink1; ?>"><?php echo $buttonLabel1; ?></a>
+      <a class="large round button secondbutton" href="<?php echo $buttonLink2; ?>"><?php echo $buttonLabel2; ?></a>
     </div>
   </div>
 </div>

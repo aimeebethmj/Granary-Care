@@ -3,6 +3,8 @@
 	#FCFBF7 almost white
 	#131342 dark blue
 
+	http://yolijn.com/convert-rgba-to-rgb
+
 */
 
 body
@@ -22,20 +24,34 @@ h1, h2, h3, h4, h5, h6
 }
 
 /* navigation */
-.general .nav-wrap, .granarykids .nav-wrap
+.general .nav-wrap, 
+.granarykids .nav-wrap,
+.general .top-bar-section ul li,
+.granarykids .top-bar-section ul li
 {
-    background-color: rgba(255, 173, 6, .23);
+    background-color: rgba(255, 236, 198, 1);
 }
 
-.nannyagency .nav-wrap
+.nannyagency .nav-wrap,
+.nannyagency .top-bar-section ul li
 {
-	background-color: rgba(255,84, 38, .23);
+	background-color: rgba(255,216, 205, 1);
 } 
 
-.motherandbaby .nav-wrap
+.motherandbaby .nav-wrap,
+.motherandbaby .top-bar-section ul li
 {
-	background-color: rgba(118,194,161, .23);
+	background-color: rgba(223,241,233, 1);
 }
+
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button),
+.top-bar-section ul li:hover:not(.has-form) > a
+{
+	color: inherit;
+	background: transparent;
+}
+
+
 
 .top-section .call-us-today a
 {
@@ -47,19 +63,26 @@ h1, h2, h3, h4, h5, h6
     color: #FCFBF7;
 }
 
-
-
-.general .top-section, .granarykids .top-section
+.general .top-section, 
+.granarykids .top-section,
+.general .top-bar-section li:not(.has-form) a:not(.button):hover,
+.granarykids .top-bar-section li:not(.has-form) a:not(.button):hover,
+.general .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button),
+.granarykids .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button)
 {
 	background-color: rgba(255,173, 6, 1);
 }
 
-.nannyagency .top-section
+.nannyagency .top-section,
+.nannyagency .top-bar-section li:not(.has-form) a:not(.button):hover,
+.nannyagency .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button)
 {
 	background-color: rgba(255,84, 38, 1);
 }
 
-.motherandbaby .top-section
+.motherandbaby .top-section,
+.motherandbaby .top-bar-section li:not(.has-form) a:not(.button):hover,
+.motherandbaby .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button)
 {
 	background-color: rgba(118,194,161, 1);
 }
@@ -68,6 +91,17 @@ h1, h2, h3, h4, h5, h6
 {
 	border-right: solid 1px rgba(19,19,66,.1);
 }
+
+.top-bar-section li:not(.has-form) a
+{
+    color: #131342;
+}
+
+ 	/* little arrow next to dropdown items */
+    .top-bar-section .has-dropdown > a:after
+    {
+        border-color: rgba(19,19,66, 0.3) transparent transparent transparent;
+    }
 
 /* hr and a colours home */
 .yellow hr
@@ -98,6 +132,44 @@ h1, h2, h3, h4, h5, h6
 .green a 
 {
 	color: rgba(118,194,161, 1);
+}
+
+.blue hr
+{
+	background-color: rgba(19, 19, 66, .7);
+}
+
+.blue a
+{
+	color: rgba(19, 19, 66, .7);
+}
+
+/* buttons */
+
+.nannyagency .buttons-container a.firstbutton
+{
+	background: url('../images/orange-paint-texture.png') no-repeat;
+	background-position: center;
+}
+
+.motherandbaby .buttons-container a.firstbutton
+{
+	background-color: rgba(118,194,161, 1);
+	border-style: none;
+}
+
+.nannyagency .secondbutton
+{
+	background: url('../images/yellow-paint-texture.png') no-repeat;
+	background-position: center;
+	color: rgba(19, 19, 66, .7);
+}
+
+.motherandbaby .buttons-container a.secondbutton
+{
+	background-color: rgba(255,173, 6, 1);
+	border-style: none;
+
 }
 
 /* footer */

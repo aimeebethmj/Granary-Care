@@ -56,7 +56,7 @@ get_header(); ?>
       <div class="large-4 columns">
         <h1><?php echo get_field('about_blurb_title')?></h1>
       </div>
-      <div class="large-6 end columns" id="home-business-blurbs">
+      <div class="large-6 end columns" id="business-blurbs">
         <?php the_content(); ?>
         <a href="<?php echo site_url(); ?>/about">More About Granary Care</a>
       </div>
@@ -77,7 +77,7 @@ get_header(); ?>
 		$summary = get_sub_field('home_business_panel_summary');
 		$buttonlink = get_sub_field('home_business_panel_buttonlink');
     $buttonlabel = get_sub_field('home_business_panel_buttonlabel');
-    $cssClass = get_sub_field('css_class')
+    $cssClass = get_sub_field('css_class');
 
 		// echo '<pre>';
 		// // print_r(get_post());
@@ -89,7 +89,7 @@ get_header(); ?>
 	      <div class="large-4 columns">
 	        	<a href="<?php echo $buttonlink; ?>"><h2><?php echo $title; ?></h2></a>
 	      </div>
-        <div class="large-6 end columns <?php echo $cssClass; ?>" id="home-business-blurbs">
+        <div class="large-6 end columns <?php echo $cssClass; ?>" id="business-blurbs">
 				  <?php echo $summary; ?>
 	      	<a href="<?php echo $buttonlink; ?>"><?php echo $buttonlabel; ?></a>
           <hr/>
