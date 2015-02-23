@@ -27,7 +27,7 @@ get_header(); ?>
 <!-- STAFF PROFILES GRANARY CARE -->
 <div class="full-width content-area page-summary1">
   <div class="row">
-    <div class="large-12 columns">
+    <div class="large-10 medium-10 small-centered columns">
       <?php the_content(); ?>   
     </div>
   </div>
@@ -57,20 +57,21 @@ get_header(); ?>
 
     <div class="full-width content-area staff-profiles">
       <div class="row">
-        <div class="large-3 medium-3 columns">
-          <img class="staff-profile-images" src="<?php echo $image['url']; ?>"/>      
-        </div>
-        <div class="large-9 medium-9 columns staffinfo">
-          <h4><?php echo $staffname; ?></h4>
-          <h5><?php echo $jobtitle; ?></h5>
-          <p><?php echo $jobroleinfo; ?></p>
-          <p><?php echo $aboutstaff; ?></p>
-          <a href="mailto:<?php echo $email ?>"><?php echo $email; ?></a><br />
-          <a href="<?php echo $linkedin; ?>"><i class="fa fa-linkedin fa-2x"></i></a>
+        <div class="large-10 medium-10 small-centered columns">
+          <div class="large-4 medium-4 columns">
+            <img class="staff-profile-images" src="<?php echo $image['url']; ?>"/>      
+          </div>
+          <div class="large-7 medium-7 columns staffinfo">
+            <h3><?php echo $staffname; ?></h3>
+            <h4><?php echo $jobtitle; ?></h4>
+            <p><?php echo $jobroleinfo; ?></p>
+            <p><?php echo $aboutstaff; ?></p>
+            <a href="mailto:<?php echo $email ?>"><?php echo $email; ?></a><br />
+            <a href="<?php echo $linkedin; ?>"><i class="fa fa-linkedin fa-2x"></i></a>
+          </div>
         </div>
       </div>
     </div>
-    <hr>
 
   <?php endwhile; ?>
 
