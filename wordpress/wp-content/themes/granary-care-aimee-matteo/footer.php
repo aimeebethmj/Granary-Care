@@ -41,13 +41,11 @@
         </div>
       </div>
     </div>
-      <div class="row">
         <div class="large-12 copyright columns">
           <div>
             &copy; <?php echo ( bloginfo("name") . " " . date("Y") ); ?>
           </div>
         </div>
-      </div>
   </div>
 
     
