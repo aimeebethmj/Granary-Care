@@ -66,7 +66,7 @@
 							<p class="call-us-today">Call us today! <a href="tel:<?php echo ot_get_option( 'telephone_number' ); ?>"><?php echo ot_get_option( 'telephone_number' ); ?></a></p>
 						</div>
 					</div>
-				<?php else: ?>
+				<?php elseif ( ! is_home()): ?>
 
 					<div class="row">
 						<div class="large-12 columns top-section">
@@ -82,7 +82,6 @@
 							</div>
 						</div>
 					</div>
-
 				<?php endif; ?>
 
 				<!-- nav -->
@@ -189,7 +188,7 @@
 			</div> -->
 			
 			<!-- GIANT LOGO (only certain pages) -->
-		<?php if( is_home() ) : ?>
+		<?php if( is_home()): ?>
 
 			<div class="logo-giant"></div>
 
