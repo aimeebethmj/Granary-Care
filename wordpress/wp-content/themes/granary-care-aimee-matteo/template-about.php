@@ -21,7 +21,7 @@ get_header(); ?>
 
 
 <!-- MAIN IMAGE -->
-<div class="full-width content-area main-image-section">
+<!-- <div class="full-width content-area main-image-section">
 	<div class="row">
 	    <div class="large-12 columns main-page-image">
 	    	<a href="<?php echo site_url(); ?>/team">
@@ -29,42 +29,30 @@ get_header(); ?>
 	        </a>
 	    </div>
 	</div>
-</div>
+</div> -->
 
 <!-- COMPANY SUMMARY -->
-<div class="full-width content-area page-summary1">
+<div class="full-width content-area">
     <div class="row">
-        <div class="large-10 large-centered columns">
-        	<?php the_content(); ?>
+        <div class="large-10 medium-10 small-centered columns">
+        	<h1><?php echo get_the_title(); ?></h1>
+        </div>
+        <div class="large-8 medium-8 small-centered columns">
+            <?php the_content();?>
+        
+            <a class="general-link" href="<?php echo site_url(); ?>/team">Meet our team!</a>
         </div>
     </div>
 </div>
 
-<div class="full-width content-area page-summary2">
+<div class="full-width content-area social-blurb">
     <div class="row">
-        <div class="large-10 large-centered columns">
-        	<?php echo get_field('about_page_summary_1');
-        	?>
-        </div>
-    </div>
-</div>
-
-<div class="full-width content-area page-summary3">
-    <div class="row">
-        <div class="large-10 large-centered columns">
-        	<?php echo get_field('about_page_summary_2');
-        	?>
-        </div>
-    </div>
-</div>
-
-<div class="full-width content-area page-summary2">
-    <div class="row">
-        <div class="large-10 large-centered columns">
+        <div class="large-10 medium-10 small-centered columns">
         	<?php echo get_field('about_social_responsibility_blurb');
         	?>
-        	<a class="small radius button" href="<?php echo site_url(); ?>/social-responsibility">Read more about it here</a>
+        	<a class="general-link" href="<?php echo site_url(); ?>/social-responsibility">Read more about it here</a>
         </div>
+        <div class="large-10 small-centered columns heart-mark"></div>
     </div>
 </div>
 
