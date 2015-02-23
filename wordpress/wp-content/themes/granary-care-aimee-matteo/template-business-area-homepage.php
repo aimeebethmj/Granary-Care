@@ -191,7 +191,9 @@ if( !empty($businessPanels) ):
 <div class="full-width content-area testimonial-large">
   <div class="row">
     <div class="large-10 medium-10 small-centered columns">
-      <a href="#"><h3><i><q><?php echo get_field('testimonial');?></i></q></h3></a>
+      <a href="<?php echo site_url(); ?>/testimonials">
+        <h3><i><q><?php echo get_field('testimonial');?></i></q></h3>
+      </a>
     </div>
   </div>
 </div>
