@@ -132,6 +132,11 @@ p
         font-weight: 300;
     }
 
+  .footer-area li
+  {
+  	font-weight: 300;
+  }
+
   .footer-area .copyright
   {
   	text-align: center;

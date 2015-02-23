@@ -172,14 +172,25 @@ h1, h2, h3, h4, h5, h6
 
 }
 
+
+/* social responsibility blurb */
+
+.social-blurb
+{
+	background-color: #F9F0E1;
+}
+
 /* footer */
-.footer-area
+.footer-area,
+.footer-area .copyright
 {
 	background-color: #131342;
 	color: #FCFBF7 ;	
 }
 
-.footer-area h2, .footer-area h3
+.footer-area h2, 
+.footer-area h3,
+.footer-area a
 {
 	color: #FCFBF7 ;
 }
