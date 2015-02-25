@@ -1,9 +1,36 @@
 /*
 
-	#FCFBF7 almost white
-	#131342 dark blue
+	OFF-WHITE BACKGROUND
+	#FCFBF7
+	rgba(252, 251, 247, 1)
+
+	CREAM
+	#F9F0E1
+	rgba(249, 240, 225, 1)
+
+	DARK BLUE
+	#131342
+	rgba(19, 19, 66, 1)
+
+	YELLOW
+	#FFAD06
+	rgba(255, 173, 6, 1)
+
+	ORANGE
+	#FF5426
+	rgba(255,84, 38, 1)
+
+	GREEN
+	#76C2A1
+	rgba(118, 194, 161, 1)
+
+	GREY
+	#7F7E8E
+	rgba(127, 126, 142, 1)
+	
 
 	http://yolijn.com/convert-rgba-to-rgb
+
 
 */
 
@@ -18,179 +45,234 @@ body
 
 /* override Foundation */
 
-h1, h2, h3, h4, h5, h6
-{
-	color: #131342; 
-}
+	h1, h2, h3, h4, h5, h6
+	{
+		color: #131342; 
+	}
 
 /* navigation */
-.general .nav-wrap, 
-.granarykids .nav-wrap,
-.general .top-bar-section ul li,
-.granarykids .top-bar-section ul li
-{
-    background-color: rgba(255, 236, 198, 1);
-}
 
-.nannyagency .nav-wrap,
-.nannyagency .top-bar-section ul li
-{
-	background-color: rgba(255,216, 205, 1);
-} 
+	.general .nav-wrap, 
+	.granarykids .nav-wrap,
+	.general .top-bar-section ul li,
+	.granarykids .top-bar-section ul li
+	{
+	    background-color: rgba(255, 236, 198, 1);
+	}
 
-.motherandbaby .nav-wrap,
-.motherandbaby .top-bar-section ul li
-{
-	background-color: rgba(223,241,233, 1);
-}
+	.nannyagency .nav-wrap,
+	.nannyagency .top-bar-section ul li
+	{
+		background-color: rgba(255,216, 205, 1);
+	} 
 
-.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button),
-.top-bar-section ul li:hover:not(.has-form) > a
-{
-	color: inherit;
-	background: transparent;
-}
+	.motherandbaby .nav-wrap,
+	.motherandbaby .top-bar-section ul li
+	{
+		background-color: rgba(223,241,233, 1);
+	}
+
+	.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button),
+	.top-bar-section ul li:hover:not(.has-form) > a
+	{
+		color: inherit;
+		background: transparent;
+	}
 
 
 
-.top-section .call-us-today a
-{
-    color: #FCFBF7;
-}
+	.top-section .call-us-today a
+	{
+	    color: #FCFBF7;
+	}
 
-.call-us-today
-{
-    color: #FCFBF7;
-}
+	.call-us-today
+	{
+	    color: #FCFBF7;
+	}
 
-.general .top-section, 
-.granarykids .top-section,
-.general .top-bar-section li:not(.has-form) a:not(.button):hover,
-.granarykids .top-bar-section li:not(.has-form) a:not(.button):hover,
-.general .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button),
-.granarykids .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button)
-{
-	background-color: rgba(255,173, 6, 1);
-}
+	.general .top-section, 
+	.granarykids .top-section,
+	.general .top-bar-section li:not(.has-form) a:not(.button):hover,
+	.granarykids .top-bar-section li:not(.has-form) a:not(.button):hover,
+	.general .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button),
+	.granarykids .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button)
+	{
+		background-color: rgba(255,173, 6, 1);
+	}
 
-.nannyagency .top-section,
-.nannyagency .top-bar-section li:not(.has-form) a:not(.button):hover,
-.nannyagency .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button)
-{
-	background-color: rgba(255,84, 38, 1);
-}
+	.nannyagency .top-section,
+	.nannyagency .top-bar-section li:not(.has-form) a:not(.button):hover,
+	.nannyagency .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button)
+	{
+		background-color: rgba(255,84, 38, 1);
+	}
 
-.motherandbaby .top-section,
-.motherandbaby .top-bar-section li:not(.has-form) a:not(.button):hover,
-.motherandbaby .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button)
-{
-	background-color: rgba(118,194,161, 1);
-}
+	.motherandbaby .top-section,
+	.motherandbaby .top-bar-section li:not(.has-form) a:not(.button):hover,
+	.motherandbaby .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button)
+	{
+		background-color: rgba(118,194,161, 1);
+	}
 
-.top-bar-section ul.top-level > li 
-{
-	border-right: solid 1px rgba(19,19,66,.1);
-}
+	.top-bar-section ul.top-level > li 
+	{
+		border-right: solid 1px rgba(19,19,66,.1);
+	}
 
-.top-bar-section li:not(.has-form) a
-{
-    color: #131342;
-}
+	.top-bar-section li:not(.has-form) a
+	{
+	    color: #131342;
+	}
 
- 	/* little arrow next to dropdown items */
+	/* little arrow next to dropdown items */
+
     .top-bar-section .has-dropdown > a:after
     {
         border-color: rgba(19,19,66, 0.3) transparent transparent transparent;
     }
 
+/* banner statement */
+	
+	.banner-statement h2
+	{
+		color:	rgba(127, 126, 142, 1)
+
+;
+	}
+
+/* links */
+
+	a.general-link
+	{
+		color: #131342;
+	}
+
 /* hr and a colours home */
-.yellow hr
-{
-	background-color: rgba(255,173, 6, 1);
-}
 
-.yellow a
-{
-	color: rgba(255,173, 6, 1);
-}
+	hr,
+	.yellow hr
+	{
+		background-color: rgba(255,173, 6, 1);
+	}
 
-.orange hr
-{
-	background-color: rgba(255,84, 38, 1);
-}
+	.yellow a,
+	.testimonial.yellow h3
+	{
+		color: rgba(255,173, 6, 1);
+	}
 
-.orange a 
-{
-	color: rgba(255,84, 38, 1);
-}
+	.orange hr
+	{
+		background-color: rgba(255,84, 38, 1);
+	}
 
-.green hr
-{
-	background-color: rgba(118,194,161, 1);
-}
+	.orange a,
+	.testimonial.orange h3
+	{
+		color: rgba(255,84, 38, 1);
+	}
 
-.green a 
-{
-	color: rgba(118,194,161, 1);
-}
+	.green hr
+	{
+		background-color: rgba(118,194,161, 1);
+	}
 
-.blue hr
-{
-	background-color: rgba(19, 19, 66, .7);
-}
+	.green a,
+	.testimonial.green h3 
+	{
+		color: rgba(118,194,161, 1);
+	}
 
-.blue a
-{
-	color: rgba(19, 19, 66, .7);
-}
+	.blue hr
+	{
+		background-color: rgba(19, 19, 66, .7);
+	}
+
+	.blue a
+	{
+		color: rgba(19, 19, 66, .7);
+	}
 
 /* buttons */
 
-.nannyagency .buttons-container a.firstbutton
-{
-	background: url('../images/orange-paint-texture.png') no-repeat;
-	background-position: center;
-}
+	.nannyagency .buttons-container a.firstbutton
+	{
+		background: url('../images/orange-paint-texture.png') no-repeat;
+		background-position: center;
+	}
 
-.motherandbaby .buttons-container a.firstbutton
-{
-	background-color: rgba(118,194,161, 1);
-	border-style: none;
-}
+	.motherandbaby .buttons-container a.firstbutton
+	{
+		background-color: rgba(118,194,161, 1);
+		border-style: none;
+	}
 
-.nannyagency .secondbutton
-{
-	background: url('../images/yellow-paint-texture.png') no-repeat;
-	background-position: center;
-	color: rgba(19, 19, 66, .7);
-}
+	.nannyagency a.secondbutton,
+	.granarykids .buttons-container a.main-button
+	{
+		background: url('../images/yellow-paint-texture.png') no-repeat;
+		background-position: center;
+		color: rgba(19, 19, 66, .7);
+	}
 
-.motherandbaby .buttons-container a.secondbutton
-{
-	background-color: rgba(255,173, 6, 1);
-	border-style: none;
+	.motherandbaby .buttons-container a.secondbutton
+	{
+		background-color: rgba(255,173, 6, 1);
+		border-style: none;
 
-}
+	}
 
 
 /* social responsibility blurb */
 
-.social-blurb
-{
-	background-color: #F9F0E1;
-}
+	.social-blurb
+	{
+		background-color: #F9F0E1;
+	}
 
 /* footer */
-.footer-area,
-.footer-area .copyright
-{
-	background-color: #131342;
-	color: #FCFBF7 ;	
-}
 
-.footer-area h2, 
-.footer-area h3,
-.footer-area a
-{
-	color: #FCFBF7 ;
-}
+	.footer-area,
+	.footer-area .copyright
+	{
+		background-color: #131342;
+		color: #FCFBF7 ;	
+	}
+
+	.footer-area h2, 
+	.footer-area h3,
+	.footer-area a
+	{
+		color: #FCFBF7 ;
+	}
+
+/* team page */
+
+	.staff-profile-images
+	{
+		border-color: #76C2A1;
+	}
+
+/* testimonials */
+	
+	.testimonial
+	{
+		color: rgba(19, 19, 66, .5);
+	}
+
+/* service page extra box */
+
+	.extra-info-box
+	{
+	background-color: rgba(249, 240, 225, 1);
+	}
+/* Granary Kids useful info */
+	
+	.social-panel-container:nth-of-type(odd)
+	{
+/*		background-color: rgba(249, 240, 225, 1);
+*/
+	}
+
+

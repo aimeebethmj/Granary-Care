@@ -117,7 +117,9 @@ if( !empty($businessPanels) ):
 
       <div class="large-8 medium-8 small-centered columns">
         <ul class="image-bullet">
-          <li><a href="<?php echo $buttonlink; ?>"><h3><?php echo $title; ?></h3></a></li>
+          <li>
+            <a href="<?php echo $buttonlink; ?>"><h3><?php echo $title; ?></h3></a>
+          </li>
         </ul>
       </div>
 

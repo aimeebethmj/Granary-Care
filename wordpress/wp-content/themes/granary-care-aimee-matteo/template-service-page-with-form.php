@@ -29,7 +29,7 @@ get_header(); ?>
 </div>
 
 <!-- IMAGE -->
-<div class="full-width content-area image-background">
+<!-- <div class="full-width content-area image-background">
   <div class="row">
     <div class="large-12 medium-12 small-12 columns">
       <div class="image-container">
@@ -37,14 +37,16 @@ get_header(); ?>
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- HEADING AND SUMMARY PARAGRAPHS -->
 <div class="full-width content-area page-summary3">
   <div class="row">
     <div class="large-12 medium-12 columns">      
-        <h2><?php echo get_the_title(); ?></h2>
-        <?php the_content();?> 
+        <h1><?php echo get_the_title(); ?></h1>
+    </div>
+    <div class="large-8 medium-8 small-centered columns">
+        <?php the_content();?>
     </div>
   </div>
 </div>

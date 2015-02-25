@@ -9,7 +9,9 @@ get_header(); ?>
     $categories = get_the_category(); // returns all categories assigned to a page/post as an Array
     $category = $categories[0]; // let's grab the first category in the Array (the element at index 0)
     $slug = $category->slug; // kind of self-explanatory (the slug property inside the category Object)
-
+    
+    $action1buttonlink = get_sub_field('action_button_1');
+    $action1buttonlabel = get_sub_field('action_button_1_label');
     // echo '<pre>';
     // // print_r(get_the_category());
     // print_r($category);
@@ -28,20 +30,28 @@ get_header(); ?>
 </div>
 
 <!-- SIDEBAR AND MAIN CONTENT -->
-<div class="full-width content-area">
   <div class="row">
-    <div class="large-12 medium-12 columns">
+    <div class="large-10 medium-10 small-centered columns">
       <div id="map_canvas"></div>
     </div>
   </div>
-</div>
 
       <!-- HEADING AND SUMMARY PARAGRAPHS -->
-<div class="full-width content-area page-summary3">
+
+<div class="row">
+  <div class="large-10 medium-10 small-centered columns">
+    <h2><?php echo get_the_title(); ?></h2>
+  </div>
+  <div class="large-8 medium-8 small-centered columns">
+    <?php the_content();?>
+  </div>
+</div>
+
+<!-- ACTION BUTTONS -->
+<div class="full-width content-area action-area <?php echo $slug; ?>">
   <div class="row">
-    <div class="large-12 medium-12 columns">      
-      	<h2><?php echo get_the_title(); ?></h2>
-	    <?php the_content();?>  
+    <div class="large-12 medium-12 columns buttons-container">
+      <a class="large round button main-button" href="<?php echo get_field('action_button_1'); ?>"><?php echo get_field('action_button_1_label'); ?></a>
     </div>
   </div>
 </div>
@@ -75,8 +85,7 @@ get_header(); ?>
 	    	$club_telephone = 	get_sub_field('club_telephone');
 	    	$latitude = 		get_sub_field('latitude');
 	    	$longitude = 		get_sub_field('longitude');
-	    	$action1buttonlink = get_sub_field('action_button_1');
-    		$action1buttonlabel = get_sub_field('action_button_1_label');
+	    	
     		$action2buttonlink = get_sub_field('action_button_2');
     		$action2buttonlabel = get_sub_field('action_button_2_label');
 
@@ -125,10 +134,10 @@ get_header(); ?>
 </div>
 
 <!-- ACTION BUTTONS -->
-<div class="full-width content-area action-area">
+<div class="full-width content-area action-area <?php echo $slug; ?>">
   <div class="row">
     <div class="large-12 medium-12 columns buttons-container">
-      <a class="large success round button" href="<?php echo get_field('action_button_1'); ?>"><?php echo get_field('action_button_1_label'); ?></a><a class="large success round button" href="<?php get_field(action_button_2); ?>"><?php echo get_field(action_button_2_label); ?></a>
+      <a class="large round button" href="<?php get_field(action_button_2); ?>"><?php echo get_field(action_button_2_label); ?></a>
     </div>
   </div>
 </div>

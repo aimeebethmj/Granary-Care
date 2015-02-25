@@ -62,7 +62,7 @@ get_header(); ?>
 
         <a href="<?php echo site_url(); ?>/about">More about us...</a>
 
-        <div class="heart-mark"></div>
+        <div class="heart-mark-blue"></div>
 
       </div>
       

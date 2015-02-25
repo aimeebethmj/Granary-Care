@@ -132,20 +132,31 @@
     .general-link
     {
         margin-top: 3rem;
+        text-decoration: underline;
+
     }
 
 
     .image-bullet li
     {
-      background: url('../images/red-heart-bullet.png') no-repeat;
+/*      background: url('../images/red-heart-bullet.png') no-repeat;
       background-size: contain;
-      background-position-y: center;
+      background-position: center;*/
       height: 3rem;
-      list-style: none;
       padding-left: 4rem;
     }
 
-    .heart-mark
+    .business-panel ul
+    {
+
+        list-style-image: url('../images/red-heart-bullet.png');
+
+/*        list-style: none;
+*/    }
+
+
+
+    .heart-mark-blue
     {
         background: url('../images/purple-heart-bullet2.png') no-repeat;
         background-size: contain;
@@ -154,6 +165,14 @@
         margin-top: 1.5rem;
     }
 
+    .heart-mark-green
+    {
+        background: url('../images/green-heart-bullet.png') no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 2rem;
+        margin-top: 1.5rem;
+    }
     
     
 
@@ -293,61 +312,80 @@
        
     }
 
-
-
-    .banner-statement .columns:before, .testimonial-large .columns:before
-    {
-        content: ' ';
-        background-image: url('../images/yellow-crayon-divide.png'); 
-        /*width: 100px;*/
-        height: 1rem;
-        display: block;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-    }
-
-    .banner-statement .columns:after, .testimonial-large .columns:after
-    {
-        content: ' ';
-        background-image: url('../images/yellow-crayon-divide.png'); 
-        height: 1rem;
-        display: block;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;    
-        -moz-transform: scaleY(-1);
-        -webkit-transform: scaleY(-1);
-        transform: scaleY(-1);
-        filter: flipv; /*IE*/
-    }
-
-    .banner1,
-    .granarykids
-    {
-/*    background-image: url("../images/grainfieldhigh_blur_b+w_1920.jpg");
-*/    }
-
+/* Banner message crayon dividers*/
     
+    /* yellow crayon */
 
-    .banner2,
-    .nannyagency,
-    .general
-    {
-/*    background-image: url("../images/brightskies_blur_b+w_1920.jpg");
-*/    }
+        .banner-statement.nannyagency .columns:before,
+        .banner-statement.motherandbaby .columns:before, 
+        .banner-statement.general .columns:before, 
+        .testimonial-large .columns:before
 
-   
+        {
+            content: ' ';
+            background-image: url('../images/yellow-crayon-divide.png'); 
+            /*width: 100px;*/
+            height: 1rem;
+            display: block;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
 
-    .banner3,
-    .motherandbaby
-    {
-/*    background-image: url("../images/grainfieldsun_b+w_1920.jpg");
-    background-position: top;*/
-    }
+        .banner-statement.nannyagency .columns:after, 
+        .banner-statement.motherandbaby .columns:after,
+        .banner-statement.general .columns:after,
+        .testimonial-large .columns:after
+
+        {
+            content: ' ';
+            background-image: url('../images/yellow-crayon-divide.png'); 
+            height: 1rem;
+            display: block;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;    
+            -moz-transform: scaleY(-1);
+            -webkit-transform: scaleY(-1);
+            transform: scaleY(-1);
+            filter: flipv; /*IE*/
+        }
+
+    /* red crayon */
+
+        .banner-statement.granarykids .columns:before, 
+        .testimonial-large .columns:before
+        {
+            content: ' ';
+            background-image: url('../images/red-crayon-divide.png'); 
+            /*width: 100px;*/
+            height: 1rem;
+            display: block;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        .banner-statement.granarykids .columns:after, 
+        .testimonial-large .columns:after
+        {
+            content: ' ';
+            background-image: url('../images/red-crayon-divide.png'); 
+            height: 1rem;
+            display: block;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;    
+            -moz-transform: scaleY(-1);
+            -webkit-transform: scaleY(-1);
+            transform: scaleY(-1);
+            filter: flipv; /*IE*/
+        }
 
 
 
+
+/* Large Images */
 
     .main-image-section
     {
@@ -526,7 +564,6 @@
     }
 
     .nanny-button-image,
-    .button-image
     {
         
         margin: 20px auto;
@@ -544,9 +581,21 @@
 
     }
     .nanny-button-image img,
-    .button-image img
     {
         vertical-align: baseline;
+    }
+
+    .button-image img
+    {
+        margin: 20px auto;
+        padding: 0;
+        position: relative;
+        text-align: center;
+        max-width: 50%;
+        overflow: hidden;
+        display: block; 
+        vertical-align: baseline;
+
     }
 
     .nanny-business-panel .nanny-button-image h3
@@ -562,7 +611,7 @@
         line-height: normal;
     }
 
-    .nanny-business-panel .business-panel-description
+    .nanny-business-panel .description
     {
         margin-top: 30px;
         height: 140px;
@@ -585,8 +634,20 @@
     
     .activity-business-panel .business-panel-description
     {
-        height: 160px;
+        height: 13rem;
     } 
+
+    .activity-business-panel.last.odd
+    {
+        float: none !important;
+        margin: auto;
+    }
+
+    .activity-business-panel.odd
+    {
+        clear: both;
+    }
+
 
     .nanny-business-panel a.button
     {
@@ -595,7 +656,8 @@
 
     .accreditations-container
     {
-        height: 220px;
+        height: 11rem;
+        margin-top: 4rem;
     }
 
     .accreditations-container img
@@ -617,11 +679,12 @@
     .action-area .buttons-container
     {
         text-align: center;
+        margin-bottom: 2rem;
     }
 
     .buttons-container a.button
     {
-        margin:80px 20px;
+        margin: 1rem;
         padding: 30px;
     }
 
@@ -669,7 +732,7 @@
 
     /* TESTIMONIALS PAGE*/
 
-    .bubble 
+/*    .bubble 
     {
     position: relative;
     margin: 40px 0;
@@ -681,40 +744,56 @@
     -moz-border-radius: 55px;
     border-radius: 55px;
     border: rgba(0,0,0,.1) solid 4px;
+    }*/
+
+    .bubble 
+    {
+    position: relative;
+    max-width: 100%;
+    min-height: 20rem;
+    padding: 2rem;
+    background: none;
+    -webkit-border-radius: 55px;
+    -moz-border-radius: 55px;
+    border-radius: 55px;
+    border: rgba(118, 194, 161, .4) solid 4px;
     }
+
 
     .bubble:after 
     {
     content: '';
     position: absolute;
     border-style: solid;
-    border-width: 40px 25px 0;
-    border-color: #FFFFFF transparent;
+    border-width: 34px 22px 0;
+    border-color: #FCFBF7 transparent;
     display: block;
     width: 0;
     z-index: 1;
-    bottom: -40px;
-    left: 589px;
+    bottom: -34px;
+    left: 97px;
     }
+
 
     .bubble:before 
     {
     content: '';
     position: absolute;
     border-style: solid;
-    border-width: 43px 28px 0;
-    border-color: rgba(0,0,0,.1) transparent;
+    border-width: 37px 25px 0;
+    border-color: rgba(118, 194, 161, .4) transparent;
     display: block;
     width: 0;
     z-index: 0;
-    bottom: -47px;
-    left: 586px;
+    bottom: -41px;
+    left: 94px;
     }
+
 
     .testimonial-container
     {
-        margin-top: 55px;
-        margin-bottom: 55px;
+        margin: 2rem auto;
+
 
     }
 
@@ -724,17 +803,11 @@
 
     }
 
-    .testimonial-container .testimonial
-    {
-        border-radius: 15px;
-        margin: 20px auto;
-    }
 
     /*    TIPPLES TOPPLES PAGE    */
 
     .extra-info-box
     {
-        background: rgba(0,0,0,0.05);
         border-radius: 10px;
         padding: 10px 20px;
     }
@@ -751,33 +824,29 @@
     }
 
 /* SOCIAL RESPONSIBILITY PAGE  */
-    .social-panel-description
+
+    .social-panel-description h2
     {
-        display: block;
-        /*margin-top: 50px;*/
-        
+        text-align: left;
+    }
+
+    .social-panel-description a
+    {
+        color: #131342;
     }
 
     .social-panel-container
     {
-        padding: 30px 0px;
-        margin-bottom: 40px;
-        margin-left: auto;
-        margin-right: auto;
+        padding: 3rem 0;
+
         
 
     }
 
 
-    .social-panel-container:nth-of-type(even)
-    {
-        background: rgba(0,0,0,0.1);
-        padding: 60px 0;
-    }
-
     .social-panel-container img
     {
-        margin-bottom: 30px;
+        margin: 2rem;
     }
 
     /* FORMS*/

@@ -26,7 +26,7 @@ get_header(); ?>
 <!-- INTRO PARAGRAPH IN SPEECH BUBBLE -->
 <div class="full-width content-area">
 	<div class="row">
-		<div class="large-12 medium-12 columns">
+		<div class="large-10 medium-10 small-centered columns">
 			<div class="bubble">
 				<h2><?php echo get_the_title(); ?></h2>
 				<?php the_content();?>
@@ -44,13 +44,15 @@ get_header(); ?>
   <?php while( have_rows('testimonials') ): the_row();
 
 // Vars
+      $cssClass = get_sub_field('css_class');
+
 
   ?>
 
 
 	<div class="row">
-		<div class="large-9 medium-9 small-10 small-centered columns testimonial">
-			<h4><i><q><?php echo get_sub_field('testimonial') ;?></i></q></h4>
+		<div class="large-8 medium-8 small-10 small-centered columns testimonial <?php echo $cssClass; ?>">
+			<h3><q><?php echo get_sub_field('testimonial') ;?></q></h3>
 			<p><?php echo get_sub_field('name') ;?></p>
 		</div>
 	</div>
