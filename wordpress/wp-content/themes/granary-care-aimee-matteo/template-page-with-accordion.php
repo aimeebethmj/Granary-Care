@@ -32,9 +32,12 @@ get_header(); ?>
 <!-- NANNY TYPE TABS -->
 <div class="full-width content-area page-summary3">
   <div class="row">
-    <div class="large-12 medium12 columns">
-      <h2><?php echo get_the_title(); ?></h2>
-      <?php the_content();?>
+    <div class="large-12 medium-12 columns">      
+        <h1><?php echo get_the_title(); ?></h1>
+    </div>
+    <div class="large-8 medium-8 small-centered columns">
+        <?php the_content();?>
+        <div class="heart-mark-blue"></div>
     </div>
   </div>
 </div>
@@ -43,7 +46,7 @@ get_header(); ?>
 <!-- NANNIES TABS -->
 <div class="full-width content-area page-summary1">
   <div class="row">
-    <div class="large-12 medium12 columns">      
+    <div class="large-10 medium-10 small-centered columns">      
 
       <ul class="tabs vertical" data-tab role="tablist">
 
@@ -109,10 +112,11 @@ get_header(); ?>
 </div>
 
 <!-- ACTION BUTTONS -->
-<div class="full-width content-area action-area">
+<div class="full-width content-area action-area <?php echo $slug; ?>">
   <div class="row">
     <div class="large-12 medium-12 columns buttons-container">
-      <a class="large success round button" href="<?php echo get_field('action_button_1'); ?>"><?php echo get_field('action_button_1_label'); ?></a><a class="large success round button" href="<?php get_field('action_button_2'); ?>"><?php echo get_field('action_button_2_label'); ?></a>
+      <a class="large round button firstbutton" href="<?php echo get_field('action_button_1'); ?>"><?php echo get_field('action_button_1_label'); ?></a>
+      <a class="large round button secondbutton" href="<?php get_field('action_button_2'); ?>"><?php echo get_field('action_button_2_label'); ?></a>
     </div>
   </div>
 </div>

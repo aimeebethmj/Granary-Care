@@ -97,7 +97,8 @@
     body.home .content-area a,
     .business-panel a,
     #business-blurbs a,
-    a.general-link
+    a.general-link,
+    a.alltext-link
     {
         text-align: center;
         display: block;
@@ -110,7 +111,7 @@
         float: none; 
         width: 100%; 
         height: 1px;
-        margin: 1rem 0;
+        margin: 1rem 0 3rem 0;
         border: none; 
     }
 
@@ -143,16 +144,30 @@
       background-size: contain;
       background-position: center;*/
       height: 3rem;
-      padding-left: 4rem;
+      padding-left: 2rem;
+    }
+
+    .image-bullet-container
+    {
+      background: url('../images/red-heart-bullet.png') no-repeat; 
+      background-size: contain;
+      background-position: center;
+      height: 3rem;
+      margin-top: 1.5rem; 
+    }
+
+    .image-bullet li a
+    {
+        text-align: left;
     }
 
     .business-panel ul
     {
 
-        list-style-image: url('../images/red-heart-bullet.png');
-
-/*        list-style: none;
-*/    }
+/*        list-style-image: url('../images/red-heart-bullet.png');
+*/
+        list-style: none;
+    }
 
 
 
@@ -304,12 +319,22 @@
         padding: 2rem 0;
     }
 
-/*SHARED FEATURES ACROSS PAGES*/
+/* banners */
     .banner-statement
     {
         text-align: center;
         padding: 1.5rem 0;
        
+    }
+
+    .image-banner-area img
+    {
+       margin: 1rem auto;
+    }
+
+    .image-banner-area h2
+    {
+        margin: 2rem 0 0 1.5rem;
     }
 
 /* Banner message crayon dividers*/
@@ -353,9 +378,9 @@
 
     /* red crayon */
 
-        .banner-statement.granarykids .columns:before, 
-        .testimonial-large .columns:before
-        {
+        .banner-statement.granarykids .columns:before 
+/*        .testimonial-large .columns:before
+*/        {
             content: ' ';
             background-image: url('../images/red-crayon-divide.png'); 
             /*width: 100px;*/
@@ -366,9 +391,9 @@
             background-size: contain;
         }
 
-        .banner-statement.granarykids .columns:after, 
-        .testimonial-large .columns:after
-        {
+        .banner-statement.granarykids .columns:after 
+/*        .testimonial-large .columns:after
+*/        {
             content: ' ';
             background-image: url('../images/red-crayon-divide.png'); 
             height: 1rem;
@@ -425,14 +450,7 @@
         padding: 40px 0;
     }
 
-/*     hr 
-    {
-        border: 0;
-        height: 0;
-        border-top: 1px solid rgba(0,0,0,0.1);
-        border-bottom: 1px solid rgba(255,255,255, 0.3);
-        margin: 0;
-    }*/
+
 
 /* SLICK SLIDER 
 
@@ -542,13 +560,10 @@
 /* IMAGE SECTIONS */
     .large-button-image
     {
-       margin: 20px auto;
+        margin: 3rem auto;
         padding: 0;
         position: relative;
-        text-align: center;
-        max-width: 400px;
-        max-height: 400px;
-        
+        text-align: center;    
         display: block; 
     }
 
@@ -557,11 +572,6 @@
        border-radius: 200px; 
     }
 
-    .facilities
-    {
-        margin-top: 40px;
-        margin-bottom: 50px;
-    }
 
     .nanny-button-image,
     {
@@ -634,8 +644,8 @@
     
     .activity-business-panel .business-panel-description
     {
-        height: 13rem;
-    } 
+/*        height: 13rem;
+*/    } 
 
     .activity-business-panel.last.odd
     {
@@ -679,7 +689,7 @@
     .action-area .buttons-container
     {
         text-align: center;
-        margin-bottom: 2rem;
+        margin: 2rem 0 4rem 0;
     }
 
     .buttons-container a.button
@@ -704,30 +714,25 @@
 
     /*MEET OUR NANNY PAGE*/
 
-    .nanny-profiles-container
+    .profiles-container
     {
-       margin-top: 40px;
+       margin-bottom: 3rem;
     }
 
     .nanny-profile-info
     {
         margin-top: 30px;
-        height: 360px;
-
 
     }
 
-    .nanny-profile-images
-    {
-       margin-top: 30px;
-    }
 
     .nanny-profile-images img
     {
-        border-radius: 152px;
-        max-width: 75%;
+        border-radius: 10rem;
         display: block;
-        margin: auto;
+        margin: 3rem auto;
+        border: solid 4px;
+        border-color: #FFAD06;
     }
 
     /* TESTIMONIALS PAGE*/

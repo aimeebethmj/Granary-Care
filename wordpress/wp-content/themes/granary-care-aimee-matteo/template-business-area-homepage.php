@@ -33,11 +33,14 @@ get_header(); ?>
 
 
 <!-- IMAGE -->
+
 <?php 
 
 $image = get_field('image');
 
-if( !empty($image) ):
+if(is_page('granary-kids') ): 
+
+// if( !empty($image) ):
 
 ?>
 
@@ -49,7 +52,26 @@ if( !empty($image) ):
     </div>
   </div>
 
+
+<?php elseif(is_page(array('mother-and-baby','nanny-agency') ) ): 
+
+?>
+
+<div class="full-width content-area image-banner-area">
+  <div class="row">
+    <div class="large-8 medium-8 small-centered columns">
+      <div class="large-5 medium-5 columns">
+        <img src="<?php echo $image['url']; ?>">
+      </div>
+      <div class="large-7 medium-7 columns">
+        <h2><?php echo get_field('image_banner_message') ?></h2>
+      </div>
+    </div>
+  </div>
+</div>
+
 <?php endif; ?>
+
 
 
 
@@ -115,13 +137,19 @@ if( !empty($businessPanels) ):
 
     if( in_category( 'granarykids' ) ): ?>
 
+    <div class="row">
       <div class="large-8 medium-8 small-centered columns">
-        <ul class="image-bullet">
-          <li>
-            <a href="<?php echo $buttonlink; ?>"><h3><?php echo $title; ?></h3></a>
-          </li>
-        </ul>
+        <div class="large-1 medium-1 columns image-bullet-container">
+        </div>
+        <div class="large-11 medium-11 columns">
+          <ul class="image-bullet">
+            <li>
+              <a href="<?php echo $buttonlink; ?>"><h3><?php echo $title; ?></h3></a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </div>
 
 
     <?php elseif( in_category( 'nannyagency' ) ): ?>
@@ -153,9 +181,9 @@ if( !empty($businessPanels) ):
 <?php if(is_page('mother-and-baby')): 
 
 ?>
-<div class="full-width content-area page-summary1">
+<div class="full-width content-area">
   <div class="row">
-    <div class="large-12 medium-12 columns">
+    <div class="large-8 medium-8 small-centered columns">
       <?php echo get_field('second_section');?>
     </div>
   </div>

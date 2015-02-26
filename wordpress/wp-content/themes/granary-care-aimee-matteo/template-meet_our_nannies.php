@@ -26,9 +26,11 @@ get_header(); ?>
 <!-- STAFF PROFILES GRANARY CARE -->
 <div class="full-width content-area page-summary1">
   <div class="row">
-    <div class="large-12 columns">
-   		<h2><?php echo get_the_title(); ?></h2>
-      	<?php the_content(); ?>   
+    <div class="large-10 medium-10 small-centered columns">
+   		<h1><?php echo get_the_title(); ?></h1>   
+    </div>
+    <div class="large-8 medium-8 small-centered columns">
+      <?php the_content(); ?>
     </div>
   </div>
 </div>
@@ -50,32 +52,34 @@ get_header(); ?>
 
 		  ?>
 
-<div class="full-width content-area ">
-      <div class="row nanny-profiles-container">
-      	<div class="large-8 medium-8 columns nanny-profile-info">
-	        <h4><?php echo $name; ?></h4>
-	        <h5><?php echo $nannytype; ?></h5>
-	        <h5><?php echo $location; ?></h5>
-	        <p><?php echo $aboutnanny; ?></p>
-			<a class="round button" href="<?php echo $buttonlink; ?>"><?php echo $buttonlabel; ?></a>
-        </div>
+      <div class="row profiles-container">
+      	<div class="large-10 medium-10 small-centered columns">
 
-        <div class="large-4 medium-4 columns nanny-profile-images">
-          <img src="<?php echo $image['url']; ?>"/>      
+          <div class="large-4 medium-4 columns nanny-profile-images">
+            <img src="<?php echo $image['url']; ?>"/>      
+          </div>
+
+          <div class="large-6 end columns nanny-profile-info" id="business-blurbs">
+  	        <h4><?php echo $name; ?></h4>
+  	        <h5><?php echo $nannytype; ?></h5>
+  	        <h5><?php echo $location; ?></h5>
+  	        <p><?php echo $aboutnanny; ?></p>
+  			     <!-- <a class="round button" href="<?php echo $buttonlink; ?>"><?php echo $buttonlabel; ?></a> -->
+          </div>
+
         </div>
       </div>
-</div>
-<hr>
 
 <?php endwhile; ?>
 
 		<?php endif; ?>
 
 <!-- ACTION BUTTONS -->
-<div class="full-width content-area action-area">
+<div class="full-width content-area action-area <?php echo $slug; ?>">
   <div class="row">
     <div class="large-12 medium-12 columns buttons-container">
-      <a class="large success round button" href="<?php echo get_field('action_button_1'); ?>"><?php echo get_field('action_button_1_label'); ?></a><a class="large success round button" href="<?php get_field('action_button_2'); ?>"><?php echo get_field('action_button_2_label'); ?></a>
+      <a class="large round button firstbutton" href="<?php echo get_field('action_button_1'); ?>"><?php echo get_field('action_button_1_label'); ?></a>
+      <a class="large round button secondbutton" href="<?php get_field('action_button_2'); ?>"><?php echo get_field('action_button_2_label'); ?></a>
     </div>
   </div>
 </div>

@@ -90,12 +90,15 @@ get_header(); ?>
 
     <?php endif; ?>
 
-      <div class="full-width content-area action-area <?php echo $slug; ?>">
-        <div class="row">
-          <div class="buttons-container">
+<!-- ACTION BUTTON -->
+
+    <div class="full-width content-area action-area <?php echo $slug; ?>">
+      <div class="row">
+        <div class="buttons-container">
           <a class="large round button main-button" href="<?php echo $buttonLink; ?>"><?php echo $buttonLabel; ?></a>
         </div>
       </div>
+    </div>
 
 
 				<!--      ACTIVE HOLIDAY CAMPS ONLY      -->
@@ -104,7 +107,6 @@ get_header(); ?>
 <?php if( is_page('active-holiday-camps' )): ?>
 
 <!-- ACTIVITIES PANELS -->
-<div class="full-width content-area">
   <div class="row">
     <div class="large-10 medium-10 small-centered columns">
   	   <h2><?php echo get_field('activities_section_title'); ?></h2>
@@ -153,7 +155,6 @@ get_header(); ?>
 
       </div>
   </div>
-</div>
 
 
 

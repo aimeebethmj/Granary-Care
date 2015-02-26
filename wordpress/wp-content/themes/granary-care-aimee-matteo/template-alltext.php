@@ -44,22 +44,24 @@ get_header(); ?>
     <div class="large-10 medium-10 small-centered columns">
       <h1><?php echo get_the_title(); ?></h1>
     </div>
-    <div class="large-8 medium-8 small-centered columns">
+    <div class="large-8 medium-8 small-centered columns <?php echo $slug; ?>">
          <?php the_content();?>
         <?php if( !empty($firstbuttonlabel) ): ?>
-          <a class="round button" href="<?php echo $firstbuttonlink; ?>"><?php echo $firstbuttonlabel; ?></a>
+          <a class="alltext-link" href="<?php echo $firstbuttonlink; ?>"><?php echo $firstbuttonlabel; ?></a>
         <?php endif; ?>
+        <hr>
     </div>
   </div>
 
 <?php if( !empty( $secondSection ) ): ?>
 <div class="full-width content-area page-summary1">
   <div class="row">
-    <div class="large-12 medium-12 columns">
+    <div class="large-8 medium-8 small-centered columns <?php echo $slug; ?>">
     	<?php echo get_field('second_section');?>
       <?php if( !empty($secondbuttonlabel) ): ?>
-        <a class="round button" href="<?php echo get_field('second_section_button'); ?>"><?php echo get_field('second_section_button_label'); ?></a>
+        <a class="alltext-link" href="<?php echo get_field('second_section_button'); ?>"><?php echo get_field('second_section_button_label'); ?></a>
       <?php endif; ?>
+      <hr/>
     </div>
   </div>
 </div>
@@ -68,11 +70,12 @@ get_header(); ?>
 <?php if( !empty( $thirdSection ) ): ?>
 <div class="full-width content-area page-summary2">
   <div class="row">
-    <div class="large-12 medium-12 columns">
+    <div class="large-8 medium-8 small-centered columns <?php echo $slug; ?>">
     	<?php echo get_field('third_section');?>
       <?php if( !empty($thirdbuttonlabel) ): ?>
-      <a class="round button" href="<?php echo get_field('third_section_button'); ?>"><?php echo get_field('third_section_button_label'); ?></a>
+      <a class="alltext-link" href="<?php echo get_field('third_section_button'); ?>"><?php echo get_field('third_section_button_label'); ?></a>
       <?php endif; ?>
+      <hr/>
     </div>
   </div>
 </div>
@@ -80,23 +83,25 @@ get_header(); ?>
 
 
 <!-- ACTION BUTTONS -->
-<div class="full-width content-area action-area">
+<div class="full-width content-area action-area <?php echo $slug; ?>">
   <div class="row">
     <div class="large-12 medium-12 columns buttons-container">
-      <a class="large success round button" href="<?php echo get_field('action_button_1'); ?>"><?php echo get_field('action_button_1_label'); ?></a>
-      <a class="large success round button" href="<?php get_field('action_button_2'); ?>"><?php echo get_field('action_button_2_label'); ?></a>
+      <a class="large round button firstbutton" href="<?php echo get_field('action_button_1'); ?>"><?php echo get_field('action_button_1_label'); ?></a>
+      <a class="large round button secondbutton" href="<?php get_field('action_button_2'); ?>"><?php echo get_field('action_button_2_label'); ?></a>
     </div>
   </div>
 </div>
 
+
 <!-- TESTIMONIAL -->
-<div class="full-width content-area testimonial-large">
-  <div class="row">
-    <div class="large-12 columns">
-      <a href="<?php echo site_url(); ?>/testimonials"><h4><i><q><?php echo get_field('testimonial'); ?></i></q></h4></a>
+
+    <div class="row testimonial-large">
+      <div class="large-10 medium-10 small-centered columns">
+        <a href="<?php echo site_url(); ?>/testimonials">
+          <h3><i><q><?php echo get_field('testimonial');?></i></q></h3>
+        </a>
+      </div>
     </div>
-  </div>
-</div>
 
 
 

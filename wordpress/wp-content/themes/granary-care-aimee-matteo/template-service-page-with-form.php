@@ -40,13 +40,14 @@ get_header(); ?>
 </div> -->
 
 <!-- HEADING AND SUMMARY PARAGRAPHS -->
-<div class="full-width content-area page-summary3">
+<div class="full-width content-area">
   <div class="row">
     <div class="large-12 medium-12 columns">      
         <h1><?php echo get_the_title(); ?></h1>
     </div>
     <div class="large-8 medium-8 small-centered columns">
         <?php the_content();?>
+        <div class="heart-mark-blue"></div>
     </div>
   </div>
 </div>
@@ -159,10 +160,11 @@ get_header(); ?>
         </div> 
     </div>
 
+<!-- BUTTON SEND -->
     <div class="row">
-        <div class="large-12 columns action-area">
+        <div class="large-12 columns action-area <?php echo $slug; ?>">
             <div class="buttons-container">
-                <button class="large success round button" type="submit">Send your application!</button>
+                <button class="large round button main-button" type="submit">Send your application!</button>
             </div>
         </div>
     </div>
