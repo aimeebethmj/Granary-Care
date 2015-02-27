@@ -58,7 +58,7 @@
 			<!-- NAVIGATION AREA -->
 			<div class="full-width navigation-area <?php echo $slug; ?>">
 				<!-- logo + phone + account buttons -->
-				<?php if( is_home()): ?>
+				<?php if( is_front_page()): ?>
 
 					<div class="row">
 						<div class="large-12 columns top-section">
@@ -66,7 +66,7 @@
 							<p class="call-us-today">Call us today! <a href="tel:<?php echo ot_get_option( 'telephone_number' ); ?>"><?php echo ot_get_option( 'telephone_number' ); ?></a></p>
 						</div>
 					</div>
-				<?php elseif ( ! is_home()): ?>
+				<?php else : ?>
 
 					<div class="row">
 						<div class="large-12 columns top-section">
@@ -188,13 +188,14 @@
 			</div> -->
 			
 			<!-- GIANT LOGO (only certain pages) -->
-		<?php if( is_home()): ?>
+		<?php if( is_front_page()): ?>
 
 			<div class="logo-giant"></div>
 
 		<?php endif; ?>
 
 		</header>
-
-
+<!-- 		
+ <?php echo ('are we home? ' . is_front_page() ); ?>
+ -->
 
