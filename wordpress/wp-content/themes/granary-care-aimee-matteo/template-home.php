@@ -24,18 +24,32 @@ get_header(); ?>
 		
 
 		// vars
-		$image = get_sub_field('carousel_image');
-		$summary = get_sub_field('carousel_summary');
-		$link = get_sub_field('carousel_link');
+		$image             = get_sub_field('carousel_image');
+    $headline          = get_sub_field('headline');
+		$summary           = get_sub_field('carousel_summary');
+		$link              = get_sub_field('carousel_link');
+    $carouselClass     = get_sub_field('css_class_carousel');
+    $businessArea      = get_sub_field('business_area');
+    $buttonlabel        = get_sub_field('button_label');
 
 		?>
-          <div>
-            <a href="<?php echo $link; ?>"><img src="<?php echo $image['url']; ?>"></a>
-            <div class="summary">           	
-          		<?php echo $summary; ?>
-          		<!-- <a class="small radius button" href="<?php echo $link; ?>">Find out more</a> -->
-          	</div>
-          	
+          <div class="<?php echo $carouselClass; ?>">
+              <div class="slider-copy-content">
+                <a href="<?php echo $link; ?>">
+                  <!-- <img src="<?php echo $image['url']; ?>"> -->
+                  <div class="business-area-logo">
+                    <h2 class="half-logo-granary">Granary</h2>
+                    <h2 class="half-logo-businessarea"><?php echo $businessArea; ?></h2>
+                  </div>
+                  <div class="summary">
+                    <h2 class="carousel-headline"><?php echo $headline; ?></h2>          	
+                		<p><?php echo $summary; ?></p>
+                		<!-- <a class="small radius button" href="<?php echo $link; ?>">Find out more</a> -->
+                	</div>
+                  <a class="small round button" href="<?php echo $link; ?>"><?php echo $buttonlabel; ?></a>
+
+                </a>
+          	 </div>
           </div>
           
 
@@ -60,7 +74,7 @@ get_header(); ?>
 
         <?php the_content(); ?>
 
-        <a href="<?php echo site_url(); ?>/about">More about us...</a>
+        <a href="<?php echo site_url(); ?>/about">More about us this way...</a>
 
         <div class="heart-mark-blue"></div>
 

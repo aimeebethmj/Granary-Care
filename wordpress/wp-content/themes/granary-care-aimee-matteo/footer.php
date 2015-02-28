@@ -67,7 +67,7 @@
 	        {
 	          var slickOptions = 
 	          {
-
+              dots: true   
 	          }
 
 	          $('.slider').slick(slickOptions);

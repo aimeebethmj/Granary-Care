@@ -152,6 +152,72 @@ body
 	}
 
 
+/* SLIDER */
+
+	.slick-prev:before, .slick-next:before
+	{
+		color: #131342;
+		opacity: .3;
+	}
+
+
+
+ /* pale background */
+
+	.slider-container .slider .granarykids
+	{
+		background-color: rgba(255, 173, 6, .15); 
+	}
+
+	.slider-container .slider .nannyagency
+	{
+		background-color: rgba(255,84, 38, .15); 
+	}
+
+	.slider-container .slider .motherandbaby
+	{
+		background-color: rgba(118, 194, 161, .15); 
+	}
+
+ /* Granary Care white logo in halves */
+
+ 	.slider .business-area-logo .half-logo-granary,
+ 	.slider .business-area-logo .half-logo-businessarea
+ 	{
+ 		color: #FCFBF7;
+ 	}
+
+ /* slider buttons */
+
+ 	.slider .granarykids a.button
+ 	{
+		background: url('../images/yellow-paint-texture.png') no-repeat;
+		background-position: center;
+		color: #131342;
+		border: solid 1px;
+		border-color: rgba(19, 19, 66, .3);
+ 	}
+
+ 	.slider .nannyagency a.button
+ 	{
+		background: url('../images/orange-paint-texture.png') no-repeat;
+		background-position: center;
+		color: #131342;
+		border: solid 1px;
+		border-color: rgba(19, 19, 66, .3);
+ 	}
+
+ 	.slider .motherandbaby a.button
+ 	{
+		background-color:  #76C2A1;
+		background-position: center;
+		color: #FCFBF7;
+		border: solid 1px;
+		border-color: rgba(19, 19, 66, .3);
+ 	}
+
+
+
 
 /* links */
 

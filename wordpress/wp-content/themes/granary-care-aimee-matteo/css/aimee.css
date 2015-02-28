@@ -51,18 +51,36 @@
         width: 10rem;
     }
     
+/* home links */
+
+    body.home .content-area a,
+    {
+        text-align: center;
+        display: block;
+        font-style: italic;
+    }
 
 /*HOMEPAGE SLIDER */
 
     body.home .slider-container
     {
-        padding-top: 50px;
+        padding: 2.5rem 0;
     }
+
+    .slider-container .slider .granarykids,
+    .slider-container .slider .nannyagency,
+    .slider-container .slider .motherandbaby
+    {
+        height: 25.5rem;
+        border-radius: .5rem;
+        overflow: hidden;
+    }
+
     .slider
 	{
 		position: relative;	
-
 	}
+
 
 	.slider img
 	{
@@ -70,19 +88,91 @@
 		overflow: hidden;
 	}
 
-    .summary p
+    .slider .business-area-logo .half-logo-granary,
+    .slider .business-area-logo .half-logo-businessarea
     {
-    	position: absolute;
-    	font-size: 20px;
-    	background-color: rgba(0,0,0,.5);
-    	color: white;
-    	margin: 0;
-    	padding: 20px;
-    	bottom: 0;
-    	top: 0;
-    	vertical-align: middle;
+        text-align: left;
+    }
+
+    .slider .summary h2,
+    .slider a .summary p
+    {
+        text-align: right;
+        margin: 0 3rem 1rem 0;
+        font-style: none;
+        color: #131342;
+    }
+
+    .slider .summary h2
+    {
+        margin-top: 1.5rem;
+    }
+
+    .slick-prev
+    {
+        left: 1rem;
+    }
+
+    .slick-next
+    {
+        right: 1rem;
+    }
+
+    ul.slick-dots
+    {
+        margin-left: 0;
+        bottom: -3.5rem;
+    }
+
+    .slider .granarykids a.button,
+    .slider .nannyagency a.button,
+    .slider .motherandbaby a.button
+    {
+        float: right;
+        padding: .75rem 1.5rem;
+        margin-right: 3rem;
 
     }
+
+
+    .slider .slider-copy-content
+    {
+        background: transparent;
+    }
+
+    .slick-active .slider-copy-content:before
+    {
+        opacity: 0;
+        transition: opacity 1s;
+
+        content:'';
+        width: 42rem;
+        height: 42rem;
+        border-radius: 21rem;
+        position: absolute;
+        z-index: -1;
+        margin-top: -6rem;
+        margin-left: -16rem;
+        margin-right: 16rem;
+        overflow: hidden;
+
+        background-color: rgba(255, 173, 6, 1);
+        background: -moz-linear-gradient(-45deg, rgba(255,173,6,1) 0%, rgba(255,172,6,0.4) 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,173,6,1)), color-stop(100%, rgba(255,172,6,0.4)));
+        background: -webkit-linear-gradient(-45deg, rgba(255,173,6,1) 0%, rgba(255,172,6,0.4) 100%);
+        background: -o-linear-gradient(-45deg, rgba(255,173,6,1) 0%, rgba(255,172,6,0.4) 100%);
+        background: -ms-linear-gradient(-45deg, rgba(255,173,6,1) 0%, rgba(255,172,6,0.4) 100%);
+        background: linear-gradient(135deg, rgba(255,173,6,1) 0%, rgba(255,172,6,0.4) 100%);
+        /*background-repeat: no-repeat;*/
+    }
+
+    .slick-cloned .slider-copy-content:before,
+    .slick-active .slider-copy-content:before
+    {
+        opacity: 1;
+    }
+
+
 
 /*HOMEPAGE ABOUT SECTION*/
     body.home h1
@@ -94,7 +184,6 @@
 /*HOMEPAGE BUSINESS PANEL*/
 
 
-    body.home .content-area a,
     .business-panel a,
     #business-blurbs a,
     a.general-link,

@@ -158,3 +158,36 @@ p
 {
 	font-weight: 300;
 }
+
+/* slider */
+
+	.slider .business-area-logo .half-logo-granary
+	{
+		font-weight: 300;
+		margin: 1.5rem 0 0 3rem;
+	}
+
+	.slider .business-area-logo .half-logo-businessarea
+	{
+		font-weight: 400;
+		margin: -.05rem 0 0 3rem;
+	}
+
+	.slider .summary p
+	{
+		font-size: 1.5rem;
+		font-weight: 300;
+	}
+
+	.slick-dots li button:before
+	{
+		font-size: .5rem;
+	}
+
+	.slider .granarykids a.button,
+	.slider .nannyagency a.button,
+	.slider .motherandbaby a.button
+	{
+		font-size: .9rem;
+
+	}
