@@ -289,6 +289,16 @@ body
 		color: rgba(19, 19, 66, .7);
 	}
 
+	.lightblue hr
+	{
+		background-color: rgba(57,198, 201, 1);
+	}
+
+	.lightblue a
+	{
+		color: rgba(57,198, 201, 1);
+	}
+
 /* buttons */
 
 	.granarykids .buttons-container a.firstbutton

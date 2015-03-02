@@ -225,6 +225,11 @@
         margin-left: 4rem;
     }
 
+    .business-panel #business-blurbs p:first-child
+    {
+        margin-top: 2.8rem;
+    }
+
     .general-link
     {
         margin-top: 3rem;

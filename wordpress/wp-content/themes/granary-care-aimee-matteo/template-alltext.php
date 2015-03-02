@@ -11,7 +11,8 @@ get_header(); ?>
     $category = $categories[0]; // let's grab the first category in the Array (the element at index 0)
     $slug = $category->slug; // kind of self-explanatory (the slug property inside the category Object)
 
-
+    $mainbuttonlink = get_field('main_action_button');
+    $mainbuttonlabel = get_field('main_action_button_label');
     $firstbuttonlink = get_field('first_section_button');
     $firstbuttonlabel = get_field('first_section_button_label');
     $secondbuttonlink = get_field('section_section_button');
@@ -52,6 +53,17 @@ get_header(); ?>
         <hr>
     </div>
   </div>
+
+  <!-- ACTION BUTTONS -->
+<?php if( !empty($mainbuttonlabel) ): ?>
+<div class="full-width content-area action-area <?php echo $slug; ?>">
+  <div class="row">
+    <div class="large-12 medium-12 columns buttons-container">
+      <a class="large round button firstbutton" href="<?php echo $mainbuttonlink; ?>"><?php echo $mainbuttonlabel; ?></a>
+    </div>
+  </div>
+</div>
+<?php endif; ?>
 
 <?php if( !empty( $secondSection ) ): ?>
 <div class="full-width content-area page-summary1">

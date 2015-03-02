@@ -58,80 +58,95 @@ get_header(); ?>
 
 <!-- CLUBS INFO -->
      
-<div class="full-width content-area page-summary3">
   <div class="row">
-    <div class="large-12 medium-12 columns">
+<!--     <div class="large-12 medium-12 columns">
       <h2><?php echo get_field('clubs_title'); ?></h2>
-    </div>
+    </div> -->
   </div>
 
-  <div class="row">
+	<div class="business-panel">
+	  <div class="row">
 
-  	<script type="text/javascript">
-  		var clubs = [] // this creates a new array, before the loop (within the loop we'll populate that array)
-  	</script>
+	  	<script type="text/javascript">
+	  		var clubs = [] // this creates a new array, before the loop (within the loop we'll populate that array)
+	  	</script>
 
-  	<?php if( have_rows('clubs') ): ?>
+	  	<?php if( have_rows('clubs') ): ?>
 
-	  	<?php while( have_rows('clubs') ): the_row();
+		  	<?php while( have_rows('clubs') ): the_row();
 
-	    	// Vars
-	    	$image = 			get_sub_field('image');
-	    	$school_name = 		get_sub_field('school_name');
-	    	$location = 		get_sub_field('location');
-	    	$sessions = 		get_sub_field('sessions');
-	    	$opening_times = 	get_sub_field('opening_times');
-	    	$play_leader = 		get_sub_field('play_leader');
-	    	$club_telephone = 	get_sub_field('club_telephone');
-	    	$latitude = 		get_sub_field('latitude');
-	    	$longitude = 		get_sub_field('longitude');
-	    	
-    		$action2buttonlink = get_field('action_button_2');
-    		$action2buttonlabel = get_field('action_button_2_label');
+		    	// Vars
+		    	$image = 			get_sub_field('image');
+		    	$school_name = 		get_sub_field('school_name');
+		    	$location = 		get_sub_field('location');
+		    	$sessions = 		get_sub_field('sessions');
+		    	$opening_times = 	get_sub_field('opening_times');
+		    	$play_leader = 		get_sub_field('play_leader');
+		    	$club_telephone = 	get_sub_field('club_telephone');
+		    	$latitude = 		get_sub_field('latitude');
+		    	$longitude = 		get_sub_field('longitude');
+		    	$schoolLink =		get_sub_field('school_page_link');
+		    	$club_button_label= get_sub_field('club_button_label');
+		    	$cssClass = 		get_sub_field('css_class');
+		    	
+	    		$action2buttonlink = get_field('action_button_2');
+	    		$action2buttonlabel = get_field('action_button_2_label');
 
 
 
-	  	?>
+		  	?>
 
-	     <div class="large-5 medium-5 columns schoolclubsinfo">
-	      	<img src="<?php echo $image['url']; ?>">
-	        <h3><?php echo $school_name; ?></h3>
-	        <p><b>Location:</b></p>          
-	        <p><?php echo $location; ?></p>
-	        <p><b>Sessions:</b></p>
-	        <p>Breakfast and Afterschool club</p>
-	        <p><b>Opening times:</b></p>
-	        <p>8:00 - 8:50</p>
-	        <p>3:25 - 6:00</p>
-	        <p><b>Play Leader:</b></p>
-	        <p><?php echo $play_leader; ?></p>
-	        <p><b>Club Tel:</b></p>
-	        <p><a href="tel:<?php echo $club_telephone; ?>"><?php echo $club_telephone; ?></a></p>
-	        <a class="small radius button" href="#">Book a place</a><a class="small radius button" href="#">Register</a>
-	    </div>
+<!-- 		     <div class="large-5 medium-5 columns schoolclubsinfo">
+		      	<img src="<?php echo $image['url']; ?>">
+		        <h3><?php echo $school_name; ?></h3>
+		        <p><b>Location:</b></p>          
+		        <p><?php echo $location; ?></p>
+		        <p><b>Sessions:</b></p>
+		        <p>Breakfast and Afterschool club</p>
+		        <p><b>Opening times:</b></p>
+		        <p>8:00 - 8:50</p>
+		        <p>3:25 - 6:00</p>
+		        <p><b>Play Leader:</b></p>
+		        <p><?php echo $play_leader; ?></p>
+		        <p><b>Club Tel:</b></p>
+		        <p><a href="tel:<?php echo $club_telephone; ?>"><?php echo $club_telephone; ?></a></p>
+		        <a class="small radius button" href="#">Book a place</a><a class="small radius button" href="#">Register</a>
+		    </div> -->
 
-	    <script type="text/javascript">
+		    <div class="large-4 columns">
+		    	<a href="<?php echo $schoolLink; ?>"><h2><?php echo $school_name; ?></h2></a>
+		    </div>
+		    <div class="large-6 end columns <?php echo $cssClass; ?>" id="business-blurbs">
+		    	<p><b>Location:</b></p>          
+		        <p><?php echo $location; ?></p>
+		        <p><b>Sessions:</b></p>
+		        <p><?php echo $sessions ?></p>
+		        <a href="<?php echo $schoolLink; ?>"><?php echo $club_button_label; ?></a>
+		        <hr/>
+		    </div>
 
-	    	// output some data about the club for Google Maps
-	    	// club is a JS object
-	    	var club = 
-	    	{
-	    		lat: <?php echo $latitude; ?>,
-	    		lng: <?php echo $longitude; ?>,
-	    		location: '<?php echo $location; ?>',
-	    		name: '<?php echo $school_name; ?>'
-	    	}
+		    <script type="text/javascript">
 
-	    	clubs.push(club) // this will add the club object to our clubs array
+		    	// output some data about the club for Google Maps
+		    	// club is a JS object
+		    	var club = 
+		    	{
+		    		lat: <?php echo $latitude; ?>,
+		    		lng: <?php echo $longitude; ?>,
+		    		location: '<?php echo $location; ?>',
+		    		name: '<?php echo $school_name; ?>'
+		    	}
 
-	    </script>
+		    	clubs.push(club) // this will add the club object to our clubs array
 
-	  	<?php endwhile; ?>
+		    </script>
 
-	<?php endif; ?>
+		  	<?php endwhile; ?>
 
-  </div>    
-</div>
+		<?php endif; ?>
+
+	  </div>    
+	</div>
 
 <!-- ACTION BUTTONS -->
 <div class="full-width content-area action-area <?php echo $slug; ?>">
@@ -141,6 +156,46 @@ get_header(); ?>
     </div>
   </div>
 </div>
+
+
+<?php 
+$accreditations = get_field('accreditations');
+
+if( !empty($accreditations) ): 
+
+?>
+
+<!-- ACCREDITATIONS- NANNY AGENCY ONLY-->
+<div class="full-width content-area accreditations-container">
+  <div class="row">
+    <div class="large-10 medium-10 small-centered columns">
+
+    
+    <?php if( have_rows('accreditations') ): ?>
+
+    <?php while( have_rows('accreditations') ): the_row();
+
+      $logo = get_sub_field('logo');
+      $logoLink = get_sub_field('logo_link');
+
+    ?>
+
+      <div class="large-3 medium-3 small-3 columns">
+        <a href="<?php echo $logoLink; ?>"><img src="<?php echo $logo['url']; ?>"></a>
+      </div>
+    
+
+    <?php endwhile; ?>
+
+  <?php endif; ?>
+
+    </div>
+  </div>
+</div>
+
+<?php endif; ?>
+
+
 
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script>

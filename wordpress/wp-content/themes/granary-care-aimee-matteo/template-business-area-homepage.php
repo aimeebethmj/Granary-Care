@@ -196,7 +196,7 @@ if( !empty($businessPanels) ):
     <div class="full-width content-area action-area <?php echo $slug; ?>">
       <div class="row">
         <div class="buttons-container">
-          <a class="large round button firstbutton" href="<?php echo $mainButtonLink; ?>"><?php echo $mainButtonLabel; ?></a>
+          <a class="large round button main-button" href="<?php echo $mainButtonLink; ?>"><?php echo $mainButtonLabel; ?></a>
         </div>
       </div>
     </div>

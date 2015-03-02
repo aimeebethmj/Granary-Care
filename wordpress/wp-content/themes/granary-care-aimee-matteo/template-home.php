@@ -141,7 +141,7 @@ get_header(); ?>
         <div class="large-10 small-centered columns">
         	<?php echo get_field('home_social_responsibility');
             	?>
-          <a href="<?php echo site_url(); ?>/social-responsibility ?>">Learn more about this...</a>
+          <a class="general-link" href="<?php echo site_url(); ?>/social-responsibility ?>">Learn more about this...</a>
         </div>
         <div class="large-10 small-centered columns heart-mark">
         </div>

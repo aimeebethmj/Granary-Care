@@ -41,7 +41,7 @@ get_header(); ?>
   <div class="full-width content-area action-area <?php echo $slug; ?>">
     <div class="row">
       <div class="buttons-container">
-      <a class="large round button main-button" href="<?php echo get_field('action_button_1'); ?>"><?php echo get_field('action_button_1_label'); ?></a>
+      <a class="large round button firstbutton" href="<?php echo get_field('action_button_1'); ?>"><?php echo get_field('action_button_1_label'); ?></a>
       </div>
     </div>
   </div>
