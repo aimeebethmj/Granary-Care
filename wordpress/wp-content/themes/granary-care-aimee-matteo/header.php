@@ -106,6 +106,7 @@
 										<ul class="dropdown">
 											<li><a href="<?php echo site_url(); ?>/team">Team</a></li>
 											<li><a href="<?php echo site_url(); ?>/testimonials">Testimonials</a></li>
+											<li><a href="<?php echo site_url(); ?>/social-responsibility">Social Responsibility</a></li>
 										</ul>
 									</li>
 
@@ -141,13 +142,13 @@
 										</ul>
 									</li>
 
-									<li class="has-dropdown"><a href="<?php echo site_url(); ?>/mother-and-baby">Mother and Baby</a>
+									<li class="has-dropdown"><a href="<?php echo site_url(); ?>/mother-and-baby">Mother &amp; Baby</a>
 										<ul class="dropdown">
-											<li><a href="<?php echo site_url(); ?>/mother-and-baby-services">Mother and Baby Services</a></li>
+											<li><a href="<?php echo site_url(); ?>/mother-and-baby-services">Mother &amp; Baby Services</a></li>
 											<li><a href="<?php echo site_url(); ?>/referral-process">Referral Process</a></li>
 											<li><a href="<?php echo site_url(); ?>/facilities">Facilities</a></li>
 											<li><a href="<?php echo site_url(); ?>/documents">Documents</a></li>
-											<li><a href="<?php echo site_url(); ?>/work-with-mother-and-baby">Work with Mother and Baby</a></li>
+											<li><a href="<?php echo site_url(); ?>/work-with-mother-and-baby">Work with Mother &amp; Baby</a></li>
 										</ul>
 									</li>
 
@@ -157,7 +158,7 @@
 										<ul class="dropdown">
 											<li><a href="<?php echo site_url(); ?>/work-with-granary-kids">Granary Kids</a></li>
 											<li><a href="<?php echo site_url(); ?>/nannies">Granary Nanny Agency</a></li>
-											<li><a href="<?php echo site_url(); ?>/work-with-mother-and-baby">Mother and Baby</a></li>
+											<li><a href="<?php echo site_url(); ?>/work-with-mother-and-baby">Granary Mother &amp; Baby</a></li>
 										</ul>
 									</li>
 

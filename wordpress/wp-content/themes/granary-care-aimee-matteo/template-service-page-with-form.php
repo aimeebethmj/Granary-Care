@@ -10,6 +10,8 @@ get_header(); ?>
     $category = $categories[0]; // let's grab the first category in the Array (the element at index 0)
     $slug = $category->slug; // kind of self-explanatory (the slug property inside the category Object)
     $image = get_field('image');
+    $mainButtonLink = get_field('main_action_button');
+     $mainButtonLabel = get_field('main_action_button_label');
 
 
     // echo '<pre>';
@@ -47,10 +49,19 @@ get_header(); ?>
     </div>
     <div class="large-8 medium-8 small-centered columns">
         <?php the_content();?>
-        <div class="heart-mark-blue"></div>
+        <div class="heart-mark-yellow"></div>
     </div>
   </div>
 </div>
+
+<!--  ACTION BUTTON -->
+    <div class="row">
+        <div class="large-12 columns action-area <?php echo $slug; ?>">
+            <div class="buttons-container">
+                <a class="large round button firstbutton" href="<?php echo $mainButtonLink; ?>"><?php echo $mainButtonLabel; ?></a>
+            </div>
+        </div>
+    </div>
 
 <!-- FORM -->
 

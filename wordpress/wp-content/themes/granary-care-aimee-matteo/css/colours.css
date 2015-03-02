@@ -12,6 +12,10 @@
 	#131342
 	rgba(19, 19, 66, 1)
 
+	BRIGHT BLUE
+	#39C6C9
+	rgba(57,198, 201, 1)
+
 	YELLOW
 	#FFAD06
 	rgba(255, 173, 6, 1)
@@ -52,25 +56,30 @@ body
 
 /* navigation */
 
-	.general .nav-wrap, 
-	.granarykids .nav-wrap,
-	.general .top-bar-section ul li,
-	.granarykids .top-bar-section ul li
-	{
-	    background-color: rgba(255, 236, 198, 1);
-	}
+	/* pale drop-down colours */
+		.general .nav-wrap,
+		.general .top-bar-section ul li
+		{
+			background-color: rgba(253, 233, 192, 1);
+		}
+		 
+		.granarykids .nav-wrap,
+		.granarykids .top-bar-section ul li
+		{
+		    background-color: rgba(207, 239, 236, 1);
+		}
 
-	.nannyagency .nav-wrap,
-	.nannyagency .top-bar-section ul li
-	{
-		background-color: rgba(255,216, 205, 1);
-	} 
+		.nannyagency .nav-wrap,
+		.nannyagency .top-bar-section ul li
+		{
+			background-color: rgba(255,216, 205, 1);
+		} 
 
-	.motherandbaby .nav-wrap,
-	.motherandbaby .top-bar-section ul li
-	{
-		background-color: rgba(223,241,233, 1);
-	}
+		.motherandbaby .nav-wrap,
+		.motherandbaby .top-bar-section ul li
+		{
+			background-color: rgba(223,241,233, 1);
+		}
 
 	.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button),
 	.top-bar-section ul li:hover:not(.has-form) > a
@@ -91,14 +100,20 @@ body
 	    color: #FCFBF7;
 	}
 
-	.general .top-section, 
-	.granarykids .top-section,
+
+	.general .top-section,
 	.general .top-bar-section li:not(.has-form) a:not(.button):hover,
-	.granarykids .top-bar-section li:not(.has-form) a:not(.button):hover,
-	.general .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button),
-	.granarykids .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button)
+	.general .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button)
 	{
 		background-color: rgba(255,173, 6, 1);
+	}
+
+	.granarykids .top-section,
+	.granarykids .top-bar-section li:not(.has-form) a:not(.button):hover,
+	.granarykids .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button)
+	{
+	
+		background-color: rgba(57,198, 201, 1);
 	}
 
 	.nannyagency .top-section,
@@ -275,6 +290,13 @@ body
 	}
 
 /* buttons */
+
+	.granarykids .buttons-container a.firstbutton
+	{
+		background: url('../images/blue-paint-texture.png') no-repeat;
+		background-position: center;
+		color: rgba(19, 19, 66, 1);	
+	}
 
 	.nannyagency .buttons-container a.firstbutton
 	{

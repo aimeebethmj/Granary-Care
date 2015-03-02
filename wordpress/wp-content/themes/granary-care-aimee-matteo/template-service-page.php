@@ -13,6 +13,8 @@ get_header(); ?>
     $extraInfo = get_field('extra_info');
     $buttonLink = get_field('button_link');
     $buttonLabel = get_field('button_label');
+    $buttonLink2 = get_field('second_button_link');
+    $buttonLabel2 = get_field('second_button_label');
 
     // echo '<pre>';
     // // print_r(get_the_category());
@@ -170,13 +172,14 @@ get_header(); ?>
   <div class="row">
     <div class="buttons-container">
       <a class="large round button main-button" href="<?php echo $buttonLink; ?>"><?php echo $buttonLabel; ?></a>
+      <a class="large round button firstbutton" href="<?php echo $buttonLink2; ?>"><?php echo $buttonLabel2; ?></a>
     </div>
   </div>
 </div>
 
 <?php endif; ?>
 
-<hr>
+
 
 <?php 
 $accreditations = get_field('accreditations');
@@ -185,6 +188,8 @@ if( !empty($accreditations) ):
 
 ?>
 <!-- ACCREDITATIONS -->
+<hr>
+
 <div class="full-width content-area accreditations-container">
   <div class="row">
 

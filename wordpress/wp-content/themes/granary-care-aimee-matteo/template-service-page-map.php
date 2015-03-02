@@ -86,8 +86,8 @@ get_header(); ?>
 	    	$latitude = 		get_sub_field('latitude');
 	    	$longitude = 		get_sub_field('longitude');
 	    	
-    		$action2buttonlink = get_sub_field('action_button_2');
-    		$action2buttonlabel = get_sub_field('action_button_2_label');
+    		$action2buttonlink = get_field('action_button_2');
+    		$action2buttonlabel = get_field('action_button_2_label');
 
 
 
@@ -137,7 +137,7 @@ get_header(); ?>
 <div class="full-width content-area action-area <?php echo $slug; ?>">
   <div class="row">
     <div class="large-12 medium-12 columns buttons-container">
-      <a class="large round button" href="<?php get_field(action_button_2); ?>"><?php echo get_field(action_button_2_label); ?></a>
+      <a class="large round button firstbutton" href="<?php echo $action2buttonlink; ?>"><?php echo $action2buttonlabel; ?></a>
     </div>
   </div>
 </div>

@@ -37,7 +37,7 @@ get_header(); ?>
 
 <div class="row">
     <div class="large-10 medium-10 small-centered columns">
-  <div class="heart-mark-green"></div>
+  <div class="heart-mark-yellow"></div>
 
     		<?php if( have_rows('text_box') ): ?>
 

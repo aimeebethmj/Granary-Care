@@ -36,7 +36,9 @@ get_header(); ?>
 
 <?php 
 
-$image = get_field('image');
+  $image = get_field('image');
+  $mainButtonLink = get_field('main_action_button');
+  $mainButtonLabel = get_field('main_action_button_label');
 
 if(is_page('granary-kids') ): 
 
@@ -85,6 +87,19 @@ if(is_page('granary-kids') ):
   </div>
 </div>
 
+<!-- ACTION BUTTON -->
+
+  <?php if( is_page (array('nanny-agency','mother-and-baby') ) ): ?>
+
+    <div class="full-width content-area action-area <?php echo $slug; ?>">
+      <div class="row">
+        <div class="buttons-container">
+          <a class="large round button firstbutton" href="<?php echo $mainButtonLink; ?>"><?php echo $mainButtonLabel; ?></a>
+        </div>
+      </div>
+    </div>
+
+  <?php endif; ?>
 
 <!--   <div class="large-3 medium-3 pull-9 columns">
     <ul class="side-nav">
@@ -175,6 +190,18 @@ if( !empty($businessPanels) ):
     </div>
 
 <?php endif; ?>
+
+  <?php if( is_page ('granary-kids') ): ?>
+
+    <div class="full-width content-area action-area <?php echo $slug; ?>">
+      <div class="row">
+        <div class="buttons-container">
+          <a class="large round button firstbutton" href="<?php echo $mainButtonLink; ?>"><?php echo $mainButtonLabel; ?></a>
+        </div>
+      </div>
+    </div>
+
+  <?php endif; ?>
 
 <!-- SECOND SUMMARY SECTION MOTHER AND BABY ONLY -->
 

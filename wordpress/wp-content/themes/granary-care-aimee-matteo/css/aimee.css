@@ -67,13 +67,12 @@
         padding: 2.5rem 0;
     }
 
-    .slider-container .slider .granarykids,
-    .slider-container .slider .nannyagency,
-    .slider-container .slider .motherandbaby
+    .slider-container .slider .slick-slide
     {
         height: 25.5rem;
         border-radius: .5rem;
         overflow: hidden;
+        position: relative;
     }
 
     .slider
@@ -131,20 +130,10 @@
         float: right;
         padding: .75rem 1.5rem;
         margin-right: 3rem;
-
     }
 
-
-    .slider .slider-copy-content
-    {
-        background: transparent;
-    }
-
-    .slick-active .slider-copy-content:before
-    {
-        opacity: 0;
-        transition: opacity 1s;
-
+    .slick-slide .slider-copy-content:before
+    { 
         content:'';
         width: 42rem;
         height: 42rem;
@@ -155,7 +144,10 @@
         margin-left: -16rem;
         margin-right: 16rem;
         overflow: hidden;
+    }
 
+    .granarykids.slick-slide .slider-copy-content:before
+    {
         background-color: rgba(255, 173, 6, 1);
         background: -moz-linear-gradient(-45deg, rgba(255,173,6,1) 0%, rgba(255,172,6,0.4) 100%);
         background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,173,6,1)), color-stop(100%, rgba(255,172,6,0.4)));
@@ -163,15 +155,29 @@
         background: -o-linear-gradient(-45deg, rgba(255,173,6,1) 0%, rgba(255,172,6,0.4) 100%);
         background: -ms-linear-gradient(-45deg, rgba(255,173,6,1) 0%, rgba(255,172,6,0.4) 100%);
         background: linear-gradient(135deg, rgba(255,173,6,1) 0%, rgba(255,172,6,0.4) 100%);
-        /*background-repeat: no-repeat;*/
     }
 
-    .slick-cloned .slider-copy-content:before,
-    .slick-active .slider-copy-content:before
+    .nannyagency.slick-slide .slider-copy-content:before
     {
-        opacity: 1;
+        background-color: rgba(255,84, 38, 1);
+        background: -moz-linear-gradient(-45deg, rgba(255,84, 38,1) 0%, rgba(255,84, 38,0.4) 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,84, 38,1)), color-stop(100%, rgba(255,84, 38,0.4)));
+        background: -webkit-linear-gradient(-45deg, rgba(255,84, 38,1) 0%, rgba(255,84, 38,0.4) 100%);
+        background: -o-linear-gradient(-45deg, rgba(255,84, 38,1) 0%, rgba(255,84, 38,0.4) 100%);
+        background: -ms-linear-gradient(-45deg, rgba(255,84, 38,1) 0%, rgba(255,84, 38,0.4) 100%);
+        background: linear-gradient(135deg, rgba(255,84, 38,1) 0%, rgba(255,84, 38,0.4) 100%);  
     }
 
+    .motherandbaby.slick-slide .slider-copy-content:before
+    {
+        background-color: rgba(118, 194, 161, 1);
+        background: -moz-linear-gradient(-45deg, rgba(118, 194, 161,1) 0%, rgba(118, 194, 161,0.4) 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(118, 194, 161,1)), color-stop(100%, rgba(118, 194, 161,0.4)));
+        background: -webkit-linear-gradient(-45deg, rgba(118, 194, 161,1) 0%, rgba(118, 194, 161,0.4) 100%);
+        background: -o-linear-gradient(-45deg, rgba(118, 194, 161,1) 0%, rgba(118, 194, 161,0.4) 100%);
+        background: -ms-linear-gradient(-45deg, rgba(118, 194, 161,1) 0%, rgba(118, 194, 161,0.4) 100%);
+        background: linear-gradient(135deg, rgba(118, 194, 161,1) 0%, rgba(118, 194, 161,0.4) 100%);
+    }
 
 
 /*HOMEPAGE ABOUT SECTION*/
@@ -238,7 +244,7 @@
 
     .image-bullet-container
     {
-      background: url('../images/red-heart-bullet.png') no-repeat; 
+      background: url('../images/yellow-heart-bullet.png') no-repeat; 
       background-size: contain;
       background-position: center;
       height: 3rem;
@@ -272,6 +278,24 @@
     .heart-mark-green
     {
         background: url('../images/green-heart-bullet.png') no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 2rem;
+        margin-top: 1.5rem;
+    }
+
+    .heart-mark-lightblue
+    {
+        background: url('../images/blue-heart-bullet.png') no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 2rem;
+        margin-top: 1.5rem;  
+    }
+
+    .heart-mark-yellow
+    {
+        background: url('../images/yellow-heart-bullet.png') no-repeat;
         background-size: contain;
         background-position: center;
         height: 2rem;
@@ -361,6 +385,11 @@
         padding-right: 3.1rem;
     }
 
+    .top-bar-section .has-dropdown > a:after
+    {
+        top: 1.25rem;
+    }
+
 
 
 /*TESTIMONIAL SECTION*/
@@ -433,7 +462,8 @@
         .banner-statement.nannyagency .columns:before,
         .banner-statement.motherandbaby .columns:before, 
         .banner-statement.general .columns:before, 
-        .testimonial-large .columns:before
+        .testimonial-large .columns:before,
+        .banner-statement.granarykids .columns:before
 
         {
             content: ' ';
@@ -449,7 +479,8 @@
         .banner-statement.nannyagency .columns:after, 
         .banner-statement.motherandbaby .columns:after,
         .banner-statement.general .columns:after,
-        .testimonial-large .columns:after
+        .testimonial-large .columns:after,
+        .banner-statement.granarykids .columns:after
 
         {
             content: ' ';
@@ -467,7 +498,7 @@
 
     /* red crayon */
 
-        .banner-statement.granarykids .columns:before 
+       /* .banner-statement.granarykids .columns:before*/ 
 /*        .testimonial-large .columns:before
 */        {
             content: ' ';
@@ -480,7 +511,7 @@
             background-size: contain;
         }
 
-        .banner-statement.granarykids .columns:after 
+       /* .banner-statement.granarykids .columns:after*/ 
 /*        .testimonial-large .columns:after
 */        {
             content: ' ';
