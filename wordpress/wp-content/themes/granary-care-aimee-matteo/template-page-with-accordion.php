@@ -30,17 +30,15 @@ get_header(); ?>
 </div>
 
 <!-- NANNY TYPE TABS -->
-<div class="full-width content-area page-summary3">
   <div class="row">
     <div class="large-12 medium-12 columns">      
         <h1><?php echo get_the_title(); ?></h1>
     </div>
     <div class="large-8 medium-8 small-centered columns">
         <?php the_content();?>
-        <div class="heart-mark-blue"></div>
+        <div class="heart-mark-yellow"></div>
     </div>
   </div>
-</div>
 
 
 
