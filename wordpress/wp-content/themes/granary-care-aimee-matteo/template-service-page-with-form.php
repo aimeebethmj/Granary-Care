@@ -11,7 +11,8 @@ get_header(); ?>
     $slug = $category->slug; // kind of self-explanatory (the slug property inside the category Object)
     $image = get_field('image');
     $mainButtonLink = get_field('main_action_button');
-     $mainButtonLabel = get_field('main_action_button_label');
+    $mainButtonLabel = get_field('main_action_button_label');
+    $formHeading = get_field('form_heading');
 
 
     // echo '<pre>';
@@ -68,6 +69,7 @@ get_header(); ?>
 <form class="form-container" enctype="multipart/form-data">
   <div class="row">
     <div class="small-8 small-centered columns">
+      <h2><?php echo $formHeading ?></h2>
 
       <div class="row">
         <div class="small-3 columns">

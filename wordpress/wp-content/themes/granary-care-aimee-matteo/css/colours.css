@@ -248,6 +248,54 @@ body
 		border-color: rgba(19, 19, 66, .3);
  	}
 
+/* slider gradients */
+
+	    .granarycare.slick-slide .slider-copy-content:before
+    {
+        background-color: rgba(255, 173, 6, 1);
+        background: -moz-linear-gradient(-45deg, rgba(255,173,6,1) 0%, rgba(255,172,6,0.4) 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,173,6,1)), color-stop(100%, rgba(255,172,6,0.4)));
+        background: -webkit-linear-gradient(-45deg, rgba(255,173,6,1) 0%, rgba(255,172,6,0.4) 100%);
+        background: -o-linear-gradient(-45deg, rgba(255,173,6,1) 0%, rgba(255,172,6,0.4) 100%);
+        background: -ms-linear-gradient(-45deg, rgba(255,173,6,1) 0%, rgba(255,172,6,0.4) 100%);
+        background: linear-gradient(135deg, rgba(255,173,6,1) 0%, rgba(255,172,6,0.4) 100%);
+    }
+
+    .granarykids.slick-slide .slider-copy-content:before,
+    .email-container.granarykids
+    {
+        background-color: rgba(57,198, 201, 1);
+        background: -moz-linear-gradient(-45deg, rgba(57,198, 201, 1) 0%, rgba(57,198, 201,0.4) 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(57,198, 201,1)), color-stop(100%, rgba(57,198, 201,0.4)));
+        background: -webkit-linear-gradient(-45deg, rgba(57,198, 201,1) 0%, rgba(57,198, 201,0.4) 100%);
+        background: -o-linear-gradient(-45deg, rgba(57,198, 201,1) 0%, rgba(57,198, 201,0.4) 100%);
+        background: -ms-linear-gradient(-45deg, rgba(57,198, 201,1) 0%, rgba(57,198, 201,0.4) 100%);
+        background: linear-gradient(135deg, rgba(57,198, 201,1) 0%, rgba(57,198, 201,0.4) 100%);
+    }
+
+    .nannyagency.slick-slide .slider-copy-content:before,
+    .email-container.nannyagency
+    {
+        background-color: rgba(255,84, 38, 1);
+        background: -moz-linear-gradient(-45deg, rgba(255,84, 38,1) 0%, rgba(255,84, 38,0.4) 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,84, 38,1)), color-stop(100%, rgba(255,84, 38,0.4)));
+        background: -webkit-linear-gradient(-45deg, rgba(255,84, 38,1) 0%, rgba(255,84, 38,0.4) 100%);
+        background: -o-linear-gradient(-45deg, rgba(255,84, 38,1) 0%, rgba(255,84, 38,0.4) 100%);
+        background: -ms-linear-gradient(-45deg, rgba(255,84, 38,1) 0%, rgba(255,84, 38,0.4) 100%);
+        background: linear-gradient(135deg, rgba(255,84, 38,1) 0%, rgba(255,84, 38,0.4) 100%);  
+    }
+
+    .motherandbaby.slick-slide .slider-copy-content:before,
+    .email-container.motherandbaby
+    {
+        background-color: rgba(118, 194, 161, 1);
+        background: -moz-linear-gradient(-45deg, rgba(118, 194, 161,1) 0%, rgba(118, 194, 161,0.4) 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(118, 194, 161,1)), color-stop(100%, rgba(118, 194, 161,0.4)));
+        background: -webkit-linear-gradient(-45deg, rgba(118, 194, 161,1) 0%, rgba(118, 194, 161,0.4) 100%);
+        background: -o-linear-gradient(-45deg, rgba(118, 194, 161,1) 0%, rgba(118, 194, 161,0.4) 100%);
+        background: -ms-linear-gradient(-45deg, rgba(118, 194, 161,1) 0%, rgba(118, 194, 161,0.4) 100%);
+        background: linear-gradient(135deg, rgba(118, 194, 161,1) 0%, rgba(118, 194, 161,0.4) 100%);
+    }
 
 
 
@@ -430,4 +478,13 @@ body
 	{
 		background: none;
 	}
+
+/* CONTACT PAGE */
+	
+	.form-container
+	{
+		background: rgba(249, 240, 225, 1);
+		
+	}
+
 
