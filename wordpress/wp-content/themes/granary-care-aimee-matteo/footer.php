@@ -54,8 +54,26 @@
 
     <!-- load Foundation and initialise it -->
     <script src="<?php echo get_active_theme_directory() ; ?>/js/foundation/js/foundation.min.js"></script>
+    
     <script>
-      $(document).foundation();
+
+      var foundationOptions = 
+      {
+        accordion: 
+        {
+          // specify the class used for accordion panels
+          content_class: 'content',
+          // specify the class used for active (or open) accordion panels
+          active_class: 'active',
+          // allow multiple accordion panels to be active at the same time
+          multi_expand: false,
+          // allow accordion panels to be closed by clicking on their headers
+          // setting to false only closes accordion panels when another is opened
+          toggleable: true
+        }
+      }  
+
+      $(document).foundation(foundationOptions);
     </script>
     
     <?php if (is_front_page()) : ?>
