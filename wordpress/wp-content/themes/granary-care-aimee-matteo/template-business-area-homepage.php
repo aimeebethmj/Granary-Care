@@ -92,7 +92,19 @@ if(is_page('granary-kids') ):
 
 <!-- ACTION BUTTON -->
 
-  <?php if( is_page (array('nanny-agency','mother-and-baby') ) ): ?>
+  <?php if( is_page ('nanny-agency') ): ?>
+
+    <div class="full-width content-area action-area <?php echo $slug; ?>">
+      <div class="row">
+        <div class="buttons-container">
+          <a class="large round button firstbutton" href="<?php echo $mainButtonLink; ?>"><?php echo $mainButtonLabel; ?></a>
+        </div>
+      </div>
+    </div>
+
+  <?php endif; ?>
+
+    <?php if( is_page ('mother-and-baby' ) ): ?>
 
     <div class="full-width content-area action-area <?php echo $slug; ?>">
       <div class="row">
@@ -274,6 +286,7 @@ if( !empty($accreditations) ):
     <div class="large-10 medium-10 small-centered columns">
 
     
+
     <?php if( have_rows('accreditations') ): ?>
 
     <?php while( have_rows('accreditations') ): the_row();
@@ -281,16 +294,24 @@ if( !empty($accreditations) ):
       $logo = get_sub_field('logo');
       $logoLink = get_sub_field('logo_link');
 
-    ?>
+      if(is_page( 'nanny-agency')): ?>
+
+      <div class="large-3 medium-3 small-3 columns">
+        <img src="<?php echo $logo['url']; ?>">
+      </div>
+
+    <?php else: ?>
 
       <div class="large-3 medium-3 small-3 columns">
         <a href="<?php echo $logoLink; ?>"><img src="<?php echo $logo['url']; ?>"></a>
       </div>
-    
+      
+      <?php endif; ?>
 
     <?php endwhile; ?>
 
   <?php endif; ?>
+
 
     </div>
   </div>
