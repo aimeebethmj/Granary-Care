@@ -70,13 +70,13 @@ get_header(); ?>
       <div class="large-4 columns">
         <h1><?php echo get_field('about_blurb_title')?></h1>
       </div>
-      <div class="large-6 end columns" id="business-blurbs">
+      <div class="large-6 end columns yellow" id="business-blurbs">
 
         <?php the_content(); ?>
 
         <a href="<?php echo site_url(); ?>/about">More about us this way...</a>
 
-        <div class="heart-mark-blue"></div>
+        <div class="heart-mark-yellow"></div>
 
       </div>
       
