@@ -123,6 +123,7 @@
         bottom: -3.5rem;
     }
 
+    .slider .granarycare a.button,
     .slider .granarykids a.button,
     .slider .nannyagency a.button,
     .slider .motherandbaby a.button
@@ -146,7 +147,7 @@
         overflow: hidden;
     }
 
-    .granarykids.slick-slide .slider-copy-content:before
+    .granarycare.slick-slide .slider-copy-content:before
     {
         background-color: rgba(255, 173, 6, 1);
         background: -moz-linear-gradient(-45deg, rgba(255,173,6,1) 0%, rgba(255,172,6,0.4) 100%);
@@ -155,6 +156,17 @@
         background: -o-linear-gradient(-45deg, rgba(255,173,6,1) 0%, rgba(255,172,6,0.4) 100%);
         background: -ms-linear-gradient(-45deg, rgba(255,173,6,1) 0%, rgba(255,172,6,0.4) 100%);
         background: linear-gradient(135deg, rgba(255,173,6,1) 0%, rgba(255,172,6,0.4) 100%);
+    }
+
+    .granarykids.slick-slide .slider-copy-content:before
+    {
+        background-color: rgba(57,198, 201, 1);
+        background: -moz-linear-gradient(-45deg, rgba(57,198, 201, 1) 0%, rgba(57,198, 201,0.4) 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(57,198, 201,1)), color-stop(100%, rgba(57,198, 201,0.4)));
+        background: -webkit-linear-gradient(-45deg, rgba(57,198, 201,1) 0%, rgba(57,198, 201,0.4) 100%);
+        background: -o-linear-gradient(-45deg, rgba(57,198, 201,1) 0%, rgba(57,198, 201,0.4) 100%);
+        background: -ms-linear-gradient(-45deg, rgba(57,198, 201,1) 0%, rgba(57,198, 201,0.4) 100%);
+        background: linear-gradient(135deg, rgba(57,198, 201,1) 0%, rgba(57,198, 201,0.4) 100%);
     }
 
     .nannyagency.slick-slide .slider-copy-content:before
@@ -210,7 +222,8 @@
         border: none; 
     }
 
-    .business-panel .row
+    .business-panel .row,
+    
     {
         margin: 2rem auto;
     }
@@ -225,9 +238,10 @@
         margin-left: 4rem;
     }
 
-    .business-panel #business-blurbs p:first-child
+    .business-panel #business-blurbs p:first-child,
+    .clubs-panel #business-blurbs p:first-child
     {
-        margin-top: 2.8rem;
+        margin-top: 2.9rem;
     }
 
     .general-link
@@ -990,4 +1004,42 @@
     form .row .row
     {
         margin: 20px auto;
+    }
+
+
+/* club pages */
+
+    .club-location-area #map_canvas
+    {
+        height: 20rem;
+        width: 20rem;
+        border-radius: 15rem;
+        display: block;
+        margin: 3rem auto;
+        border: solid 4px;
+        border-color: #39C6C9;
+
+    }
+
+    .clubs-panel #business-blurbs a 
+    {
+        text-align: left;
+    }
+
+    .clubs-panel .row
+    {
+        margin: 1rem auto;
+    }
+
+    .clubs-panel #business-blurbs,
+    .clubs-panel h2
+    {
+        margin-bottom: 3.5rem;
+    }
+
+    /* Accordion */
+
+    .accordion-container
+    {
+       margin-top: 3rem; 
     }

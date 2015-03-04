@@ -179,9 +179,16 @@ body
 
  /* pale background */
 
-	.slider-container .slider .granarykids
+	
+
+	.slider-container .slider .granarycare
 	{
 		background-color: rgba(255, 173, 6, .15); 
+	}
+
+	.slider-container .slider .granarykids
+	{
+		background-color: rgba(57,198, 201, .15); 
 	}
 
 	.slider-container .slider .nannyagency
@@ -204,9 +211,19 @@ body
 
  /* slider buttons */
 
- 	.slider .granarykids a.button
+ 	.slider .granarycare a.button
  	{
 		background: url('../images/yellow-paint-texture.png') no-repeat;
+		background-position: center;
+		color: #131342;
+		border: solid 1px;
+		border-color: rgba(19, 19, 66, .3);
+ 	}
+
+ 	 .slider .granarykids a.button
+ 	{
+		/*background-color:  #39C6C9;*/
+		background: url('../images/blue-paint-texture.png');
 		background-position: center;
 		color: #131342;
 		border: solid 1px;
@@ -391,4 +408,26 @@ body
 */
 	}
 
+
+/* Type pf Carers Accordion */
+	
+	.accordion .accordion-navigation > a:hover, .accordion dd > a:hover
+	{
+		background: rgba(255, 173, 6, .4);
+	}
+	.accordion .accordion-navigation.active > a, .accordion dd.active > a
+	{
+		background: rgba(255,84, 38, .5);
+	}
+
+	.accordion .accordion-navigation > a, .accordion dd > a
+	{
+		background: rgba(249, 240, 225, 1);
+		color: #131342;
+	}
+
+	.accordion .accordion-navigation > .content.active, .accordion dd > .content.active
+	{
+		background: none;
+	}
 
