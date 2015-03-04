@@ -39,6 +39,9 @@ get_header(); ?>
   $image = get_field('image');
   $mainButtonLink = get_field('main_action_button');
   $mainButtonLabel = get_field('main_action_button_label');
+  $secondButtonLink = get_field('second_action_button');
+  $secondButtonLabel = get_field('second_action_button_label');
+
 
 if(is_page('granary-kids') ): 
 
@@ -95,6 +98,8 @@ if(is_page('granary-kids') ):
       <div class="row">
         <div class="buttons-container">
           <a class="large round button firstbutton" href="<?php echo $mainButtonLink; ?>"><?php echo $mainButtonLabel; ?></a>
+          <a class="large round button secondbutton" href="<?php echo $secondButtonLink; ?>"><?php echo $secondButtonLabel; ?></a>
+
         </div>
       </div>
     </div>
