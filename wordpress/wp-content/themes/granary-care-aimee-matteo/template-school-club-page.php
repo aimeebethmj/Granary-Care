@@ -119,7 +119,7 @@ get_header(); ?>
 
 <div class="clubs-panel">
 	<div class="row">
-		<div class="large-10 medium-10 small-centered columns">
+		<div class="large-8 medium-8 small-centered columns">
 			<div class="large-4 medium-4 columns">
 				<h2>Location:</h2>
 			</div>
@@ -131,7 +131,7 @@ get_header(); ?>
 	</div>
 
 	<div class="row">
-		<div class="large-10 medium-10 small-centered columns">
+		<div class="large-8 medium-8 small-centered columns">
 			<div class="large-4 medium-4 columns">
 				<h2>Sessions:</h2>
 			</div>
@@ -163,7 +163,7 @@ get_header(); ?>
 	</div>
 
 	<div class="row">
-		<div class="large-10 medium-10 small-centered columns">
+		<div class="large-8 medium-8 small-centered columns">
 			<div class="large-4 medium-4 columns">
 				<h2>What we do here:</h2>
 			</div>
@@ -175,7 +175,7 @@ get_header(); ?>
 	</div>
 
 	<div class="row">
-		<div class="large-10 medium-10 small-centered columns">
+		<div class="large-8 medium-8 small-centered columns">
 			<div class="large-4 medium-4 columns">
 				<h2>Play Leader:</h2>
 			</div>
@@ -187,7 +187,7 @@ get_header(); ?>
 	</div>
 
 	<div class="row">
-		<div class="large-10 medium-10 small-centered columns">
+		<div class="large-8 medium-8 small-centered columns">
 			<div class="large-4 medium-4 columns">
 				<h2>Club Tel:</h2>
 			</div>
