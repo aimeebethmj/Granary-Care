@@ -487,4 +487,64 @@ body
 		
 	}
 
+	label
+	{
+		color: rgba(19, 19, 66, .8);
+	}
+
+	input[type="text"], 
+	input[type="password"], 
+	input[type="date"], 
+	input[type="datetime"], 
+	input[type="datetime-local"], 
+	input[type="month"], 
+	input[type="week"], 
+	input[type="email"], 
+	input[type="number"], 
+	input[type="search"], 
+	input[type="tel"], 
+	input[type="time"], 
+	input[type="url"], 
+	input[type="color"], 
+	textarea,
+	select
+	{
+		background-color: #FCFBF7; 
+	}
+
+	input[type="text"]:focus, 
+	input[type="password"]:focus, 
+	input[type="date"]:focus, 
+	input[type="datetime"]:focus, 
+	input[type="datetime-local"]:focus, 
+	input[type="month"]:focus, 
+	input[type="week"]:focus, 
+	input[type="email"]:focus, 
+	input[type="number"]:focus, 
+	input[type="search"]:focus, 
+	input[type="tel"]:focus, 
+	input[type="time"]:focus, 
+	input[type="url"]:focus, 
+	input[type="color"]:focus, 
+	textarea:focus
+	{
+		border-color: rgba(255, 173, 6, .7);
+	}
+
+	select:hover
+	{
+		background-color: #FCFBF7;
+		border-color: rgba(255, 173, 6, .5);
+	}
+
+	select:focus
+	{
+		outline-color: rgba(255, 173, 6, .7);
+	}
+
+	select option#business-area:hover
+	{
+	
+	}
+
 
