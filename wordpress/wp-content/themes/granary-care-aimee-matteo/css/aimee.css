@@ -777,7 +777,7 @@
     .accreditations-container
     {
         height: 11rem;
-        margin-top: 4rem;
+        margin: 4rem auto;
     }
 
     .accreditations-container img
@@ -1312,6 +1312,18 @@
             }
 
             .business-panel h2
+            {
+                text-align: center;
+            }
+
+        /* GRANARY KIDS USEFUL INFO */
+            .social-panel-container img
+            {
+                margin: 2rem auto;
+                display: block;
+            }
+
+            .social-panel-description h2
             {
                 text-align: center;
             }
