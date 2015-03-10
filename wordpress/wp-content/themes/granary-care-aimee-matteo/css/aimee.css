@@ -1392,6 +1392,12 @@
             {
                 line-height: 2rem;
             }
+
+        /* FORMS */
+            .form-container h2
+            {
+                text-align: center;
+            }
            
 
     }
