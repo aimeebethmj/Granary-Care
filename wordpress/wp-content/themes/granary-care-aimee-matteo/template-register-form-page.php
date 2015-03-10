@@ -19,6 +19,8 @@ get_header(); ?>
 
 ?>
 
+<div class="content">
+
 <!-- BANNER STATEMENT -->
 <div class="full-width content-area banner-statement <?php echo $slug; ?>" >
     <div class="row">
@@ -38,9 +40,11 @@ get_header(); ?>
   </div>
 </div>
 
+</div>
+
 <div class="full-width content-area">
     <div class="row">
-        <div class="small-8 small-centered columns">
+        <div class="large-8 medium-8 small-12 small-centered columns">
 
             <dl class="tabs" data-tab>
               <dd class="active"><a href="#panel1">Families Form</a></dd>

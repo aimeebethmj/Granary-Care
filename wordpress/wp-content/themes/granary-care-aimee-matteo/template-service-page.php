@@ -23,6 +23,8 @@ get_header(); ?>
 
 ?>
 
+<div class="content">
+
 <!-- BANNER STATEMENT -->
 <div class="full-width content-area banner-statement <?php echo $slug; ?>" >
     <div class="row">
@@ -162,7 +164,7 @@ get_header(); ?>
 
 
 <!-- SECOND SECTION: "AND MUCH MORE" PARAGRAPH -->
-  <div class="row">
+  <div class="row last-blurb">
     <div class="large-10 medium-10 small-centered columns">      
 	    <?php echo get_field('second_section'); ?>   
     </div>
@@ -203,7 +205,7 @@ if( !empty($accreditations) ):
 
     ?>
 
-      <div class="large-4 medium-4 small-4 columns">
+      <div class="large-4 medium-4 small-6 logos columns">
         <a href="<?php echo $logoLink; ?>"><img src="<?php echo $logo['url']; ?>"></a>
       </div>
     
@@ -219,7 +221,7 @@ if( !empty($accreditations) ):
 
 
 
-
+</div>
 
 
 

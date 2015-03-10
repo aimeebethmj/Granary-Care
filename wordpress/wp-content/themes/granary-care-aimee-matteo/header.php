@@ -61,20 +61,25 @@
 				<?php if( is_front_page()): ?>
 
 					<div class="row">
+
 						<div class="large-12 columns top-section">
 							<!-- <a href="<?php echo site_url(); ?>"><img src=""></a> -->
 							<p class="call-us-today">Call us today! <a href="tel:<?php echo ot_get_option( 'telephone_number' ); ?>"><?php echo ot_get_option( 'telephone_number' ); ?></a></p>
+							<div class="large-12 medium-12 small-12 columns logo-small hide-for-large-up hide-for-medium-up">
+								<!-- new logo -->
+								<a href="<?php echo site_url(); ?>" id="logo-small-link"></a>
+							</div>
 						</div>
 					</div>
 				<?php else : ?>
 
 					<div class="row">
 						<div class="large-12 columns top-section">
-							<div class="medium-4 columns  logo-small">
+							<div class="large-4 medium-4 small-12 columns logo-small">
 								<!-- new logo -->
 								<a href="<?php echo site_url(); ?>" id="logo-small-link"></a>
 							</div>
-							<div class="medium-4 columns ">						
+							<div class="large-4 medium-4 small-12  columns ">						
 								<p class="call-us-today">Call us today! <a href="tel:<?php echo ot_get_option( 'telephone_number' ); ?>"><?php echo ot_get_option( 'telephone_number' ); ?></a></p>
 							</div>
 							<div class="medium-4 columns ">
@@ -191,7 +196,7 @@
 			<!-- GIANT LOGO (only certain pages) -->
 		<?php if( is_front_page()): ?>
 
-			<div class="logo-giant"></div>
+			<div class="logo-giant hide-for-small"></div>
 
 		<?php endif; ?>
 

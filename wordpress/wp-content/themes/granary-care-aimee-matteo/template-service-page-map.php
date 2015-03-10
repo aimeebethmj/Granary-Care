@@ -19,6 +19,8 @@ get_header(); ?>
 
 ?>
 
+<div class="content">
+
 <!-- BANNER STATEMENT -->
 
 <div class="full-width content-area banner-statement <?php echo $slug; ?>" >
@@ -180,7 +182,7 @@ if( !empty($accreditations) ):
 
     ?>
 
-      <div class="large-3 medium-3 small-3 columns">
+      <div class="large-3 medium-3 small-6 logos columns">
         <a href="<?php echo $logoLink; ?>"><img src="<?php echo $logo['url']; ?>"></a>
       </div>
     
@@ -263,7 +265,7 @@ if( !empty($accreditations) ):
 
 
 
-
+</div>
 
 
 

@@ -12,6 +12,7 @@ get_header(); ?>
 
 
 ?>
+<div class="content">
 
 <!-- BANNER STATEMENT -->
 
@@ -57,12 +58,12 @@ get_header(); ?>
 
     	<div class="row social-panel-container">
         <hr>
-      		<div class="large-4 medium-4 columns">
+      		<div class="large-4 medium-4 small-12 columns">
               <div class="social-panel-description">
               	<a href="<?php echo $webLink; ?>"><h2><?php echo $panelTitle; ?></h2></a>
               </div>
           </div>
-          <div class="large-6 medium-6 end columns" id="business-blurbs">
+          <div class="large-6 medium-6 end small-12 columns" id="business-blurbs">
               <?php echo $blurb; ?>
           </div>
       </div>
@@ -94,7 +95,7 @@ get_header(); ?>
     </div>
 </div>
 
-
+</div>
 
 
 

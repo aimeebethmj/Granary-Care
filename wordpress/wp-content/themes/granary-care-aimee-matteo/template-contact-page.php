@@ -18,7 +18,7 @@ get_header(); ?>
 ?>
 
 
-
+<div class="content">
 
 <!-- BANNER STATEMENT -->
 
@@ -57,9 +57,19 @@ get_header(); ?>
 
 	    ?>
 
-	 		<div class="large-7 medium-7 small-centered columns email-container <?php echo $cssClass ?>">
-	 			<a href="mailto:<?php echo $emailHandle ?>@granarycare.com"><h3><b><?php echo $emailHandle ?></b>@granarycare.com</h3></a>
+
+
+	 		<div class="large-6 medium-6 small-11 small-centered columns email-container <?php echo $cssClass ?>">
+	 			<a href="mailto:<?php echo $emailHandle ?>@granarycare.com"><h3><b><?php echo $emailHandle ?></b><br>@granarycare.com</h3></a>
 	 		</div>
+<!-- 
+      } else {
+
+      <div class="large-7 medium-7 small-centered columns email-container <?php echo $cssClass ?>">
+        <a href="mailto:<?php echo $emailHandle ?>@granarycare.com"><h3><b><?php echo $emailHandle ?></b><br>@granarycare.com</h3></a>
+      </div>
+ -->
+
 
  		<?php endwhile; ?>
 
@@ -68,6 +78,9 @@ get_header(); ?>
 
  	</div>
  </div>
+
+ 
+</div>
 
  <!-- FORM -->
 
@@ -79,7 +92,7 @@ get_header(); ?>
 
 <form class="form-container contact" enctype="multipart/form-data">
   <div class="row">
-    <div class="small-6 small-centered columns">
+    <div class="large-6 medium-6 small-11 small-centered columns">
     	<h2><?php echo $formHeading ?></h2>
 
       <div class="row">

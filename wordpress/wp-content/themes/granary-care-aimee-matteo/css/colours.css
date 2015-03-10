@@ -250,7 +250,7 @@ body
 
 /* slider gradients */
 
-	    .granarycare.slick-slide .slider-copy-content:before
+	.granarycare.slick-slide .slider-copy-content:before
     {
         background-color: rgba(255, 173, 6, 1);
         background: -moz-linear-gradient(-45deg, rgba(255,173,6,1) 0%, rgba(255,172,6,0.4) 100%);
@@ -435,6 +435,11 @@ body
 		border-color: #76C2A1;
 	}
 
+	.staffinfo a
+	{
+		color: #76C2A1;
+	}
+
 /* testimonials */
 	
 	.testimonial
@@ -544,7 +549,7 @@ body
 
 	select option#business-area:hover
 	{
-	
+
 	}
 
 

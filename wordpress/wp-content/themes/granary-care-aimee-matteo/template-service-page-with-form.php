@@ -22,6 +22,8 @@ get_header(); ?>
 
 ?>
 
+<div class="content">
+
 <!-- BANNER STATEMENT -->
 <div class="full-width content-area banner-statement <?php echo $slug; ?>" >
     <div class="row">
@@ -64,113 +66,85 @@ get_header(); ?>
         </div>
     </div>
 
+</div>
+
 <!-- FORM -->
 
 <form class="form-container" enctype="multipart/form-data">
   <div class="row">
-    <div class="small-8 small-centered columns">
+    <div class="large-8 medium-8 small-11 small-centered columns">
       <h2><?php echo $formHeading ?></h2>
 
       <div class="row">
-        <div class="small-3 columns">
-          <label for="firstName" class="inline">First Name</label>
-        </div>
-        <div class="small-9 columns">
-          <input type="text" id="firstName" placeholder="First name" name="firstName">
-        </div>
+          <label for="firstName" class="inline">First Name
+            <input type="text" id="firstName" placeholder="First name" name="firstName">
+          </label>
       </div>
 
         
       <div class="row">
-        <div class="small-3 columns">
-          <label for="lastName" class="inline">Last name</label>
-        </div>
-        <div class="small-9 columns">
-          <input type="text" id="lastName" placeholder="" name="lastName">
-        </div>
+          <label for="lastName" class="inline">Last name
+            <input type="text" id="lastName" placeholder="" name="lastName">
+          </label>
       </div>
 
       <div class="row">
-        <div class="small-3 columns">
-          <label for="email" class="inline">Email</label>
-        </div>
-        <div class="small-9 columns">
-          <input type="email" id="email" placeholder="youremail@example.com" name="email">
-        </div>
+          <label for="email" class="inline">Email
+            <input type="email" id="email" placeholder="youremail@example.com" name="email">
+          </label>
       </div>
 
       <div class="row">
-        <div class="small-3 columns">
-          <label for="number" class="inline">Contact Number</label>
-        </div>
-        <div class="small-9 columns">
-          <input type="text" id="number" placeholder="" name="number">
-        </div>
+          <label for="number" class="inline">Contact Number
+            <input type="text" id="number" placeholder="" name="number">
+          </label>
       </div>
 
 
       <div class="row">
-        <div class="small-3 columns">
-          <label for="position" class="inline">Position Applying For</label>
-        </div>
-        <div class="small-9 columns">
+          <label for="position" class="inline">Position Applying For
             <select>
               <option id="position" name="position" value="husker">Husker</option>
               <option id="position" name="position" value="starbuck">Starbuck</option>
               <option id="position" name="position" value="hotdog">Hot Dog</option>
               <option id="position" name="position" value="apollo">Apollo</option>
             </select>
-        </div>
+          </label>
       </div>
 
       <div class="row">
-        <div class="small-3 columns">
-          <label for="renumeration" class="inline">Renumeration</label>
-        </div>
-        <div class="small-9 columns">
+          <label for="renumeration" class="inline">Renumeration
             <select>
               <option value="husker" id="renumeration" name="renumeration">Paid employment only</option>
               <option value="starbuck" id="renumeration" name="renumeration">Voluntary role only</option>
               <option value="hotdog" id="renumeration" name="renumeration">Paid and voluntary</option>
             </select>
-        </div>
+          </label>
       </div>
 
       <div class="row">
-        <div class="small-3 columns">
-          <label for="transportation" class="inline">Driver</label>
-        </div>
-        <div class="small-9 columns">
+          <label for="transportation" class="inline">Driver:
             <input type="radio" name="transportation" value="Driver" id="Driver"><label for="Driver" class="inline">Driver</label>
             <input type="radio" name="transportation" value="Non-Driver" id="nonDriver"><label for="nonDriver" class="inline">Non-Driver</label>
-        </div>
+          </label>
       </div>
 
       <div class="row">
-        <div class="small-3 columns">
-            <label for="moreInfo" class="inline">Additional Information</label>
-        </div>
-        <div class="small-9 columns">
-            <textarea id="moreInfo" placeholder="" name="moreInfo"></textarea>
-        </div>
+            <label for="moreInfo" class="inline">Additional Information
+              <textarea id="moreInfo" placeholder="" name="moreInfo"></textarea>
+            </label>
       </div>
 
     <div class="row">
-        <div class="small-3 columns">
-            <label id="uploadCV">Upload your CV</label>
-        </div> 
-        <div class="small-9 columns"> 
-            <input type="file" id="uploadCV" name="uploadCV"/>
-        </div> 
+            <label id="uploadCV">Upload your CV
+              <input type="file" id="uploadCV" name="uploadCV"/>
+            </label>
     </div>
 
     <div class="row">
-        <div class="small-3 columns">
-            <label id="uploadCerts">Additional certificates</label>
-        </div> 
-        <div class="small-9 columns"> 
-            <input type="file" id="uploadCerts" name="uploadCerts"/>
-        </div> 
+            <label id="uploadCerts">Additional certificates
+              <input type="file" id="uploadCerts" name="uploadCerts"/>
+            </label>
     </div>
 
 <!-- BUTTON SEND -->

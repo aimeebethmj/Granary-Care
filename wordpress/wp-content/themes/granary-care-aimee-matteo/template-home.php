@@ -8,7 +8,7 @@ get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<div class="full-width content-area">
+
 
 <!-- SLIDER -->
 
@@ -43,7 +43,7 @@ get_header(); ?>
                   </div>
                   <div class="summary">
                     <h2 class="carousel-headline"><?php echo $headline; ?></h2>          	
-                		<p><?php echo $summary; ?></p>
+                		<p class="hide-for-small"><?php echo $summary; ?></p>
                 		<!-- <a class="small radius button" href="<?php echo $link; ?>">Find out more</a> -->
                 	</div>
                   <a class="small round button" href="<?php echo $link; ?>"><?php echo $buttonlabel; ?></a>
@@ -63,6 +63,7 @@ get_header(); ?>
     </div>
 
 
+<div class="content">
 
 <!-- ABOUT BLURB -->
 
@@ -135,6 +136,9 @@ get_header(); ?>
     </div>
 
 
+</div>
+
+
 <!-- SOCIAL RESPONSIBILITY BLURB -->
     <div class="full-width content-area social-blurb">
       <div class="row">
@@ -149,7 +153,7 @@ get_header(); ?>
     </div>
 
 
-</div>
+
 
 
 

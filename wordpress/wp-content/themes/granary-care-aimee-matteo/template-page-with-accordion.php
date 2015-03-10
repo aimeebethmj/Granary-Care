@@ -18,6 +18,7 @@ get_header(); ?>
 ?>
 
 <!-- CONTENT AREA -->
+<div class="content">
 
 <!-- BANNER STATEMENT -->
 
@@ -112,7 +113,7 @@ get_header(); ?>
 
 
 
-
+</div>
 
 <?php endwhile; ?>
 <!-- post navigation -->

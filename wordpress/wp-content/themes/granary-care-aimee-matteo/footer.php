@@ -13,8 +13,11 @@
 <?php do_action('foundationPress_before_closing_body'); ?> -->
 
 	<!-- FOOTER AREA -->
+
+
 	<div class="full-width footer-area">
     <div class="row">
+      <div class="content">
       <div class="large-10 small-centered columns">
         <h2>We love to meet new people!</h2>
         <h3>Do you have any questions or want to talk about our Kids Clubs, Nanny Agency or Mother &amp; Baby Centre?</h3>
@@ -45,7 +48,8 @@
           <div>
             &copy; <?php echo ( bloginfo("name") . " " . date("Y") ); ?>
           </div>
-        </div>
+      </div>
+    </div>
   </div>
 
     

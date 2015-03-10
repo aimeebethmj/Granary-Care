@@ -13,6 +13,8 @@ get_header(); ?>
 
 ?>
 
+<div class="content">
+
 <!-- BANNER STATEMENT -->
 <div class="full-width content-area banner-statement <?php echo $slug; ?>" >
     <div class="row">
@@ -59,7 +61,7 @@ get_header(); ?>
             <img src="<?php echo $image['url']; ?>"/>      
           </div>
 
-          <div class="large-6 end columns nanny-profile-info" id="business-blurbs">
+          <div class="large-6 end columns profile-info" id="business-blurbs">
   	        <h4><?php echo $name; ?></h4>
   	        <h5><?php echo $nannytype; ?></h5>
   	        <h5><?php echo $location; ?></h5>
@@ -82,6 +84,8 @@ get_header(); ?>
       <a class="large round button secondbutton" href="<?php get_field('action_button_2'); ?>"><?php echo get_field('action_button_2_label'); ?></a>
     </div>
   </div>
+</div>
+
 </div>
 
 

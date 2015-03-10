@@ -18,6 +18,7 @@ get_header(); ?>
 ?>
 
 <!-- CONTENT AREA -->
+<div class="content">
 
 <!-- BANNER STATEMENT -->
 
@@ -29,6 +30,8 @@ get_header(); ?>
             <!-- :after -->
         </div>
     </div>
+</div>
+
 </div>
 
 
@@ -68,7 +71,7 @@ if(is_page('granary-kids') ):
       <div class="large-5 medium-5 columns">
         <img src="<?php echo $image['url']; ?>">
       </div>
-      <div class="large-7 medium-7 columns">
+      <div class="large-7 medium-7 hide-for-small columns">
         <h2><?php echo get_field('image_banner_message') ?></h2>
       </div>
     </div>
@@ -78,6 +81,7 @@ if(is_page('granary-kids') ):
 <?php endif; ?>
 
 
+<div class="content">
 
 
 <!-- SIDEBAR AND MAIN CONTENT -->
@@ -173,7 +177,7 @@ if( !empty($businessPanels) ):
       <div class="large-8 medium-8 small-centered columns">
         <div class="large-1 medium-1 columns image-bullet-container">
         </div>
-        <div class="large-11 medium-11 columns">
+        <div class="large-11 medium-11 small-12 columns">
           <ul class="image-bullet">
             <li>
               <a href="<?php echo $buttonlink; ?>"><h3><?php echo $title; ?></h3></a>
@@ -296,13 +300,13 @@ if( !empty($accreditations) ):
 
       if(is_page( 'nanny-agency')): ?>
 
-      <div class="large-3 medium-3 small-3 columns">
+      <div class="large-3 medium-3 small-6 logos columns">
         <img src="<?php echo $logo['url']; ?>">
       </div>
 
     <?php else: ?>
 
-      <div class="large-3 medium-3 small-3 columns">
+      <div class="large-3 medium-3 small-6 logos columns">
         <a href="<?php echo $logoLink; ?>"><img src="<?php echo $logo['url']; ?>"></a>
       </div>
       
@@ -318,6 +322,8 @@ if( !empty($accreditations) ):
 </div>
 
 <?php endif; ?>
+
+</div>
 
 
 <?php endwhile; ?>

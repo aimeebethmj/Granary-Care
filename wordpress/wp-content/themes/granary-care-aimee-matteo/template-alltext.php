@@ -29,6 +29,9 @@ get_header(); ?>
 
 ?>
 
+
+<div class="content">
+
 <!-- BANNER STATEMENT -->
 
 <div class="full-width content-area banner-statement <?php echo $slug; ?>">
@@ -115,7 +118,7 @@ get_header(); ?>
       </div>
     </div>
 
-
+</div>
 
 <?php endwhile; ?>
 <!-- post navigation -->

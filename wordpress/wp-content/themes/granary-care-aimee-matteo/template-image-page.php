@@ -13,6 +13,9 @@ get_header(); ?>
 
 ?>
 
+
+<div class="content">
+
 <!-- BANNER STATEMENT -->
 
 <div class="full-width content-area banner-statement <?php echo $slug; ?>" >
@@ -71,7 +74,7 @@ get_header(); ?>
               <img src="<?php echo $image['url']; ?>">   
             </div>
       </div>
-      <div class="large-6 medium-6 columns" id="business-blurbs">
+      <div class="large-6 medium-6 columns profile-info" id="business-blurbs">
               <h3><?php echo $panelTitle; ?></h3>
               <?php echo $blurb; ?>
       </div>
@@ -92,7 +95,7 @@ $secondButtonLabel = get_field('second_section_button_label');
 
 if( !empty( $secondSection ) ): ?>
 
-  <div class="row">
+  <div class="row last-blurb">
     <div class="large-8 medium-8 small-centered columns">
       <?php echo $secondSection;?>
     </div>
@@ -110,6 +113,8 @@ if( !empty( $secondSection ) ): ?>
   </div>
 </div>
 
+
+</div>
 
 
 
