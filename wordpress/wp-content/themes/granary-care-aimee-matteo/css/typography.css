@@ -212,33 +212,120 @@ p
 
 /*  RESPONSIVE DESIGN  */
     
-    @media (max-width:600px)
-    {
+	   
+	/* 500 */
+	    @media (max-width:500px)
+	    {
 
-    	html
-		{
-		/* resetting the browser's default, from 16px to 20 */
-		font-size: 18px;
-		}
+	    	html
+			{
+			/* resetting the browser's default, from 16px to 20 */
+			font-size: 18px;
+			}
 
-    	h1
-    	{
-    		font-size: 2.8rem;
-  			line-height: 3.5rem;
-  			margin-top: 1rem;
-  			margin-bottom: 1rem;
-    	}
+	    	h1
+	    	{
+	    		font-size: 2.8rem;
+	  			line-height: 3.5rem;
+	  			margin-top: 1rem;
+	  			margin-bottom: 1rem;
+	    	}
 
-    	h2
-    	{
-    		font-size: 2rem;
-  			line-height: 2.6rem;
-    	}
+	    	h2
+	    	{
+	    		font-size: 2rem;
+	  			line-height: 2.6rem;
+	    	}
 
-    	h3
-    	{
-    		font-size: 1.4rem;
-  			line-height: 2.2rem;
-  			margin-top: 1.5rem;
-    	}
-    }
+	    	h3
+	    	{
+	    		font-size: 1.4rem;
+	  			line-height: 2.2rem;
+	  			margin-top: 1.5rem;
+	    	}
+	    }
+
+
+    /* 800 */
+        @media (max-width:800px)
+        {
+            /**/
+           	html
+			{
+			/* resetting the browser's default, from 16px to 20 */
+			font-size: 18px;
+			}
+
+				h1
+	    	{
+	    		font-size: 3.5rem;
+	  			line-height: 4rem;
+	  			margin-top: 2rem;
+	  			margin-bottom: 2rem;
+	    	}
+
+	    	h2
+	    	{
+	    		font-size: 2.3rem;
+	  			line-height: 2.8rem;
+	    	}
+
+	    	h3
+	    	{
+	    		font-size: 1.5rem;
+	  			line-height: 2.6rem;
+	  			margin-top: 1.5rem;
+	    	}
+
+			    	/*h1
+			    	{
+			    		font-size: 2.8rem;
+			  			line-height: 3.5rem;
+			  			margin-top: 1rem;
+			  			margin-bottom: 1rem;
+			    	}
+
+			    	h2
+			    	{
+			    		font-size: 2rem;
+			  			line-height: 2.6rem;
+			    	}
+
+			    	h3
+			    	{
+			    		font-size: 1.4rem;
+			  			line-height: 2.2rem;
+			  			margin-top: 1.5rem;
+			    	}*/
+
+	    		/*h1 */
+				/*{
+					font-size: 4.25rem;
+					line-height: 4.5rem;
+					margin-top: 3rem;
+					margin-bottom: 3rem;
+					font-weight: 300;
+				}
+
+				h2 
+				{
+					font-size: 2.6rem;
+					line-height: 3rem;
+					margin-top: 1.5rem;
+					margin-bottom: 1.5rem;
+					font-weight: 300;
+
+				}
+
+				h3 
+				{
+					font-size: 1.6rem;
+					line-height: 3rem;
+					margin-top: 1.5rem;
+					margin-bottom: 1.5rem;
+					font-weight: 300;
+*/
+/*}
+	    }*/
+
+        }

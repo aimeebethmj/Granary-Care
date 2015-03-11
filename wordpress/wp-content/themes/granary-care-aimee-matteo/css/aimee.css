@@ -1079,328 +1079,353 @@
 
 /*  RESPONSIVE DESIGN  */
     
-    @media (max-width:600px)
-    {
 
-        html,body
+    /* 800 */
+        @media (max-width:800px)
         {
-            width: 100%;
-            height: 100%;
-            margin: 0px;
-            padding: 0px;
-            overflow-x: hidden; 
-        }
+            /**/
 
-        .content
-        {
-            margin: 0 0.8rem;
-        }
+                .content
+                {
+                    margin: 0 3rem;
+                }
 
-        /* HEADER */
-            .logo-small
-            {
-                height: 4rem;
-            }
+             /* HEADER */
 
-            #logo-small-link
-            {
-                width: 100%;
-                height: 4rem;
-            }
-
-            .call-us-today
-            {
-                text-align: center;
-            }
-
-        /* SLIDER */
-            .slider-container .slider .slick-slide
-            {
-                height: 20rem;
-            }
-
-            .slick-slide .slider-copy-content:before
-            { 
-                content:'';
-                width: 34rem;
-                height: 34rem;
-                border-radius: 17rem;
-                position: absolute;
-                z-index: -1;
-                margin-top: -23rem;
-                margin-left: -11rem;
-                margin-right: 16rem;
-                overflow: hidden;
-            }
-
-            .slider .summary h2, .slider a .summary p
-            {
-                margin: 0 1.5rem 1rem 0;
-            }
-
-            .slider .business-area-logo .half-logo-granary
-            {
-                margin: 1.5rem 0 0 1.5rem;
-            }
-
-            .slider .business-area-logo .half-logo-businessarea
-            {
-                margin-left: 1.5rem;
-            }
-
-            .slider .granarycare a.button, 
-            .slider .granarykids a.button, 
-            .slider .nannyagency a.button, 
-            .slider .motherandbaby a.button
-            {
-                margin-right: 1.5rem;
-            }
-
-        /* FOOTER */
-
-            .footer-area .call-us-today
-            {
-                line-height: 2rem;
-            }
-
-        /* BANNER STATEMENT */
-            {
-                padding: 1rem 0;
-            }
-
-        /* TESTIMONIALS */
-
-            .testimonial-large
-            {
-                padding: 2rem 0;
-            }
-        /* NAVIGATION */
-
-            .top-bar-section ul.top-level > li
-            {
-                display: block;
-            }
-
-            .top-bar.expanded .title-area
-            {
-                background: none; 
-            }
-
-            .top-bar .toggle-topbar.menu-icon
-            {
-                margin-top: -.8rem;
-            }
-
-            .top-bar .toggle-topbar.menu-icon a
-            {
-                color: #131342;
-            }
-
-            .top-bar .toggle-topbar.menu-icon a span::after
-            {
-                box-shadow: 0 0px 0 1px #131342, 0 7px 0 1px #131342, 0 14px 0 1px #131342;
-            }
-
-            .general .nav-wrap, .general .top-bar-section ul li,
-            .granarykids .nav-wrap, .granarykids .top-bar-section ul li,
-            .nannyagency .nav-wrap, .nannyagency .top-bar-section ul li,
-            .motherandbaby .nav-wrap, .motherandbaby .top-bar-section ul li
-            {
-                z-index: 1;
-            }
-            .general .nav-wrap, .general .top-bar-section ul li
-            {
-                background-color: rgba(253, 233, 192, 1);
-            }
-
-            .granarykids .nav-wrap, .granarykids .top-bar-section ul li
-            {
-                background-color: rgba(207, 239, 236, 1);
-            }
-
-            .nannyagency .nav-wrap, .nannyagency .top-bar-section ul li
-            {
-                background-color: rgba(255,216, 205, 1);
-            }
-
-            .motherandbaby .nav-wrap, .motherandbaby .top-bar-section ul li
-            {
-                background-color: rgba(223,241,233, 1);
-            }
-
-            .top-bar-section ul.top-level > li
-            {
-                border-right: none;
-            }
-
-
-            .nav-wrap
-            {
-                height: 2.9rem;
-                border-radius: 0;
-            }
-
-            .top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.parent-link a
-            {
-                color: rgba(19, 19, 66, .6);
-            }
-
-        /* BUTTONS */
-
-            .buttons-container a.button
-            {
-                padding: 1rem;
-            }
-
-            .action-area .buttons-container
-            {
-                margin: 2rem 0;
-            }
-
-        /* HOMEPAGE */
-
-            body.home h1
-            {
-                text-align: center;
-            }
-
-        /* GRANARY KIDS HOMEPAGE */
-
-            .image-bullet li
-            {
-                    height: 2rem;
-                    padding-left: 0;
-                    
-            }
-
-            .image-bullet li a
-            {
+                .call-us-today
+                {
                     text-align: center;
-            }
+                }
 
-            ul.image-bullet
-            {
-                margin-left: 0;
-            }
+            /* BANNER STATEMENT */
+                {
+                    padding: 1rem 0;
+                }
 
-            .image-bullet-container
-            {
-                height: 2.2rem;
-            }
 
-        /* TEAM PAGE */
+            /* TESTIMONIALS */
 
-            .staff-profile-images
-            {
-                border-radius: 8rem;
-                margin: 2rem auto 0;
-                width: 15rem;
-                display: block;
+                .testimonial-large
+                {
+                    padding: 2rem 0;
+                }
+        }
 
-            }
+    /* 600 */
+        @media (max-width:600px)
+        {
 
-            .staffinfo
-            {
-                padding-left: 0;
-                margin-top: 1.5rem;
-            }
+                html,body
+                {
+                    width: 100%;
+                    height: 100%;
+                    margin: 0px;
+                    padding: 0px;
+                    overflow-x: hidden; 
+                }
 
-        /* BREAKFAST CLUBS HOMEPAGE */
-            #map_canvas
-            {
-                height: 15rem;
-            }
+                .content
+                {
+                    margin: 0 1.5rem;
+                }
 
-            .business-panel h2
-            {
-                text-align: center;
-            }
+            /* HEADER */
+                .logo-small
+                {
+                    height: 4rem;
+                }
 
-        /* GRANARY KIDS USEFUL INFO */
-            .social-panel-container img
-            {
-                margin: 2rem auto;
-                display: block;
-            }
+                #logo-small-link
+                {
+                    width: 100%;
+                    height: 4rem;
+                }
 
-            .social-panel-description h2
-            {
-                text-align: center;
-            }
 
-        /* ACTIVE HOLIDAY CAMPS */
+            /* SLIDER */
+                .slider-container .slider .slick-slide
+                {
+                    height: 20rem;
+                }
 
-            .last-blurb
-            {
-                margin-top: 2rem;
-            }
+                .slick-slide .slider-copy-content:before
+                { 
+                    content:'';
+                    width: 34rem;
+                    height: 34rem;
+                    border-radius: 17rem;
+                    position: absolute;
+                    z-index: -1;
+                    margin-top: -23rem;
+                    margin-left: -11rem;
+                    margin-right: 16rem;
+                    overflow: hidden;
+                }
 
-        /* BUSINESS AREA HOMEPAGE */
+                .slider .summary h2, .slider a .summary p
+                {
+                    margin: 0 1.5rem 1rem 0;
+                }
 
-            .image-banner-area img
-            {
-                margin: 1rem auto;
-                height: 14.5rem;
-                display: block;
-            }
+                .slider .business-area-logo .half-logo-granary
+                {
+                    margin: 1.5rem 0 0 1.5rem;
+                }
 
-            .accreditations-container .logos:nth-of-type(3n)
-            {
-                clear: both;
-            }
+                .slider .business-area-logo .half-logo-businessarea
+                {
+                    margin-left: 1.5rem;
+                }
 
-        /* MEET OUR NANNIES */
-            .nanny-profile-images img
-            {
-                margin: 2rem auto 0;
-                width: 15rem;
-            }
+                .slider .granarycare a.button, 
+                .slider .granarykids a.button, 
+                .slider .nannyagency a.button, 
+                .slider .motherandbaby a.button
+                {
+                    margin-right: 1.5rem;
+                }
 
-            .profiles-container #business-blurbs h4,
-            .profiles-container #business-blurbs h5,
-            .staff-profiles .staffinfo h3,
-            .staff-profiles .staffinfo h4
+            /* FOOTER */
 
-            {
-                text-align: center;
-            }
+                .footer-area .call-us-today
+                {
+                    line-height: 2rem;
+                }
 
-        /* MOTHER & BABY FACILITIES PAGE */
+            
 
-            .large-button-image
-            {
-                margin: 2rem auto 0;
-                width: 15rem;
-                display: block;
-            }
+            /* NAVIGATION */
 
-            .profiles-container h3
-            {
-                text-align: center;
-            }
+                .top-bar-section ul.top-level > li
+                {
+                    display: block;
+                }
 
-            .last-blurb ul
-            {
-                margin-left: 1rem;
-            }
+                .top-bar.expanded .title-area
+                {
+                    background: none; 
+                }
 
-        /* CONTACT PAGE */
+                .top-bar .toggle-topbar.menu-icon
+                {
+                    margin-top: -.8rem;
+                }
 
-            .email-container.granarykids h3,
-            .email-container.nannyagency h3,
-            .email-container.motherandbaby h3
-            {
-                line-height: 2rem;
-            }
+                .top-bar .toggle-topbar.menu-icon a
+                {
+                    color: #131342;
+                }
 
-        /* FORMS */
-            .form-container h2
-            {
-                text-align: center;
-            }
+                .top-bar .toggle-topbar.menu-icon a span::after
+                {
+                    box-shadow: 0 0px 0 1px #131342, 0 7px 0 1px #131342, 0 14px 0 1px #131342;
+                }
+
+                .general .nav-wrap, .general .top-bar-section ul li,
+                .granarykids .nav-wrap, .granarykids .top-bar-section ul li,
+                .nannyagency .nav-wrap, .nannyagency .top-bar-section ul li,
+                .motherandbaby .nav-wrap, .motherandbaby .top-bar-section ul li
+                {
+                    z-index: 1;
+                }
+                .general .nav-wrap, .general .top-bar-section ul li
+                {
+                    background-color: rgba(253, 233, 192, 1);
+                }
+
+                .granarykids .nav-wrap, .granarykids .top-bar-section ul li
+                {
+                    background-color: rgba(207, 239, 236, 1);
+                }
+
+                .nannyagency .nav-wrap, .nannyagency .top-bar-section ul li
+                {
+                    background-color: rgba(255,216, 205, 1);
+                }
+
+                .motherandbaby .nav-wrap, .motherandbaby .top-bar-section ul li
+                {
+                    background-color: rgba(223,241,233, 1);
+                }
+
+                .top-bar-section ul.top-level > li
+                {
+                    border-right: none;
+                }
+
+
+                .nav-wrap
+                {
+                    height: 2.9rem;
+                    border-radius: 0;
+                }
+
+                .top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.parent-link a
+                {
+                    color: rgba(19, 19, 66, .6);
+                }
+
+            /* BUTTONS */
+
+                .buttons-container a.button
+                {
+                    padding: 1rem;
+                }
+
+                .action-area .buttons-container
+                {
+                    margin: 2rem 0;
+                }
+
+            /* HOMEPAGE */
+
+                body.home h1
+                {
+                    text-align: center;
+                }
+
+            /* GRANARY KIDS HOMEPAGE */
+
+                .image-bullet li
+                {
+                        height: 2rem;
+                        padding-left: 0;
+                        
+                }
+
+                .image-bullet li a
+                {
+                        text-align: center;
+                }
+
+                ul.image-bullet
+                {
+                    margin-left: 0;
+                }
+
+                .image-bullet-container
+                {
+                    height: 2.2rem;
+                }
+
+            /* TEAM PAGE */
+
+                .staff-profile-images
+                {
+                    border-radius: 8rem;
+                    margin: 2rem auto 0;
+                    width: 15rem;
+                    display: block;
+
+                }
+
+                .staffinfo
+                {
+                    padding-left: 0;
+                    margin-top: 1.5rem;
+                }
+
+            /* BREAKFAST CLUBS HOMEPAGE */
+                #map_canvas
+                {
+                    height: 15rem;
+                }
+
+                .business-panel h2
+                {
+                    text-align: center;
+                }
+
+            /* GRANARY KIDS USEFUL INFO */
+                .social-panel-container img
+                {
+                    margin: 2rem auto;
+                    display: block;
+                }
+
+                .social-panel-description h2
+                {
+                    text-align: center;
+                }
+
+            /* ACTIVE HOLIDAY CAMPS */
+
+                .last-blurb
+                {
+                    margin-top: 2rem;
+                }
+
+            /* BUSINESS AREA HOMEPAGE */
+
+                .image-banner-area img
+                {
+                    margin: 1rem auto;
+                    height: 14.5rem;
+                    display: block;
+                }
+
+                .accreditations-container .logos:nth-of-type(3n)
+                {
+                    clear: both;
+                }
+
+            /* MEET OUR NANNIES */
+                .nanny-profile-images img
+                {
+                    margin: 2rem auto 0;
+                    width: 15rem;
+                }
+
+                .profiles-container #business-blurbs h4,
+                .profiles-container #business-blurbs h5,
+                .staff-profiles .staffinfo h3,
+                .staff-profiles .staffinfo h4
+
+                {
+                    text-align: center;
+                }
+
+            /* MOTHER & BABY FACILITIES PAGE */
+
+                .large-button-image
+                {
+                    margin: 2rem auto 0;
+                    width: 15rem;
+                    display: block;
+                }
+
+                .profiles-container h3
+                {
+                    text-align: center;
+                }
+
+                .last-blurb ul
+                {
+                    margin-left: 1rem;
+                }
+
+            /* CONTACT PAGE */
+
+                .email-container.granarykids h3,
+                .email-container.nannyagency h3,
+                .email-container.motherandbaby h3
+                {
+                    line-height: 2rem;
+                }
+
+            /* FORMS */
+                .form-container h2
+                {
+                    text-align: center;
+                }
            
 
-    }
+        }
+
+
+
+
+
 
    
 
