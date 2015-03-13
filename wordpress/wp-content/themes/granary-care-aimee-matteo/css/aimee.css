@@ -3,7 +3,7 @@
  
     /** Set the backgrounds for the different sections **/
 
-     
+
     .call-us-today
     {
         margin-top: 1rem;
@@ -586,9 +586,14 @@
     }
 
 /* SOCIAL RESPONSIBILITY */
-    #business-blurbs
+    .social-blurb #business-blurbs
     {
         margin-left: 0;
+    }
+
+    .social-blurb h2
+    {
+        text-align: center;
     }
 
 
@@ -1077,17 +1082,29 @@
     }
 
 
+
 /*  RESPONSIVE DESIGN  */
     
+        @media (min-width:847px)
+        {
+                /*.nav-wrap
+                {
+                border-bottom-left-radius: .5rem;
+                border-bottom-right-radius: .5rem;
+                height: 2.25rem;
 
-    /* 800 */
-        @media (max-width:800px)
+                }*/
+        }
+
+    /* 846  trying 1024 foundations medium size screen*/
+        @media (max-width:1025px)
         {
             /**/
 
                 .content
                 {
-                    margin: 0 3rem;
+                    margin: 0 2rem;
+                    padding: 0 4rem;
                 }
 
              /* HEADER */
@@ -1107,13 +1124,139 @@
 
                 .testimonial-large
                 {
-                    padding: 2rem 0;
+                    padding: 2rem 4rem;
+                }
+        
+
+        /* NAVIGATION */
+
+                .top-bar-section ul.top-level > li
+                {
+                    display: block;
+                }
+
+                .top-bar.expanded .title-area
+                {
+                    background: none; 
+                }
+
+                .top-bar .toggle-topbar.menu-icon
+                {
+                    margin-top: -.8rem;
+                }
+
+                .top-bar .toggle-topbar.menu-icon a
+                {
+                    color: #131342;
+                }
+
+                .top-bar .toggle-topbar.menu-icon a span::after
+                {
+                    box-shadow: 0 0px 0 1px #131342, 0 7px 0 1px #131342, 0 14px 0 1px #131342;
+                }
+
+                .general .nav-wrap, .general .top-bar-section ul li,
+                .granarykids .nav-wrap, .granarykids .top-bar-section ul li,
+                .nannyagency .nav-wrap, .nannyagency .top-bar-section ul li,
+                .motherandbaby .nav-wrap, .motherandbaby .top-bar-section ul li
+                {
+                    z-index: 1;
+                }
+                .general .nav-wrap, .general .top-bar-section ul li
+                {
+                    background-color: rgba(253, 233, 192, 1);
+                }
+
+                .granarykids .nav-wrap, .granarykids .top-bar-section ul li
+                {
+                    background-color: rgba(207, 239, 236, 1);
+                }
+
+                .nannyagency .nav-wrap, .nannyagency .top-bar-section ul li
+                {
+                    background-color: rgba(255,216, 205, 1);
+                }
+
+                .motherandbaby .nav-wrap, .motherandbaby .top-bar-section ul li
+                {
+                    background-color: rgba(223,241,233, 1);
+                }
+
+                .top-bar-section ul.top-level > li
+                {
+                    border-right: none;
+                }
+
+
+                /*.nav-wrap
+                {
+                    height: 2.9rem;
+                    border-radius: 0;
+                }*/
+
+                .top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.parent-link a
+                {
+                    color: rgba(19, 19, 66, .6);
+                }
+
+        /* HOMEPAGE */
+
+                body.home h1
+                {
+                    text-align: center;
+                }
+
+                #business-blurbs 
+                {
+                    margin-left: 0;
+                    /*padding: 0 4rem;*/
+                }
+
+                .business-panel h2
+                {
+                    text-align: center;
+                }
+
+                body.home .heart-mark-yellow
+                {
+                    margin-bottom: 2rem;
+                }
+
+                .social-blurb
+                {
+                    /*padding: 0 4rem;*/
+                }
+
+                
+
+        /* FOOTER AREA */
+
+                .footer-area .content
+                {
+                    /*padding: 0 4rem;*/
                 }
         }
 
-    /* 600 */
-        @media (max-width:600px)
+    /* 768 topbar break (48em at 16px base font) */
+        @media (max-width:767px)
         {
+                .nav-wrap
+                {
+                    height: 2.9rem;
+                    
+                }
+        }
+
+
+
+    /* 640 */
+        @media (max-width:640px)
+        {
+
+                .content
+                {
+                    padding: 0 1rem;
+                }
 
                 html,body
                 {
@@ -1124,10 +1267,6 @@
                     overflow-x: hidden; 
                 }
 
-                .content
-                {
-                    margin: 0 1.5rem;
-                }
 
             /* HEADER */
                 .logo-small
@@ -1190,6 +1329,11 @@
                 .footer-area .call-us-today
                 {
                     line-height: 2rem;
+                }
+
+                .footer-area .content
+                {
+                    padding: 0 1.5rem;
                 }
 
             
@@ -1279,9 +1423,16 @@
 
             /* HOMEPAGE */
 
-                body.home h1
+
+                #business-blurbs 
                 {
-                    text-align: center;
+                    margin-left: 0;
+                    padding: 0 1.5rem;
+                }
+
+                .social-blurb
+                {
+                    padding: 0 1.5rem;
                 }
 
             /* GRANARY KIDS HOMEPAGE */
@@ -1331,10 +1482,7 @@
                     height: 15rem;
                 }
 
-                .business-panel h2
-                {
-                    text-align: center;
-                }
+                
 
             /* GRANARY KIDS USEFUL INFO */
                 .social-panel-container img
@@ -1422,6 +1570,15 @@
 
         }
 
+    /* 360 */
+        @media (max-width:360px)
+        {
+
+                .content
+                {
+                    padding: 0;
+                }
+        }
 
 
 

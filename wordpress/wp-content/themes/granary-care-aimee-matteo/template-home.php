@@ -68,10 +68,10 @@ get_header(); ?>
 <!-- ABOUT BLURB -->
 
     <div class="row">
-      <div class="large-4 columns">
+      <div class="large-4 medium-12 columns">
         <h1><?php echo get_field('about_blurb_title')?></h1>
       </div>
-      <div class="large-6 end columns yellow" id="business-blurbs">
+      <div class="large-6 medium-12 end columns yellow" id="business-blurbs">
 
         <?php the_content(); ?>
 
@@ -110,7 +110,7 @@ get_header(); ?>
           <div class="large-4 columns">
             	<a href="<?php echo $buttonlink; ?>"><h2><?php echo $title; ?></h2></a>
           </div>
-          <div class="large-6 end columns <?php echo $cssClass; ?>" id="business-blurbs">
+          <div class="large-6  end columns <?php echo $cssClass; ?>" id="business-blurbs">
     			  <?php echo $summary; ?>
           	<a href="<?php echo $buttonlink; ?>"><?php echo $buttonlabel; ?></a>
             <hr/>
@@ -142,13 +142,14 @@ get_header(); ?>
 <!-- SOCIAL RESPONSIBILITY BLURB -->
     <div class="full-width content-area social-blurb">
       <div class="row">
-        <div class="large-10 small-centered columns">
-        	<?php echo get_field('home_social_responsibility');
-            	?>
-          <a class="general-link" href="<?php echo site_url(); ?>/social-responsibility ?>">Learn more about this...</a>
+        <div class="content">
+          <div class="large-10 small-centered columns">
+          	<?php echo get_field('home_social_responsibility');
+              	?>
+            <a class="general-link" href="<?php echo site_url(); ?>/social-responsibility ?>">Learn more about this...</a>
+          </div>
         </div>
-        <div class="large-10 small-centered columns heart-mark">
-        </div>
+        <div class="heart-mark-yellow"></div>
       </div>
     </div>
 

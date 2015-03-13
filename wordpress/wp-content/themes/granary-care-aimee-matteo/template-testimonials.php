@@ -28,7 +28,11 @@ get_header(); ?>
 <!-- INTRO PARAGRAPH IN SPEECH BUBBLE -->
 <div class="full-width content-area">
 	<div class="row">
-		<div class="large-10 medium-10 small-centered columns">
+		<div class="large-10 medium-12 small-centered columns hide-for-large-up hide-for-medium-up">
+				<h2><?php echo get_the_title(); ?></h2>
+				<?php the_content();?>
+		</div>
+		<div class="large-10 medium-12 small-centered columns hide-for-small">
 			<div class="bubble">
 				<h2><?php echo get_the_title(); ?></h2>
 				<?php the_content();?>
@@ -53,7 +57,7 @@ get_header(); ?>
 
 
 	<div class="row">
-		<div class="large-8 medium-8 small-10 small-centered columns testimonial <?php echo $cssClass; ?>">
+		<div class="large-8 medium-10 small-12 small-centered columns testimonial <?php echo $cssClass; ?>">
 			<h3><q><?php echo get_sub_field('testimonial') ;?></q></h3>
 			<p><?php echo get_sub_field('name') ;?></p>
 		</div>
