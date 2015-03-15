@@ -28,10 +28,10 @@ get_header(); ?>
 <!-- SUMMARY -->
 
 <div class="row">
-  <div class="large-12 medium-12 columns">
+  <div class="large-12 medium-10 columns">
     <h1><?php echo get_the_title(); ?></h1>
   </div>
-  <div class="large-8 medium-8 small-centered columns">
+  <div class="large-8 medium-10 small-centered columns">
     <?php the_content();?>
   </div>
 </div>
@@ -58,12 +58,12 @@ get_header(); ?>
 
     	<div class="row social-panel-container">
         <hr>
-      		<div class="large-4 medium-4 small-12 columns">
+      		<div class="large-4 medium-12 small-12 columns">
               <div class="social-panel-description">
               	<a href="<?php echo $webLink; ?>"><h2><?php echo $panelTitle; ?></h2></a>
               </div>
           </div>
-          <div class="large-6 medium-6 end small-12 columns" id="business-blurbs">
+          <div class="large-6 medium-12 end small-12 columns" id="business-blurbs">
               <?php echo $blurb; ?>
           </div>
       </div>
@@ -75,10 +75,10 @@ get_header(); ?>
 
     	<div class="row social-panel-container">
         <hr>
-      		<div class="large-4 medium-4 columns">
+      		<div class="large-4 medium-12 columns">
           			<a href="<?php echo $webLink; ?>"><img src="<?php echo $image['url']; ?>"/></a>
           </div>
-          <div class="large-6 medium-6 end columns" id="business-blurbs">
+          <div class="large-6 medium-12 end columns" id="business-blurbs">
     	        <div class="social-panel-description">
     	          	<a href="<?php echo $webLink; ?>"><h2><?php echo $panelTitle; ?></h2></a>
     	            <?php echo $blurb; ?>
