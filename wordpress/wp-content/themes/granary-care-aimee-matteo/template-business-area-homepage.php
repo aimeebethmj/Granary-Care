@@ -175,7 +175,7 @@ if( !empty($businessPanels) ):
 
     <div class="row">
       <div class="large-8 medium-8 small-centered columns">
-        <div class="large-1 medium-1 columns image-bullet-container">
+        <div class="large-1 medium-1 columns image-bullet-container hide-for-small">
         </div>
         <div class="large-11 medium-11 small-12 columns">
           <ul class="image-bullet">
