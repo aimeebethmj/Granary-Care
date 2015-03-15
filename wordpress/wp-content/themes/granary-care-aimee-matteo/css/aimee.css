@@ -1242,6 +1242,18 @@
                 {
                     padding-left: 0;
                 }
+
+        /* GRANARY KIDS HOMEPAGE */
+
+                .business-panel ul.image-bullet li a h3
+                {
+                    color: #39C6C9;
+                }
+
+                ul.image-bullet
+                {
+                    margin-left: 0;
+                }
         }
 
     /* 768 topbar break (48em at 16px base font) */
@@ -1458,10 +1470,10 @@
 
                 }
 
-                ul.image-bullet
+                /*ul.image-bullet
                 {
                     margin-left: 0;
-                }
+                }*/
 
               /*  .image-bullet-container
                 {
@@ -1470,10 +1482,10 @@
                     background: none;
                 }*/
 
-                .business-panel ul.image-bullet li a h3
+                /*.business-panel ul.image-bullet li a h3
                 {
                     color: #39C6C9;
-                }
+                }*/
 
             /* TEAM PAGE */
 

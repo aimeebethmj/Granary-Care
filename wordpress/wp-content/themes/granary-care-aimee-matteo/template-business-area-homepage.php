@@ -86,10 +86,10 @@ if(is_page('granary-kids') ):
 
 <!-- SIDEBAR AND MAIN CONTENT -->
 <div class="row">
-  <div class="large-10 medium-10 small-centered columns">
+  <div class="large-10 medium-12 small-centered columns">
     <h1><?php echo get_the_title(); ?></h1>
   </div>
-  <div class="large-8 medium-8 small-centered columns">
+  <div class="large-8 medium-10 small-centered columns">
     <?php the_content();?>
   </div>
 </div>
@@ -174,10 +174,10 @@ if( !empty($businessPanels) ):
     if( in_category( 'granarykids' ) ): ?>
 
     <div class="row">
-      <div class="large-8 medium-8 small-centered columns">
-        <div class="large-1 medium-1 columns image-bullet-container hide-for-small">
+      <div class="large-8 medium-10 small-centered columns">
+        <div class="large-1 columns image-bullet-container hide-for-small hide-for-medium">
         </div>
-        <div class="large-11 medium-11 small-12 columns">
+        <div class="large-11 medium-12 small-12 columns">
           <ul class="image-bullet">
             <li>
               <a href="<?php echo $buttonlink; ?>"><h3><?php echo $title; ?></h3></a>
