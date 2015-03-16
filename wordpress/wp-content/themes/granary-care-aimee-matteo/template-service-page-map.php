@@ -33,7 +33,7 @@ get_header(); ?>
 
 <!-- SIDEBAR AND MAIN CONTENT -->
   <div class="row">
-    <div class="large-10 medium-10 small-centered columns">
+    <div class="large-10 medium-12 small-centered columns">
       <div id="map_canvas"></div>
     </div>
   </div>
@@ -41,10 +41,10 @@ get_header(); ?>
       <!-- HEADING AND SUMMARY PARAGRAPHS -->
 
 <div class="row">
-  <div class="large-10 medium-10 small-centered columns">
+  <div class="large-10 medium-12 small-centered columns">
     <h2><?php echo get_the_title(); ?></h2>
   </div>
-  <div class="large-8 medium-8 small-centered columns">
+  <div class="large-8 medium-10 small-centered columns">
     <?php the_content();?>
   </div>
 </div>
@@ -182,7 +182,7 @@ if( !empty($accreditations) ):
 
     ?>
 
-      <div class="large-3 medium-3 small-6 logos columns">
+      <div class="large-3 medium-6 small-6 logos columns">
         <a href="<?php echo $logoLink; ?>"><img src="<?php echo $logo['url']; ?>"></a>
       </div>
     

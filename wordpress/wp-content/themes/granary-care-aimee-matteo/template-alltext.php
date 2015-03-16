@@ -45,10 +45,10 @@ get_header(); ?>
 <!-- SUMMARY -->
 
   <div class="row">
-    <div class="large-10 medium-10 small-centered columns">
+    <div class="large-10 medium-12 small-centered columns">
       <h1><?php echo get_the_title(); ?></h1>
     </div>
-    <div class="large-8 medium-8 small-centered columns <?php echo $slug; ?>">
+    <div class="large-8 medium-10 small-centered columns <?php echo $slug; ?>">
          <?php the_content();?>
         <?php if( !empty($firstbuttonlabel) ): ?>
           <a class="alltext-link" href="<?php echo $firstbuttonlink; ?>"><?php echo $firstbuttonlabel; ?></a>
@@ -71,7 +71,7 @@ get_header(); ?>
 <?php if( !empty( $secondSection ) ): ?>
 <div class="full-width content-area page-summary1">
   <div class="row">
-    <div class="large-8 medium-8 small-centered columns <?php echo $slug; ?>">
+    <div class="large-8 medium-10 small-centered columns <?php echo $slug; ?>">
     	<?php echo get_field('second_section');?>
       <?php if( !empty($secondbuttonlabel) ): ?>
         <a class="alltext-link" href="<?php echo get_field('second_section_button'); ?>"><?php echo get_field('second_section_button_label'); ?></a>
@@ -85,7 +85,7 @@ get_header(); ?>
 <?php if( !empty( $thirdSection ) ): ?>
 <div class="full-width content-area page-summary2">
   <div class="row">
-    <div class="large-8 medium-8 small-centered columns <?php echo $slug; ?>">
+    <div class="large-8 medium-10 small-centered columns <?php echo $slug; ?>">
     	<?php echo get_field('third_section');?>
       <?php if( !empty($thirdbuttonlabel) ): ?>
       <a class="alltext-link" href="<?php echo get_field('third_section_button'); ?>"><?php echo get_field('third_section_button_label'); ?></a>
