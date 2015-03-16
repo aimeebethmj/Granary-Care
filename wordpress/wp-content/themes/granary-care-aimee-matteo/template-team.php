@@ -64,10 +64,10 @@ get_header(); ?>
     <div class="full-width content-area staff-profiles">
       <div class="row">
         <div class="large-10 medium-12 small-centered columns">
-          <div class="large-4 medium-4 small-12 columns">
+          <div class="large-4 medium-12 small-12 columns">
             <img class="staff-profile-images" src="<?php echo $image['url']; ?>"/>      
           </div>
-          <div class="large-7 medium-7 small-12 columns staffinfo">
+          <div class="large-7 medium-12 small-12 columns staffinfo">
             <h3><?php echo $staffname; ?></h3>
             <h4><?php echo $jobtitle; ?></h4>
             <p><?php echo $jobroleinfo; ?></p>

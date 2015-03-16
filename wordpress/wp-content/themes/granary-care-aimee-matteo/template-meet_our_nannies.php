@@ -28,10 +28,10 @@ get_header(); ?>
 <!-- STAFF PROFILES GRANARY CARE -->
 <div class="full-width content-area page-summary1">
   <div class="row">
-    <div class="large-10 medium-10 small-centered columns">
+    <div class="large-10 medium-12 small-centered columns">
    		<h1><?php echo get_the_title(); ?></h1>   
     </div>
-    <div class="large-8 medium-8 small-centered columns">
+    <div class="large-8 medium-10 small-centered columns">
       <?php the_content(); ?>
     </div>
   </div>
@@ -55,13 +55,13 @@ get_header(); ?>
 		  ?>
 
       <div class="row profiles-container">
-      	<div class="large-10 medium-10 small-centered columns">
+      	<div class="large-10 medium-12 small-centered columns">
 
-          <div class="large-4 medium-4 columns nanny-profile-images">
+          <div class="large-4 medium-12 columns nanny-profile-images">
             <img src="<?php echo $image['url']; ?>"/>      
           </div>
 
-          <div class="large-6 end columns profile-info" id="business-blurbs">
+          <div class="large-6 medium-12 end columns profile-info" id="business-blurbs">
   	        <h4><?php echo $name; ?></h4>
   	        <h5><?php echo $nannytype; ?></h5>
   	        <h5><?php echo $location; ?></h5>

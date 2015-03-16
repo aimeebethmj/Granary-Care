@@ -422,10 +422,16 @@
        
     }
 
+    .image-banner-area
+    {
+        padding: 1rem 0;
+    }
+
     .image-banner-area img
     {
        margin: 1rem auto;
     }
+
 
     .image-banner-area h2
     {
@@ -782,7 +788,7 @@
 
     .accreditations-container
     {
-        height: 11rem;
+        /*height: 11rem;*/
         margin: 4rem auto;
     }
 
@@ -792,7 +798,7 @@
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
-        max-width: 60%;
+        max-width: 50%;
     }
 
 /* FAMILIES PAGE*/
@@ -1254,6 +1260,37 @@
                 {
                     margin-left: 0;
                 }
+
+        /* BUSNESS AREA HOMEPAGE */
+                .accreditations-container .logos:nth-of-type(3n)
+                {
+                    clear: both;
+                }
+
+        /* GRANARY KIDS USEFUL INFO */
+                .social-panel-container img
+                {
+                    margin: 2rem auto;
+                    display: block;
+                }
+
+        /* MEET OUR NANNIES PAGE */
+                .nanny-profile-images img,
+                .staff-profile-images
+                {
+                    max-width: 35%;
+                    display: block;
+                    margin: 2rem auto 0;
+                }
+
+                .profiles-container #business-blurbs h4,
+                .profiles-container #business-blurbs h5,
+                .staff-profiles .staffinfo h3,
+                .staff-profiles .staffinfo h4
+
+                {
+                    text-align: center;
+                }
         }
 
     /* 768 topbar break (48em at 16px base font) */
@@ -1493,7 +1530,7 @@
                 {
                     border-radius: 8rem;
                     margin: 2rem auto 0;
-                    width: 15rem;
+                    width: 80%;
                     display: block;
 
                 }
@@ -1513,12 +1550,7 @@
                 
 
             /* GRANARY KIDS USEFUL INFO */
-                .social-panel-container img
-                {
-                    margin: 2rem auto;
-                    display: block;
-                }
-
+               
                 .social-panel-description h2
                 {
                     text-align: center;
@@ -1532,6 +1564,8 @@
                 }
 
             /* BUSINESS AREA HOMEPAGE */
+
+
 
                 .image-banner-area img
                 {
@@ -1549,17 +1583,19 @@
                 .nanny-profile-images img
                 {
                     margin: 2rem auto 0;
-                    width: 15rem;
+                    width: 80%;
                 }
 
-                .profiles-container #business-blurbs h4,
+
+
+                /*.profiles-container #business-blurbs h4,
                 .profiles-container #business-blurbs h5,
                 .staff-profiles .staffinfo h3,
                 .staff-profiles .staffinfo h4
 
                 {
                     text-align: center;
-                }
+                }*/
 
             /* MOTHER & BABY FACILITIES PAGE */
 
@@ -1605,13 +1641,20 @@
         }
 
     /* 360 */
-        @media (max-width:360px)
+        @media (max-width:420px)
         {
 
                 .content
                 {
                     padding: 0;
                     margin: 0 1rem;
+                }
+
+            /* MEET OUR NANNIES PAGE */
+                .nanny-profile-images img,
+                .staff-profile-images
+                {
+                    max-width: 60%;
                 }
         }
 
