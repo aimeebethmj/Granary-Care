@@ -300,13 +300,13 @@ if( !empty($accreditations) ):
 
       if(is_page( 'nanny-agency')): ?>
 
-      <div class="large-3 medium-3 small-6 logos columns">
+      <div class="large-3 medium-6 small-6 logos columns">
         <img src="<?php echo $logo['url']; ?>">
       </div>
 
     <?php else: ?>
 
-      <div class="large-3 medium-3 small-6 logos columns">
+      <div class="large-3 medium-6 small-6 logos columns">
         <a href="<?php echo $logoLink; ?>"><img src="<?php echo $logo['url']; ?>"></a>
       </div>
       
