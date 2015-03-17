@@ -31,10 +31,10 @@ get_header(); ?>
 
 
   <div class="row">
-    <div class="large-10 medium-10 small-centered columns">
+    <div class="large-10 medium-12 small-centered columns">
       <h1><?php echo get_the_title(); ?></h1>
     </div>
-    <div class="large-8 medium-8 small-centered columns">
+    <div class="large-8 medium-10 small-centered columns">
       <?php the_content();?>
     </div>
   </div>
@@ -53,7 +53,7 @@ get_header(); ?>
 <!-- FACILITIES PANELS -->
 
   <div class="row">
-    <div class="large-10 medium-10 small-centered columns">
+    <div class="large-10 medium-12 small-centered columns">
       <h2><?php echo get_field('image_section_title'); ?></h2>
     </div>
   </div>
@@ -68,13 +68,13 @@ get_header(); ?>
 
   ?>
   <div class="row profiles-container">
-    <div class="large-10 medium-10 small-centered columns">
-      <div class="large-4 medium-4 columns">
+    <div class="large-10 medium-12 small-centered columns">
+      <div class="large-4 medium-12 columns">
             <div class="large-button-image">
               <img src="<?php echo $image['url']; ?>">   
             </div>
       </div>
-      <div class="large-6 medium-6 columns profile-info" id="business-blurbs">
+      <div class="large-6 medium-12 columns profile-info" id="business-blurbs">
               <h3><?php echo $panelTitle; ?></h3>
               <?php echo $blurb; ?>
       </div>
@@ -96,7 +96,7 @@ $secondButtonLabel = get_field('second_section_button_label');
 if( !empty( $secondSection ) ): ?>
 
   <div class="row last-blurb">
-    <div class="large-8 medium-8 small-centered columns">
+    <div class="large-8 medium-10 small-centered columns">
       <?php echo $secondSection;?>
     </div>
   </div>

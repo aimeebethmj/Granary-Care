@@ -1299,6 +1299,16 @@
                 {
                     text-align: center;
                 }
+        /* FACILITIES PAGE */
+                .large-button-image img
+                {
+                    max-width: 240px;
+                }
+
+                .profiles-container h3
+                {
+                    text-align: center;
+                }
         }
 
     /* 768 topbar break (48em at 16px base font) */
@@ -1624,10 +1634,7 @@
                     display: block;
                 }
 
-                .profiles-container h3
-                {
-                    text-align: center;
-                }
+                
 
                 .last-blurb ul
                 {
