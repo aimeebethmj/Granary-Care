@@ -32,10 +32,10 @@ get_header(); ?>
 
 <!-- CONTENT -->
 <div class="row">
-    <div class="large-10 medium-10 small-centered columns">      
+    <div class="large-10 medium-12 small-centered columns">      
         <h1><?php echo get_the_title(); ?></h1>
     </div>
-    <div class="large-8 medium-8 small-centered columns">
+    <div class="large-8 medium-10 small-centered columns">
         <?php the_content();?>
         
     </div>
@@ -59,7 +59,7 @@ get_header(); ?>
 
 
 
-	 		<div class="large-6 medium-6 small-11 small-centered columns email-container <?php echo $cssClass ?>">
+	 		<div class="large-6 medium-8 small-11 small-centered columns email-container <?php echo $cssClass ?>">
 	 			<a href="mailto:<?php echo $emailHandle ?>@granarycare.com"><h3><b><?php echo $emailHandle ?></b><br>@granarycare.com</h3></a>
 	 		</div>
 <!-- 
