@@ -44,7 +44,7 @@ get_header(); ?>
 
 <div class="full-width content-area">
     <div class="row">
-        <div class="large-8 medium-8 small-12 small-centered columns">
+        <div class="large-8 medium-10 small-12 small-centered columns">
 
             <dl class="tabs" data-tab>
               <dd class="active"><a href="#panel1">Families Form</a></dd>
@@ -174,6 +174,8 @@ get_header(); ?>
                 </form>
 
               </div>
+
+              <!-- nannies register -->
               <div class="content" id="panel2">
                 <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
               </div>
