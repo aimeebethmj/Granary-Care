@@ -35,7 +35,7 @@ get_header(); ?>
     <div class="large-12 medium-12 columns">      
         <h1><?php echo get_the_title(); ?></h1>
     </div>
-    <div class="large-8 medium-8 small-centered columns">
+    <div class="large-8 medium-10 small-centered columns">
         <?php the_content();?>
         <div class="heart-mark-yellow"></div>
     </div>
@@ -46,7 +46,7 @@ get_header(); ?>
 
 <!-- NEW ACCORDION -->
   <div class="row accordion-container">
-    <div class="large-8 medium-8 small-centered columns">
+    <div class="large-8 medium-10 small-centered columns">
       <dl class="accordion" data-accordion>
 
         <?php if( have_rows('accordion') ): ?>
