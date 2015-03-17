@@ -130,9 +130,10 @@ get_header(); ?>
             while( have_rows('activities') ): the_row();
 
             // Vars
-            $image = get_sub_field('panel_image');
+            $image      = get_sub_field('panel_image');
             $panelTitle = get_sub_field('panel_title');
-            $blurb = get_sub_field('blurb');
+            $blurb      = get_sub_field('blurb');
+            $createdBy  = get_sub_field('created_by');
             
             $classes = '';
             if ($currentRow == $totalRows) $classes .= 'last ';
@@ -142,8 +143,8 @@ get_header(); ?>
           ?>
 
               <div class="large-6 medium-6 columns activity-business-panel <?=$classes?>">
-                  <div class="button-image">
-                    <img src="<?php echo $image['url']; ?>">
+                  <div class="button-image" >
+                    <img src="<?php echo $image['url']; ?>" title="<?php echo $createdBy; ?>">
                   </div>
                   <div class="business-panel-description">
                   	<h3><?php echo $panelTitle; ?></h3>
