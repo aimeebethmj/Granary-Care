@@ -1309,6 +1309,16 @@
                     height: 2.9rem;
                     
                 }
+
+
+        }
+
+        @media (min-width:768px)
+        {
+                .top-bar-section .dropdown li.parent-link
+                {
+                    display: none;
+                }
         }
 
 
