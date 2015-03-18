@@ -39,7 +39,7 @@
             <li><a href="<?php echo site_url(); ?>/social-responsibility">Social Responsibility</a></li>
             <li><a href="<?php echo site_url(); ?>/work-for-us">Work With Us</a></li>
             <li><a href="<?php echo site_url(); ?>/contact-us">Contact Us</a></li>
-            <li><a href="<?php echo ot_get_option( 'facebook' ); ?>"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+            <!-- <li><a href="<?php echo ot_get_option( 'facebook' ); ?>"><i class="fa fa-facebook-square fa-2x"></i></a></li> -->
           </ul>        
         </div>
       </div>
