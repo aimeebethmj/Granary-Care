@@ -94,11 +94,10 @@
     }
 
     .slider .summary h2,
-    .slider a .summary p
+    .slider .summary p
     {
         text-align: right;
         margin: 0 3rem 1rem 0;
-        font-style: none;
         color: #131342;
     }
 
@@ -131,6 +130,9 @@
         float: right;
         padding: .75rem 1.5rem;
         margin-right: 3rem;
+        position: absolute;
+        bottom: 0.5rem;
+        right: 0;
     }
 
     .slick-slide .slider-copy-content:before
@@ -414,7 +416,7 @@
     }
 
     a .fa {
-        padding: 10px;
+        margin-top: .5rem;
     }
 
     .footer-area .row
@@ -1012,7 +1014,7 @@
 
     }
 
-    .clubs-panel #business-blurbs a 
+    .clubs-panel .business-blurbs a 
     {
         text-align: left;
     }
@@ -1022,7 +1024,7 @@
         margin: 1rem auto;
     }
 
-    .clubs-panel #business-blurbs,
+    .clubs-panel .business-blurbs,
     .clubs-panel h2
     {
         margin-bottom: 3.5rem;
@@ -1320,6 +1322,37 @@
                     
                 }
 
+                /* little arrow next to dropdown items */
+
+                .top-bar-section .has-dropdown > a:after
+                {
+                    /* pointing right */
+                    border-color: transparent transparent transparent rgba(19,19,66, 0.3) ;
+                } 
+
+                li .back
+                {
+                    position: relative;
+                    padding-left: 1rem;
+                }
+
+                li .back:before
+                {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border: inset 5px;
+                    border-left-style: solid;
+                    margin-right: 0.9375rem;
+                    margin-top: -2.5px;
+                    position: absolute;
+                    top: 50%;
+                    left: 0.5rem;
+
+                    border-color: transparent rgba(19,19,66, 0.3) transparent transparent  ;  
+                }   
+
 
         }
 
@@ -1385,7 +1418,7 @@
                     overflow: hidden;
                 }
 
-                .slider .summary h2, .slider a .summary p
+                .slider .summary h2, .slider .summary p
                 {
                     margin: 0 1.5rem 1rem 0;
                 }
