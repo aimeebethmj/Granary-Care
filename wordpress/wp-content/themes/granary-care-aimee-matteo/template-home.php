@@ -35,7 +35,7 @@ get_header(); ?>
 		?>
           <div class="<?php echo $carouselClass; ?>">
               <div class="slider-copy-content">
-                <a href="<?php echo $link; ?>">
+                <!-- <a href="<?php echo $link; ?>"> -->
                   <!-- <img src="<?php echo $image['url']; ?>"> -->
                   <div class="business-area-logo">
                     <h2 class="half-logo-granary">Granary</h2>
@@ -47,8 +47,7 @@ get_header(); ?>
                 		<!-- <a class="small radius button" href="<?php echo $link; ?>">Find out more</a> -->
                 	</div>
                   <a class="small round button" href="<?php echo $link; ?>"><?php echo $buttonlabel; ?></a>
-
-                </a>
+                <!-- </a> -->
           	 </div>
           </div>
           
