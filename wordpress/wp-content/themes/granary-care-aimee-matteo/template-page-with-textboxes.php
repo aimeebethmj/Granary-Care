@@ -28,7 +28,7 @@ get_header(); ?>
 <!-- SUMMARY -->
 
 <div class="row">
-  <div class="large-12 medium-10 columns">
+  <div class="large-12 columns">
     <h1><?php echo get_the_title(); ?></h1>
   </div>
   <div class="large-8 medium-10 small-centered columns">
