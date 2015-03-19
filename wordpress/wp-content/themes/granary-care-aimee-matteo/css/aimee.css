@@ -1356,6 +1356,17 @@
 
         }
 
+
+        @media (max-width:801px)
+        {
+                .row.image-container
+                {
+                    margin: 0 -7rem;
+                    width: auto;
+                }
+        }
+
+
         @media (min-width:768px)
         {
                 .top-bar-section .dropdown li.parent-link
@@ -1363,6 +1374,8 @@
                     display: none;
                 }
         }
+
+       
 
 
 
@@ -1694,6 +1707,13 @@
                 {
                     padding: 2rem 0;
                 }
+
+             /* SERVICE PAGES */
+                .row.image-container
+                {
+                    margin: 0 -4rem;
+                    width: auto;
+                }
            
 
         }
@@ -1732,12 +1752,13 @@
                     width: 15rem;
                 }
 
-            /* SERVICE PAGES */
+             /* SERVICE PAGES */
                 .row.image-container
                 {
                     margin: 0 -1.5rem;
                     width: auto;
                 }
+           
 
         }
 
