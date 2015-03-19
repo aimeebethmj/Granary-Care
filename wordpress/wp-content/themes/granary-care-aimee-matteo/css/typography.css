@@ -249,10 +249,15 @@ p
 	    		font-size: 1.3rem;
 	    	}
 
+	    	.fa-phone.fa-2x
+	    	{
+	    		font-size: 1.5rem;
+	    	}
+
 		
         }
 	   
-	/* 500 */
+	/* 640 */
 	    @media (max-width:640px)
 	    {
 
@@ -282,10 +287,24 @@ p
 	  			line-height: 2.2rem;
 	  			margin-top: 1.5rem;
 	    	}
-		    }
 
-	/* 470 */
-		@media (max-width:470px)
+    	/* SLIDER */
+
+            .slider .summary p
+            {
+                font-size: 1rem;
+            }
+
+            .slider .summary h2
+            {
+            	font-size: 1.8rem;
+            }
+
+	    	
+		}
+
+	/* 500 */
+		@media (max-width:500px)
 	    {
 	    	h1
 	    	{
@@ -306,7 +325,6 @@ p
 	    	.slider .summary h2.carousel-headline
 	    	{
 	    		font-size: 1.6rem;
-	    		margin: 0.5rem 1.5rem 1rem 0;
 	    	}
 	               
 	    }

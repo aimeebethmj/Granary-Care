@@ -1313,6 +1313,22 @@
                 }
         }
 
+
+    /* 801 break: large images for tablets full-wdith */
+        @media (max-width:801px)
+        {
+                .fa-phone.fa-2x
+                {
+                    padding: 0 1rem;
+                }
+
+                .row.image-container
+                {
+                    margin: 0 -7rem;
+                    width: auto;
+                }
+        }
+
     /* 768 topbar break (48em at 16px base font) */
         @media (max-width:767px)
         {
@@ -1357,16 +1373,7 @@
         }
 
 
-        @media (max-width:801px)
-        {
-                .row.image-container
-                {
-                    margin: 0 -7rem;
-                    width: auto;
-                }
-        }
-
-
+    /* 768px break hides nav parent link on large nav */
         @media (min-width:768px)
         {
                 .top-bar-section .dropdown li.parent-link
@@ -1397,6 +1404,11 @@
                     overflow-x: hidden; 
                 }
 
+                .call-us-today
+                {
+                    margin-top: .4rem;
+                }
+
 
             /* HEADER */
                 .logo-small
@@ -1409,6 +1421,8 @@
                     width: 100%;
                     height: 4rem;
                 }
+
+                
 
 
             /* SLIDER */
@@ -1431,9 +1445,10 @@
                     overflow: hidden;
                 }
 
-                .slider .summary h2, .slider .summary p
+                .slider .summary h2,
+                .slider .summary p
                 {
-                    margin: 0 1.5rem 1rem 0;
+                    margin: 0 1.5rem .5rem 1.5rem;
                 }
 
                 .slider .business-area-logo .half-logo-granary
@@ -1717,9 +1732,20 @@
            
 
         }
+    /* 580 break for slider paragraph */
 
-    /* 470 */
-        @media (max-width:470px)
+        @media (max-width: 580px)
+        {
+             /* SLIDER */
+
+                .summary p
+                {
+                    display: none;
+                }
+        }
+
+    /* 500 */
+        @media (max-width:500px)
         {
 
                 .content
@@ -1735,8 +1761,17 @@
 
                 .call-us-today
                 {
-                    margin-top: .4rem;
+                    margin-top: .2rem;
                 }
+
+            /* SLIDER */
+                .slider .summary h2.carousel-headline
+                {
+                    margin: 0.5rem 1.5rem 1rem 1.5rem;
+
+                }
+
+                
 
             /* MEET OUR NANNIES PAGE */
                 .nanny-profile-images img,

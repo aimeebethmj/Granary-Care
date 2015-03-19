@@ -43,7 +43,7 @@ get_header(); ?>
                   </div>
                   <div class="summary">
                     <h2 class="carousel-headline"><?php echo $headline; ?></h2>          	
-                		<p class="hide-for-small"><?php echo $summary; ?></p>
+                		<p><?php echo $summary; ?></p>
                 		<!-- <a class="small radius button" href="<?php echo $link; ?>">Find out more</a> -->
                 	</div>
                   <a class="small round button" href="<?php echo $link; ?>"><?php echo $buttonlabel; ?></a>
