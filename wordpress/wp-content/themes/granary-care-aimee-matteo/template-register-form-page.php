@@ -6,10 +6,13 @@ get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 
-    $categories = get_the_category(); // returns all categories assigned to a page/post as an Array
-    $category = $categories[0]; // let's grab the first category in the Array (the element at index 0)
-    $slug = $category->slug; // kind of self-explanatory (the slug property inside the category Object)
-    $image = get_field('image');
+    $categories  = get_the_category(); // returns all categories assigned to a page/post as an Array
+    $category    = $categories[0]; // let's grab the first category in the Array (the element at index 0)
+    $slug        = $category->slug; // kind of self-explanatory (the slug property inside the category Object)
+    $image       = get_field('image');
+    $formHeading = get_field('form_heading');
+    $mainButtonLink = get_field('main_button_link');
+    $mainButtonLabel= get_field('main_button_label');
 
 
     // echo '<pre>';
@@ -40,152 +43,113 @@ get_header(); ?>
   </div>
 </div>
 
+<!-- ACTION BUTTON -->
+  <div class="full-width content-area action-area <?php echo $slug; ?>">
+      <div class="row">
+        <div class="buttons-container">
+          <a class="large round button firstbutton" href="<?php echo $mainButtonLink; ?>"><?php echo $mainButtonLabel; ?></a>
+        </div>
+      </div>
+    </div>
+
 </div>
 
-<div class="full-width content-area">
+
+<?php if(is_page('family-register') ): ?>
+
+<!-- FORM -->
+
+<form class="form-container" enctype="multipart/form-data">
+  <div class="row">
+    <div class="large-8 medium-8 small-11 small-centered columns">
+      <h2><?php echo $formHeading ?></h2>
+
+      <div class="row">
+          <label for="firstName" class="inline">First Name
+            <input type="text" id="firstName" placeholder="First name" name="firstName">
+          </label>
+      </div>
+
+        
+      <div class="row">
+          <label for="lastName" class="inline">Last name
+            <input type="text" id="lastName" placeholder="" name="lastName">
+          </label>
+      </div>
+
+      <div class="row">
+          <label for="email" class="inline">Email
+            <input type="email" id="email" placeholder="youremail@example.com" name="email">
+          </label>
+      </div>
+
+      <div class="row">
+          <label for="number" class="inline">Contact Number
+            <input type="text" id="number" placeholder="" name="number">
+          </label>
+      </div>
+
+
+      <div class="row">
+          <label for="position" class="inline">Position Applying For
+            <select>
+              <option id="position" name="position" value="husker">Husker</option>
+              <option id="position" name="position" value="starbuck">Starbuck</option>
+              <option id="position" name="position" value="hotdog">Hot Dog</option>
+              <option id="position" name="position" value="apollo">Apollo</option>
+            </select>
+          </label>
+      </div>
+
+      <div class="row">
+          <label for="renumeration" class="inline">Renumeration
+            <select>
+              <option value="husker" id="renumeration" name="renumeration">Paid employment only</option>
+              <option value="starbuck" id="renumeration" name="renumeration">Voluntary role only</option>
+              <option value="hotdog" id="renumeration" name="renumeration">Paid and voluntary</option>
+            </select>
+          </label>
+      </div>
+
+      <div class="row">
+          <label for="transportation" class="inline">Driver:
+            <input type="radio" name="transportation" value="Driver" id="Driver"><label for="Driver" class="inline">Driver</label>
+            <input type="radio" name="transportation" value="Non-Driver" id="nonDriver"><label for="nonDriver" class="inline">Non-Driver</label>
+          </label>
+      </div>
+
+      <div class="row">
+            <label for="moreInfo" class="inline">Additional Information
+              <textarea id="moreInfo" placeholder="" name="moreInfo"></textarea>
+            </label>
+      </div>
+
     <div class="row">
-        <div class="large-8 medium-10 small-12 small-centered columns">
+            <label id="uploadCV">Upload your CV
+              <input type="file" id="uploadCV" name="uploadCV"/>
+            </label>
+    </div>
 
-            <dl class="tabs" data-tab>
-              <dd class="active"><a href="#panel1">Families Form</a></dd>
-              <dd><a href="#panel2">Nannies Form</a></dd>
-            </dl>
-            <div class="tabs-content">
-              <div class="content active" id="panel1">
-                <!-- <p>This is the first panel of the basic tab example. This is the first panel of the basic tab example.</p> -->
+    <div class="row">
+            <label id="uploadCerts">Additional certificates
+              <input type="file" id="uploadCerts" name="uploadCerts"/>
+            </label>
+    </div>
 
-                <!-- FAMILIES REGISTRATION FORM -->
-                <form class="form-container" enctype="multipart/form-data">
-                  <div class="row">
-                    <div class="large-12 columns">
-
-                      <div class="row">
-                        <div class="small-3 columns">
-                          <label for="firstName" class="inline">First Name</label>
-                        </div>
-                        <div class="small-9 columns">
-                          <input type="text" id="firstName" placeholder="First name" name="firstName">
-                        </div>
-                      </div>
-
-                        
-                      <div class="row">
-                        <div class="small-3 columns">
-                          <label for="lastName" class="inline">Last name</label>
-                        </div>
-                        <div class="small-9 columns">
-                          <input type="text" id="lastName" placeholder="" name="lastName">
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="small-3 columns">
-                          <label for="email" class="inline">Email</label>
-                        </div>
-                        <div class="small-9 columns">
-                          <input type="email" id="email" placeholder="youremail@example.com" name="email">
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="small-3 columns">
-                          <label for="number" class="inline">Contact Number</label>
-                        </div>
-                        <div class="small-9 columns">
-                          <input type="text" id="number" placeholder="" name="number">
-                        </div>
-                      </div>
-
-
-                      <div class="row">
-                        <div class="small-3 columns">
-                          <label for="position" class="inline">Position Applying For</label>
-                        </div>
-                        <div class="small-9 columns">
-                            <select>
-                              <option id="position" name="position" value="husker">Husker</option>
-                              <option id="position" name="position" value="starbuck">Starbuck</option>
-                              <option id="position" name="position" value="hotdog">Hot Dog</option>
-                              <option id="position" name="position" value="apollo">Apollo</option>
-                            </select>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="small-3 columns">
-                          <label for="renumeration" class="inline">Renumeration</label>
-                        </div>
-                        <div class="small-9 columns">
-                            <select>
-                              <option value="husker" id="renumeration" name="renumeration">Paid employment only</option>
-                              <option value="starbuck" id="renumeration" name="renumeration">Voluntary role only</option>
-                              <option value="hotdog" id="renumeration" name="renumeration">Paid and voluntary</option>
-                            </select>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="small-3 columns">
-                          <label for="transportation" class="inline">Driver</label>
-                        </div>
-                        <div class="small-9 columns">
-                            <input type="radio" name="transportation" value="Driver" id="Driver"><label for="Driver" class="inline">Driver</label>
-                            <input type="radio" name="transportation" value="Non-Driver" id="nonDriver"><label for="nonDriver" class="inline">Non-Driver</label>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="small-3 columns">
-                            <label for="moreInfo" class="inline">Additional Information</label>
-                        </div>
-                        <div class="small-9 columns">
-                            <textarea id="moreInfo" placeholder="" name="moreInfo"></textarea>
-                        </div>
-                      </div>
-
-                    <div class="row">
-                        <div class="small-3 columns">
-                            <label id="uploadCV">Upload your CV</label>
-                        </div> 
-                        <div class="small-9 columns"> 
-                            <input type="file" id="uploadCV" name="uploadCV"/>
-                        </div> 
-                    </div>
-
-                    <div class="row">
-                        <div class="small-3 columns">
-                            <label id="uploadCerts">Additional certificates</label>
-                        </div> 
-                        <div class="small-9 columns"> 
-                            <input type="file" id="uploadCerts" name="uploadCerts"/>
-                        </div> 
-                    </div>
-
-                    <div class="row">
-                        <div class="large-12 columns action-area">
-                            <div class="buttons-container">
-                                <button class="large success round button" type="submit">Send your application!</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    </div>
-                  </div>
-                </form>
-
-              </div>
-
-              <!-- nannies register -->
-              <div class="content" id="panel2">
-                <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
-              </div>
+<!-- BUTTON SEND -->
+    <div class="row">
+        <div class="large-12 columns action-area <?php echo $slug; ?>">
+            <div class="buttons-container">
+                <button class="large round button main-button" type="submit">Send your application!</button>
             </div>
-
         </div>
     </div>
-</div>
 
+    </div>
+  </div>
+</form>
 
+<?php endif; ?>
 
 
 
