@@ -114,6 +114,7 @@ get_header(); ?>
               <option id="business-area" name="business-area" value="Kids Clubs">Kids Clubs</option>
               <option id="business-area" name="business-area" value="Nanny Agency">Nanny Agency</option>
               <option id="business-area" name="business-area" value="Mother &amp; Baby">Mother &amp; Baby</option>
+              <option id="business-area" name="business-area" value="Other">Other</option>
             </select>
           </label>
       </div>
