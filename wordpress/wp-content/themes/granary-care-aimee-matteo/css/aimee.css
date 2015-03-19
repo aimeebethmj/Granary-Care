@@ -1596,6 +1596,23 @@
                     color: rgba(19, 19, 66, .6);
                 }
 
+                .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after
+                {
+                    
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border: inset 5px;
+                    border-color: transparent transparent transparent rgba(255, 255, 255, 0.4);
+                    border-left-style: solid;
+                    margin-right: 0.9375rem;
+                    margin-top: -4.5px;
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                }
+
             /* BUTTONS */
 
                 .buttons-container a.button
