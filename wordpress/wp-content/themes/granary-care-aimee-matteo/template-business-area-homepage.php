@@ -175,15 +175,11 @@ if( !empty($businessPanels) ):
 
     <div class="row">
       <div class="large-8 medium-10 small-centered columns">
-        <div class="large-1 columns image-bullet-container hide-for-small hide-for-medium">
-        </div>
-        <div class="large-11 medium-12 small-12 columns">
           <ul class="image-bullet">
             <li>
               <a href="<?php echo $buttonlink; ?>"><h3><?php echo $title; ?></h3></a>
             </li>
           </ul>
-        </div>
       </div>
     </div>
 
