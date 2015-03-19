@@ -68,7 +68,8 @@
 								<!-- new logo -->
 								<a href="<?php echo site_url(); ?>" id="logo-small-link"></a>
 							</div>
-							<p class="call-us-today">Call us today! <a href="tel:<?php echo ot_get_option( 'telephone_number' ); ?>"><?php echo ot_get_option( 'telephone_number' ); ?></a></p>
+							<p class="call-us-today hide-for-small">Call us today! <a href="tel:<?php echo ot_get_option( 'telephone_number' ); ?>"><?php echo ot_get_option( 'telephone_number' ); ?></a></p>
+							<p class="call-us-today show-for-small-only"><i class="fa fa-phone fa-2x"></i><a href="tel:<?php echo ot_get_option( 'telephone_number' ); ?>"><?php echo ot_get_option( 'telephone_number' ); ?></a></p>
 
 						</div>
 					</div>
@@ -81,7 +82,9 @@
 								<a href="<?php echo site_url(); ?>" id="logo-small-link"></a>
 							</div>
 							<div class="large-4 medium-5 small-12  columns ">						
-								<p class="call-us-today">Call us today! <a href="tel:<?php echo ot_get_option( 'telephone_number' ); ?>"><?php echo ot_get_option( 'telephone_number' ); ?></a></p>
+								<p class="call-us-today hide-for-small">Call us today! <a href="tel:<?php echo ot_get_option( 'telephone_number' ); ?>"><?php echo ot_get_option( 'telephone_number' ); ?></a></p>
+								<p class="call-us-today show-for-small-only"><i class="fa fa-phone fa-2x"></i><a href="tel:<?php echo ot_get_option( 'telephone_number' ); ?>"><?php echo ot_get_option( 'telephone_number' ); ?></a></p>
+
 							</div>
 							<div class="medium-4 hide-for-medium columns ">
 								<!-- register buttons -->
