@@ -1698,8 +1698,8 @@
 
         }
 
-    /* 360 */
-        @media (max-width:420px)
+    /* 470 */
+        @media (max-width:470px)
         {
 
                 .content
@@ -1713,6 +1713,12 @@
                 .staff-profile-images
                 {
                     max-width: 60%;
+                }
+            /* CLUBS PAGES */
+                .club-location-area #map_canvas
+                {
+                    height: 15rem;
+                    width: 15rem;
                 }
         }
 

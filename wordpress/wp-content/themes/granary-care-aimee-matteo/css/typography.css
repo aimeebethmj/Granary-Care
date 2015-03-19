@@ -284,12 +284,29 @@ p
 	    	}
 		    }
 
-	/* 360 */
-		@media (max-width:360px)
+	/* 470 */
+		@media (max-width:470px)
 	    {
 	    	h1
 	    	{
 	    		font-size: 2.4rem;
+	    	}
+
+	    	.social-blurb h3,
+	    	.footer-area h3
+	    	{
+	    		font-size: 1.2rem;
+	    	}
+
+	    	.footer-area h3.call-us-today
+	    	{
+	    		font-size: 1.4rem;
+	    	}
+
+	    	.slider .summary h2.carousel-headline
+	    	{
+	    		font-size: 1.6rem;
+	    		margin: 0.5rem 1.5rem 1rem 0;
 	    	}
 	               
 	    }

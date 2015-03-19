@@ -62,7 +62,7 @@ get_header(); ?>
 
 <!-- Map -->
 <div class="row">
-	<div class="large-10 medium-10 small-centered club-location-area columns">
+	<div class="large-10 medium-10 small-12 small-centered club-location-area columns">
 
 		<script type="text/javascript">
 	  		var clubs = [] // this creates a new array, before the loop (within the loop we'll populate that array)
