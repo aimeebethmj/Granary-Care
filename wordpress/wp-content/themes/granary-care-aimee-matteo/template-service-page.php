@@ -43,11 +43,9 @@ get_header(); ?>
 
     ?>
 
-      <div class="row">
-        <div class="large-10 medium-12 small-centered columns">
-          <div class="image-container">
+      <div class="row image-container">
+        <div class="large-10 medium-12 small-centered  columns">
             <img src="<?php echo $image['url']; ?>">
-          </div>
         </div>
       </div>
 

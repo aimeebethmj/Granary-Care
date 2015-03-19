@@ -1708,18 +1708,37 @@
                     margin: 0 1rem;
                 }
 
+                .banner-statement
+                {
+                    display: none;
+                }
+
+                .call-us-today
+                {
+                    margin-top: .4rem;
+                }
+
             /* MEET OUR NANNIES PAGE */
                 .nanny-profile-images img,
                 .staff-profile-images
                 {
                     max-width: 60%;
                 }
+
             /* CLUBS PAGES */
                 .club-location-area #map_canvas
                 {
                     height: 15rem;
                     width: 15rem;
                 }
+
+            /* SERVICE PAGES */
+                .row.image-container
+                {
+                    margin: 0 -1.5rem;
+                    width: auto;
+                }
+
         }
 
 
