@@ -347,8 +347,7 @@
     .top-bar-section ul.top-level > li:last-child
     {
         border-right: none;
-        border-bottom-left-radius: .5rem;
-        border-bottom-right-radius: .5rem;
+
 
     } 
 
@@ -1371,6 +1370,8 @@
                 .nav-wrap
                 {
                     height: 2.9rem;
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
                     
                 }
 
@@ -1403,7 +1404,12 @@
                     left: 0.5rem;
 
                     border-color: transparent rgba(19,19,66, 0.3) transparent transparent  ;  
-                }   
+                }  
+
+                .top-bar.expanded
+                {
+                    overflow: visible;
+                } 
 
 
         }
