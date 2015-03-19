@@ -256,6 +256,20 @@ p
 
 		
         }
+
+    /* 801 break: smaller slider fonts for tablets full-wdith */
+        @media (max-width:801px)
+        {
+                .slider .summary h2
+                {
+                	font-size: 2rem;
+                }
+
+                .slider .summary p
+                {
+                	font-size: 1.2rem;
+                }
+        }
 	   
 	/* 640 */
 	    @media (max-width:640px)

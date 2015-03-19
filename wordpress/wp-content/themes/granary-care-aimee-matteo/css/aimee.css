@@ -97,7 +97,7 @@
     .slider .summary p
     {
         text-align: right;
-        margin: 0 3rem 1rem 0;
+        margin: 0 3rem 1rem 3rem;
         color: #131342;
     }
 
@@ -188,6 +188,12 @@
         margin: 2rem auto;
     }
 
+
+    .business-panel ul
+    {
+        margin-left: 0;
+    }
+
     .business-panel h2
     {
         text-align: right;
@@ -210,15 +216,16 @@
         text-decoration: underline;
 
     }
-
+    
+    .business-panel ul.image-bullet li a h3
+    {
+        color: #39C6C9;
+    }
 
     .image-bullet li
     {
-/*      background: url('../images/red-heart-bullet.png') no-repeat;
-      background-size: contain;
-      background-position: center;*/
+
       height: 3rem;
-      padding-left: 2rem;
     }
 
     .image-bullet-container
@@ -612,6 +619,7 @@
     {
         text-align: center;
     }
+
 
 
 
@@ -1030,6 +1038,13 @@
         margin-bottom: 3.5rem;
     }
 
+    .clubs-panel .business-blurbs p,
+    .clubs-panel .business-blurbs a h3
+    {
+        margin-left: 4rem;
+    }
+
+
 /* Accordion */
 
     .accordion-container
@@ -1261,15 +1276,36 @@
 
         /* GRANARY KIDS HOMEPAGE */
 
-                .business-panel ul.image-bullet li a h3
-                {
-                    color: #39C6C9;
-                }
+                
 
                 ul.image-bullet
                 {
                     margin-left: 0;
                 }
+
+        /* CLUBS PAGES */
+
+                .clubs-panel h2 
+                {
+                    margin: 0.5rem 0;
+                }
+
+                .clubs-panel .business-blurbs p,
+                .clubs-panel .business-blurbs a h3
+                {
+                    margin-left: 0;
+                }
+
+                .clubs-panel .business-blurbs
+                {
+                    margin-bottom: 1rem;
+                }
+
+                .clubs-panel hr
+                {
+                    margin: 1rem 0;
+                }
+
 
         /* BUSNESS AREA HOMEPAGE */
                 .accreditations-container .logos:nth-of-type(3n)

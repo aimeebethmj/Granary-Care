@@ -54,6 +54,11 @@ body
 		color: #131342; 
 	}
 
+	a
+	{
+		color: #FFAD06;
+	}
+
 /* navigation */
 
 	/* pale drop-down colours */
@@ -333,6 +338,7 @@ body
 		color: rgba(255,84, 38, 1);
 	}
 
+	.motherandbaby hr,
 	.green hr
 	{
 		background-color: rgba(118,194,161, 1);
