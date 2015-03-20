@@ -1131,7 +1131,7 @@
 
 /* WORK WITH MOTHER AND BABY */
 
-    .vacancy-container a
+    .vacancy-container a.button
     {
         margin: 3rem auto 0;
         display: block;

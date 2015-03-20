@@ -45,7 +45,6 @@ get_header(); ?>
 </div> -->
 
 <!-- HEADING AND SUMMARY PARAGRAPHS -->
-<div class="full-width content-area">
   <div class="row">
     <div class="large-12 medium-12 columns">      
         <h1><?php echo get_the_title(); ?></h1>
@@ -55,7 +54,6 @@ get_header(); ?>
         <div class="heart-mark-yellow"></div>
     </div>
   </div>
-</div>
 
 <!--  ACTION BUTTON -->
     <div class="row">

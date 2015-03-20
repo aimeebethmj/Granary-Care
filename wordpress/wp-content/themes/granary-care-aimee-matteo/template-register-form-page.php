@@ -34,14 +34,12 @@ get_header(); ?>
 </div>
 
 <!-- HEADING AND SUMMARY PARAGRAPHS -->
-<div class="full-width content-area page-summary3">
   <div class="row">
     <div class="large-12 medium-12 columns">      
         <h2><?php echo get_the_title(); ?></h2>
         <?php the_content();?> 
     </div>
   </div>
-</div>
 
 <!-- ACTION BUTTON -->
   <div class="full-width content-area action-area <?php echo $slug; ?>">
