@@ -1129,6 +1129,19 @@
         border-radius: 5px;
     }
 
+/* WORK WITH MOTHER AND BABY */
+
+    .vacancy-container a
+    {
+        margin: 3rem auto 0;
+        display: block;
+    }
+
+    .vacancy-container
+    {
+        margin: 3rem auto;
+    }
+
 
 
 /*  RESPONSIVE DESIGN  */

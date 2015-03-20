@@ -154,7 +154,8 @@ p
 
 .nannyagency .buttons-container a.firstbutton,
 .motherandbaby .buttons-container a.firstbutton,
-.motherandbaby .buttons-container a.secondbutton
+.motherandbaby .buttons-container a.secondbutton,
+.vacancy-container a.secondbutton
 {
 	font-weight: 300;
 }

@@ -85,7 +85,7 @@ get_header(); ?>
 <div class="content">
 
 
-<!-- SIDEBAR AND MAIN CONTENT -->
+<!-- MAIN CONTENT -->
 <div class="row">
   <div class="large-10 medium-12 small-centered columns">
     <h1><?php echo get_the_title(); ?></h1>
