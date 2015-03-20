@@ -157,7 +157,7 @@ body
 	
 	.banner-statement h2
 	{
-		color:	rgba(127, 126, 142, 1);
+		color:	rgba(127, 126, 142, .8);
 	}
 
 	.image-banner-area

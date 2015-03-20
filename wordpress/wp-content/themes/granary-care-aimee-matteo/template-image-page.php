@@ -74,7 +74,7 @@ get_header(); ?>
               <img src="<?php echo $image['url']; ?>">   
             </div>
       </div>
-      <div class="large-6 medium-12 columns profile-info" id="business-blurbs">
+      <div class="large-6 medium-12 columns profile-info business-blurbs">
               <h3><?php echo $panelTitle; ?></h3>
               <?php echo $blurb; ?>
       </div>

@@ -63,7 +63,7 @@ get_header(); ?>
               	<a href="<?php echo $webLink; ?>"><h2><?php echo $panelTitle; ?></h2></a>
               </div>
           </div>
-          <div class="large-6 medium-12 end small-12 columns" id="business-blurbs">
+          <div class="large-6 medium-12 end small-12 columns business-blurbs">
               <?php echo $blurb; ?>
           </div>
       </div>
@@ -78,7 +78,7 @@ get_header(); ?>
       		<div class="large-4 medium-12 columns">
           			<a href="<?php echo $webLink; ?>"><img src="<?php echo $image['url']; ?>"/></a>
           </div>
-          <div class="large-6 medium-12 end columns" id="business-blurbs">
+          <div class="large-6 medium-12 end columns business-blurbs">
     	        <div class="social-panel-description">
     	          	<a href="<?php echo $webLink; ?>"><h2><?php echo $panelTitle; ?></h2></a>
     	            <?php echo $blurb; ?>

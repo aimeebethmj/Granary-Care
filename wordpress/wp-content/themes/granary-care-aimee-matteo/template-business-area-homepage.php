@@ -24,7 +24,7 @@ get_header(); ?>
 
 <div class="full-width content-area banner-statement <?php echo $slug; ?>" >
     <div class="row">
-        <div class="large-10 medium-10 small-centered columns">
+        <div class="large-10 medium-12 small-centered columns">
             <!-- :before -->
             <h2><?php echo get_field('banner_message');?></h2>
             <!-- :after -->
@@ -46,13 +46,13 @@ get_header(); ?>
   $secondButtonLabel = get_field('second_action_button_label');
 
 
-if(is_page('granary-kids') ): 
+/*if(is_page('granary-kids') ):*/ 
 
 // if( !empty($image) ):
 
 ?>
 
-  <div class="row">
+ <!--  <div class="row">
     <div class="large-12 medium-12 small-12 columns">
       <div class="image-container">
         <img src="<?php echo $image['url']; ?>">
@@ -61,9 +61,9 @@ if(is_page('granary-kids') ):
   </div>
 
 
-<?php elseif(is_page(array('mother-and-baby','nanny-agency') ) ): 
+<?php //if(is_page(array('mother-and-baby','nanny-agency') ) ): 
 
-?>
+?> -->
 
 <div class="full-width content-area image-banner-area">
   <div class="row">
@@ -78,8 +78,9 @@ if(is_page('granary-kids') ):
   </div>
 </div>
 
-<?php endif; ?>
-
+<!-- 
+<?php //endif; ?>
+ -->
 
 <div class="content">
 
@@ -190,7 +191,7 @@ if( !empty($businessPanels) ):
         <div class="large-4 columns">
             <a href="<?php echo $buttonlink; ?>"><h2><?php echo $title; ?></h2></a>
         </div>
-        <div class="large-6 end columns <?php echo $cssClass; ?>" id="business-blurbs">
+        <div class="large-6 end columns <?php echo $cssClass; ?> business-blurbs">
           <?php echo $blurb; ?>
           <a href="<?php echo $buttonlink; ?>"><?php echo $buttonlabel; ?></a>
           <hr/>

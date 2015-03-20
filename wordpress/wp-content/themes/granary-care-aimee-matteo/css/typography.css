@@ -269,6 +269,14 @@ p
                 {
                 	font-size: 1.2rem;
                 }
+
+                .image-banner-area h2,
+                .banner-statement h2
+                {
+                    font-size: 2rem;
+                }
+
+
         }
 	   
 	/* 640 */

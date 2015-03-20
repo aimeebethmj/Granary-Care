@@ -61,7 +61,7 @@ get_header(); ?>
             <img src="<?php echo $image['url']; ?>"/>      
           </div>
 
-          <div class="large-6 medium-12 end columns profile-info" id="business-blurbs">
+          <div class="large-6 medium-12 end columns profile-info business-blurbs">
   	        <h4><?php echo $name; ?></h4>
   	        <h5><?php echo $nannytype; ?></h5>
   	        <h5><?php echo $location; ?></h5>

@@ -70,7 +70,7 @@ get_header(); ?>
       <div class="large-4 medium-12 columns">
         <h1><?php echo get_field('about_blurb_title')?></h1>
       </div>
-      <div class="large-6 medium-12 end columns yellow" id="business-blurbs">
+      <div class="large-6 medium-12 end columns yellow business-blurbs">
 
         <?php the_content(); ?>
 
@@ -109,7 +109,7 @@ get_header(); ?>
           <div class="large-4 columns">
             	<a href="<?php echo $buttonlink; ?>"><h2><?php echo $title; ?></h2></a>
           </div>
-          <div class="large-6  end columns <?php echo $cssClass; ?>" id="business-blurbs">
+          <div class="large-6  end columns <?php echo $cssClass; ?> business-blurbs">
     			  <?php echo $summary; ?>
           	<a href="<?php echo $buttonlink; ?>"><?php echo $buttonlabel; ?></a>
             <hr/>

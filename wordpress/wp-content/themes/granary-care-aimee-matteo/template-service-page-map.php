@@ -118,7 +118,7 @@ get_header(); ?>
 		    <div class="large-4 columns">
 		    	<a href="<?php echo $schoolLink; ?>"><h2><?php echo $school_name; ?></h2></a>
 		    </div>
-		    <div class="large-6 end columns <?php echo $cssClass; ?>" id="business-blurbs">
+		    <div class="large-6 end columns <?php echo $cssClass; ?> business-blurbs">
 		    	<p><b>Location:</b></p>          
 		        <p><?php echo $location; ?></p>
 		        <p><b>Sessions:</b></p>

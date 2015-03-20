@@ -163,7 +163,7 @@
 
 
     .business-panel a,
-    #business-blurbs a,
+    .business-blurbs a,
     a.general-link,
     a.alltext-link
     {
@@ -199,13 +199,13 @@
         text-align: right;
     }
 
-    #business-blurbs
+    .business-blurbs
     {
         margin-left: 4rem;
     }
 
-    .business-panel #business-blurbs p:first-child,
-    .clubs-panel #business-blurbs p:first-child
+    .business-panel .business-blurbs p:first-child,
+    .clubs-panel .business-blurbs p:first-child
     {
         margin-top: 2.9rem;
     }
@@ -381,6 +381,23 @@
     .top-bar-section .has-dropdown > a:after
     {
         top: 1.25rem;
+    }
+
+    .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after
+    {
+        
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border: inset 5px;
+        border-color: transparent transparent transparent rgba(19,19,66, 0.3);
+        border-left-style: solid;
+        margin-right: 0.9375rem;
+        margin-top: -4.5px;
+        position: absolute;
+        top: 50%;
+        right: 0;
     }
 
 
@@ -609,7 +626,7 @@
     }
 
 /* SOCIAL RESPONSIBILITY */
-    .social-blurb #business-blurbs
+    .social-blurb .business-blurbs
     {
         margin-left: 0;
     }
@@ -1237,7 +1254,7 @@
                     text-align: center;
                 }
 
-                #business-blurbs 
+                .business-blurbs 
                 {
                     margin-left: 0;
                     /*padding: 0 4rem;*/
@@ -1328,8 +1345,8 @@
                     margin: 2rem auto 0;
                 }
 
-                .profiles-container #business-blurbs h4,
-                .profiles-container #business-blurbs h5,
+                .profiles-container .business-blurbs h4,
+                .profiles-container .business-blurbs h5,
                 .staff-profiles .staffinfo h3,
                 .staff-profiles .staffinfo h4
 
@@ -1361,6 +1378,11 @@
                 {
                     margin: 0 -7rem;
                     width: auto;
+                }
+
+                .image-banner-area h2
+                {
+                    margin: 1.8rem 0 0 1.5rem;
                 }
         }
 
@@ -1409,6 +1431,11 @@
                 .top-bar.expanded
                 {
                     overflow: visible;
+                }
+
+                .image-banner-area h2
+                {
+                    margin: 1.2rem 0 0 1.5rem;
                 } 
 
 
@@ -1604,7 +1631,7 @@
                     width: 0;
                     height: 0;
                     border: inset 5px;
-                    border-color: transparent transparent transparent rgba(255, 255, 255, 0.4);
+                    border-color: transparent transparent transparent rgba(19,19,66, 0.3);
                     border-left-style: solid;
                     margin-right: 0.9375rem;
                     margin-top: -4.5px;
@@ -1628,7 +1655,7 @@
             /* HOMEPAGE */
 
 
-                #business-blurbs 
+                .business-blurbs 
                 {
                     margin-left: 0;
                     padding: 0 1.5rem;
@@ -1736,8 +1763,8 @@
 
 
 
-                /*.profiles-container #business-blurbs h4,
-                .profiles-container #business-blurbs h5,
+                /*.profiles-container .business-blurbs h4,
+                .profiles-container .business-blurbs h5,
                 .staff-profiles .staffinfo h3,
                 .staff-profiles .staffinfo h4
 
