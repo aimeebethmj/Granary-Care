@@ -854,7 +854,7 @@
 
     .buttons-container a.button
     {
-        margin: 1rem;
+        margin: 1rem 0 3rem;
         padding: 30px;
     }
 
@@ -1292,14 +1292,17 @@
                     /*padding: 0 4rem;*/
                 }
 
+                .business-panel .business-blurbs p:first-child, 
+                .clubs-panel .business-blurbs p:first-child
+                {
+                    margin-top: 0;
+                }
+
                 
 
         /* FOOTER AREA */
 
-                .footer-area .content
-                {
-                    /*padding: 0 4rem;*/
-                }
+            
 
         /* TEAM PAGE */
                 .staffinfo
@@ -1380,6 +1383,12 @@
                 {
                     text-align: center;
                 }
+        /* BUTTONS */
+
+                .action-area .buttons-container
+                {
+                    margin: 1rem 0 1rem 0;
+                }
         }
 
 
@@ -1400,6 +1409,22 @@
                 .image-banner-area h2
                 {
                     margin: 1.8rem 0 0 1.5rem;
+                }
+
+                .business-blurbs 
+                {
+                    margin-left: 0;
+                    padding: 0;
+                }
+
+                .action-area .buttons-container
+                {
+                    margin: 0;
+                }
+
+                .buttons-container a.button
+                {
+                    margin: 1rem 0 2rem;
                 }
         }
 
@@ -1562,11 +1587,6 @@
                     line-height: 2rem;
                 }
 
-                .footer-area .content
-                {
-                    padding: 0 1.5rem;
-                }
-
             
 
             /* NAVIGATION */
@@ -1664,23 +1684,15 @@
                     padding: 1rem;
                 }
 
-                .action-area .buttons-container
-                {
-                    margin: 2rem 0;
-                }
+                
 
             /* HOMEPAGE */
 
 
-                .business-blurbs 
-                {
-                    margin-left: 0;
-                    padding: 0 1.5rem;
-                }
 
                 .social-blurb
                 {
-                    padding: 0 1.5rem;
+                    padding: 0;
                 }
 
             /* GRANARY KIDS HOMEPAGE */
@@ -1762,7 +1774,7 @@
                 .image-banner-area img
                 {
                     margin: 1rem auto;
-                    height: 14.5rem;
+                    height: 10.5rem;
                     display: block;
                 }
 

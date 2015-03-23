@@ -140,6 +140,7 @@ p
   .footer-area .copyright
   {
   	text-align: center;
+  	font-weight: 300;
   }
 
 /* Banner Statement */
@@ -337,7 +338,7 @@ p
 	    	.social-blurb h3,
 	    	.footer-area h3
 	    	{
-	    		font-size: 1.2rem;
+	    		font-size: 1rem;
 	    	}
 
 	    	.footer-area h3.call-us-today
@@ -347,7 +348,7 @@ p
 
 	    	.slider .summary h2.carousel-headline
 	    	{
-	    		font-size: 1.6rem;
+	    		font-size: 1.4rem;
 	    	}
 	               
 	    }
