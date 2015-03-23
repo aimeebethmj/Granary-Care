@@ -1034,11 +1034,12 @@
     {
         height: 20rem;
         width: 20rem;
-        border-radius: 15rem;
+        /*border-radius: 15rem;*/
         display: block;
         margin: 3rem auto;
         border: solid 4px;
         border-color: #39C6C9;
+        -webkit-transform: translateZ(0px);
 
     }
 
@@ -1310,6 +1311,11 @@
                     padding-left: 0;
                 }
 
+                .staff-profiles
+                {
+                    padding: .75rem 0;
+                }
+
         /* GRANARY KIDS HOMEPAGE */
 
                 
@@ -1323,7 +1329,7 @@
 
                 .clubs-panel h2 
                 {
-                    margin: 0.5rem 0;
+                    margin: 1rem 0;
                 }
 
                 .clubs-panel .business-blurbs p,
@@ -1340,6 +1346,12 @@
                 .clubs-panel hr
                 {
                     margin: 1rem 0;
+                }
+
+                .clubs-panel .large-3,
+                .clubs-panel .medium-12
+                {
+                    padding: 0;
                 }
 
 
@@ -1748,7 +1760,7 @@
             /* BREAKFAST CLUBS HOMEPAGE */
                 #map_canvas
                 {
-                    height: 15rem;
+                    height: 13rem;
                 }
 
                 
@@ -1806,7 +1818,6 @@
                 .large-button-image
                 {
                     margin: 2rem auto 0;
-                    width: 15rem;
                     display: block;
                 }
 
@@ -1897,7 +1908,8 @@
                 .nanny-profile-images img,
                 .staff-profile-images
                 {
-                    max-width: 60%;
+                    max-width: 240px;
+                    /*max-width: 60%;*/
                 }
 
             /* CLUBS PAGES */
@@ -1905,6 +1917,11 @@
                 {
                     height: 15rem;
                     width: 15rem;
+                }
+
+                .clubs-panel .columns h2
+                {
+                    padding-left: 0;
                 }
 
              /* SERVICE PAGES */
