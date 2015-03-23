@@ -1,4 +1,8 @@
-
+    body
+    {
+        -webkit-overflow-scrolling: touch;
+    }
+    
 /* HEADER */
  
     /** Set the backgrounds for the different sections **/
