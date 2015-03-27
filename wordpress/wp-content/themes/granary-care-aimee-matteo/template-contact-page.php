@@ -95,47 +95,9 @@ get_header(); ?>
     <div class="large-6 medium-6 small-11 small-centered columns">
     	<h2><?php echo $formHeading ?></h2>
 
-      <div class="row">
-          <label>Name
-          	<input type="text" id="Name" placeholder="Your name" name="Name">
-          </label>
-      </div>
+      <?php echo do_shortcode( '[contact-form-7 id="674" title="Contact form 1"]' ); ?>
 
-      <div class="row">
-          <label for="email" class="inline">Email
-          	<input type="email" id="email" placeholder="youremail@example.com" name="email">
-          </label>
-      </div>
-
-
-      <div class="row">
-          <label for="position" class="inline">Which area do you want to know about?
-            <select>
-              <option id="business-area" name="business-area" value="Kids Clubs">Kids Clubs</option>
-              <option id="business-area" name="business-area" value="Nanny Agency">Nanny Agency</option>
-              <option id="business-area" name="business-area" value="Mother &amp; Baby">Mother &amp; Baby</option>
-              <option id="business-area" name="business-area" value="Other">Other</option>
-            </select>
-          </label>
-      </div>
-
-      <div class="row">
-            <label for="moreInfo" class="inline">Your Message
-            	<textarea id="moreInfo" placeholder="" name="moreInfo" style="height: 10rem"></textarea>
-            </label>
-      </div>
-
-<!-- BUTTON SEND -->
-    <div class="row">
-        <div class="large-12 columns action-area <?php echo $slug; ?>">
-            <div class="buttons-container">
-                <button class="large round button main-button" type="submit">Send</button>
-            </div>
-        </div>
-    </div>
-
-
- 	</div>
+ 	  </div>
   </div>
 </form>
 

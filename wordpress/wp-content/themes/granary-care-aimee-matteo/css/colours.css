@@ -396,7 +396,8 @@ body
 
 	.nannyagency a.secondbutton,
 	.granarykids .buttons-container a.main-button,
-	button[type="submit"]
+	button[type="submit"],
+	.form-container .main-button
 
 	{
 		background: url('../images/yellow-paint-texture.png') no-repeat;

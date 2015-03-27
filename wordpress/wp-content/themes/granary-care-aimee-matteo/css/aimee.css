@@ -1134,6 +1134,12 @@
         border-radius: 5px;
     }
 
+    .form-container .main-button
+    {
+        display: block;
+        margin: 4rem auto;
+    }
+
 /* WORK WITH MOTHER AND BABY */
 
     .vacancy-container a.button
