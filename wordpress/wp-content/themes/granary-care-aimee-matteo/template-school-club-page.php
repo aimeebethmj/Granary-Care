@@ -38,7 +38,15 @@ get_header(); ?>
     	$latitude = 		get_field('latitude');
     	$longitude = 		get_field('longitude');
     	$school_name = 		get_field('school_name');
-		// $location = 		get_field('location');
+		$location = 		get_field('location');
+    	$sessions = 		get_field('sessions');
+    	$clubActivities =	get_field('activities');
+    	$play_leader = 		get_field('play_leader');
+    	$club_telephone = 	get_field('club_telephone');
+    	$school_telephone = get_field('school_telephone');
+    	$ofsted_reg = 		get_field('ofsted_registration_number');
+    	$actionButtonLink =		get_field('action_button_link');
+		$actionButtonLabel =	get_field('action_button_label');
 
   	?>
 
@@ -46,31 +54,11 @@ get_header(); ?>
 <div class="row">
 	<div class="large-10 medium-10 small-12 small-centered club-location-area columns">
 
-		<script type="text/javascript">
-	  		var clubs = [] // this creates a new array, before the loop (within the loop we'll populate that array)
-	  	</script>
-
 		<div id="map_canvas">
 		</div>
 		
 	</div>
 </div>
-
-		    <script type="text/javascript">
-
-		    	// output some data about the club for Google Maps
-		    	// club is a JS object
-		    	var club = 
-		    	{
-		    		lat: <?php echo $latitude; ?>,
-		    		lng: <?php echo $longitude; ?>,
-		    		location: '<?php echo $location; ?>',
-		    		name: '<?php echo $school_name; ?>'
-		    	}
-
-		    	clubs.push(club) // this will add the club object to our clubs array
-
-		    </script>
 
 
 <!-- MAIN CONTENT -->
@@ -83,21 +71,6 @@ get_header(); ?>
   </div>
 </div>
 
-
-	<?php
-
-    	// Vars
-    	
-    	
-    	$location = 		get_field('location');
-    	$sessions = 		get_field('sessions');
-    	$clubActivities =	get_field('activities');
-    	$play_leader = 		get_field('play_leader');
-    	$club_telephone = 	get_field('club_telephone');
-    	$latitude = 		get_field('latitude');
-    	$longitude = 		get_field('longitude');
-
-  	?>
 
 
 
@@ -181,14 +154,33 @@ get_header(); ?>
 			<hr>
 		</div>
 	</div>
+
+	<div class="row">
+		<div class="large-8 medium-8 small-centered columns">
+			<div class="large-3 medium-12 columns">
+				<h2>School Office Tel</h2>
+			</div>
+			<div class="large-5 medium-12 columns business-blurbs">
+				<a href="tel:<?php echo $club_telephone; ?>" ><h3><?php echo $school_telephone; ?></h3></a>
+			</div>
+			<hr>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="large-8 medium-8 small-centered columns">
+			<div class="large-3 medium-12 columns">
+				<h2>Ofsted Reg</h2>
+			</div>
+			<div class="large-5 medium-12 columns business-blurbs">
+				<a href="tel:<?php echo $club_telephone; ?>" ><h3><?php echo $ofsted_reg; ?></h3></a>
+			</div>
+			<hr>
+		</div>
+	</div>
+
 </div>
 
-<?php 
-
-	$actionButtonLink =		get_field('action_button_link');
-	$actionButtonLabel =	get_field('action_button_label');
-
-?>
 <!-- ACTION BUTTONS -->
 <div class="full-width content-area action-area <?php echo $slug; ?>">
   <div class="row">
@@ -218,51 +210,54 @@ get_header(); ?>
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script>
 
+	// output some data about the club for Google Maps
+	// club is a JS object
+	var club = 
+	{
+		lat: <?php echo $latitude; ?>,
+		lng: <?php echo $longitude; ?>,
+		location: '<?php echo str_replace(array("\r", "\n"), "", $location); ?>',
+		name: '<?php echo $school_name; ?>'
+	}
+
   function initialize() 
   {
     var mapCanvas = document.getElementById('map_canvas');
 
     var mapOptions = 
     {    
-    	center: new google.maps.LatLng(51.535183, -0.448138),
+    	center: new google.maps.LatLng(<?php echo $latitude; ?>, <?php echo $longitude; ?>),
       	zoom: 13,
       	mapTypeId: google.maps.MapTypeId.ROADMAP
     }
     var map = new google.maps.Map(mapCanvas, mapOptions);
 
-    // for each club in the clubs array...
-    // for (var i = 0; i < clubs.length; i++) 
-    clubs.forEach(function(club)
+
+	var latLng = new google.maps.LatLng(club.lat, club.lng);
+
+    var marker = new google.maps.Marker(
     {
-    	// club = clubs[i]
-    	// console.log(club) 
+        position: latLng,
+        map: map,
+        title: club.name
+    });
 
-    	var latLng = new google.maps.LatLng(club.lat, club.lng);
-    
-	    var marker = new google.maps.Marker(
-	    {
-	        position: latLng,
-	        map: map,
-	        title: club.name
-	    });
+    var contentString = '<div class="map-info-window">'+
+      // '<h4>' + club.name + '</h4> ' +
+      '<p>' + club.location + '</p>' +
+      '</div>';
 
-	    var contentString = '<div class="map-info-window">'+
-	      '<h4>' + club.name + '</h4> ' +
-	      '<p>' + club.location + '</p>' +
-	      '</div>';
+    // console.log(contentString)  
 
-	    // console.log(contentString)  
+    var infoWindow = new google.maps.InfoWindow(
+    {
+        content: contentString
+    });
 
-	    var infoWindow = new google.maps.InfoWindow(
-	    {
-	        content: contentString
-	    });
-
-	    google.maps.event.addListener(marker, 'click', function() 
-	    {
-	      	infoWindow.open(map, marker);
-	    });
-    })
+    google.maps.event.addListener(marker, 'click', function() 
+    {
+      	infoWindow.open(map, marker);
+    });
   }
   google.maps.event.addDomListener(window, 'load', initialize);
 

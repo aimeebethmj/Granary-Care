@@ -209,7 +209,7 @@ if( !empty($accreditations) ):
     var mapOptions = 
     {    
     	center: new google.maps.LatLng(51.535183, -0.448138),
-      	zoom: 9,
+      	zoom: 10,
       	mapTypeId: google.maps.MapTypeId.ROADMAP
     }
     var map = new google.maps.Map(mapCanvas, mapOptions);
