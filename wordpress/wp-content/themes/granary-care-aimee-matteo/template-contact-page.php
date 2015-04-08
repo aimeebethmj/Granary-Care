@@ -36,7 +36,7 @@ get_header(); ?>
         <h1><?php echo get_the_title(); ?></h1>
     </div>
     <div class="large-8 medium-10 small-centered columns">
-        <?php the_content();?>
+        <?php echo get_field('main_blurb');?>
         
     </div>
   </div>
@@ -90,16 +90,17 @@ get_header(); ?>
 
  ?>
 
-<form class="form-container contact" enctype="multipart/form-data">
+<!-- <form class="" enctype="multipart/form-data"> -->
+<div class="form-container contact">
   <div class="row">
     <div class="large-6 medium-6 small-11 small-centered columns">
     	<h2><?php echo $formHeading ?></h2>
 
-      <?php echo do_shortcode( '[contact-form-7 id="674" title="Contact form 1"]' ); ?>
+      <?php the_content(); ?>
 
  	  </div>
   </div>
-</form>
+</div>
 
 
 

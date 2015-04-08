@@ -1153,6 +1153,34 @@
         margin: 3rem auto;
     }
 
+/* CONTACT US PAGE */
+
+    .wpcf7-response-output.wpcf7-mail-sent-ok
+    {
+        border: 5px solid #76C2A1;
+        margin-bottom: 3rem;
+        padding: .75rem;
+        border-radius: 8px;
+    }
+
+    .wpcf7-response-output.wpcf7-validation-errors
+    {
+        border: 8px solid #131342;
+        margin-bottom: 3rem;
+        padding: .75rem;
+        border-radius: 8px;  
+    }
+
+    .wpcf7-not-valid-tip
+    {
+        color: #FF5426;
+    }
+
+    .screen-reader-response
+    {
+        display: none;
+    }
+
 
 
 /*  RESPONSIVE DESIGN  */
