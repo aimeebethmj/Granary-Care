@@ -135,7 +135,7 @@
 										<ul class="dropdown">
 											<li class="has-dropdown"><a href="<?php echo site_url(); ?>/families">Families</a>
 												<ul class="dropdown">
-													<li><a href="<?php echo site_url(); ?>/meet-our-nannies">Meet Our Nannies</a></li>
+													<!-- <li><a href="<?php echo site_url(); ?>/meet-our-nannies">Meet Our Nannies</a></li> -->
 													<li><a href="<?php echo site_url(); ?>/babysitting">Babysitting</a></li>
 													<li><a href="<?php echo site_url(); ?>/types-of-carers">Types of Carers</a></li>
 													<li><a href="<?php echo site_url(); ?>/agency-services-for-families">Agency Services</a></li>
