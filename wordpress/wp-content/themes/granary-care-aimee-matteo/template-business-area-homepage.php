@@ -244,6 +244,7 @@ if( !empty($businessPanels) ):
   $buttonLabel1 = get_field('action_button_1_label');
   $buttonLink2 = get_field('action_button_2');
   $buttonLabel2 = get_field('action_button_2_label');
+  $testimonial = get_field('testimonial');
   
 
   if(is_page( array( 'nanny-agency', 'mother-and-baby' ) )):
@@ -261,17 +262,18 @@ if( !empty($businessPanels) ):
 
 <?php endif; ?>
 
-
+<?php if( !empty( $testimonial ) ): ?>
 <!-- TESTIMONIAL -->
 <div class="full-width content-area testimonial-large">
   <div class="row">
     <div class="large-10 medium-10 small-centered columns">
       <a href="<?php echo site_url(); ?>/testimonials">
-        <h3><i><q><?php echo get_field('testimonial');?></i></q></h3>
+        <h3><i><q><?php echo $testimonial; ?></i></q></h3>
       </a>
     </div>
   </div>
 </div>
+<?php endif; ?>
 
 
 <?php 

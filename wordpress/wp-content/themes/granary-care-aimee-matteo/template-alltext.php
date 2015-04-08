@@ -26,6 +26,7 @@ get_header(); ?>
 
     $secondSection = get_field('second_section');
     $thirdSection = get_field('third_section');
+    $testimonial = get_field('testimonial');
 
 ?>
 
@@ -109,14 +110,15 @@ get_header(); ?>
 
 
 <!-- TESTIMONIAL -->
-
+<?php if( !empty( $testimonial ) ): ?>
     <div class="row testimonial-large">
       <div class="large-10 medium-10 small-centered columns">
         <a href="<?php echo site_url(); ?>/testimonials">
-          <h3><i><q><?php echo get_field('testimonial');?></i></q></h3>
+          <h3><i><q><?php echo $testimonial;?></i></q></h3>
         </a>
       </div>
     </div>
+<?php endif; ?>
 
 </div>
 
