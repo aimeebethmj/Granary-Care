@@ -111,39 +111,23 @@ get_header(); ?>
 
     <?php if( is_page ('mother-and-baby' ) ): ?>
 
-    <div class="full-width content-area action-area <?php echo $slug; ?>">
-      <div class="row">
-        <div class="buttons-container">
-          <a class="large round button firstbutton" href="<?php echo $mainButtonLink; ?>"><?php echo $mainButtonLabel; ?></a>
-          <a class="large round button secondbutton" href="<?php echo $secondButtonLink; ?>"><?php echo $secondButtonLabel; ?></a>
+      
+        <div class="full-width content-area action-area <?php echo $slug; ?>">
+          <div class="row">
+            <div class="buttons-container">
+              <a class="large round button firstbutton" href="<?php echo $mainButtonLink; ?>"><?php echo $mainButtonLabel; ?></a>
 
+              <?php if( !empty( $secondButtonLabel ) ): ?>
+              <a class="large round button secondbutton" href="<?php echo $secondButtonLink; ?>"><?php echo $secondButtonLabel; ?></a>
+              <?php endif; ?>
+
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      
 
   <?php endif; ?>
 
-<!--   <div class="large-3 medium-3 pull-9 columns">
-    <ul class="side-nav">
-
-    	<?php if( have_rows('side_navigation') ): ?>
-
-		  <?php while( have_rows('side_navigation') ): the_row();
-
-		    // Vars
-		    $tabLink = get_sub_field('tab_link');
-		    $tabLabel = get_sub_field('tab_label');
-
-		  ?>
-
-		      <li><a href="<?php echo $tabLink; ?>"><?php echo $tabLabel; ?></a></li>
-
-		  <?php endwhile; ?>
-
-		<?php endif; ?>
-
-    </ul>
-  </div> -->
 
 
 
@@ -170,6 +154,7 @@ if( !empty($businessPanels) ):
     $buttonlabel = get_sub_field('button_label');
     $blurb = get_sub_field('blurb');
     $cssClass = get_sub_field('css_class');
+    $second_section = get_field('second_section');
 
 
     if( in_category( 'granarykids' ) ): ?>
@@ -222,20 +207,21 @@ if( !empty($businessPanels) ):
   <?php endif; ?>
 
 <!-- SECOND SUMMARY SECTION MOTHER AND BABY ONLY -->
+<!-- 
+<?php if(is_page('mother-and-baby')): ?>
 
-<?php if(is_page('mother-and-baby')): 
-
-?>
-<div class="full-width content-area">
-  <div class="row">
-    <div class="large-8 medium-8 small-centered columns">
-      <?php echo get_field('second_section');?>
+  <?php if( !empty( $second_section ) ): ?>
+  <div class="full-width content-area">
+    <div class="row">
+      <div class="large-8 medium-8 small-centered columns">
+        <?php echo get_field('second_section');?>
+      </div>
     </div>
   </div>
-</div>
+  <?php endif; ?>
 
 <?php endif; ?>
-
+ -->
 
 <!--  ACTION BUTTONS/TESTIMONIALS-  NANNY AGENCY AND MOTHER AND BABY ONLY -->
 <?php
@@ -251,6 +237,7 @@ if( !empty($businessPanels) ):
 ?>
 
 <!-- ACTION BUTTONS -->
+<?php if( !empty( $secondButtonLabel ) ): ?>
 <div class="full-width content-area action-area <?php echo $slug; ?>">
   <div class="row">
     <div class="large-12 medium-12 columns buttons-container">
@@ -259,6 +246,7 @@ if( !empty($businessPanels) ):
     </div>
   </div>
 </div>
+<?php endif; ?>
 
 <?php endif; ?>
 
