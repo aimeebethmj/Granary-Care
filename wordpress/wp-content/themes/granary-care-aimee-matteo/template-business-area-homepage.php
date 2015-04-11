@@ -40,6 +40,7 @@ get_header(); ?>
 <?php 
 
   $image = get_field('image');
+  $mainImage = get_field('main_image');
   $mainButtonLink = get_field('main_action_button');
   $mainButtonLabel = get_field('main_action_button_label');
   $secondButtonLink = get_field('second_action_button');
@@ -78,9 +79,8 @@ get_header(); ?>
   </div>
 </div>
 
-<!-- 
-<?php //endif; ?>
- -->
+
+
 
 <div class="content">
 
@@ -88,6 +88,18 @@ get_header(); ?>
 <!-- MAIN CONTENT -->
 <div class="row">
   <div class="large-10 medium-12 small-centered columns">
+
+          <?php if(is_page('granary-kids') ): 
+          if( !empty($mainImage) ):
+          ?>
+                <div class="image-container mainimage">
+                  <img src="<?php echo $mainImage['url']; ?>">
+                </div>
+
+          <?php endif; ?>
+
+          <?php endif; ?>
+
     <h1><?php echo get_the_title(); ?></h1>
   </div>
   <div class="large-8 medium-10 small-centered columns">
