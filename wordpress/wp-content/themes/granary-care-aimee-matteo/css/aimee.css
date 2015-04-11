@@ -569,6 +569,13 @@
     {
         display: block;
         margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    .image-container.mainimage img
+    {
+        margin-top: 2rem;
+        border-radius: 10px;
     }
 
     .text-overlay
@@ -974,7 +981,7 @@
     .extra-info-box
     {
         border-radius: 10px;
-        padding: 10px 20px;
+        padding: 10px 50px;
     }
 
     .service-buttons-container
@@ -1389,6 +1396,8 @@
                 }
 
 
+
+
         /* BUSNESS AREA HOMEPAGE */
                 .accreditations-container .logos:nth-of-type(3n)
                 {
@@ -1472,6 +1481,13 @@
                 {
                     margin: 1rem 0 2rem;
                 }
+
+            /* ACTIVE HOLIDAY CAMPS */
+                .image-container img
+                {
+                    border-radius: 0;
+                }
+
         }
 
     /* 768 topbar break (48em at 16px base font) */
