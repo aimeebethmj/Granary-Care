@@ -37,17 +37,19 @@ get_header(); ?>
               <div class="slider-copy-content">
                 <!-- <a href="<?php echo $link; ?>"> -->
                   <!-- <img src="<?php echo $image['url']; ?>"> -->
-                  <div class="business-area-logo">
-                    <h2 class="half-logo-granary">Granary</h2>
-                    <h2 class="half-logo-businessarea"><?php echo $businessArea; ?></h2>
-                  </div>
-                  <div class="summary">
-                    <h2 class="carousel-headline"><?php echo $headline; ?></h2>          	
-                		<p><?php echo $summary; ?></p>
-                		<!-- <a class="small radius button" href="<?php echo $link; ?>">Find out more</a> -->
-                	</div>
-                  <a class="small round button" href="<?php echo $link; ?>"><?php echo $buttonlabel; ?></a>
+                  <?php if( !empty($headline) ): ?>
+                    <div class="business-area-logo">
+                      <h2 class="half-logo-granary">Granary</h2>
+                      <h2 class="half-logo-businessarea"><?php echo $businessArea; ?></h2>
+                    </div>
+                    <div class="summary">
+                      <h2 class="carousel-headline"><?php echo $headline; ?></h2>          	
+                  		<p><?php echo $summary; ?></p>
+                  		<!-- <a class="small radius button" href="<?php echo $link; ?>">Find out more</a> -->
+                  	</div>
+                    <a class="small round button" href="<?php echo $link; ?>"><?php echo $buttonlabel; ?></a>
                 <!-- </a> -->
+                  <?php endif; ?>
           	 </div>
           </div>
           
