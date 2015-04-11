@@ -207,6 +207,14 @@ body
 		background-color: rgba(118, 194, 161, .15); 
 	}
 
+	.slider-container .slider .mainpicture
+	{
+		background: url('../images/HomepageKids.jpg');
+		background-position: center;
+		background-size: cover;
+	}
+
+
  /* Granary Care white logo in halves */
 
  	.slider .business-area-logo .half-logo-granary,
