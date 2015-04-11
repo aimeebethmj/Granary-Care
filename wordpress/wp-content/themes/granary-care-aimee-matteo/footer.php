@@ -90,7 +90,7 @@
 	          var slickOptions = 
 	          {
               arrows: false,
-              // autoplay: true,
+              autoplay: true,
               autoplaySpeed: 8000, 
               speed: 1000, 
               fade: true,
