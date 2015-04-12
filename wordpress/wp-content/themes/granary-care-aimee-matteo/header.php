@@ -30,8 +30,8 @@
 		<!-- our styles rules, after all the other styles! -->
 		<link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="<?php echo get_active_theme_directory(); ?>/css/typography.css" />
-		<link rel="stylesheet" href="<?php echo get_active_theme_directory(); ?>/css/colours.css" />
-		<link rel="stylesheet" href="<?php echo get_active_theme_directory(); ?>/css/aimee.css" />
+		<link rel="stylesheet" href="<?php echo get_active_theme_directory(); ?>/css/colours.css?11042015" />
+		<link rel="stylesheet" href="<?php echo get_active_theme_directory(); ?>/css/aimee.css?11042015" />
 
 
 		<link rel="icon" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/favicon.ico" type="image/x-icon">
