@@ -13,6 +13,7 @@ get_header(); ?>
     $mainButtonLink = get_field('main_action_button');
     $mainButtonLabel = get_field('main_action_button_label');
     $formHeading = get_field('form_heading');
+    $main_blurb = get_field('main_blurb');
 
 
     // echo '<pre>';
@@ -34,7 +35,7 @@ get_header(); ?>
 </div>
 
 <!-- IMAGE -->
-<!-- <div class="full-width content-area image-background">
+<div class="full-width content-area image-background">
   <div class="row">
     <div class="large-12 medium-12 small-12 columns">
       <div class="image-container">
@@ -42,7 +43,7 @@ get_header(); ?>
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
 <!-- HEADING AND SUMMARY PARAGRAPHS -->
   <div class="row">
@@ -50,7 +51,7 @@ get_header(); ?>
         <h1><?php echo get_the_title(); ?></h1>
     </div>
     <div class="large-8 medium-10 small-centered columns">
-        <?php the_content();?>
+        <?php echo $main_blurb;?>
         <div class="heart-mark-yellow"></div>
     </div>
   </div>
@@ -68,12 +69,14 @@ get_header(); ?>
 
 <!-- FORM -->
 
-<form class="form-container" enctype="multipart/form-data">
+<div class="form-container">
   <div class="row">
     <div class="large-8 medium-8 small-11 small-centered columns">
       <h2><?php echo $formHeading ?></h2>
 
-      <div class="row">
+      <?php the_content();?>
+
+<!--       <div class="row">
           <label for="firstName" class="inline">First Name
             <input type="text" id="firstName" placeholder="First name" name="firstName">
           </label>
@@ -145,18 +148,17 @@ get_header(); ?>
             </label>
     </div>
 
-<!-- BUTTON SEND -->
     <div class="row">
         <div class="large-12 columns action-area <?php echo $slug; ?>">
             <div class="buttons-container">
                 <button class="large round button main-button" type="submit">Send your application!</button>
             </div>
         </div>
-    </div>
+    </div> -->
 
     </div>
   </div>
-</form>
+</div>
 
 
 
