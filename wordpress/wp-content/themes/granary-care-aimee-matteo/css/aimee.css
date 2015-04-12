@@ -1188,6 +1188,18 @@
         display: none;
     }
 
+/* WORK WITH GRANARY KIDS */
+
+    .transportation
+    {
+        margin-bottom: 1rem;
+    }
+
+    .wpcf7-list-item.first
+    {
+        margin-right: 2rem;
+    }
+
 
 
 /*  RESPONSIVE DESIGN  */
