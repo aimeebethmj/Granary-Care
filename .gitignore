@@ -6,3 +6,4 @@ wordpress/wp-content/themes/playground
 wp-config.php
 *.pdf
 *.zip
+.htaccess
