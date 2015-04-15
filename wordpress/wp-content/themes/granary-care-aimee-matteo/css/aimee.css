@@ -1200,6 +1200,14 @@
         margin-right: 2rem;
     }
 
+    input.wpcf7-form-control.wpcf7-file.wpcf7-validates-as-required
+    {
+        margin-top: 1rem;
+        line-height: 0rem;
+        font-size: .85rem;
+        color: #FF5426;
+    }
+
 
 
 /*  RESPONSIVE DESIGN  */
