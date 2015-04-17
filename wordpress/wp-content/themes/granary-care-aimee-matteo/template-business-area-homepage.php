@@ -89,14 +89,12 @@ get_header(); ?>
 <div class="row">
   <div class="large-10 medium-12 small-centered columns">
 
-          <?php if(is_page('granary-kids') ): 
+          <?php 
           if( !empty($mainImage) ):
           ?>
                 <div class="image-container mainimage">
                   <img src="<?php echo $mainImage['url']; ?>">
                 </div>
-
-          <?php endif; ?>
 
           <?php endif; ?>
 
