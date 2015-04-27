@@ -1162,7 +1162,8 @@
 
 /* CONTACT US PAGE */
 
-    .wpcf7-response-output.wpcf7-mail-sent-ok
+    .wpcf7-response-output.wpcf7-mail-sent-ok,
+    .gform_confirmation_message_2.gform_confirmation_message
     {
         border: 5px solid #76C2A1;
         margin-bottom: 3rem;
@@ -1206,6 +1207,14 @@
         line-height: 0rem;
         font-size: .85rem;
         color: #FF5426;
+    }
+
+/* FORM BUTTONS */
+
+    .button.gform_next_button,
+    input[type=submit].gform_button.button
+    {
+        border-radius: 1000px;
     }
 
 
