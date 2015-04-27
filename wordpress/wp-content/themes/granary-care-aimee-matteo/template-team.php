@@ -50,7 +50,6 @@ get_header(); ?>
     $image = get_sub_field('team_staff_profile_picture');
     $staffname = get_sub_field('name_of_staff_member');
     $jobtitle = get_sub_field('job_title');
-    $jobroleinfo = get_sub_field('job_role_info');
     $aboutstaff = get_sub_field('about_staff_member');
     $email = get_sub_field('email_address');
     $linkedin = get_sub_field('linkedin');
@@ -70,10 +69,14 @@ get_header(); ?>
           <div class="large-7 medium-12 small-12 columns staffinfo">
             <h3><?php echo $staffname; ?></h3>
             <h4><?php echo $jobtitle; ?></h4>
-            <p><?php echo $jobroleinfo; ?></p>
             <p><?php echo $aboutstaff; ?></p>
             <a href="mailto:<?php echo $email ?>"><?php echo $email; ?></a><br />
+
+            <?php 
+          if( !empty($linkedin) ):
+          ?>
             <a href="<?php echo $linkedin; ?>"><i class="fa fa-linkedin fa-2x"></i></a>
+          <?php endif;?>
           </div>
         </div>
       </div>
