@@ -45,8 +45,8 @@ get_header(); ?>
     	$club_telephone = 	get_field('club_telephone');
     	$school_telephone = get_field('school_telephone');
     	$ofsted_reg = 		get_field('ofsted_registration_number');
-    	$actionButtonLink =		get_field('action_button_link');
 		$actionButtonLabel =	get_field('action_button_label');
+		$bookingForm = get_field('booking_form');
 
   	?>
 
@@ -185,7 +185,7 @@ get_header(); ?>
 <div class="full-width content-area action-area <?php echo $slug; ?>">
   <div class="row">
     <div class="large-12 medium-12 columns buttons-container">
-      <a class="large round button firstbutton" href="<?php echo $actionButtonLink; ?>"><?php echo $actionButtonLabel; ?></a>
+      <a class="large round button firstbutton" href="<?php echo $bookingForm['url']; ?>"><?php echo $actionButtonLabel; ?></a>
     </div>
   </div>
 </div>
