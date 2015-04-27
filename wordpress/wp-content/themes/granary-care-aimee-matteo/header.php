@@ -122,7 +122,15 @@
 
 									<li class="has-dropdown"><a href="<?php echo site_url(); ?>/granary-kids">Kids Clubs</a>
 										<ul class="dropdown">
-											<li><a href="<?php echo site_url(); ?>/breakfast-and-after-school-clubs">Breakfast and After School Clubs</a></li>
+											<li class="has-dropdown"><a href="<?php echo site_url(); ?>/breakfast-and-after-school-clubs">Breakfast and After School Clubs</a>
+												<ul class="dropdown">
+													<li><a href="<?php echo site_url(); ?>/botwell-house-rc-primary/">Botwell House</a></li>
+													<li><a href="<?php echo site_url(); ?>/grimsdyke-primary/">Grimsdyke Primary</a></li>
+													<li><a href="<?php echo site_url(); ?>/marlborough-primary/">Marlborough Primary</a></li>
+													<li><a href="<?php echo site_url(); ?>/oak-farm-school/">Oak Farm School</a></li>
+													<li><a href="<?php echo site_url(); ?>/simon-marks-jewish-primary/">Simon Marks Jewish Primary</a></li>
+												</ul>
+											</li>
 											<li><a href="<?php echo site_url(); ?>/tipple-topples-creche">Tipple Topples Creche</a></li>
 											<li><a href="<?php echo site_url(); ?>/active-holiday-camps">Active Holiday Camps</a></li>
 											<li><a href="<?php echo site_url(); ?>/work-with-granary-kids">Work with Granary Kids</a></li>        
