@@ -388,7 +388,9 @@ body
 		color: rgba(19, 19, 66, 1);	
 	}
 
-	.nannyagency .buttons-container a.firstbutton
+	.nannyagency .buttons-container a.firstbutton,
+	.button.gform_next_button,
+	input[type=submit].gform_button.button
 	{
 		background: url('../images/orange-paint-texture.png') no-repeat;
 		background-position: center;

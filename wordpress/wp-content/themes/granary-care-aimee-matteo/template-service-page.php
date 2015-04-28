@@ -15,12 +15,11 @@ get_header(); ?>
     $buttonLabel = get_field('button_label');
     $buttonLink2 = get_field('second_button_link');
     $buttonLabel2 = get_field('second_button_label');
+    $bookingForm = get_field('booking_form');
 
-    // echo '<pre>';
-    // // print_r(get_the_category());
-    // print_r($category);
-    // echo '</pre>';
-
+    
+    // showMeTheGoods($bookingForm);
+  
 ?>
 
 <div class="content">
@@ -97,7 +96,17 @@ get_header(); ?>
     <div class="full-width content-area action-area <?php echo $slug; ?>">
       <div class="row">
         <div class="buttons-container">
+
+          <?php if( is_page('active-holiday-camps' )): ?>
+          
+          <a class="large round button main-button" href="<?php echo $bookingForm['url']; ?>"><?php echo $buttonLabel; ?></a>
+
+          <?php else: ?>
+
           <a class="large round button main-button" href="<?php echo $buttonLink; ?>"><?php echo $buttonLabel; ?></a>
+
+          <?php endif; ?>
+
         </div>
       </div>
     </div>
@@ -132,6 +141,7 @@ get_header(); ?>
             $panelTitle = get_sub_field('panel_title');
             $blurb      = get_sub_field('blurb');
             $createdBy  = get_sub_field('created_by');
+
             
             $classes = '';
             if ($currentRow == $totalRows) $classes .= 'last ';
@@ -172,7 +182,11 @@ get_header(); ?>
 <div class="full-width content-area action-area <?php echo $slug; ?>">
   <div class="row">
     <div class="buttons-container">
-      <a class="large round button main-button" href="<?php echo $buttonLink; ?>"><?php echo $buttonLabel; ?></a>
+      <?php if( is_page('active-holiday-camps' )): ?>        
+       <a class="large round button main-button" href="<?php echo $bookingForm['url']; ?>"><?php echo $buttonLabel; ?></a> 
+      <?php else: ?>
+        <a class="large round button main-button" href="<?php echo $buttonLink; ?>"><?php echo $buttonLabel; ?></a>
+      <?php endif; ?>
       <a class="large round button firstbutton" href="<?php echo $buttonLink2; ?>"><?php echo $buttonLabel2; ?></a>
     </div>
   </div>
