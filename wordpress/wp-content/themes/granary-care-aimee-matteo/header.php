@@ -44,20 +44,24 @@
 
 	</head>
 
-	<body <?php body_class(); 
+	<body <?php body_class();?> >
 
-    $categories = get_the_category(); // returns all categories assigned to a page/post as an Array
-    $category = $categories[0]; // let's grab the first category in the Array (the element at index 0)
-    $slug = $category->slug; // kind of self-explanatory (the slug property inside the category Object)
+	<?php 
 
-	?>>
+	// a GLOBAL variable is accessible from other templates
+	// this way we can get the slug once here in the header
+	// and then re-use it in other templates (which all include the header)
+	global $categorySlug;
+	$categorySlug = getCategorySlug();
+
+	?>
 
 
 		<!-- HEADER AREA -->
 		<header>
 
 			<!-- NAVIGATION AREA -->
-			<div class="full-width navigation-area <?php echo $slug; ?>">
+			<div class="full-width navigation-area <?php echo $categorySlug; ?>">
 				<!-- logo + phone + account buttons -->
 				<?php if( is_front_page()): ?>
 

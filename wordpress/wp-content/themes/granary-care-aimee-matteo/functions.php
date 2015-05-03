@@ -48,5 +48,20 @@ function showMeTheGoods($theGoods)
     echo '</pre>';
 }
 
+function getCategorySlug()
+{
+	$categories = get_the_category(); // returns all categories assigned to a page/post as an Array
+    
+    $category = $categories[0]; // let's grab the first category in the Array (the element at index 0)
+
+    // quick hack: if the first category is the "Event Espresso" one, grab the second category instead..
+    if ($category->slug == 'eventespresso') {
+    	$category = $categories[1];
+    }
+
+    $slug = $category->slug; // kind of self-explanatory (the slug property inside the category Object)
+    return $slug;
+}
+
 
 ?>
