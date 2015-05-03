@@ -461,7 +461,7 @@ if (!function_exists('event_espresso_get_event_details')) {
 		}
 		//Check to see how many database queries were performed
 		//echo '<p>Database Queries: ' . get_num_queries() .'</p>';
-		espresso_registration_footer();
+		// espresso_registration_footer();
 	}
 
 }

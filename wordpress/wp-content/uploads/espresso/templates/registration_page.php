@@ -271,7 +271,7 @@ if (!function_exists('register_attendees')) {
                  echo '<h3 class="'.espresso_template_css_class('expired_event','expired_event').'">'.__('This event has expired or is no longer available.', 'event_espresso').'</h3>';
             }
 
-            echo espresso_registration_footer();
+            // echo espresso_registration_footer();
 
             //Check to see how many database queries were performed
             //echo '<p>Database Queries: ' . get_num_queries() .'</p>';
