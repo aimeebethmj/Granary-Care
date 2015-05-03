@@ -44,7 +44,7 @@ $num_attendees = apply_filters('filter_hook_espresso_get_num_attendees', $event_
 
 
 
-<!-- SIMPLIFIED BADDEO TEMPLATE -->
+<!-- SIMPLIFIED TEMPLATE -->
 
 	<h3>
 		<a title="<?php echo stripslashes_deep($event_name) ?>" class="<?php espresso_template_css_class('a_event_title','a_event_title'); ?>" id="a_event_title-<?php echo $event_id ?>" href="<?php echo $registration_url; ?>">
