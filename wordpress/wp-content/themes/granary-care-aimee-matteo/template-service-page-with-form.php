@@ -75,6 +75,10 @@ get_header(); ?>
       <h2><?php echo $formHeading ?></h2>
 
       <?php the_content();?>
+    </div>
+  </div>
+</div>
+
 
 
 
