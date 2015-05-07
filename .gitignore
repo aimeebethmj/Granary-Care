@@ -8,3 +8,5 @@ wp-config.php
 *.zip
 .htaccess
 *.sql
+
+wordpress/wp-content/uploads/espresso/templates/css
