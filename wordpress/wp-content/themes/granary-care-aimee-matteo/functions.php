@@ -65,5 +65,14 @@ function getCategorySlug()
 	return $slug;
 }
 
+// a handy function to "console.log" PHP data
+function consoleLog($data) {
+	if (is_array($data) || is_object($data)) {
+		echo("<script>console.log(".json_encode($data).");</script>");
+	} else {
+		echo("<script>console.log(".$data.");</script>");
+	}
+}
+
 
 ?>
