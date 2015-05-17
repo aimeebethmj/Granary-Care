@@ -813,13 +813,14 @@ if (!function_exists('event_espresso_load_checkout_page')) {
 		
 	</form>
 </div>
-
+<!-- 
 <script>
 	jQuery(function(){
 		//Registration form validation
 		jQuery('#event_espresso_checkout_form').validate();
 	});
 </script>
+ -->
 <?php
 		}
 
