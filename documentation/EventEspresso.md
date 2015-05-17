@@ -70,14 +70,55 @@ To display events at a certain venue:
 	?>
 ```			
 
+## Paypal set up
+
+### Sandbox testing
+
+https://developer.paypal.com/developer/accounts
+payments-facilitator@granarycare.com / letmeinpal
+payments-buyer@granarycare.com / letmeinpal
+
+
+# Bugs
+
+### AJAX setup
+
+In `event-espresso/scripts/espresso_cart_functions.js`
+
+```js
+jQuery.ajaxSetup({
+    cache: false,
+    // MM removed as jQuery.browser has been deprecated since 1.9
+    // http://jquery.com/upgrade-guide/1.9/#jquery-browser-removed
+    /*xhr: function()
+    {
+        if (jQuery.browser.msie)
+        {
+            return new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        else
+        {
+            return new XMLHttpRequest();
+        }
+    },*/
+    type: "POST",
+    url:  EEGlobals.ajaxurl
+});
+```
 
 # TODO
 
-- [ ] Display all future events by venue
-- [ ] Display single event
-- [ ] Book single event
-- [ ] [Book multiple events](http://eventespresso.com/product/espresso-multiple/)
-- [ ] Subscribe to repeating event
+- [x] Paypal [sandbox](#sandbox-testing) set up
+- [x] Display all future events by venue
+- [x] Display single event
+- [x] Book single event
+- [ ] [Book multiple events](http://eventespresso.com/wiki/multiple-event-registration-add-on/)
+- [ ] Subscribe to repeating event?
+- [ ] Events calendar
+- [ ] Improve copy on all those ugly pages (rename things etc)
+- [ ] Style all those ugly pages 
+- [ ] Paypal set up
+- [ ] WP User integration 
 
 
 
