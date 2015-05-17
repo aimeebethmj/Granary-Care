@@ -5,16 +5,35 @@
 ?>
 
 
+
+
 <!-- SIMPLIFIED TEMPLATE -->
 
 
 	<div class="large-10 medium-10 small-centered columns">
-		<h1><?php echo $event_name ?></h1>
+		<h2><?php echo $event_name ?></h2>
 	</div>
 
 	<div class="large-8 medium-8 small-centered columns">
 
-		<!-- VENUE -->
+		<!-- WHEN -->
+
+			<h3>When?</h3>
+			<p class="date">
+			<?php echo event_date_display($start_date, get_option('date_format')); ?>
+			</p>
+			<p class="time">
+			<?php 
+				echo event_espresso_get_time($event_id, $format = 'start_time');
+				echo event_espresso_get_time($event_id, $format = 'end_time'); 
+			?>
+			</p>
+
+
+
+		<!-- WHERE -->
+
+			<h3>Where?</h3>
 
 			<?php /* Venue details. Un-comment first and last lines & any venue details you wish to display or use the provided shortcodes. */ ?>
 			<?php echo '<div id="venue-details-display">'; ?>
@@ -28,6 +47,9 @@
 			<?php // echo $venue_country != ''?'<p id="event_venue_country-'.$event_id.'" class="event_venue_country">'.stripslashes_deep($venue_country).'</p>':''?>
 			<?php echo '</div>'; ?>
 			<?php /* end venue details block */ ?>
+		
+
+		<!-- HOW MUCH?	 -->
 
 		<!-- DESCRIPTION --><!-- 
 			<?php if ($display_desc == "Y") { // Show the description or not ?>

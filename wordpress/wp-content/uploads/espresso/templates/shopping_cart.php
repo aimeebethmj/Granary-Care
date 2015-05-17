@@ -161,3 +161,4 @@ if ( !function_exists( 'event_espresso_shopping_cart' ) ){
 			}
 		}
 }
+?>

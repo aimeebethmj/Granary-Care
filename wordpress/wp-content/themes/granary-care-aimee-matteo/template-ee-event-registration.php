@@ -8,7 +8,9 @@ get_header();
 
 // summon the GLOBAL variable (assigned in header.php)
 global $categorySlug;
-// showMeTheGoods($categorySlug);
+
+consoleLog($categorySlug);
+consoleLog($_SESSION);
 
 ?>
 

@@ -11,4 +11,9 @@ wp-config.php
 
 wordpress/wp-content/uploads/espresso/templates/css
 wordpress/wp-content/uploads/gravity_forms
+wordpress/wp-content/uploads/espresso/logs
+
 brand
+
+
+wordpress/wp-content/themes/granary-care-aimee-matteo/node_modules

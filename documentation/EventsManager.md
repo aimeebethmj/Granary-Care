@@ -1,0 +1,1 @@
+http://wp-events-plugin.com/documentation/using-template-files/

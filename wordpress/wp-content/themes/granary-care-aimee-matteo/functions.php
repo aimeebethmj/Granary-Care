@@ -62,16 +62,20 @@ function getCategorySlug()
 	}
 
 	$slug = $category->slug; // kind of self-explanatory (the slug property inside the category Object)
+	
+	// another hack.. we should probably have a way to set the category globally first, and as a fallback to grab it from the current page/post
+	if ($slug == '') $slug = 'granarykids';
+
 	return $slug;
 }
 
 // a handy function to "console.log" PHP data
-function consoleLog($data) {
-	if (is_array($data) || is_object($data)) {
-		echo("<script>console.log(".json_encode($data).");</script>");
-	} else {
-		echo("<script>console.log(".$data.");</script>");
-	}
+function consoleLog($data) 
+{
+	if (is_array($data) || is_object($data)) $data = json_encode($data);
+	else if (is_string($data)) $data = '"' . $data . '"';
+	
+	echo('<script>console.log(' . $data . ');</script>');
 }
 
 

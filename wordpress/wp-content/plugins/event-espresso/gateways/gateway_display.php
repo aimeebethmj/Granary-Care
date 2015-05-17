@@ -82,7 +82,7 @@ do_action('action_hook_espresso_display_offline_payment_footer');
 
 echo '</div><!-- / .event-data-display -->';
 echo '</div><!-- / .event-display-boxes payment opts -->';
-echo '<p id="external-link-msg-pg"><img width="16" height="16" src="' . EVENT_ESPRESSO_PLUGINFULLURL . '/images/icons/external-link.png" alt="click to visit this payment gateway">&nbsp;&nbsp;' . __('denotes an external link. clicking will take you to another website for payment processing.', 'event_espresso') . '</p>';
+// echo '<p id="external-link-msg-pg"><img width="16" height="16" src="' . EVENT_ESPRESSO_PLUGINFULLURL . '/images/icons/external-link.png" alt="click to visit this payment gateway">&nbsp;&nbsp;' . __('denotes an external link. clicking will take you to another website for payment processing.', 'event_espresso') . '</p>';
 
 wp_register_script( 'espresso_payment_page', EVENT_ESPRESSO_PLUGINFULLURL . 'scripts/espresso_payment_page.js', array( 'jquery' ), '1.0', TRUE );
 wp_enqueue_script( 'espresso_payment_page' );

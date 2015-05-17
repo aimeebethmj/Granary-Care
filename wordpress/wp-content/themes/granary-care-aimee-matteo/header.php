@@ -192,33 +192,11 @@
 					</div>
 				</div>
 			</div>
-
-
-		
-
-
-
-		
-			<!-- <div class="row">
-			  <div class="large-8 medium-8 columns">
-				
-			  </div>
-			  <div class="large-4 medium-4 columns social-buttons">
-				<a href="<?php echo ot_get_option( 'twitter' ); ?>"><i class="fa fa-twitter fa-2x"></i></a>
-				<a href="<?php echo ot_get_option( 'facebook' ); ?>"><i class="fa fa-facebook-square fa-2x"></i></a>
-				<a href="#"><i class="fa fa-pinterest fa-2x"></i></a>
-			  </div>
-			</div> -->
 			
-			<!-- GIANT LOGO (only certain pages) -->
+			
 		<?php if( is_front_page()): ?>
-
+			<!-- GIANT LOGO (only certain pages) -->
 			<div class="logo-giant hide-for-small"></div>
-
 		<?php endif; ?>
 
 		</header>
-<!-- 		
- <?php echo ('are we home? ' . is_front_page() ); ?>
- -->
-
