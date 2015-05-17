@@ -7,7 +7,6 @@ jQuery(document).ready(function() {
 		jQuery('#event_espresso_notifications').hide();
 	}
 	
-
     jQuery.ajaxSetup({
         cache: false,
         xhr: function()
@@ -25,17 +24,20 @@ jQuery(document).ready(function() {
         url:  EEGlobals.ajaxurl
     });
 
-    var EECART = {
-
-
-        progress: function(container){
-
+    var EECART = 
+    {
+        progress: function(container)
+        {
             jQuery(container).html('<img class="ee-ajax-loader-img" src="' + EEGlobals.plugin_url + 'images/ajax-loader.gif">');
         },
-        add_item : function(params){
+
+        add_item: function(params)
+        {
             var _eecart = this;
             _eecart.progress(params.container);
-            var data = {
+            
+            var data = 
+            {
                 action: 'event_espresso_add_item',
                 regevent_action: "event_espresso_add_item",
                 item_type : params.item_type,
@@ -46,17 +48,15 @@ jQuery(document).ready(function() {
                 event_page_id: EEGlobals.event_page_id
             };
 
-            event_espresso_do_ajax( data, function(r){
-
+            event_espresso_do_ajax( data, function(r)
+            {
                 params.container.html(r.html);
-
-            }) ;
-
+            })
         },
 
-        delete_item : function(params){
-
-		//alert( 'params = ' + params.toSource() );
+        delete_item : function(params)
+        {
+            //alert( 'params = ' + params.toSource() );
 
             var _eecart = this;
             _eecart.progress(params.loader_container);
@@ -77,10 +77,10 @@ jQuery(document).ready(function() {
                     });
                 _eecart.calculate_total();
             }) ;
-
         },
 
-        calculate_total: function(grand_total){
+        calculate_total: function(grand_total)
+        {
             var _eecart = this;
             _eecart.progress(jQuery('#event_total_price'));
 
@@ -100,16 +100,11 @@ jQuery(document).ready(function() {
 				}
 				
             });
-
-
         }
-
-
-
     };
 
-    jQuery('body').on('click', '.ee_add_item_to_cart',function(){
-
+    jQuery('body').on('click', '.ee_add_item_to_cart',function()
+    {
         var data = {
             item_type: 'event',
             id : jQuery(this).attr('id'),
@@ -117,13 +112,11 @@ jQuery(document).ready(function() {
 			direct_to_cart : jQuery(this).attr('direct_to_cart'),
 			moving_to_cart : jQuery(this).attr('moving_to_cart'),
             container : jQuery(this).parent()
-
         }
 
         EECART.add_item(data);
 
         return false;
-
     });
  
 
@@ -161,23 +154,23 @@ jQuery(document).ready(function() {
 
         var data = "action=event_espresso_update_item&" + jQuery(this).serialize()
 
-    //progress(jQuery('#event_total_price'));
-    /*event_espresso_do_ajax(data,function(r){
+        //progress(jQuery('#event_total_price'));
+        /*event_espresso_do_ajax(data,function(r){
 
-               //return true;
+                   //return true;
 
-            });
-    //return false;
+                });
+        //return false;
 
 
-    /*jQuery(this).validate({
+        /*jQuery(this).validate({
 
-                        submitHandler: function(form) {
-                            form.submit();
-                        }
+                            submitHandler: function(form) {
+                                form.submit();
+                            }
 
-                    });*/
-    //return false;
+                        });*/
+        //return false;
     });
 
 
@@ -189,7 +182,7 @@ jQuery(document).ready(function() {
         //progress(jQuery('#event_total_price'));
         //event_espresso_do_ajax(data,jQuery('#event_total_price'),'');
         //return false;
-        });
+    });
 
     /*
      * Constructs qty dropdown
@@ -272,7 +265,7 @@ jQuery(document).ready(function() {
 
 
         //return false;
-        });
+    });
 
     jQuery('#event_espresso_confirm_pay').click(function(){
 
@@ -419,8 +412,10 @@ jQuery(document).ready(function() {
     });
 
 
-   //Updated in Event Espresso 3.1.31 to suport Jquery 1.9
-   function event_espresso_do_ajax(data, callback){
+    //Updated in Event Espresso 3.1.31 to suport Jquery 1.9
+    function event_espresso_do_ajax(data, callback) 
+    {
+        console.log('event_espresso_do_ajax', data)
 		jQuery.ajax({
 			data: data,
 			dataType: 'json'
@@ -429,13 +424,12 @@ jQuery(document).ready(function() {
 			process_response(response, callback);
 		})
 		.fail(function(resp) {
-			//alert('Error.');
+			console.error(resp)
 		})
 		.complete(function(resp){
-			//alert('Complete.');
+			console.log(resp)
 		});
-
-   }
+    }
 
     function process_response(from_server, callback)
     {
