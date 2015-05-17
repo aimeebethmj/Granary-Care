@@ -29,6 +29,34 @@
 			<?php echo '</div>'; ?>
 			<?php /* end venue details block */ ?>
 
+		<!-- DESCRIPTION --><!-- 
+			<?php if ($display_desc == "Y") { // Show the description or not ?>
+			<div class="event_description">
+				<?php echo espresso_format_content($event_desc); //Code to show the actual description. The Wordpress function "wpautop" adds formatting to your description.   ?>
+			</div>	
+			<?php }// End display description ?>
+ 		-->
+		<!-- ADD TO CART? -->
+			<?php
+
+				$params = array(
+				//REQUIRED, the id of the event that needs to be added to the cart
+				'event_id' => $event->id,
+				//REQUIRED, Anchor of the link, can use text or image
+				'anchor' => __('Add to Cart', 'event_espresso'),
+				//'anchor' => '<img src="' . WP_PLUGIN_URL. "/".plugin_basename(dirname(__FILE__)) .'/add_to_cart.png" />',
+				//REQUIRED, the event name for the event to be added to the cart
+				'event_name' => $event->event_name,
+				//OPTIONAL, will place this term before the link
+				//'separator' => __(" or ", 'event_espresso')
+				);
+				$cart_link = event_espresso_cart_link($params);
+				echo ('<div class="cart-container">' . $cart_link . '</div>');
+				// consoleLog($cart_link);
+			
+				// $shortcode = '[ESPRESSO_CART_LINK]';
+				// echo do_shortcode($shortcode);
+			?>
 	<?php	
 		switch ($is_active['status']) {
 		
@@ -42,7 +70,7 @@
 			
 				//only show the event description.
 				// if todays date is after $reg_end_date
-		?>
+				?>
 					<div class="<?php espresso_template_css_class('event_registration_closed_event_messages','event-registration-closed event-messages ui-corner-all ui-state-highlight'); ?>"> 
 						<!-- <span class="<?php espresso_template_css_class('icon_alert','ui-icon ui-icon-alert'); ?>"></span> -->
 						<p class="<?php espresso_template_css_class('event_full','event_full'); ?>">
@@ -63,7 +91,7 @@
 				//only show the event description.
 				// if todays date is after $reg_end_date
 				// if todays date is prior to $reg_start_date
-		?>
+				?>
 					<div class="<?php espresso_template_css_class('event_registration_pending','event-registration-pending event-messages ui-corner-all ui-state-highlight'); ?>"> <span class="<?php espresso_template_css_class('icon_alert','ui-icon ui-icon-alert'); ?>"></span>
 						<p class="<?php espresso_template_css_class('event_full','event_full'); ?>">
 							<?php _e('We are sorry but this event is not yet open for registration.', 'event_espresso'); ?>
@@ -77,8 +105,9 @@
 
 			default: //This will display the registration form
 			
-			do_action('action_hook_espresso_registration_page_top', $event_id, $event_meta, $all_meta);
-		?>
+				do_action('action_hook_espresso_registration_page_top', $event_id, $event_meta, $all_meta);
+				?>
+
 					<div class="event_espresso_form_wrapper <?php espresso_template_css_class('form_wrapper',''); ?>">
 						<form method="post" action="<?php echo get_permalink( $event_page_id );?>" id="registration_form">
 							<?php
@@ -102,19 +131,19 @@
 
 						if ($display_price_dropdown == TRUE) {
 							$price_label = '<span class="'.espresso_template_css_class('section_title','event_price_label', false).'">'.__('Choose an Option:', 'event_espresso').'</span>';
-			?>
+				?>
 							<p class="event_prices">
 								<?php do_action( 'espresso_price_select', $event_id, array('show_label'=>TRUE, 'label'=>$price_label) );?>
 							</p>
 							<?php
 						} else {
-			?>
+				?>
 							<p class="event_prices">
 								<?php do_action( 'espresso_seating_price_select_action', $event_id );?>
 							</p>
 							<?php
 						}						
-			?>
+				?>
 							<p class="event_time">
 								<?php
 							//This block of code is used to display the times of an event in either a dropdown or text format.
@@ -123,11 +152,11 @@
 							} else {
 								echo event_espresso_time_dropdown($event_id);
 							}//End time selected
-			?>
+				?>
 							</p>
 							<?php
 					}
-			?>
+				?>
 							<p class="<?php espresso_template_css_class('start_date','start_date'); ?>">
 								<?php if ($end_date !== $start_date) { ?>
 								<span class="<?php espresso_template_css_class('event_date_label','span_event_date_label'); ?>">
@@ -147,7 +176,7 @@
 								<?php endif; ?>
 								<?php echo apply_filters('filter_hook_espresso_display_ical', $all_meta); ?> </p>
 							<?php
-				}
+					}
 
 				// * * This section shows the registration form if it is an active event * *
 
@@ -155,7 +184,7 @@
 					
 					do_action('action_hook_espresso_registration_form_top', $event_id, $event_meta, $all_meta);
 
-			?>
+					?>
 							<div id="event-reg-form-groups" class="<?php espresso_template_css_class('event_reg_form_groups','event-reg-form-groups'); ?>">
 								<h3 class="<?php espresso_template_css_class('section_heading','section-heading'); ?>">
 									<?php _e('Registration Details', 'event_espresso'); ?>
@@ -163,10 +192,10 @@
 								<?php
 						//Outputs the custom form questions. This function can be overridden using the custom files addon
 						echo event_espresso_add_question_groups( $question_groups, '', NULL, FALSE, array( 'attendee_number' => 1 ), 'ee-reg-page-questions' );
-			?>
+					?>
 							</div>
 							<?php					
-			?>
+					?>
 							<input type="hidden" name="regevent_action" id="regevent_action-<?php echo $event_id; ?>" value="post_attendee">
 							<input type="hidden" name="event_id" id="event_id-<?php echo $event_id; ?>" value="<?php echo $event_id; ?>">
 							<?php
@@ -175,21 +204,21 @@
 							//This returns the additional attendee form fields. Can be overridden in the custom files addon.
 							echo event_espresso_additional_attendees($event_id, $additional_limit, $number_available_spaces, __('Number of Tickets', 'event_espresso'), true, $event_meta);
 						} else {				
-			?>
+					?>
 							<input type="hidden" name="num_people" id="num_people-<?php echo $event_id; ?>" value="1">
 							<?php
 						}					
 						//End allow multiple	
 						
 						wp_nonce_field('reg_nonce', 'reg_form_nonce'); 
-			?>
+					?>
 							<p class="<?php espresso_template_css_class('event_form_submit','event_form_submit'); ?>" id="event_form_submit-<?php echo $event_id; ?>">
 								<input class="<?php espresso_template_css_class('btn_event_form_submit','btn_event_form_submit ui-button ui-button-big ui-priority-primary ui-state-default ui-state-hover ui-state-focus ui-corner-all'); ?>" id="event_form_field-<?php echo $event_id; ?>" type="submit" name="Submit" value="<?php _e('Submit', 'event_espresso'); ?>">
 							</p>
 							<?php 
 					do_action('action_hook_espresso_registration_form_bottom', $event_id, $event_meta, $all_meta);
 				}
-		 	?>
+		 		?>
 						</form>
 					</div>
 					<?php 
