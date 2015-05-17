@@ -17,17 +17,6 @@ global $categorySlug;
 
 <div class="content">
 
-	<!-- BANNER STATEMENT -->
-
-	<div class="full-width content-area banner-statement <?php echo $categorySlug; ?>" >
-		<div class="row">
-			<div class="large-12 medium-12 small-12 columns">
-				<!-- <h2><?php echo get_field('banner_message');?></h2> -->
-				Banner message here?
-			</div>
-		</div>
-	</div>
-
 	<!-- MAIN CONTENT -->
 	<div class="row">
 		<!-- this will call the template in uploads/espresso/templates/registration_page_display.php -->
