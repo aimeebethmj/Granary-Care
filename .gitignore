@@ -10,3 +10,4 @@ wp-config.php
 *.sql
 
 wordpress/wp-content/uploads/espresso/templates/css
+wordpress/wp-content/uploads/gravity_forms
