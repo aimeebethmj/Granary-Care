@@ -62,6 +62,10 @@ function getCategorySlug()
 	}
 
 	$slug = $category->slug; // kind of self-explanatory (the slug property inside the category Object)
+	
+	// another hack.. we should probably have a way to set the category globally first, and as a fallback to grab it from the current page/post
+	if ($slug == '') $slug = 'granarykids';
+
 	return $slug;
 }
 
