@@ -80,7 +80,7 @@ get_header(); ?>
 			<div class="large-3 medium-12 columns">
 				<h2>Location</h2>
 			</div>
-			<div class="large-5 medium-12 columns business-blurbs">
+			<div class="large-7 medium-12 columns business-blurbs">
 				<p><b><?php echo $location; ?></b></p>
 			</div>
 			<hr>
@@ -92,7 +92,7 @@ get_header(); ?>
 			<div class="large-3 medium-12 columns">
 				<h2>Sessions</h2>
 			</div>
-			<div class="large-5 medium-12 columns business-blurbs">
+			<div class="large-7 medium-12 columns business-blurbs">
 			
 				
 				<?php if( have_rows('sessions') ): ?>
@@ -105,7 +105,7 @@ get_header(); ?>
 
 		  		?>
 			
-				<p><b><?php echo $club; ?></b></p>
+				<p><?php echo $club; ?></p>
 				<p><b><?php echo $times; ?></b></p>
 				<p><b><?php echo $price; ?></b></p>
 
@@ -124,7 +124,7 @@ get_header(); ?>
 			<div class="large-3 medium-12 columns">
 				<h2>What we do here</h2>
 			</div>
-			<div class="large-5 medium-12 columns business-blurbs">
+			<div class="large-7 medium-12 columns business-blurbs">
 				<p><?php echo $clubActivities; ?></p>
 			</div>
 			<hr>
@@ -136,7 +136,7 @@ get_header(); ?>
 			<div class="large-3 medium-12 columns">
 				<h2>Play Leader</h2>
 			</div>
-			<div class="large-5 medium-12 columns business-blurbs">
+			<div class="large-7 medium-12 columns business-blurbs">
 				<p><?php echo $play_leader; ?></p>
 			</div>
 			<hr>
@@ -148,7 +148,7 @@ get_header(); ?>
 			<div class="large-3 medium-12 columns">
 				<h2>Club Tel</h2>
 			</div>
-			<div class="large-5 medium-12 columns business-blurbs">
+			<div class="large-7 medium-12 columns business-blurbs">
 				<a href="tel:<?php echo $club_telephone; ?>" ><h3><?php echo $club_telephone; ?></h3></a>
 			</div>
 			<hr>
@@ -160,7 +160,7 @@ get_header(); ?>
 			<div class="large-3 medium-12 columns">
 				<h2>School Office Tel</h2>
 			</div>
-			<div class="large-5 medium-12 columns business-blurbs">
+			<div class="large-7 medium-12 columns business-blurbs">
 				<a href="tel:<?php echo $club_telephone; ?>" ><h3><?php echo $school_telephone; ?></h3></a>
 			</div>
 			<hr>
@@ -172,7 +172,7 @@ get_header(); ?>
 			<div class="large-3 medium-12 columns">
 				<h2>Ofsted Reg</h2>
 			</div>
-			<div class="large-5 medium-12 columns business-blurbs">
+			<div class="large-7 medium-12 columns business-blurbs">
 				<a href="tel:<?php echo $club_telephone; ?>" ><h3><?php echo $ofsted_reg; ?></h3></a>
 			</div>
 			<hr>
