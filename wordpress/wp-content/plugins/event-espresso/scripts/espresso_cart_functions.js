@@ -9,7 +9,9 @@ jQuery(document).ready(function() {
 	
     jQuery.ajaxSetup({
         cache: false,
-        xhr: function()
+        // MM removed as jQuery.browser has been deprecated since 1.9
+        // http://jquery.com/upgrade-guide/1.9/#jquery-browser-removed
+        /*xhr: function()
         {
             if (jQuery.browser.msie)
             {
@@ -19,7 +21,7 @@ jQuery(document).ready(function() {
             {
                 return new XMLHttpRequest();
             }
-        },
+        },*/
         type: "POST",
         url:  EEGlobals.ajaxurl
     });
