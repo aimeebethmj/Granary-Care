@@ -1,7 +1,7 @@
 <?php 
 
 /*
-Template Name: Event Espresso Venue Events
+Template Name: Event Espresso Calendar
 */
 
 get_header(); 
@@ -27,15 +27,12 @@ global $categorySlug;
 
 				the_content();
 
-				$venueId = get_field('venue_id');
+				$categoryId = 'botwell-house';
+				// $categoryId = get_field('venue_id');
 
-				// EVENTS list
-				$shortcode = '[ESPRESSO_VENUE_EVENTS id="'. $venueId . '" show_expired=false order_by=date(start_date) ]';
-				// this shortcode uses event_list_display.php from uploads/espressoo/templates 
-				echo do_shortcode($shortcode);
+				$shortcode = '[ESPRESSO_CALENDAR event_category_id="'. $categoryId . '"]';
 
-				// VENUE info
-				$shortcode = '[ESPRESSO_VENUE id="'. $venueId . '" show_map_image=false show_google_map_link=false]';
+				// TODO ??? this shortcode uses event_list_display.php from uploads/espressoo/templates 
 				echo do_shortcode($shortcode);
  
 			?>
