@@ -11,7 +11,16 @@
  * 
  * $args - the args passed onto EM_Events::output() 
  */
+
 global $EM_Event;
 /* @var $EM_Event EM_Event */
+
+consoleLog('event-single.php');
+consoleLog($EM_Event);
+
+// this seems to be only affecting the display of CONTENT, not the whole html
+// echo ('blabla');
+
 echo $EM_Event->output_single();
+
 ?>

@@ -6,6 +6,8 @@ Template Name: Events Manager
 
 get_header(); 
 
+consoleLog('template-em.php');
+
 // summon the GLOBAL variable (assigned in header.php)
 global $categorySlug;
 
