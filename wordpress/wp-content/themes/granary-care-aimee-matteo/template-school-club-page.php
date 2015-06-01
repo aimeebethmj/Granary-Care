@@ -47,6 +47,7 @@ get_header(); ?>
     	$ofsted_reg = 		get_field('ofsted_registration_number');
 		$actionButtonLabel =	get_field('action_button_label');
 		$bookingForm = get_field('booking_form');
+		$booking_info = get_field('booking_info');
 
   	?>
 
@@ -71,8 +72,20 @@ get_header(); ?>
   </div>
 </div>
 
+<!-- ACTION BUTTONS -->
+<div class="full-width content-area action-area <?php echo $slug; ?>">
+  <div class="row">
+    <div class="large-12 medium-12 columns buttons-container">
+      <a class="large round button firstbutton" href="<?php echo $bookingForm['url']; ?>"><?php echo $actionButtonLabel; ?></a>
+    </div>
+  </div>
+</div>
 
-
+ <div class="row"> 
+  <div class="large-8 medium-8 small-centered columns">
+    <?php echo $booking_info;?>
+  </div>
+</div>
 
 <div class="clubs-panel">
 	<div class="row">
