@@ -64,7 +64,11 @@
 				}
 			}  
 
-			$(document).foundation(foundationOptions);
+			$(document).ready(function()
+			{
+				$(document).foundation(foundationOptions)
+			})	
+			
 		</script>
 		
 		<?php if (is_front_page()) : ?>
