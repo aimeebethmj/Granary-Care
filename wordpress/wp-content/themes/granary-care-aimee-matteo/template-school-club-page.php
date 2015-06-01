@@ -35,8 +35,7 @@ get_header(); ?>
 
     	// Vars
     	
-    	$latitude = 		get_field('latitude');
-    	$longitude = 		get_field('longitude');
+
     	$school_name = 		get_field('school_name');
 		$location = 		get_field('location');
     	$sessions = 		get_field('sessions');
@@ -51,15 +50,7 @@ get_header(); ?>
 
   	?>
 
-<!-- Map -->
-<div class="row">
-	<div class="large-10 medium-10 small-12 small-centered club-location-area columns">
 
-		<div id="map_canvas">
-		</div>
-		
-	</div>
-</div>
 
 
 <!-- MAIN CONTENT -->
@@ -213,80 +204,6 @@ get_header(); ?>
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-<script>
-
-	// output some data about the club for Google Maps
-	// club is a JS object
-	var club = 
-	{
-		lat: <?php echo $latitude; ?>,
-		lng: <?php echo $longitude; ?>,
-		location: '<?php echo str_replace(array("\r", "\n"), "", $location); ?>',
-		name: '<?php echo $school_name; ?>'
-	}
-
-  function initialize() 
-  {
-    var mapCanvas = document.getElementById('map_canvas');
-
-    var mapOptions = 
-    {    
-    	center: new google.maps.LatLng(<?php echo $latitude; ?>, <?php echo $longitude; ?>),
-      	zoom: 13,
-      	mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
-    var map = new google.maps.Map(mapCanvas, mapOptions);
-
-
-	var latLng = new google.maps.LatLng(club.lat, club.lng);
-
-    var marker = new google.maps.Marker(
-    {
-        position: latLng,
-        map: map,
-        title: club.name
-    });
-
-    var contentString = '<div class="map-info-window">'+
-      // '<h4>' + club.name + '</h4> ' +
-      '<p>' + club.location + '</p>' +
-      '</div>';
-
-    // console.log(contentString)  
-
-    var infoWindow = new google.maps.InfoWindow(
-    {
-        content: contentString
-    });
-
-    google.maps.event.addListener(marker, 'click', function() 
-    {
-      	infoWindow.open(map, marker);
-    });
-  }
-  google.maps.event.addDomListener(window, 'load', initialize);
-
-</script>
-
-<script>
-	
-	$('div.schoolclubsinfo').on('click', function() 
-	{
-  		$(this).toggleClass('show-description');
-  	});
-
-</script>
-
-
-
 
 
 
