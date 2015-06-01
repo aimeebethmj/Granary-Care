@@ -1064,12 +1064,14 @@
     .clubs-panel h2
     {
         margin-bottom: 3.5rem;
+        margin-left: 1rem;
+        padding: 0;
     }
 
     .clubs-panel .business-blurbs p,
     .clubs-panel .business-blurbs a h3
     {
-        margin-left: 4rem;
+        margin-left: 1rem;
     }
 
 
