@@ -176,7 +176,7 @@
 
 									<!-- <li><a href="<?php echo site_url(); ?>/social-responsibility">Social Responsibility</a></li> -->
 
-									<li class="has-dropdown"><a>Work for Us</a>
+									<li class="has-dropdown"><a>Work with Us</a>
 										<ul class="dropdown">
 											<li><a href="<?php echo site_url(); ?>/work-with-granary-kids">Granary Kids</a></li>
 											<li><a href="<?php echo site_url(); ?>/nannies">Granary Nanny Agency</a></li>
