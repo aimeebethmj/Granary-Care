@@ -50,7 +50,22 @@ get_header(); ?>
 
   	?>
 
+<!-- IMAGE -->
+    <?php 
 
+    $image = get_field('image');
+
+    if( !empty($image) ):
+
+    ?>
+
+      <div class="row image-container">
+        <div class="large-10 medium-12 small-centered  columns">
+            <img src="<?php echo $image['url']; ?>">
+        </div>
+      </div>
+
+    <?php endif; ?>
 
 
 <!-- MAIN CONTENT -->
