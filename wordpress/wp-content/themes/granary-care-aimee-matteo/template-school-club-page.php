@@ -35,8 +35,7 @@ get_header(); ?>
 
     	// Vars
     	
-    	$latitude = 		get_field('latitude');
-    	$longitude = 		get_field('longitude');
+
     	$school_name = 		get_field('school_name');
 		$location = 		get_field('location');
     	$sessions = 		get_field('sessions');
@@ -47,18 +46,26 @@ get_header(); ?>
     	$ofsted_reg = 		get_field('ofsted_registration_number');
 		$actionButtonLabel =	get_field('action_button_label');
 		$bookingForm = get_field('booking_form');
+		$booking_info = get_field('booking_info');
 
   	?>
 
-<!-- Map -->
-<div class="row">
-	<div class="large-10 medium-10 small-12 small-centered club-location-area columns">
+<!-- IMAGE -->
+    <?php 
 
-		<div id="map_canvas">
-		</div>
-		
-	</div>
-</div>
+    $image = get_field('image');
+
+    if( !empty($image) ):
+
+    ?>
+
+      <div class="row image-container">
+        <div class="large-10 medium-12 small-centered  columns">
+            <img src="<?php echo $image['url']; ?>">
+        </div>
+      </div>
+
+    <?php endif; ?>
 
 
 <!-- MAIN CONTENT -->
@@ -71,16 +78,28 @@ get_header(); ?>
   </div>
 </div>
 
+<!-- ACTION BUTTONS -->
+<div class="full-width content-area action-area <?php echo $slug; ?>">
+  <div class="row">
+    <div class="large-12 medium-12 columns buttons-container">
+      <a class="large round button firstbutton" href="<?php echo $bookingForm['url']; ?>"><?php echo $actionButtonLabel; ?></a>
+    </div>
+  </div>
+</div>
 
-
+ <div class="row"> 
+  <div class="large-8 medium-8 small-centered columns">
+    <?php echo $booking_info;?>
+  </div>
+</div>
 
 <div class="clubs-panel">
 	<div class="row">
 		<div class="large-8 medium-8 small-centered columns">
-			<div class="large-3 medium-12 columns">
+			<div class="large-5 medium-12 columns">
 				<h2>Location</h2>
 			</div>
-			<div class="large-7 medium-12 columns business-blurbs">
+			<div class="large-6 medium-12 columns business-blurbs">
 				<p><b><?php echo $location; ?></b></p>
 			</div>
 			<hr>
@@ -89,10 +108,10 @@ get_header(); ?>
 
 	<div class="row">
 		<div class="large-8 medium-8 small-centered columns">
-			<div class="large-3 medium-12 columns">
+			<div class="large-5 medium-12 columns">
 				<h2>Sessions</h2>
 			</div>
-			<div class="large-7 medium-12 columns business-blurbs">
+			<div class="large-6 medium-12 columns business-blurbs">
 			
 				
 				<?php if( have_rows('sessions') ): ?>
@@ -121,10 +140,10 @@ get_header(); ?>
 
 	<div class="row">
 		<div class="large-8 medium-8 small-centered columns">
-			<div class="large-3 medium-12 columns">
+			<div class="large-5 medium-12 columns">
 				<h2>What we do here</h2>
 			</div>
-			<div class="large-7 medium-12 columns business-blurbs">
+			<div class="large-6 medium-12 columns business-blurbs">
 				<p><?php echo $clubActivities; ?></p>
 			</div>
 			<hr>
@@ -133,10 +152,10 @@ get_header(); ?>
 
 	<div class="row">
 		<div class="large-8 medium-8 small-centered columns">
-			<div class="large-3 medium-12 columns">
+			<div class="large-5 medium-12 columns">
 				<h2>Play Leader</h2>
 			</div>
-			<div class="large-7 medium-12 columns business-blurbs">
+			<div class="large-6 medium-12 columns business-blurbs">
 				<p><?php echo $play_leader; ?></p>
 			</div>
 			<hr>
@@ -145,10 +164,10 @@ get_header(); ?>
 
 	<div class="row">
 		<div class="large-8 medium-8 small-centered columns">
-			<div class="large-3 medium-12 columns">
+			<div class="large-5 medium-12 columns">
 				<h2>Club Tel</h2>
 			</div>
-			<div class="large-7 medium-12 columns business-blurbs">
+			<div class="large-6 medium-12 columns business-blurbs">
 				<a href="tel:<?php echo $club_telephone; ?>" ><h3><?php echo $club_telephone; ?></h3></a>
 			</div>
 			<hr>
@@ -157,10 +176,10 @@ get_header(); ?>
 
 	<div class="row">
 		<div class="large-8 medium-8 small-centered columns">
-			<div class="large-3 medium-12 columns">
+			<div class="large-5 medium-12 columns">
 				<h2>School Office Tel</h2>
 			</div>
-			<div class="large-7 medium-12 columns business-blurbs">
+			<div class="large-6 medium-12 columns business-blurbs">
 				<a href="tel:<?php echo $club_telephone; ?>" ><h3><?php echo $school_telephone; ?></h3></a>
 			</div>
 			<hr>
@@ -169,10 +188,10 @@ get_header(); ?>
 
 	<div class="row">
 		<div class="large-8 medium-8 small-centered columns">
-			<div class="large-3 medium-12 columns">
+			<div class="large-5 medium-12 columns">
 				<h2>Ofsted Reg</h2>
 			</div>
-			<div class="large-7 medium-12 columns business-blurbs">
+			<div class="large-6 medium-12 columns business-blurbs">
 				<a href="tel:<?php echo $club_telephone; ?>" ><h3><?php echo $ofsted_reg; ?></h3></a>
 			</div>
 			<hr>
@@ -200,80 +219,6 @@ get_header(); ?>
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-<script>
-
-	// output some data about the club for Google Maps
-	// club is a JS object
-	var club = 
-	{
-		lat: <?php echo $latitude; ?>,
-		lng: <?php echo $longitude; ?>,
-		location: '<?php echo str_replace(array("\r", "\n"), "", $location); ?>',
-		name: '<?php echo $school_name; ?>'
-	}
-
-  function initialize() 
-  {
-    var mapCanvas = document.getElementById('map_canvas');
-
-    var mapOptions = 
-    {    
-    	center: new google.maps.LatLng(<?php echo $latitude; ?>, <?php echo $longitude; ?>),
-      	zoom: 13,
-      	mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
-    var map = new google.maps.Map(mapCanvas, mapOptions);
-
-
-	var latLng = new google.maps.LatLng(club.lat, club.lng);
-
-    var marker = new google.maps.Marker(
-    {
-        position: latLng,
-        map: map,
-        title: club.name
-    });
-
-    var contentString = '<div class="map-info-window">'+
-      // '<h4>' + club.name + '</h4> ' +
-      '<p>' + club.location + '</p>' +
-      '</div>';
-
-    // console.log(contentString)  
-
-    var infoWindow = new google.maps.InfoWindow(
-    {
-        content: contentString
-    });
-
-    google.maps.event.addListener(marker, 'click', function() 
-    {
-      	infoWindow.open(map, marker);
-    });
-  }
-  google.maps.event.addDomListener(window, 'load', initialize);
-
-</script>
-
-<script>
-	
-	$('div.schoolclubsinfo').on('click', function() 
-	{
-  		$(this).toggleClass('show-description');
-  	});
-
-</script>
-
-
-
 
 
 

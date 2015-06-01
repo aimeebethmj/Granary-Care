@@ -141,6 +141,8 @@ p
   {
   	text-align: center;
   	font-weight: 300;
+  	font-size: .8rem;
+  	word-spacing: 2px;
   }
 
 /* Banner Statement */
@@ -209,6 +211,13 @@ p
 	label
 	{
 		font-size: 1rem;
+	}
+
+/* accordion */
+	
+	.accordion .accordion-navigation > a, .accordion dd > a
+	{
+		font-family: "Lato";
 	}
 
 

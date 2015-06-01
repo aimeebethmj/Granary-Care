@@ -247,7 +247,7 @@ if( !empty($businessPanels) ):
 ?>
 
 <!-- ACTION BUTTONS -->
-<?php if( !empty( $secondButtonLabel ) ): ?>
+<?php if( !empty( $buttonLabel2 ) ): ?>
 <div class="full-width content-area action-area <?php echo $slug; ?>">
   <div class="row">
     <div class="large-12 medium-12 columns buttons-container">

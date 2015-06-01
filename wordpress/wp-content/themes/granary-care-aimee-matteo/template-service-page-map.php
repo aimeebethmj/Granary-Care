@@ -151,6 +151,12 @@ get_header(); ?>
 	</div>
 
 <!-- ACTION BUTTONS -->
+<?php 
+
+if( !empty($action2buttonlabel) ):
+
+?>
+
 <div class="full-width content-area action-area <?php echo $slug; ?>">
   <div class="row">
     <div class="large-12 medium-12 columns buttons-container">
@@ -158,6 +164,8 @@ get_header(); ?>
     </div>
   </div>
 </div>
+
+<?php endif; ?>
 
 
 <?php 

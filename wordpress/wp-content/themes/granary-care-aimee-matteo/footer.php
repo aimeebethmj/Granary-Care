@@ -14,7 +14,7 @@
           <li><a href="<?php echo site_url(); ?>/about">About Us</a></li>
           <li><a href="<?php echo site_url(); ?>/granary-kids">Granary Kids</a></li>
           <li><a href="<?php echo site_url(); ?>/nanny-agency">Nanny Agency</a></li>
-          <li><a href="<?php echo site_url(); ?>/mother-and-baby-unit">Mother &amp; Baby</a></li>
+          <li><a href="<?php echo site_url(); ?>/mother-and-baby">Mother &amp; Baby</a></li>
           
         </ul>
       </div>
@@ -22,7 +22,7 @@
       <div class="large-6 medium-6 columns">
         <ul class="footer-nav">
           <li><a href="<?php echo site_url(); ?>/social-responsibility">Social Responsibility</a></li>
-          <li><a href="<?php echo site_url(); ?>/work-for-us">Work With Us</a></li>
+          <li><a href="<?php echo site_url(); ?>/work-with-granary-kids">Work With Us</a></li>
           <li><a href="<?php echo site_url(); ?>/contact-us">Contact Us</a></li>
           <!-- <li><a href="<?php echo ot_get_option( 'facebook' ); ?>"><i class="fa fa-facebook-square fa-2x"></i></a></li> -->
         </ul>        
@@ -33,7 +33,10 @@
         <div>
           &copy; <?php echo ( bloginfo("name") . " " . date("Y") ); ?>
         </div>
-    </div>
+        <div class="made-by">
+          Made with  &hearts;  by <a href="https://twitter.com/aimeebethmj">Aimee</a> and <a href="https://twitter.com/baddeo">Matteo</a>
+        </div>
+      </div>
   </div>
 </div>
 
