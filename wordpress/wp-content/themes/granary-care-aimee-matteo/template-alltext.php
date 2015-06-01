@@ -15,7 +15,7 @@ get_header(); ?>
     $mainbuttonlabel = get_field('main_action_button_label');
     $firstbuttonlink = get_field('first_section_button');
     $firstbuttonlabel = get_field('first_section_button_label');
-    $secondbuttonlink = get_field('section_section_button');
+    $secondbuttonlink = get_field('second_section_button');
     $secondbuttonlabel = get_field('second_section_button_label');
     $thirdbuttonlink = get_field('third_section_button');
     $thirdbuttonlabel = get_field('third_section_button_label');
@@ -75,7 +75,7 @@ get_header(); ?>
     <div class="large-8 medium-10 small-centered columns <?php echo $slug; ?>">
     	<?php echo get_field('second_section');?>
       <?php if( !empty($secondbuttonlabel) ): ?>
-        <a class="alltext-link" href="<?php echo get_field('second_section_button'); ?>"><?php echo get_field('second_section_button_label'); ?></a>
+        <a class="alltext-link" href="<?php echo $secondbuttonlink; ?>"><?php echo get_field('second_section_button_label'); ?></a>
       <?php endif; ?>
       <hr/>
     </div>
