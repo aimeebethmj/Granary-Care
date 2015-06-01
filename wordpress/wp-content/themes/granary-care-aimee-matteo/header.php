@@ -19,7 +19,7 @@
 		} elseif ( is_single() ) {
 			wp_title('');
 		} else {
-			echo wp_title( ' | ', 'false', 'right' ); bloginfo( 'name' );
+			echo wp_title( ' | ', 'false', 'right' ); 
 		} ?></title>
 		
 		<link rel="stylesheet" href="<?php echo get_active_theme_directory(); ?>/css/normalize.css" />
