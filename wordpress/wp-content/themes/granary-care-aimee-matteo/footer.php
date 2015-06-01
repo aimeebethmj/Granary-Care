@@ -33,7 +33,10 @@
         <div>
           &copy; <?php echo ( bloginfo("name") . " " . date("Y") ); ?>
         </div>
-    </div>
+        <div class="made-by">
+          Made with  &hearts;  by <a href="https://twitter.com/aimeebethmj">Aimee</a> and <a href="https://twitter.com/baddeo">Matteo</a>
+        </div>
+      </div>
   </div>
 </div>
 
