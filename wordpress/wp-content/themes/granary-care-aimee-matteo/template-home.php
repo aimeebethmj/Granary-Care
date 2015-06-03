@@ -12,7 +12,7 @@ get_header(); ?>
 
 <!-- SLIDER -->
 
-    <div class="row slider-container">
+    <div class="row slider-container hide-for-small">
       <div class="large-12 columns">
         
         <div class="slider">
@@ -62,6 +62,24 @@ get_header(); ?>
         </div>
       </div>
     </div>
+
+    <!-- IMAGE FOR MOBILE -->
+
+        <?php 
+
+    $image = get_field('image');
+
+    if( !empty($image) ):
+
+    ?>
+
+      <div class="row image-container hide-for-large-up hide-for-medium-up">
+        <div class="large-12 medium-12 small-centered  columns ">
+            <img src="<?php echo $image['url']; ?>">
+        </div>
+      </div>
+
+    <?php endif; ?>
 
 
 <div class="content">
