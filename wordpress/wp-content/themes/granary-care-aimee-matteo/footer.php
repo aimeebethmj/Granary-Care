@@ -24,7 +24,8 @@
 					<li><a href="<?php echo site_url(); ?>/social-responsibility">Social Responsibility</a></li>
 					<li><a href="<?php echo site_url(); ?>/work-with-granary-kids">Work With Us</a></li>
 					<li><a href="<?php echo site_url(); ?>/contact-us">Contact Us</a></li>
-					<!-- <li><a href="<?php echo ot_get_option( 'facebook' ); ?>"><i class="fa fa-facebook-square fa-2x"></i></a></li> -->
+					<li><a href="<?php echo ot_get_option( 'facebook' ); ?>"><i class="fa fa-facebook-square fa-2x"></i></a><a href="<?php echo ot_get_option( 'twitter' ); ?>"><i class="fa fa-twitter fa-2x"></i></a></li>
+					<!-- <li></li> -->
 				</ul>        
 			</div>
 		</div>

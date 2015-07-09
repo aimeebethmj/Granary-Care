@@ -24,6 +24,7 @@
 		
 		<link rel="stylesheet" href="<?php echo get_active_theme_directory(); ?>/css/normalize.css" />
 		<link rel="stylesheet" href="<?php echo get_active_theme_directory(); ?>/css/foundation.css" />
+		<link rel="stylesheet" href="<?php echo get_active_theme_directory(); ?>/css/font-awesome/css/font-awesome.min.css"> <!-- import icon font  -->
 		<link rel="stylesheet" href="<?php echo get_active_theme_directory(); ?>/js/slick/slick.css"/> <!-- slick slider -->
 
 		<!-- our styles rules, after all the other styles! -->
@@ -74,6 +75,7 @@
 							</div>
 							<p class="call-us-today hide-for-small">Call us today! <a href="tel:<?php echo ot_get_option( 'telephone_number' ); ?>"><?php echo ot_get_option( 'telephone_number' ); ?></a></p>
 							<p class="call-us-today show-for-small-only"><a href="tel:<?php echo ot_get_option( 'telephone_number' ); ?>"><?php echo ot_get_option( 'telephone_number' ); ?></a></p>
+				
 
 						</div>
 					</div>
