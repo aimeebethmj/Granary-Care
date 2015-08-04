@@ -65,7 +65,7 @@ body
 
 /* override Foundation */
 
-	h1, h2, h3, h4, h5, h6
+	h1, h2, h3, h4, h5, h6, table tr thead, table thead tr th, table tr td
 	{
 		color: #131342; 
 	}
@@ -599,6 +599,35 @@ body
 
 	}
 
+/* NANNY JOBS TABLE */
+
+	
+
+	tr
+	{
+		background: rgba(249, 240, 225, .8);
+	}
+
+	table thead tr
+	{
+		background: rgba(255,84, 38, .2);
+	}
+
+	table tr.even, table tr.alt, table tr:nth-of-type(even)
+	{
+		background: rgba(249, 240, 225, .4);
+	}
+
+	table tbody tr:hover 
+    {
+        background: rgba(255, 173, 6, .4);
+    }
+
+    td:before
+    {
+    	color: rgba(19, 19, 66, .6);
+    }
+	
 
 
 
