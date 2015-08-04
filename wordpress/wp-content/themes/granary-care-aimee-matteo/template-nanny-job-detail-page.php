@@ -9,7 +9,8 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 ?>
 
 <div class="content">
-
+	<div class="row">
+  		<div class="large-10 medium-12 small-centered columns">
 
 <?php
 
@@ -28,7 +29,7 @@ if( $fields )
 		// get_field_object( $field_name, $post_id, $options )
 		// - $value has already been loaded for us, no point to load it again in the get_field_object function
 		$field = get_field_object($field_name, false, array('load_value' => false));		
-		showMeTheGoods($field);
+		// showMeTheGoods($field);
 	?>	
 		<div class="row">
 			<div class="large-6 medium-6 small-12 columns">
@@ -45,6 +46,9 @@ if( $fields )
 
 ?>
 
+
+</div>
+</div>
 </div>
 
 
