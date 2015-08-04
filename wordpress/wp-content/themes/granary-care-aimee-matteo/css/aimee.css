@@ -1239,7 +1239,6 @@
 
     table tbody tr:hover 
     {
-        background-color: #ffff99;
         cursor: pointer;
     }
 
@@ -1583,11 +1582,17 @@
                     padding-right: 10px; 
                     white-space: nowrap;
                 }
+
+                table
+                {
+                  border: none;
+                  
+                }
                 
                 /*
                 Label the data
                 */
-                td:nth-of-type(1):before { content: "Reference"; }
+                /*td:nth-of-type(1):before { content: "Reference"; }
                 td:nth-of-type(2):before { content: "Position"; }
                 td:nth-of-type(3):before { content: "Location"; }
                 td:nth-of-type(4):before { content: "Live in/out"; }
@@ -1596,7 +1601,7 @@
                 td:nth-of-type(7):before { content: "Start date"; }
                 td:nth-of-type(8):before { content: "Full time/part time"; }
                 td:nth-of-type(9):before { content: "Language requirements"; }
-                td:nth-of-type(10):before { content: "More info"; }
+                td:nth-of-type(10):before { content: "More info"; }*/
             
 
         }
