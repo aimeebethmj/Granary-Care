@@ -2,6 +2,11 @@
     {
         -webkit-overflow-scrolling: touch;
     }
+
+    a
+    {
+        cursor: pointer;
+    }
     
 /* HEADER */
  
@@ -1225,6 +1230,19 @@
         border-radius: 1000px;
     }
 
+/* NANNY JOBS PAGE */
+
+    table 
+    {
+        width: 100%;
+    }
+
+    table tbody tr:hover 
+    {
+        background-color: #ffff99;
+        cursor: pointer;
+    }
+
 
 
 /*  RESPONSIVE DESIGN  */
@@ -1524,6 +1542,62 @@
                 {
                     border-radius: 0;
                 }
+
+            /* NANNY JOBS PAGE TABLE */
+
+                table, thead, tbody, th, table tbody tr td, table tr td, tr 
+                { 
+                    display: block; 
+                }
+                
+                /* Hide table headers (but not display: none;, for accessibility) */
+                thead tr 
+                { 
+                    position: absolute;
+                    top: -9999px;
+                    left: -9999px;
+                }
+                
+                tr 
+                { 
+                    border: 1px solid #ccc; 
+                }
+                
+                table tbody tr td, table tr td
+                { 
+                    /* Behave  like a "row" */
+                    border: none;
+                    border-bottom: 1px solid #eee; 
+                    position: relative;
+                    padding-left: 50%; 
+                }
+                
+                td:before 
+                { 
+                    /* Now like a table header */
+                    position: absolute;
+                    /* Top/left values mimic padding */
+                    top: 6px;
+                    left: 6px;
+                    width: 45%; 
+                    padding-right: 10px; 
+                    white-space: nowrap;
+                }
+                
+                /*
+                Label the data
+                */
+                td:nth-of-type(1):before { content: "Reference"; }
+                td:nth-of-type(2):before { content: "Position"; }
+                td:nth-of-type(3):before { content: "Location"; }
+                td:nth-of-type(4):before { content: "Live in/out"; }
+                td:nth-of-type(5):before { content: "Salary"; }
+                td:nth-of-type(6):before { content: "Children"; }
+                td:nth-of-type(7):before { content: "Start date"; }
+                td:nth-of-type(8):before { content: "Full time/part time"; }
+                td:nth-of-type(9):before { content: "Language requirements"; }
+                td:nth-of-type(10):before { content: "More info"; }
+            
 
         }
 
