@@ -4,6 +4,8 @@ Template Name: Nanny Jobs Page
 */
 get_header();
 
+if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+
 ?>
 
 <div class="content">
@@ -11,8 +13,14 @@ get_header();
 <div class="row">
 	<div class="large-12 medium-12 small-centered columns">
 
+<div class="large-10 medium-10 small-centered columns">
+	<h1><?php echo get_the_title(); ?></h1>
+	<?php the_content();?>
+</div>
 
-<h1><?php echo get_the_title(); ?></h1>
+	<!-- <div class="large-8 medium-10 small-centered columns">
+    	<?php the_content();?>
+  	</div> -->
 
 <?php 
 
@@ -24,7 +32,7 @@ $pagesCount = 0;
 
 foreach($pages as $page) // for each page within pages
 {
-	showMeTheGoods($page);
+	// showMeTheGoods($page);
 
 	
 
@@ -35,6 +43,36 @@ foreach($pages as $page) // for each page within pages
 	{
 		// spit out the thead and beginning of tbody
 		?>
+		<style>
+
+		/* 801 break: large images for tablets full-wdith */
+        @media (max-width:801px)
+        {
+
+		<?php
+
+		$fieldCount = 1;		
+		// loop through all the fields
+		foreach( $fields as $field_name => $value )
+		{
+
+			$field = get_field_object($field_name, $page->ID, array('load_value' => false));		
+
+			if ($field['required'] == 1)
+			{
+		?>		
+				td:nth-of-type(<?php echo $fieldCount; ?>):before { content: "<?php echo $field['label']; ?>"; }
+		
+		<?php
+				$fieldCount ++;
+
+			}
+		}			
+		
+		?>
+
+		}
+		</style>
 		<table>
 			<thead>
 			<tr>
@@ -119,7 +157,7 @@ foreach($pages as $page) // for each page within pages
 
 
 
-<?php // endwhile; endif; ?>
+<?php  endwhile; endif; ?>
 
 </div>
 </div>
