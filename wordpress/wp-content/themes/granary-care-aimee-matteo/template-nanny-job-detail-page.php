@@ -8,9 +8,22 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 ?>
 
-<div class="content">
-	<div class="row">
-  		<div class="large-10 medium-12 small-centered columns">
+<div class="content job-page">
+
+	<!-- MAIN CONTENT -->
+<div class="row">
+  <div class="large-10 medium-10 small-centered columns">
+    <h1><?php echo get_the_title(); ?></h1>
+  </div>
+  <div class="large-8 medium-8 small-centered columns">
+    <?php the_content();?>
+  </div>
+</div>
+
+<!-- JOB DETAILS -->
+	
+<div class="row">
+	<div class="large-10 medium-12 small-centered columns job">
 
 <?php
 
@@ -31,14 +44,21 @@ if( $fields )
 		$field = get_field_object($field_name, false, array('load_value' => false));		
 		// showMeTheGoods($field);
 	?>	
-		<div class="row">
-			<div class="large-6 medium-6 small-12 columns">
-				<?php echo $field['label']; ?>
+		
+
+
+
+			<div class="row">
+				<div class="large-6 medium-6 small-5 columns field-label">
+					<p><?php echo $field['label']; ?></p>
+				</div>
+				<div class="large-6 medium-6 small-7 columns">
+					<p><?php echo $value; ?></p>
+				</div>
 			</div>
-			<div class="large-6 medium-6 small-12 columns">
-				<?php echo $value; ?>
-			</div>
-		</div>
+			
+	
+
 	<?php
 
 	}
@@ -46,9 +66,11 @@ if( $fields )
 
 ?>
 
+	</div>
+</div>			
 
-</div>
-</div>
+
+
 </div>
 
 
