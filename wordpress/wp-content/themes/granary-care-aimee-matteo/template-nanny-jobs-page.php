@@ -8,7 +8,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 ?>
 
-<div class="content">
+<div class="content jobs-page">
 
 <div class="row">
 	<div class="large-12 medium-12 small-centered columns">
