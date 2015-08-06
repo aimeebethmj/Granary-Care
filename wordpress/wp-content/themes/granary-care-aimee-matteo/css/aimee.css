@@ -1235,11 +1235,51 @@
     table 
     {
         width: 100%;
+        margin: 3rem 0;
     }
 
     table tbody tr:hover 
     {
         cursor: pointer;
+    }
+
+    
+/* NANNY JOBS DETAIL PAGE */
+
+/*    .job .business-blurbs,
+    .job h3
+    {
+        margin-bottom: 0;
+        margin-left: 1rem;
+        padding: 0;
+    }
+
+    .job .row
+    {
+        margin: 0 auto;
+    }
+
+    .job .business-blurbs p:first-child
+    {
+        margin-top: 2.5rem;
+    }
+*/
+    .job
+    {
+        border: solid 1px #DDDDDD;
+        margin: 3rem 0;
+
+    }
+
+    .job p
+    {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .job .row
+    {
+        border-bottom: 1px solid #eee;
     }
 
 
