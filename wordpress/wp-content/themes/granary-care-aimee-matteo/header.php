@@ -129,18 +129,26 @@
 										<ul class="dropdown">
 											<li class="has-dropdown"><a href="<?php echo site_url(); ?>/breakfast-and-after-school-clubs">Breakfast and After School Clubs</a>
 												<ul class="dropdown">
-													<li><a href="<?php echo site_url(); ?>/botwell-house-rc-primary/">Botwell House</a></li>
-													<li><a href="<?php echo site_url(); ?>/grimsdyke-primary/">Grimsdyke Primary</a></li>
-													<li><a href="<?php echo site_url(); ?>/marlborough-primary/">Marlborough Primary</a></li>
-													<li><a href="<?php echo site_url(); ?>/oak-farm-school/">Oak Farm School</a></li>
-													<li><a href="<?php echo site_url(); ?>/simon-marks-jewish-primary/">Simon Marks Jewish Primary</a></li>
+													<?php
+														// get all the pages using the school club template
+														$schools = get_posts( array( 'post_type' => 'page', 'order' => 'ASC', 'orderby' => 'menu_order', 'meta_key' => '_wp_page_template', 'meta_value' => 'template-school-club-page.php', 'posts_per_page' => 200 ) );
+
+														foreach($schools as $school) // for each school within schools
+														{
+															
+															$school_URL = get_page_link($school->ID);
+															$school_name = $school->post_title;
+															// showMeTheGoods($school_name);
+															echo '<li><a href="' . $school_URL . '">' . $school_name . '</a></li>';
+														}	
+													?>
 												</ul>
 											</li>
 											<!-- <li><a href="<?php echo site_url(); ?>/tipple-topples-creche">Tipple Topples Creche</a></li> -->
 											<li><a href="<?php echo site_url(); ?>/active-holiday-camps">Active Holiday Camps</a></li>
 											<li><a href="<?php echo site_url(); ?>/work-with-granary-kids">Work with Granary Kids</a></li>        
-<!-- 											<li><a href="<?php echo site_url(); ?>/book-a-place">Book a place</a></li>
- -->											<li><a href="<?php echo site_url(); ?>/granary-kids-useful-info">Useful info</a></li>
+											<!-- <li><a href="<?php echo site_url(); ?>/book-a-place">Book a place</a></li> -->											
+											<li><a href="<?php echo site_url(); ?>/granary-kids-useful-info">Useful info</a></li>
 										</ul>
 									</li>
 
