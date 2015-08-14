@@ -2,27 +2,21 @@
 /*
 Template Name: Business Area Home Page
 */
-get_header(); ?>
+get_header(); 
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
-
-    $categories = get_the_category(); // returns all categories assigned to a page/post as an Array
-    $category = $categories[0]; // let's grab the first category in the Array (the element at index 0)
-    $slug = $category->slug; // kind of self-explanatory (the slug property inside the category Object)
-
-    /*echo '<pre>';
-    print_r(get_the_category());
-    print_r($category);
-    echo '</pre>';*/
+// summon the GLOBAL variable (assigned in header.php)
+global $categorySlug;
 
 ?>
+
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <!-- CONTENT AREA -->
 <div class="content">
 
 <!-- BANNER STATEMENT -->
 
-<div class="full-width content-area banner-statement <?php echo $slug; ?>" >
+<div class="full-width content-area banner-statement <?php echo $categorySlug; ?>" >
     <div class="row">
         <div class="large-10 medium-12 small-centered columns">
             <!-- :before -->
@@ -109,7 +103,7 @@ get_header(); ?>
 
   <?php if( is_page ('nanny-agency') ): ?>
 
-    <div class="full-width content-area action-area <?php echo $slug; ?>">
+    <div class="full-width content-area action-area <?php echo $categorySlug; ?>">
       <div class="row">
         <div class="buttons-container">
           <a class="large round button firstbutton" href="<?php echo $mainButtonLink; ?>"><?php echo $mainButtonLabel; ?></a>
@@ -122,7 +116,7 @@ get_header(); ?>
     <?php if( is_page ('mother-and-baby' ) ): ?>
 
       
-        <div class="full-width content-area action-area <?php echo $slug; ?>">
+        <div class="full-width content-area action-area <?php echo $categorySlug; ?>">
           <div class="row">
             <div class="buttons-container">
               <a class="large round button firstbutton" href="<?php echo $mainButtonLink; ?>"><?php echo $mainButtonLabel; ?></a>
@@ -206,7 +200,7 @@ if( !empty($businessPanels) ):
 
   <?php if( is_page ('granary-kids') ): ?>
 
-    <div class="full-width content-area action-area <?php echo $slug; ?>">
+    <div class="full-width content-area action-area <?php echo $categorySlug; ?>">
       <div class="row">
         <div class="buttons-container">
           <a class="large round button main-button" href="<?php echo $mainButtonLink; ?>"><?php echo $mainButtonLabel; ?></a>
@@ -248,7 +242,7 @@ if( !empty($businessPanels) ):
 
 <!-- ACTION BUTTONS -->
 <?php if( !empty( $buttonLabel2 ) ): ?>
-<div class="full-width content-area action-area <?php echo $slug; ?>">
+<div class="full-width content-area action-area <?php echo $categorySlug; ?>">
   <div class="row">
     <div class="large-12 medium-12 columns buttons-container">
       <a class="large round button firstbutton" href="<?php echo $buttonLink1; ?>"><?php echo $buttonLabel1; ?></a>
