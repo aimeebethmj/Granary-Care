@@ -166,7 +166,7 @@
 											<li class="has-dropdown"><a href="<?php echo site_url(); ?>/nannies">Nannies</a>
 												<ul class="dropdown">
 													<!-- <li><a href="<?php echo site_url(); ?>/job-search">Job Search</a></li> -->
-													<li><a href="<?php echo site_url(); ?>/nanny-agency/nannies/nanny-register/">Register</a></li>
+													<li><a href="<?php echo site_url(); ?>/nanny-agency/nannies/nanny-registration-form/">Register</a></li>
 												</ul>
 											</li>  
 											<li><a href="<?php echo site_url(); ?>/nanny-agency-useful-info">Useful Info</a></li>
