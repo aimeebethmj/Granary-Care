@@ -25,7 +25,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 <?php 
 
 // get all the pages using the nanny job detail template
-$pages = get_posts( array( 'post_type' => 'page', 'meta_key' => '_wp_page_template', 'meta_value' => 'template-nanny-job-detail-page.php' ) );
+$pages = get_posts( array( 'post_type' => 'page', 'meta_key' => '_wp_page_template', 'meta_value' => 'template-nanny-job-detail-page.php', 'posts_per_page' => 200 ) );
 
 $pagesLength = count($pages);
 $pagesCount = 0;
