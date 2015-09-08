@@ -101,19 +101,7 @@ global $categorySlug;
 
 <!-- ACTION BUTTON -->
 
-  <?php if( is_page ('nanny-agency') ): ?>
-
-    <div class="full-width content-area action-area <?php echo $categorySlug; ?>">
-      <div class="row">
-        <div class="buttons-container">
-          <a class="large round button firstbutton" href="<?php echo $mainButtonLink; ?>"><?php echo $mainButtonLabel; ?></a>
-        </div>
-      </div>
-    </div>
-
-  <?php endif; ?>
-
-    <?php if( is_page ('mother-and-baby' ) ): ?>
+  <?php if( is_page( array( 'nanny-agency', 'mother-and-baby' ) ) ): ?>
 
       
         <div class="full-width content-area action-area <?php echo $categorySlug; ?>">
