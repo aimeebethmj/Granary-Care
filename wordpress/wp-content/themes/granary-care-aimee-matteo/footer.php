@@ -93,7 +93,35 @@
 				});
 			</script>
 
-	<?php endif; ?>
+		<?php endif; ?>
+
+		<?php if( is_page ('gallery') ): ?>
+
+				<script type="text/javascript" src="<?php echo get_active_theme_directory() ; ?>/js/instafeed.min.js"></script>
+				<script type="text/javascript">
+					var feed = new Instafeed(
+					{
+						get: 'tagged',
+						tagName: '<?php echo get_field('hashtag'); ?>',
+						resolution: 'standard_resolution',
+						clientId: 'ef54732d28b1434f95561b9a71801fe2',
+						template: '<a href="{{link}}" target="_blank"><img src="{{image}}"/><p>{{caption}}</p></a>',
+						limit: 20,
+						after: function() 
+						{
+							if (this.hasNext()) 
+							{
+								feed.next()
+								// loadButton.setAttribute('disabled', 'disabled');
+							}
+						},
+						sortBy: 'most-recent'
+						// sortBy: 'random'
+					})
+					feed.run()
+				</script>
+
+		<?php endif; ?>
 
 </body>
 </html>
