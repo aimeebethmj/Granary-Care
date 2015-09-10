@@ -1282,6 +1282,95 @@
         border-bottom: 1px solid #eee;
     }
 
+/* INSTAFEED */
+
+    #instafeed
+    {
+        border: none; 
+        width: 100%; 
+        height: 100%;
+        /*position: absolute;*/
+        top: 0;
+        margin: 0 auto;
+    }
+
+    #instafeed a
+    {
+        margin: .75rem;
+        width: 46%;
+        float: left;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #instafeed a img
+    {
+        /*max-width: 320px;*/
+        vertical-align: text-bottom;
+        width: 100%;
+        /*margin: .75rem;*/
+        /*width: 46%;*/
+
+    }
+
+    #instafeed p
+    {
+        opacity: 0;
+        position: absolute;
+        top: 5rem;
+        background: rgba(255,255,255,.8);
+        margin: 0;
+        padding: 0.5rem .75rem;
+        color: #131342;
+    }
+
+    #instafeed a:hover p
+    {
+        opacity: 1;
+    }
+
+
+    @media (max-width: 960px)
+    {
+        #instafeed a
+        {
+            width: 47%;
+            margin: 0.5rem; 
+        }   
+    }
+
+    @media (max-width: 834px)
+    {
+        #instafeed a
+        {
+            /* 1 column */
+            width: 85%;
+            margin: 2.5rem auto;
+            display: block; 
+            float: none;
+        } 
+
+        #instafeed p
+        {
+            opacity: 1;
+            position: static;
+            background: transparent;
+            margin: 1rem auto;
+            padding: 0;
+        }  
+    }
+
+
+    @media (max-width: 640px)
+    {
+        #instafeed a 
+        {
+            /* 1 column */
+            width: 100%;
+            margin: 4rem auto 1.5rem; 
+        }   
+    }
+
 
 
 /*  RESPONSIVE DESIGN  */
@@ -1538,6 +1627,11 @@
                 {
                     margin: 1rem 0 1rem 0;
                 }
+
+
+        /* INSTAFEED */
+
+               
         }
 
 
