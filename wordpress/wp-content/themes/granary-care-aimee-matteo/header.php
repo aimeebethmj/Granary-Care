@@ -146,8 +146,9 @@
 											</li>
 											<!-- <li><a href="<?php echo site_url(); ?>/tipple-topples-creche">Tipple Topples Creche</a></li> -->
 											<li><a href="<?php echo site_url(); ?>/active-holiday-camps">Active Holiday Camps</a></li>
+											<li><a href="<?php echo site_url(); ?>/gallery">Gallery</a></li>
 											<li><a href="<?php echo site_url(); ?>/work-with-granary-kids">Work with Granary Kids</a></li>        
-											<!-- <li><a href="<?php echo site_url(); ?>/book-a-place">Book a place</a></li> -->											
+											<li><a href="<?php echo site_url(); ?>/book-a-place">Book a place</a></li>											
 											<li><a href="<?php echo site_url(); ?>/granary-kids-useful-info">Useful info</a></li>
 										</ul>
 									</li>
