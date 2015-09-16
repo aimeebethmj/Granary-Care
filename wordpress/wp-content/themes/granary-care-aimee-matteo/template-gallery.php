@@ -28,7 +28,7 @@ global $categorySlug;
 
 
 
-    <div class="row">
+    <div class="row instafeed">
 
       <div class="large-10 medium-12 small-centered columns">
 

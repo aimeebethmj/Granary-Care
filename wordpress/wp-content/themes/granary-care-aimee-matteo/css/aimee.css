@@ -1284,6 +1284,12 @@
 
 /* INSTAFEED */
 
+
+    .instafeed
+    {
+        margin-bottom: 2rem;
+    }
+
     #instafeed
     {
         border: none; 
