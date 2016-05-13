@@ -174,7 +174,7 @@
 										</ul>
 									</li>
 
-									<li><a href="<?php echo site_url(); ?>/mother-and-baby">Mother &amp; Baby</a>
+									<li class="has-dropdown"><a href="<?php echo site_url(); ?>/mother-and-baby">Mother &amp; Baby</a>
 										<ul class="dropdown">
 											<li><a href="<?php echo site_url(); ?>/mother-and-baby-services">Mother &amp; Baby Services</a></li>
 											<li><a href="<?php echo site_url(); ?>/referral-process">Referral Process</a></li>
