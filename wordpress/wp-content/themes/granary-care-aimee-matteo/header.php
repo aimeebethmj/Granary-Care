@@ -175,13 +175,13 @@
 									</li>
 
 									<li><a href="<?php echo site_url(); ?>/mother-and-baby">Mother &amp; Baby</a>
-										<!-- <ul class="dropdown">
+										<ul class="dropdown">
 											<li><a href="<?php echo site_url(); ?>/mother-and-baby-services">Mother &amp; Baby Services</a></li>
 											<li><a href="<?php echo site_url(); ?>/referral-process">Referral Process</a></li>
-											<li><a href="<?php echo site_url(); ?>/facilities">Facilities</a></li>
+											<!-- <li><a href="<?php echo site_url(); ?>/facilities">Facilities</a></li> -->
 											<li><a href="<?php echo site_url(); ?>/documents">Documents</a></li>
-											<li><a href="<?php echo site_url(); ?>/work-with-mother-and-baby">Work with Mother &amp; Baby</a></li>
-										</ul> -->
+											<!-- <li><a href="<?php echo site_url(); ?>/work-with-mother-and-baby">Work with Mother &amp; Baby</a></li> -->
+										</ul>
 									</li>
 
 									<!-- <li><a href="<?php echo site_url(); ?>/social-responsibility">Social Responsibility</a></li> -->
