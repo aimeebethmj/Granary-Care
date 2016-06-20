@@ -104,7 +104,7 @@
 						get: 'tagged',
 						tagName: '<?php echo get_field('hashtag'); ?>',
 						resolution: 'standard_resolution',
-						clientId: 'ef54732d28b1434f95561b9a71801fe2',
+						clientId: '	57f8b97797124c49b0db64c605b4134c',
 						template: '<a href="{{link}}" target="_blank"><img src="{{image}}"/><p>{{caption}}</p></a>',
 						limit: 20,
 						after: function() 
