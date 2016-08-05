@@ -21,3 +21,6 @@ wordpress/wp-content/_old
 .phpintel
 wordpress/wp-content/plugins
 _wordpress
+wordpress/wp-content/cache
+wordpress/wp-includes
+wordpress/wp-content/themes/twentysixteen
