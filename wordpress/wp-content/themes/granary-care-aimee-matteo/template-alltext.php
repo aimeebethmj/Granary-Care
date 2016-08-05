@@ -2,14 +2,16 @@
 /*
 Template Name: All Text Page
 */
-get_header(); ?>
+get_header(); 
+
+// summon the GLOBAL variable (assigned in header.php)
+global $categorySlug;
+?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 
 
- 	  $categories = get_the_category(); // returns all categories assigned to a page/post as an Array
-    $category = $categories[0]; // let's grab the first category in the Array (the element at index 0)
-    $slug = $category->slug; // kind of self-explanatory (the slug property inside the category Object)
+ 	  
 
     $mainbuttonlink = get_field('main_action_button');
     $mainbuttonlabel = get_field('main_action_button_label');
@@ -35,7 +37,7 @@ get_header(); ?>
 
 <!-- BANNER STATEMENT -->
 
-<div class="full-width content-area banner-statement <?php echo $slug; ?>">
+<div class="full-width content-area banner-statement <?php echo $categorySlug; ?>">
     <div class="row">
         <div class="large-12 medium-12 small-12 columns">
             <h2><?php echo get_field('banner_message');?></h2>
@@ -49,7 +51,7 @@ get_header(); ?>
     <div class="large-10 medium-12 small-centered columns">
       <h1><?php echo get_the_title(); ?></h1>
     </div>
-    <div class="large-8 medium-10 small-centered columns <?php echo $slug; ?>">
+    <div class="large-8 medium-10 small-centered columns <?php echo $categorySlug; ?>">
          <?php the_content();?>
         <?php if( !empty($firstbuttonlabel) ): ?>
           <a class="alltext-link" href="<?php echo $firstbuttonlink; ?>"><?php echo $firstbuttonlabel; ?></a>
@@ -60,7 +62,7 @@ get_header(); ?>
 
   <!-- ACTION BUTTONS -->
 <?php if( !empty($mainbuttonlabel) ): ?>
-<div class="full-width content-area action-area <?php echo $slug; ?>">
+<div class="full-width content-area action-area <?php echo $categorySlug; ?>">
   <div class="row">
     <div class="large-12 medium-12 columns buttons-container">
       <a class="large round button firstbutton" href="<?php echo $mainbuttonlink; ?>"><?php echo $mainbuttonlabel; ?></a>
@@ -72,7 +74,7 @@ get_header(); ?>
 <?php if( !empty( $secondSection ) ): ?>
 <div class="full-width content-area page-summary1">
   <div class="row">
-    <div class="large-8 medium-10 small-centered columns <?php echo $slug; ?>">
+    <div class="large-8 medium-10 small-centered columns <?php echo $categorySlug; ?>">
     	<?php echo get_field('second_section');?>
       <?php if( !empty($secondbuttonlabel) ): ?>
         <a class="alltext-link" href="<?php echo $secondbuttonlink; ?>"><?php echo get_field('second_section_button_label'); ?></a>
@@ -86,7 +88,7 @@ get_header(); ?>
 <?php if( !empty( $thirdSection ) ): ?>
 <div class="full-width content-area page-summary2">
   <div class="row">
-    <div class="large-8 medium-10 small-centered columns <?php echo $slug; ?>">
+    <div class="large-8 medium-10 small-centered columns <?php echo $categorySlug; ?>">
     	<?php echo get_field('third_section');?>
       <?php if( !empty($thirdbuttonlabel) ): ?>
       <a class="alltext-link" href="<?php echo get_field('third_section_button'); ?>"><?php echo get_field('third_section_button_label'); ?></a>
@@ -99,7 +101,7 @@ get_header(); ?>
 
 
 <!-- ACTION BUTTONS -->
-<div class="full-width content-area action-area <?php echo $slug; ?>">
+<div class="full-width content-area action-area <?php echo $categorySlug; ?>">
   <div class="row">
     <div class="large-12 medium-12 columns buttons-container">
       <a class="large round button firstbutton" href="<?php echo get_field('action_button_1'); ?>"><?php echo get_field('action_button_1_label'); ?></a>
