@@ -41,8 +41,7 @@
 	</div>
 </div>
 
-		<!-- load jQuery -->
-		<script src="<?php echo get_active_theme_directory() ; ?>/js/jquery/dist/jquery.min.js"></script>
+		
 
 		<!-- load Foundation and initialise it -->
 		<script src="<?php echo get_active_theme_directory() ; ?>/js/foundation/js/foundation.min.js"></script>
@@ -122,6 +121,24 @@
 				</script>
 
 		<?php endif; ?>
+
+		<!-- if it's a form page... -->
+		<?php if( is_page (['family-register','nanny-registration-form']) ): ?>
+		
+			<script type="text/javascript">
+
+				var $errorBox = $('.validation_error').get(0);
+				if ($errorBox) $errorBox.scrollIntoView();
+
+				var $confirmationBox = $('.gform_confirmation_wrapper').get(0);
+				if ($confirmationBox) $confirmationBox.scrollIntoView();
+
+			</script>
+
+		<?php endif; ?>
+
+
+		
 
 </body>
 </html>

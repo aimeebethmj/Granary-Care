@@ -39,6 +39,10 @@
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/apple-touch-icon-114x114-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/apple-touch-icon-72x72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/apple-touch-icon-precomposed.png">
+
+		<!-- load jQuery -->
+		<script src="<?php echo get_active_theme_directory() ; ?>/js/jquery/dist/jquery.min.js"></script>
+		<script src="<?php echo get_active_theme_directory() ; ?>/js/jquery.maskedinput/jquery.maskedinput.min.js"></script>
 		
 		<?php wp_head(); ?>
 
