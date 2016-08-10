@@ -98,12 +98,15 @@
 
 				<script type="text/javascript" src="<?php echo get_active_theme_directory() ; ?>/js/instafeed.min.js"></script>
 				<script type="text/javascript">
+
 					var feed = new Instafeed(
 					{
+						clientId: '4e294e73de604fd89630ee2067e2c385',
+						accessToken: '2199435043.4e294e7.ab966f2e54d445c48fa791976be8efe4',
 						get: 'tagged',
-						tagName: '<?php echo get_field('hashtag'); ?>',
+						tagName: '<?php echo get_field("hashtag"); ?>',
+						// tagName: 'granarycare',
 						resolution: 'standard_resolution',
-						clientId: '	57f8b97797124c49b0db64c605b4134c',
 						template: '<a href="{{link}}" target="_blank"><img src="{{image}}"/><p>{{caption}}</p></a>',
 						limit: 20,
 						after: function() 

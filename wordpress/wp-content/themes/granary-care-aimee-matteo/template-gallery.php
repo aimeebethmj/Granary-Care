@@ -27,7 +27,6 @@ global $categorySlug;
 </div>
 
 
-
     <div class="row instafeed">
 
       <div class="large-10 medium-12 small-centered columns">
@@ -35,22 +34,13 @@ global $categorySlug;
         <?php the_content();?>
 
         <div id="instafeed"></div>
-
-      
+  
       </div>
 
     </div>
 
 
-
-
-
-
-
-
 </div>
-
-
 
 
 <?php endwhile; endif; ?>

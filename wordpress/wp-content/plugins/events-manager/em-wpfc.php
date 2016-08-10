@@ -5,7 +5,7 @@
  * Admin functions are located in admin/wpfc-admin.php
  */
 //overrides the ajax calls for event data
-if( defined('DOING_AJAX') && DOING_AJAX && !empty($_REQUEST['type']) && $_REQUEST['type'] == 'event' ){ //only needed during ajax requests anyway
+if( defined('DOING_AJAX') && DOING_AJAX && !empty($_REQUEST['type']) && $_REQUEST['type'] == EM_POST_TYPE_EVENT ){ //only needed during ajax requests anyway
 	remove_action('wp_ajax_WP_FullCalendar', array('WP_FullCalendar','ajax'));
 	remove_action('wp_ajax_nopriv_WP_FullCalendar', array('WP_FullCalendar','ajax'));
 	add_action('wp_ajax_WP_FullCalendar', 'wpfc_em_ajax');
@@ -135,14 +135,12 @@ function wpfc_em_ajax() {
     $_REQUEST['year'] = false;
     
     //get the year and month to show, which would be the month/year between start and end request params
-    $month_diff =  $_REQUEST['end'] - $_REQUEST['start'];
-    $month_ts = $_REQUEST['start'] + ($month_diff/2); //get a 'mid-month' timestamp to get year and month
-    $year = (int) date ( "Y", $month_ts );
-    $month = (int) date ( "m", $month_ts );
+    $scope = $_REQUEST['start'] .','. $_REQUEST['end']; 
 
-	$args = array ('month'=>$month, 'year'=>$year, 'owner'=>false, 'status'=>1, 'orderby'=>'event_start_time, event_name'); //since wpfc handles date sorting we only care about time and name ordering here
+	$args = array ('scope'=>$scope, 'owner'=>false, 'status'=>1, 'orderby'=>'event_start_time, event_name'); //since wpfc handles date sorting we only care about time and name ordering here
 	$args['number_of_weeks'] = 6; //WPFC always has 6 weeks
 	$limit = $args['limit'] = get_option('wpfc_limit',3);
+	$args['long_events'] = ( isset($_REQUEST['long_events']) && $_REQUEST['long_events'] == 0 ) ? 0:1; //long events are enabled, unless explicitly told not to in the shortcode
 	
 	//do some corrections for EM query
 	if( isset($_REQUEST[EM_TAXONOMY_CATEGORY]) || empty($_REQUEST['category']) ) $_REQUEST['category'] = !empty($_REQUEST[EM_TAXONOMY_CATEGORY]) ? $_REQUEST[EM_TAXONOMY_CATEGORY]:false;
@@ -178,7 +176,7 @@ function wpfc_em_ajax() {
 		foreach( $cell_data['events'] as $EM_Event ){
 			$color = $borderColor = $orig_color;
 			$textColor = '#fff';
-			if ( !empty ( $EM_Event->get_categories()->categories )) {
+			if ( get_option('dbem_categories_enabled') && !empty ( $EM_Event->get_categories()->categories )) {
 				foreach($EM_Event->get_categories()->categories as $EM_Category){
 					/* @var $EM_Category EM_Category */
 					if( $EM_Category->get_color() != '' ){
@@ -204,6 +202,7 @@ function wpfc_em_ajax() {
 				if( $event_day_counts[$date] <= $limit ){
 					$title = $EM_Event->output(get_option('dbem_emfc_full_calendar_event_format', '#_EVENTNAME'), 'raw');
 					$event_array = array ("title" => $title, "color" => $color, 'textColor'=>$textColor, 'borderColor'=>$borderColor, "start" => date('Y-m-d\TH:i:s', $EM_Event->start), "end" => date('Y-m-d\TH:i:s', $EM_Event->end), "url" => $EM_Event->get_permalink(), 'post_id' => $EM_Event->post_id, 'event_id' => $EM_Event->event_id, 'allDay' => $EM_Event->event_all_day == true );
+					if( $args['long_events'] == 0 ) $event_array['end'] = $event_array['start']; //if long events aren't wanted, make the end date same as start so it shows this way on the calendar
 					$events[] = apply_filters('wpfc_events_event', $event_array, $EM_Event);
 					$event_ids[] = $EM_Event->event_id;
 				}
@@ -212,7 +211,7 @@ function wpfc_em_ajax() {
 		if( $cell_data['events_count'] > $limit ){
 			$event_dates_more[$date] = 1;
 			$day_ending = $date."T23:59:59";
-			$events[] = apply_filters('wpfc_events_more', array ("title" => get_option('wpfc_limit_txt','more ...'), "color" => get_option('wpfc_limit_color','#fbbe30'), "start" => $day_ending, "url" => str_replace('%s',$date,$event_page_link), 'post_id' => 0, 'event_id' => 0 ,'allDay' => true), $date);
+			$events[] = apply_filters('wpfc_events_more', array ("title" => get_option('wpfc_limit_txt','more ...'), "color" => get_option('wpfc_limit_color','#fbbe30'), "start" => $day_ending, "url" => str_replace('%s',$date,$event_page_link), 'post_id' => 0, 'event_id' => 0 , 'className' => 'wpfc-more'), $date);
 		}
 	}
 	echo EM_Object::json_encode( apply_filters('wpfc_events', $events) );
@@ -305,5 +304,5 @@ function wpfc_em_fullcalendar_args($args){
 }
 
 if( is_admin() ){
-	include('admin/wpfc-admin.php');
+	include('admin/settings/wpfc-admin.php');
 }
